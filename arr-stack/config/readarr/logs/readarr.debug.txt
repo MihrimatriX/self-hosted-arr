@@ -1,0 +1,1160 @@
+2025-09-25 01:46:12.5|Debug|ProcessProvider|Found 0 processes with the name: Readarr.Console
+2025-09-25 01:46:12.5|Debug|ProcessProvider|Found 1 processes with the name: Readarr
+2025-09-25 01:46:12.6|Debug|ProcessProvider| - [148] Readarr
+2025-09-25 01:46:12.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-25 01:46:12.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-25 01:46:12.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-25 01:46:12.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-25 01:46:12.8|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-25 01:46:12.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1161209s
+2025-09-25 01:46:12.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-25 01:46:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1698975s
+2025-09-25 01:46:13.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-25 01:46:13.0|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrating
+2025-09-25 01:46:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:13.1|Info|FluentMigrator.Runner.MigrationRunner|CreateTable VersionInfo
+2025-09-25 01:46:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo" ("Version" INTEGER NOT NULL)
+2025-09-25 01:46:13.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0607326s
+2025-09-25 01:46:13.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:13.3|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrated
+2025-09-25 01:46:13.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.2097324s
+2025-09-25 01:46:13.4|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrating
+2025-09-25 01:46:13.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:13.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex VersionInfo (Version)
+2025-09-25 01:46:13.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-09-25 01:46:13.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.036633s
+2025-09-25 01:46:13.6|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-09-25 01:46:13.6|Info|FluentMigrator.Runner.MigrationRunner|=> 5.5E-06s
+2025-09-25 01:46:13.6|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo AppliedOn DateTime
+2025-09-25 01:46:13.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "AppliedOn" DATETIME
+2025-09-25 01:46:13.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0182806s
+2025-09-25 01:46:13.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:13.7|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrated
+2025-09-25 01:46:13.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0548937s
+2025-09-25 01:46:13.8|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrating
+2025-09-25 01:46:13.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:13.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-09-25 01:46:13.8|Info|FluentMigrator.Runner.MigrationRunner|=> 6.1E-06s
+2025-09-25 01:46:13.9|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo Description String
+2025-09-25 01:46:13.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "Description" TEXT
+2025-09-25 01:46:13.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0282769s
+2025-09-25 01:46:13.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:14.0|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrated
+2025-09-25 01:46:14.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0744802s
+2025-09-25 01:46:14.0|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrating
+2025-09-25 01:46:14.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:14.1|Info|InitialSetup|Starting migration of Log DB to 1
+2025-09-25 01:46:14.1|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Logs
+2025-09-25 01:46:14.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-09-25 01:46:14.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0307742s
+2025-09-25 01:46:14.2|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Logs (Time)
+2025-09-25 01:46:14.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-09-25 01:46:14.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0250668s
+2025-09-25 01:46:14.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (1, '2025-09-24T22:46:14', 'InitialSetup')
+2025-09-25 01:46:14.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:14.3|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrated
+2025-09-25 01:46:14.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1154821s
+2025-09-25 01:46:14.3|Info|FluentMigrator.Runner.MigrationRunner|2: ImportListSearch migrating
+2025-09-25 01:46:14.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:14.4|Info|ImportListSearch|Starting migration of Log DB to 2
+2025-09-25 01:46:14.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (2, '2025-09-24T22:46:14', 'ImportListSearch')
+2025-09-25 01:46:14.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:14.5|Info|FluentMigrator.Runner.MigrationRunner|2: ImportListSearch migrated
+2025-09-25 01:46:14.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1649839s
+2025-09-25 01:46:14.7|Info|FluentMigrator.Runner.MigrationRunner|3: add_priority_to_indexers migrating
+2025-09-25 01:46:14.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:14.7|Info|add_priority_to_indexers|Starting migration of Log DB to 3
+2025-09-25 01:46:14.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (3, '2025-09-24T22:46:14', 'add_priority_to_indexers')
+2025-09-25 01:46:14.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:14.9|Info|FluentMigrator.Runner.MigrationRunner|3: add_priority_to_indexers migrated
+2025-09-25 01:46:14.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1676936s
+2025-09-25 01:46:14.9|Info|FluentMigrator.Runner.MigrationRunner|4: rename_supports_on_track_retag migrating
+2025-09-25 01:46:14.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.0|Info|rename_supports_on_track_retag|Starting migration of Log DB to 4
+2025-09-25 01:46:15.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (4, '2025-09-24T22:46:15', 'rename_supports_on_track_retag')
+2025-09-25 01:46:15.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.1|Info|FluentMigrator.Runner.MigrationRunner|4: rename_supports_on_track_retag migrated
+2025-09-25 01:46:15.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1144091s
+2025-09-25 01:46:15.1|Info|FluentMigrator.Runner.MigrationRunner|5: add_indexer_and_enabled_to_release_profiles migrating
+2025-09-25 01:46:15.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.1|Info|add_indexer_and_enabled_to_release_profiles|Starting migration of Log DB to 5
+2025-09-25 01:46:15.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (5, '2025-09-24T22:46:15', 'add_indexer_and_enabled_to_release_profiles')
+2025-09-25 01:46:15.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.2|Info|FluentMigrator.Runner.MigrationRunner|5: add_indexer_and_enabled_to_release_profiles migrated
+2025-09-25 01:46:15.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0976635s
+2025-09-25 01:46:15.3|Info|FluentMigrator.Runner.MigrationRunner|6: remove_chown_and_folderchmod_config migrating
+2025-09-25 01:46:15.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.3|Info|remove_chown_and_folderchmod_config|Starting migration of Log DB to 6
+2025-09-25 01:46:15.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (6, '2025-09-24T22:46:15', 'remove_chown_and_folderchmod_config')
+2025-09-25 01:46:15.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.4|Info|FluentMigrator.Runner.MigrationRunner|6: remove_chown_and_folderchmod_config migrated
+2025-09-25 01:46:15.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0947757s
+2025-09-25 01:46:15.4|Info|FluentMigrator.Runner.MigrationRunner|7: update_notifiarr migrating
+2025-09-25 01:46:15.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.5|Info|update_notifiarr|Starting migration of Log DB to 7
+2025-09-25 01:46:15.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (7, '2025-09-24T22:46:15', 'update_notifiarr')
+2025-09-25 01:46:15.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.5|Info|FluentMigrator.Runner.MigrationRunner|7: update_notifiarr migrated
+2025-09-25 01:46:15.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1184427s
+2025-09-25 01:46:15.6|Info|FluentMigrator.Runner.MigrationRunner|8: extend_metadata_profiles migrating
+2025-09-25 01:46:15.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.7|Info|extend_metadata_profiles|Starting migration of Log DB to 8
+2025-09-25 01:46:15.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (8, '2025-09-24T22:46:15', 'extend_metadata_profiles')
+2025-09-25 01:46:15.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.7|Info|FluentMigrator.Runner.MigrationRunner|8: extend_metadata_profiles migrated
+2025-09-25 01:46:15.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0860438s
+2025-09-25 01:46:15.7|Info|FluentMigrator.Runner.MigrationRunner|9: update_author_sort_name migrating
+2025-09-25 01:46:15.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.8|Info|update_author_sort_name|Starting migration of Log DB to 9
+2025-09-25 01:46:15.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (9, '2025-09-24T22:46:15', 'update_author_sort_name')
+2025-09-25 01:46:15.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:15.8|Info|FluentMigrator.Runner.MigrationRunner|9: update_author_sort_name migrated
+2025-09-25 01:46:15.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.076168s
+2025-09-25 01:46:15.9|Info|FluentMigrator.Runner.MigrationRunner|10: add_bookfile_part migrating
+2025-09-25 01:46:15.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:15.9|Info|add_bookfile_part|Starting migration of Log DB to 10
+2025-09-25 01:46:15.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (10, '2025-09-24T22:46:15', 'add_bookfile_part')
+2025-09-25 01:46:15.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:16.0|Info|FluentMigrator.Runner.MigrationRunner|10: add_bookfile_part migrated
+2025-09-25 01:46:16.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.076448s
+2025-09-25 01:46:16.0|Info|FluentMigrator.Runner.MigrationRunner|11: update_audio_qualities migrating
+2025-09-25 01:46:16.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:16.0|Info|update_audio_qualities|Starting migration of Log DB to 11
+2025-09-25 01:46:16.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (11, '2025-09-24T22:46:16', 'update_audio_qualities')
+2025-09-25 01:46:16.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:16.1|Info|FluentMigrator.Runner.MigrationRunner|11: update_audio_qualities migrated
+2025-09-25 01:46:16.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0731083s
+2025-09-25 01:46:16.1|Info|FluentMigrator.Runner.MigrationRunner|12: add_bookfile_part_naming_token migrating
+2025-09-25 01:46:16.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:16.2|Info|add_bookfile_part_naming_token|Starting migration of Log DB to 12
+2025-09-25 01:46:16.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (12, '2025-09-24T22:46:16', 'add_bookfile_part_naming_token')
+2025-09-25 01:46:16.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:16.2|Info|FluentMigrator.Runner.MigrationRunner|12: add_bookfile_part_naming_token migrated
+2025-09-25 01:46:16.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0739912s
+2025-09-25 01:46:16.3|Info|FluentMigrator.Runner.MigrationRunner|13: update_author_sort_name_again migrating
+2025-09-25 01:46:16.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:16.6|Info|update_author_sort_name_again|Starting migration of Log DB to 13
+2025-09-25 01:46:16.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (13, '2025-09-24T22:46:16', 'update_author_sort_name_again')
+2025-09-25 01:46:16.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:16.8|Info|FluentMigrator.Runner.MigrationRunner|13: update_author_sort_name_again migrated
+2025-09-25 01:46:16.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.2903179s
+2025-09-25 01:46:16.8|Info|FluentMigrator.Runner.MigrationRunner|14: rename_blacklist_to_blocklist migrating
+2025-09-25 01:46:16.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:16.9|Info|rename_blacklist_to_blocklist|Starting migration of Log DB to 14
+2025-09-25 01:46:16.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (14, '2025-09-24T22:46:16', 'rename_blacklist_to_blocklist')
+2025-09-25 01:46:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:17.0|Info|FluentMigrator.Runner.MigrationRunner|14: rename_blacklist_to_blocklist migrated
+2025-09-25 01:46:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1866379s
+2025-09-25 01:46:17.2|Info|FluentMigrator.Runner.MigrationRunner|15: FixIndexes migrating
+2025-09-25 01:46:17.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:17.3|Info|FixIndexes|Starting migration of Log DB to 15
+2025-09-25 01:46:17.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (15, '2025-09-24T22:46:17', 'FixIndexes')
+2025-09-25 01:46:17.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:17.4|Info|FluentMigrator.Runner.MigrationRunner|15: FixIndexes migrated
+2025-09-25 01:46:17.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1300398s
+2025-09-25 01:46:17.4|Info|FluentMigrator.Runner.MigrationRunner|16: AddRelatedBooks migrating
+2025-09-25 01:46:17.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:17.5|Info|AddRelatedBooks|Starting migration of Log DB to 16
+2025-09-25 01:46:17.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (16, '2025-09-24T22:46:17', 'AddRelatedBooks')
+2025-09-25 01:46:17.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:17.6|Info|FluentMigrator.Runner.MigrationRunner|16: AddRelatedBooks migrated
+2025-09-25 01:46:17.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1113384s
+2025-09-25 01:46:17.6|Info|FluentMigrator.Runner.MigrationRunner|17: ImportListMonitorExisting migrating
+2025-09-25 01:46:17.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:17.7|Info|ImportListMonitorExisting|Starting migration of Log DB to 17
+2025-09-25 01:46:17.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (17, '2025-09-24T22:46:17', 'ImportListMonitorExisting')
+2025-09-25 01:46:17.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:17.8|Info|FluentMigrator.Runner.MigrationRunner|17: ImportListMonitorExisting migrated
+2025-09-25 01:46:17.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1195328s
+2025-09-25 01:46:17.9|Info|FluentMigrator.Runner.MigrationRunner|18: AddSeriesPosition migrating
+2025-09-25 01:46:17.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:17.9|Info|AddSeriesPosition|Starting migration of Log DB to 18
+2025-09-25 01:46:17.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (18, '2025-09-24T22:46:17', 'AddSeriesPosition')
+2025-09-25 01:46:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:18.0|Info|FluentMigrator.Runner.MigrationRunner|18: AddSeriesPosition migrated
+2025-09-25 01:46:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1011537s
+2025-09-25 01:46:18.0|Info|FluentMigrator.Runner.MigrationRunner|19: AddNewItemMonitorType migrating
+2025-09-25 01:46:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:18.1|Info|AddNewItemMonitorType|Starting migration of Log DB to 19
+2025-09-25 01:46:18.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (19, '2025-09-24T22:46:18', 'AddNewItemMonitorType')
+2025-09-25 01:46:18.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:18.1|Info|FluentMigrator.Runner.MigrationRunner|19: AddNewItemMonitorType migrated
+2025-09-25 01:46:18.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0826379s
+2025-09-25 01:46:18.2|Info|FluentMigrator.Runner.MigrationRunner|20: AddDownloadHistory migrating
+2025-09-25 01:46:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:18.2|Info|AddDownloadHistory|Starting migration of Log DB to 20
+2025-09-25 01:46:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (20, '2025-09-24T22:46:18', 'AddDownloadHistory')
+2025-09-25 01:46:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:18.3|Info|FluentMigrator.Runner.MigrationRunner|20: AddDownloadHistory migrated
+2025-09-25 01:46:18.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1327629s
+2025-09-25 01:46:18.4|Info|FluentMigrator.Runner.MigrationRunner|21: add_on_delete_to_notifications migrating
+2025-09-25 01:46:18.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:18.4|Info|add_on_delete_to_notifications|Starting migration of Log DB to 21
+2025-09-25 01:46:18.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (21, '2025-09-24T22:46:18', 'add_on_delete_to_notifications')
+2025-09-25 01:46:18.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:18.5|Info|FluentMigrator.Runner.MigrationRunner|21: add_on_delete_to_notifications migrated
+2025-09-25 01:46:18.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1147195s
+2025-09-25 01:46:18.6|Info|FluentMigrator.Runner.MigrationRunner|22: EditionMonitoredIndex migrating
+2025-09-25 01:46:18.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:18.6|Info|EditionMonitoredIndex|Starting migration of Log DB to 22
+2025-09-25 01:46:18.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (22, '2025-09-24T22:46:18', 'EditionMonitoredIndex')
+2025-09-25 01:46:18.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:18.7|Info|FluentMigrator.Runner.MigrationRunner|22: EditionMonitoredIndex migrated
+2025-09-25 01:46:18.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0895405s
+2025-09-25 01:46:18.7|Info|FluentMigrator.Runner.MigrationRunner|23: postgres_update_timestamp_columns_to_with_timezone migrating
+2025-09-25 01:46:18.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:18.8|Info|postgres_update_timestamp_columns_to_with_timezone|Starting migration of Log DB to 23
+2025-09-25 01:46:18.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Logs
+2025-09-25 01:46:18.8|Info|FluentMigrator.Runner.MigrationRunner|=> 5.5E-06s
+2025-09-25 01:46:18.8|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn Logs Time DateTimeOffset
+2025-09-25 01:46:18.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-09-25 01:46:18.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Logs_temp" ("Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level") SELECT "Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level" FROM "Logs"
+2025-09-25 01:46:18.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Logs"
+2025-09-25 01:46:18.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Logs_temp" RENAME TO "Logs"
+2025-09-25 01:46:18.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-09-25 01:46:18.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0968728s
+2025-09-25 01:46:19.0|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-09-25 01:46:19.0|Info|FluentMigrator.Runner.MigrationRunner|=> 5.9E-06s
+2025-09-25 01:46:19.0|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn VersionInfo AppliedOn DateTimeOffset
+2025-09-25 01:46:19.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo_temp" ("Version" INTEGER NOT NULL, "AppliedOn" DATETIME, "Description" TEXT)
+2025-09-25 01:46:19.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo_temp" ("Version", "AppliedOn", "Description") SELECT "Version", "AppliedOn", "Description" FROM "VersionInfo"
+2025-09-25 01:46:19.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "VersionInfo"
+2025-09-25 01:46:19.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo_temp" RENAME TO "VersionInfo"
+2025-09-25 01:46:19.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-09-25 01:46:19.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.090419s
+2025-09-25 01:46:19.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (23, '2025-09-24T22:46:19', 'postgres_update_timestamp_columns_to_with_timezone')
+2025-09-25 01:46:19.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:19.2|Info|FluentMigrator.Runner.MigrationRunner|23: postgres_update_timestamp_columns_to_with_timezone migrated
+2025-09-25 01:46:19.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1814565s
+2025-09-25 01:46:19.3|Info|FluentMigrator.Runner.MigrationRunner|24: add_update_history migrating
+2025-09-25 01:46:19.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:19.3|Info|add_update_history|Starting migration of Log DB to 24
+2025-09-25 01:46:19.4|Info|FluentMigrator.Runner.MigrationRunner|CreateTable UpdateHistory
+2025-09-25 01:46:19.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2025-09-25 01:46:19.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.3169205s
+2025-09-25 01:46:19.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex UpdateHistory (Date)
+2025-09-25 01:46:19.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2025-09-25 01:46:19.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0527437s
+2025-09-25 01:46:20.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (24, '2025-09-24T22:46:20', 'add_update_history')
+2025-09-25 01:46:20.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.1|Info|FluentMigrator.Runner.MigrationRunner|24: add_update_history migrated
+2025-09-25 01:46:20.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1696877s
+2025-09-25 01:46:20.1|Info|FluentMigrator.Runner.MigrationRunner|25: add_on_update_to_notifications migrating
+2025-09-25 01:46:20.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.2|Info|add_on_update_to_notifications|Starting migration of Log DB to 25
+2025-09-25 01:46:20.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (25, '2025-09-24T22:46:20', 'add_on_update_to_notifications')
+2025-09-25 01:46:20.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.2|Info|FluentMigrator.Runner.MigrationRunner|25: add_on_update_to_notifications migrated
+2025-09-25 01:46:20.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1042109s
+2025-09-25 01:46:20.3|Info|FluentMigrator.Runner.MigrationRunner|26: add_custom_formats migrating
+2025-09-25 01:46:20.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.3|Info|add_custom_formats|Starting migration of Log DB to 26
+2025-09-25 01:46:20.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (26, '2025-09-24T22:46:20', 'add_custom_formats')
+2025-09-25 01:46:20.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.4|Info|FluentMigrator.Runner.MigrationRunner|26: add_custom_formats migrated
+2025-09-25 01:46:20.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0920463s
+2025-09-25 01:46:20.4|Info|FluentMigrator.Runner.MigrationRunner|27: remove_omg migrating
+2025-09-25 01:46:20.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.5|Info|remove_omg|Starting migration of Log DB to 27
+2025-09-25 01:46:20.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (27, '2025-09-24T22:46:20', 'remove_omg')
+2025-09-25 01:46:20.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.5|Info|FluentMigrator.Runner.MigrationRunner|27: remove_omg migrated
+2025-09-25 01:46:20.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.064248s
+2025-09-25 01:46:20.6|Info|FluentMigrator.Runner.MigrationRunner|28: add_indexer_tags migrating
+2025-09-25 01:46:20.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.6|Info|add_indexer_tags|Starting migration of Log DB to 28
+2025-09-25 01:46:20.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (28, '2025-09-24T22:46:20', 'add_indexer_tags')
+2025-09-25 01:46:20.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.7|Info|FluentMigrator.Runner.MigrationRunner|28: add_indexer_tags migrated
+2025-09-25 01:46:20.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0933714s
+2025-09-25 01:46:20.7|Info|FluentMigrator.Runner.MigrationRunner|29: list_sync_time migrating
+2025-09-25 01:46:20.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.8|Info|list_sync_time|Starting migration of Log DB to 29
+2025-09-25 01:46:20.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (29, '2025-09-24T22:46:20', 'list_sync_time')
+2025-09-25 01:46:20.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:20.8|Info|FluentMigrator.Runner.MigrationRunner|29: list_sync_time migrated
+2025-09-25 01:46:20.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0833994s
+2025-09-25 01:46:20.9|Info|FluentMigrator.Runner.MigrationRunner|30: download_client_per_indexer migrating
+2025-09-25 01:46:20.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:20.9|Info|download_client_per_indexer|Starting migration of Log DB to 30
+2025-09-25 01:46:20.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (30, '2025-09-24T22:46:20', 'download_client_per_indexer')
+2025-09-25 01:46:21.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:21.0|Info|FluentMigrator.Runner.MigrationRunner|30: download_client_per_indexer migrated
+2025-09-25 01:46:21.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1331193s
+2025-09-25 01:46:21.1|Info|FluentMigrator.Runner.MigrationRunner|31: add_colon_replacement_to_naming_config migrating
+2025-09-25 01:46:21.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:21.1|Info|add_colon_replacement_to_naming_config|Starting migration of Log DB to 31
+2025-09-25 01:46:21.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (31, '2025-09-24T22:46:21', 'add_colon_replacement_to_naming_config')
+2025-09-25 01:46:21.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:21.2|Info|FluentMigrator.Runner.MigrationRunner|31: add_colon_replacement_to_naming_config migrated
+2025-09-25 01:46:21.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1268995s
+2025-09-25 01:46:21.3|Info|FluentMigrator.Runner.MigrationRunner|32: postgres_update_timestamp_columns_to_with_timezone_part2 migrating
+2025-09-25 01:46:21.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:21.3|Info|postgres_update_timestamp_columns_to_with_timezone_part2|Starting migration of Log DB to 32
+2025-09-25 01:46:21.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (32, '2025-09-24T22:46:21', 'postgres_update_timestamp_columns_to_with_timezone_part2')
+2025-09-25 01:46:21.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:21.4|Info|FluentMigrator.Runner.MigrationRunner|32: postgres_update_timestamp_columns_to_with_timezone_part2 migrated
+2025-09-25 01:46:21.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1093699s
+2025-09-25 01:46:21.5|Info|FluentMigrator.Runner.MigrationRunner|33: metadata_profile_ignored_to_list migrating
+2025-09-25 01:46:21.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:21.6|Info|metadata_profile_ignored_to_list|Starting migration of Log DB to 33
+2025-09-25 01:46:21.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (33, '2025-09-24T22:46:21', 'metadata_profile_ignored_to_list')
+2025-09-25 01:46:21.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:21.7|Info|FluentMigrator.Runner.MigrationRunner|33: metadata_profile_ignored_to_list migrated
+2025-09-25 01:46:21.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.12809s
+2025-09-25 01:46:21.8|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrating
+2025-09-25 01:46:21.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:21.9|Info|add_download_client_tags|Starting migration of Log DB to 35
+2025-09-25 01:46:21.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2025-09-24T22:46:21', 'add_download_client_tags')
+2025-09-25 01:46:21.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:21.9|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrated
+2025-09-25 01:46:22.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1067828s
+2025-09-25 01:46:22.0|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrating
+2025-09-25 01:46:22.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:22.0|Info|add_result_to_commands|Starting migration of Log DB to 36
+2025-09-25 01:46:22.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2025-09-24T22:46:22', 'add_result_to_commands')
+2025-09-25 01:46:22.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:22.3|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrated
+2025-09-25 01:46:22.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.2475995s
+2025-09-25 01:46:22.4|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2025-09-25 01:46:22.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:22.5|Info|add_notification_status|Starting migration of Log DB to 37
+2025-09-25 01:46:22.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2025-09-24T22:46:22', 'add_notification_status')
+2025-09-25 01:46:22.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:22.6|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2025-09-25 01:46:22.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.127439s
+2025-09-25 01:46:22.6|Info|FluentMigrator.Runner.MigrationRunner|38: add_on_author_added_to_notifications migrating
+2025-09-25 01:46:22.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:22.7|Info|add_on_author_added_to_notifications|Starting migration of Log DB to 38
+2025-09-25 01:46:22.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (38, '2025-09-24T22:46:22', 'add_on_author_added_to_notifications')
+2025-09-25 01:46:22.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:22.9|Info|FluentMigrator.Runner.MigrationRunner|38: add_on_author_added_to_notifications migrated
+2025-09-25 01:46:22.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.2175183s
+2025-09-25 01:46:23.0|Info|FluentMigrator.Runner.MigrationRunner|39: book_last_searched_time migrating
+2025-09-25 01:46:23.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:23.0|Info|book_last_searched_time|Starting migration of Log DB to 39
+2025-09-25 01:46:23.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (39, '2025-09-24T22:46:23', 'book_last_searched_time')
+2025-09-25 01:46:23.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:23.1|Info|FluentMigrator.Runner.MigrationRunner|39: book_last_searched_time migrated
+2025-09-25 01:46:23.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0969193s
+2025-09-25 01:46:23.1|Info|FluentMigrator.Runner.MigrationRunner|40: add_indexer_flags migrating
+2025-09-25 01:46:23.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:23.1|Info|add_indexer_flags|Starting migration of Log DB to 40
+2025-09-25 01:46:23.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (40, '2025-09-24T22:46:23', 'add_indexer_flags')
+2025-09-25 01:46:23.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:23.2|Info|FluentMigrator.Runner.MigrationRunner|40: add_indexer_flags migrated
+2025-09-25 01:46:23.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0881505s
+2025-09-25 01:46:23.2|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrating
+2025-09-25 01:46:23.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-09-25 01:46:23.3|Info|cdh_per_downloadclient|Starting migration of Log DB to 158
+2025-09-25 01:46:23.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (158, '2025-09-24T22:46:23', 'cdh_per_downloadclient')
+2025-09-25 01:46:23.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-09-25 01:46:23.4|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrated
+2025-09-25 01:46:23.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1122529s
+2025-09-25 01:46:23.4|Debug|MigrationController|Took: 00:00:10.8408006
+2025-09-25 01:46:23.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8787
+2025-09-25 01:46:23.9|Info|UpdaterConfigProvider|Update mechanism BuiltIn not supported in the current configuration, changing to Docker.
+2025-09-25 01:46:24.7|Info|UpdaterConfigProvider|External updater uses branch nightly instead of the currently selected develop, changing to nightly.
+2025-09-25 01:46:25.2|Debug|QualityDefinitionService|Setting up default quality config
+2025-09-25 01:46:25.2|Info|QualityProfileService|Setting up default quality profiles
+2025-09-25 01:46:25.3|Info|MetadataProfileService|Setting up standard metadata profile
+2025-09-25 01:46:25.4|Info|MetadataProfileService|Setting up empty metadata profile
+2025-09-25 01:46:25.4|Debug|NotificationFactory|Initializing Providers. Count 25
+2025-09-25 01:46:25.6|Debug|IndexerFactory|Initializing Providers. Count 8
+2025-09-25 01:46:25.6|Debug|ImportListFactory|Initializing Providers. Count 6
+2025-09-25 01:46:25.6|Debug|MetadataFactory|Initializing Providers. Count 0
+2025-09-25 01:46:25.6|Debug|DownloadClientFactory|Initializing Providers. Count 17
+2025-09-25 01:46:25.7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-25 01:46:25.7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-25 01:46:25.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-09-25 01:51:25.8|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 01:56:26.0|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:01:26.3|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:01:26.3|Info|RssSyncService|Starting RSS Sync
+2025-09-25 02:01:26.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-09-25 02:01:26.5|Info|DownloadDecisionMaker|No results found
+2025-09-25 02:01:26.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-09-25 02:01:26.5|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-25 02:06:26.6|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:11:26.8|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:16:27.0|Info|RssSyncService|Starting RSS Sync
+2025-09-25 02:16:27.0|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:16:27.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-09-25 02:16:27.0|Info|DownloadDecisionMaker|No results found
+2025-09-25 02:16:27.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-09-25 02:16:27.0|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-25 02:21:27.1|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:26:27.3|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:31:27.5|Info|RssSyncService|Starting RSS Sync
+2025-09-25 02:31:27.5|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:31:27.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-09-25 02:31:27.5|Info|DownloadDecisionMaker|No results found
+2025-09-25 02:31:27.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-09-25 02:31:27.5|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-25 02:33:41.2|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.4|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.4|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.4|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.5|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.6|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.6|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.6|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.6|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.6|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:41.9|Debug|Api|[GET] /api/v1/tag: 200.OK (50 ms)
+2025-09-25 02:33:41.9|Debug|Api|[GET] /api/v1/language: 200.OK (49 ms)
+2025-09-25 02:33:41.9|Debug|Api|[GET] /api/v1/customFilter: 200.OK (56 ms)
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Api|[GET] /api/v1/qualityprofile: 200.OK (70 ms)
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Api|[GET] /api/v1/book: 200.OK (115 ms)
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Api|[GET] /api/v1/author: 200.OK (128 ms)
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.0|Debug|Api|[GET] /api/v1/metadataprofile: 200.OK (59 ms)
+2025-09-25 02:33:42.0|Debug|Api|[GET] /api/v1/indexerFlag: 200.OK (36 ms)
+2025-09-25 02:33:42.1|Debug|Api|[GET] /api/v1/config/ui: 200.OK (48 ms)
+2025-09-25 02:33:42.1|Debug|Api|[GET] /api/v1/importlist: 200.OK (58 ms)
+2025-09-25 02:33:42.1|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:42.1|Debug|Api|[GET] /api/v1/localization: 200.OK (42 ms)
+2025-09-25 02:33:42.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (100 ms)
+2025-09-25 02:33:42.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-09-25 02:33:42.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:33:42.2|Debug|Api|[GET] /api/v1/queue/status: 200.OK (11 ms)
+2025-09-25 02:33:42.2|Debug|Api|[GET] /api/v1/health: 200.OK (30 ms)
+2025-09-25 02:33:42.3|Debug|Readarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-09-25 02:33:42.3|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-09-25 02:33:42.3|Debug|Api|[GET] /api/v1/config/host: 200.OK (121 ms)
+2025-09-25 02:34:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:34:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (40 ms)
+2025-09-25 02:34:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:34:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (9 ms)
+2025-09-25 02:36:27.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:36:27.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2025-09-25 02:36:27.6|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:36:27.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:36:27.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2025-09-25 02:36:27.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:36:27.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2025-09-25 02:36:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:36:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (6 ms)
+2025-09-25 02:37:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:37:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (6 ms)
+2025-09-25 02:37:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:37:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2025-09-25 02:39:27.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:39:27.6|Debug|Api|[GET] /api/v1/command: 200.OK (7 ms)
+2025-09-25 02:39:27.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:39:27.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2025-09-25 02:40:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:40:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (8 ms)
+2025-09-25 02:40:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:40:57.6|Debug|Api|[GET] /api/v1/command: 200.OK (7 ms)
+2025-09-25 02:41:57.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:41:57.7|Debug|Api|[GET] /api/v1/command: 200.OK (24 ms)
+2025-09-25 02:41:57.7|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:41:57.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:41:57.8|Debug|Api|[GET] /api/v1/command: 200.OK (32 ms)
+2025-09-25 02:42:08.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:09.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:09.6|Debug|Api|[GET] /api/v1/health: 200.OK (9 ms)
+2025-09-25 02:42:09.6|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (741 ms)
+2025-09-25 02:42:09.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:09.7|Debug|Api|[GET] /api/v1/system/status: 200.OK (37 ms)
+2025-09-25 02:42:11.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:11.2|Debug|Api|[GET] /api/v1/health: 200.OK (12 ms)
+2025-09-25 02:42:15.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:15.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:15.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:15.5|Debug|Api|[GET] /api/v1/config/downloadclient: 200.OK (56 ms)
+2025-09-25 02:42:15.5|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (60 ms)
+2025-09-25 02:42:15.5|Debug|Api|[GET] /api/v1/remotepathmapping: 200.OK (96 ms)
+2025-09-25 02:42:16.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:16.4|Debug|Api|[GET] /api/v1/downloadclient/schema: 200.OK (199 ms)
+2025-09-25 02:42:26.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:27.2|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- Name: 'Name' must not be empty.
+2025-09-25 02:42:27.3|Debug|Api|[POST] /api/v1/downloadclient/test: 400.BadRequest (385 ms)
+2025-09-25 02:42:27.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:27.7|Debug|Api|[GET] /api/v1/command: 200.OK (6 ms)
+2025-09-25 02:42:27.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:27.7|Debug|Api|[GET] /api/v1/command: 200.OK (9 ms)
+2025-09-25 02:42:31.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:31.7|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- Name: 'Name' must not be empty.
+2025-09-25 02:42:31.7|Debug|Api|[POST] /api/v1/downloadclient/test?forceTest=true: 400.BadRequest (86 ms)
+2025-09-25 02:42:36.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:38.0|Debug|QBittorrentProxyV2|qBittorrent authentication succeeded.
+2025-09-25 02:42:40.9|Debug|Api|[POST] /api/v1/downloadclient/test: 200.OK (4065 ms)
+2025-09-25 02:42:42.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:44.3|Debug|Api|[POST] /api/v1/downloadclient: 201.Created (2261 ms)
+2025-09-25 02:42:45.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:45.4|Debug|Api|[GET] /api/v1/health: 200.OK (14 ms)
+2025-09-25 02:42:47.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:42:47.4|Debug|Api|[GET] /api/v1/config/host: 200.OK (49 ms)
+2025-09-25 02:43:58.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:43:58.5|Debug|Api|[GET] /api/v1/command: 200.OK (36 ms)
+2025-09-25 02:43:58.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:43:58.6|Debug|Api|[GET] /api/v1/command: 200.OK (88 ms)
+2025-09-25 02:44:55.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:44:55.3|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (369 ms)
+2025-09-25 02:44:55.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:44:56.0|Debug|Newznab|Downloading Feed http://192.168.1.102:9696/0/api?t=book&cat=7000,3030,7010,7020,7030,7040,7050,7060&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:44:56.2|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (673 ms)
+2025-09-25 02:44:56.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:44:56.9|Debug|Newznab|Downloading Feed http://192.168.1.102:9696/0/api?t=book&cat=7000,3030,7010,7020,7030,7040,7050,7060&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:44:58.1|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (1195 ms)
+2025-09-25 02:44:58.3|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:44:58.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (20 ms)
+2025-09-25 02:44:58.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:44:58.4|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:45:01.5|Debug|Api|[POST] /api/v1/indexer: 201.Created (3121 ms)
+2025-09-25 02:45:01.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:45:01.6|Debug|Api|[GET] /api/v1/health: 200.OK (18 ms)
+2025-09-25 02:45:28.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:45:28.3|Debug|Api|[GET] /api/v1/command: 200.OK (38 ms)
+2025-09-25 02:45:28.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:45:28.5|Debug|Api|[GET] /api/v1/command: 200.OK (21 ms)
+2025-09-25 02:46:27.7|Info|RssSyncService|Starting RSS Sync
+2025-09-25 02:46:27.8|Debug|FetchAndParseRssService|Available indexers 1
+2025-09-25 02:46:27.8|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:46:28.5|Debug|FetchAndParseRssService|Found 50 reports
+2025-09-25 02:46:28.5|Info|DownloadDecisionMaker|Processing 50 releases
+2025-09-25 02:46:28.6|Debug|DownloadDecisionMaker|Processing release 'Stewart B. Digital SAT Study Guide Premium 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:28.6|Debug|Parser|Parsing string 'Stewart B. Digital SAT Study Guide Premium 2026'
+2025-09-25 02:46:28.9|Debug|Parser|Unable to parse Stewart B. Digital SAT Study Guide Premium 2026
+2025-09-25 02:46:29.0|Debug|DownloadDecisionMaker|Processing release 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.0|Debug|Parser|Parsing string 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006'
+2025-09-25 02:46:29.0|Debug|Parser|Unable to parse Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006
+2025-09-25 02:46:29.0|Debug|DownloadDecisionMaker|Processing release 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.0|Debug|Parser|Parsing string 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025'
+2025-09-25 02:46:29.1|Debug|Parser|Unable to parse Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025
+2025-09-25 02:46:29.1|Debug|DownloadDecisionMaker|Processing release 'Misra A. Supercapacitors. Concepts and advances 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.1|Debug|Parser|Parsing string 'Misra A. Supercapacitors. Concepts and advances 2025'
+2025-09-25 02:46:29.1|Debug|Parser|Unable to parse Misra A. Supercapacitors. Concepts and advances 2025
+2025-09-25 02:46:29.1|Debug|DownloadDecisionMaker|Processing release 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.1|Debug|Parser|Parsing string 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)'
+2025-09-25 02:46:29.2|Debug|Parser|Unable to parse RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)
+2025-09-25 02:46:29.2|Debug|DownloadDecisionMaker|Processing release 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.2|Debug|Parser|Parsing string 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025'
+2025-09-25 02:46:29.2|Debug|Parser|Unable to parse Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025
+2025-09-25 02:46:29.2|Debug|DownloadDecisionMaker|Processing release 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.2|Debug|Parser|Parsing string 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025'
+2025-09-25 02:46:29.2|Debug|Parser|Unable to parse Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025
+2025-09-25 02:46:29.2|Debug|DownloadDecisionMaker|Processing release 'Minella M. Water Reuse and Unconventional Water Resources...2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.3|Debug|Parser|Parsing string 'Minella M. Water Reuse and Unconventional Water Resources...2024'
+2025-09-25 02:46:29.3|Debug|Parser|Unable to parse Minella M. Water Reuse and Unconventional Water Resources...2024
+2025-09-25 02:46:29.3|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.3|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025'
+2025-09-25 02:46:29.3|Debug|Parser|Unable to parse Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025
+2025-09-25 02:46:29.3|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Hearing Loss 5ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.4|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Hearing Loss 5ed 2025'
+2025-09-25 02:46:29.4|Debug|Parser|Unable to parse Sataloff R., Roehm P. Hearing Loss 5ed 2025
+2025-09-25 02:46:29.4|Debug|DownloadDecisionMaker|Processing release 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.4|Debug|Parser|Parsing string 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024'
+2025-09-25 02:46:29.5|Debug|Parser|Unable to parse Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024
+2025-09-25 02:46:29.5|Debug|DownloadDecisionMaker|Processing release 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.6|Debug|Parser|Parsing string 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025'
+2025-09-25 02:46:29.6|Debug|Parser|Unable to parse Stephenson R. The Physical Therapist's Guide to Women's...Health 2025
+2025-09-25 02:46:29.7|Debug|DownloadDecisionMaker|Processing release 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:29.7|Debug|Parser|Parsing string 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025'
+2025-09-25 02:46:29.8|Debug|Parser|Unable to parse Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025
+2025-09-25 02:46:30.0|Debug|DownloadDecisionMaker|Processing release 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:30.2|Debug|Parser|Parsing string 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024'
+2025-09-25 02:46:30.3|Debug|Parser|Unable to parse Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024
+2025-09-25 02:46:30.4|Debug|DownloadDecisionMaker|Processing release 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:30.6|Debug|Parser|Parsing string 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026'
+2025-09-25 02:46:30.8|Debug|Parser|Unable to parse Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026
+2025-09-25 02:46:30.8|Debug|DownloadDecisionMaker|Processing release 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:30.8|Debug|Parser|Parsing string 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025'
+2025-09-25 02:46:30.9|Debug|Parser|Unable to parse Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025
+2025-09-25 02:46:30.9|Debug|DownloadDecisionMaker|Processing release 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:30.9|Debug|Parser|Parsing string 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024'
+2025-09-25 02:46:30.9|Debug|Parser|Unable to parse Wuelfing C., Murphy R. Imaging Cell Signaling 2024
+2025-09-25 02:46:30.9|Debug|DownloadDecisionMaker|Processing release 'Small E. In Defense of the World's Most Despised Species...2023' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.0|Debug|Parser|Parsing string 'Small E. In Defense of the World's Most Despised Species...2023'
+2025-09-25 02:46:31.0|Debug|Parser|Unable to parse Small E. In Defense of the World's Most Despised Species...2023
+2025-09-25 02:46:31.0|Debug|DownloadDecisionMaker|Processing release 'Seok J. Stonehouse's Anatomy 2020' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.1|Debug|Parser|Parsing string 'Seok J. Stonehouse's Anatomy 2020'
+2025-09-25 02:46:31.1|Debug|Parser|Unable to parse Seok J. Stonehouse's Anatomy 2020
+2025-09-25 02:46:31.1|Debug|DownloadDecisionMaker|Processing release 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.1|Debug|Parser|Parsing string 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024'
+2025-09-25 02:46:31.1|Debug|Parser|Unable to parse Dos Santos W. Biomedical Imaging. Principles and Advancements 2024
+2025-09-25 02:46:31.2|Debug|DownloadDecisionMaker|Processing release 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.2|Debug|Parser|Parsing string 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025'
+2025-09-25 02:46:31.2|Debug|Parser|Unable to parse Chino N. Structure and Dynamics of Asymmetric Interactions 2025
+2025-09-25 02:46:31.2|Debug|DownloadDecisionMaker|Processing release 'Morana M. Blockchain Application Security. How to Design...2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.3|Debug|Parser|Parsing string 'Morana M. Blockchain Application Security. How to Design...2026'
+2025-09-25 02:46:31.3|Debug|Parser|Unable to parse Morana M. Blockchain Application Security. How to Design...2026
+2025-09-25 02:46:31.3|Debug|DownloadDecisionMaker|Processing release 'Managing Back Pain For Dummies' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.3|Debug|Parser|Parsing string 'Managing Back Pain For Dummies'
+2025-09-25 02:46:31.3|Debug|Parser|Unable to parse Managing Back Pain For Dummies
+2025-09-25 02:46:31.4|Debug|DownloadDecisionMaker|Processing release 'PC Gamer Annual - Volume 9 [2026]' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.4|Debug|Parser|Parsing string 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 02:46:31.4|Debug|Parser|Book Parsed. PC Gamer Annual - Volume 9 
+2025-09-25 02:46:31.4|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 02:46:31.6|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 02:46:31.6|Debug|Parser|Release Group parsed: 
+2025-09-25 02:46:31.6|Debug|ParsingService|Trying inexact author match for PC Gamer Annual
+2025-09-25 02:46:31.7|Debug|ParsingService|No matching author PC Gamer Annual
+2025-09-25 02:46:31.7|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 02:46:31.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 02:46:31.7|Debug|DownloadDecisionMaker|Processing release 'TIME Special Edition - Weight Loss Breakthrough [2025]' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.7|Debug|Parser|Parsing string 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 02:46:31.7|Debug|Parser|Book Parsed. TIME Special Edition - Weight Loss Breakthrough 
+2025-09-25 02:46:31.7|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 02:46:31.7|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 02:46:31.7|Debug|Parser|Release Group parsed: 
+2025-09-25 02:46:31.7|Debug|ParsingService|Trying inexact author match for TIME Special Edition
+2025-09-25 02:46:31.7|Debug|ParsingService|No matching author TIME Special Edition
+2025-09-25 02:46:31.8|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 02:46:31.8|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 02:46:31.8|Debug|DownloadDecisionMaker|Processing release 'Tech AI Magazine - September 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.8|Debug|Parser|Parsing string 'Tech AI Magazine - September 2025'
+2025-09-25 02:46:31.8|Debug|Parser|Book Parsed. Tech AI Magazine - September 
+2025-09-25 02:46:31.8|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 02:46:31.8|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 02:46:31.8|Debug|Parser|Release Group parsed: 
+2025-09-25 02:46:31.9|Debug|ParsingService|Trying inexact author match for Tech AI Magazine
+2025-09-25 02:46:31.9|Debug|ParsingService|No matching author Tech AI Magazine
+2025-09-25 02:46:31.9|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 02:46:31.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 02:46:31.9|Debug|DownloadDecisionMaker|Processing release 'Understandable Electric Circuits, First Edition' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.9|Debug|Parser|Parsing string 'Understandable Electric Circuits, First Edition'
+2025-09-25 02:46:31.9|Debug|Parser|Unable to parse Understandable Electric Circuits, First Edition
+2025-09-25 02:46:31.9|Debug|DownloadDecisionMaker|Processing release 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:31.9|Debug|Parser|Parsing string 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 02:46:31.9|Debug|Parser|Book Parsed. Dan Brown - THE SECRET OF SECRETS 
+2025-09-25 02:46:31.9|Debug|QualityParser|Trying to parse quality for 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 02:46:31.9|Debug|Parser|Quality parsed: EPUB v1
+2025-09-25 02:46:31.9|Debug|Parser|Release Group parsed: 
+2025-09-25 02:46:31.9|Debug|ParsingService|Trying inexact author match for Dan Brown
+2025-09-25 02:46:31.9|Debug|ParsingService|No matching author Dan Brown
+2025-09-25 02:46:31.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 02:46:31.9|Debug|DownloadDecisionMaker|Processing release 'The New York Times Best Sellers - September 21, 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.0|Debug|Parser|Parsing string 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 02:46:32.0|Debug|Parser|Book Parsed. The New York Times Best Sellers - September 21 
+2025-09-25 02:46:32.0|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 02:46:32.0|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 02:46:32.0|Debug|Parser|Release Group parsed: 
+2025-09-25 02:46:32.0|Debug|ParsingService|Trying inexact author match for The New York Times Best Sellers
+2025-09-25 02:46:32.0|Debug|ParsingService|No matching author The New York Times Best Sellers
+2025-09-25 02:46:32.0|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 02:46:32.0|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 02:46:32.0|Debug|DownloadDecisionMaker|Processing release '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.0|Debug|Parser|Parsing string '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024'
+2025-09-25 02:46:32.0|Debug|Parser|Unable to parse 2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024
+2025-09-25 02:46:32.1|Debug|DownloadDecisionMaker|Processing release 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.1|Debug|Parser|Parsing string 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990'
+2025-09-25 02:46:32.1|Debug|Parser|Unable to parse Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990
+2025-09-25 02:46:32.1|Debug|DownloadDecisionMaker|Processing release 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.1|Debug|Parser|Parsing string 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025'
+2025-09-25 02:46:32.1|Debug|Parser|Unable to parse Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025
+2025-09-25 02:46:32.1|Debug|DownloadDecisionMaker|Processing release 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.1|Debug|Parser|Parsing string 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025'
+2025-09-25 02:46:32.1|Debug|Parser|Unable to parse English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025
+2025-09-25 02:46:32.1|Debug|DownloadDecisionMaker|Processing release 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.1|Debug|Parser|Parsing string 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025'
+2025-09-25 02:46:32.1|Debug|Parser|Unable to parse Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025
+2025-09-25 02:46:32.1|Debug|DownloadDecisionMaker|Processing release 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.1|Debug|Parser|Parsing string 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025'
+2025-09-25 02:46:32.2|Debug|Parser|Unable to parse Walsh E. Nadas' Pediatric Cardiology 3ed 2025
+2025-09-25 02:46:32.2|Debug|DownloadDecisionMaker|Processing release 'Lee J. Manifolds and Differential Geometry 2010' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.2|Debug|Parser|Parsing string 'Lee J. Manifolds and Differential Geometry 2010'
+2025-09-25 02:46:32.2|Debug|Parser|Unable to parse Lee J. Manifolds and Differential Geometry 2010
+2025-09-25 02:46:32.2|Debug|DownloadDecisionMaker|Processing release 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.2|Debug|Parser|Parsing string 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025'
+2025-09-25 02:46:32.2|Debug|Parser|Unable to parse Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025
+2025-09-25 02:46:32.2|Debug|DownloadDecisionMaker|Processing release 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.3|Debug|Parser|Parsing string 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016'
+2025-09-25 02:46:32.3|Debug|Parser|Unable to parse Thareja R. Computer Fundamentals and Programming in C 2ed 2016
+2025-09-25 02:46:32.3|Debug|DownloadDecisionMaker|Processing release 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.3|Debug|Parser|Parsing string 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026'
+2025-09-25 02:46:32.3|Debug|Parser|Unable to parse Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026
+2025-09-25 02:46:32.3|Debug|DownloadDecisionMaker|Processing release 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.3|Debug|Parser|Parsing string 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026'
+2025-09-25 02:46:32.3|Debug|Parser|Unable to parse Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026
+2025-09-25 02:46:32.3|Debug|DownloadDecisionMaker|Processing release 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.3|Debug|Parser|Parsing string 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025'
+2025-09-25 02:46:32.3|Debug|Parser|Unable to parse Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025
+2025-09-25 02:46:32.4|Debug|DownloadDecisionMaker|Processing release 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.4|Debug|Parser|Parsing string 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage'
+2025-09-25 02:46:32.4|Debug|Parser|Unable to parse How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage
+2025-09-25 02:46:32.4|Debug|DownloadDecisionMaker|Processing release 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.4|Debug|Parser|Parsing string 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider'
+2025-09-25 02:46:32.4|Debug|Parser|Unable to parse Get In, Get Connected, Get Hired - Lessons from an MBA Insider
+2025-09-25 02:46:32.4|Debug|DownloadDecisionMaker|Processing release 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.4|Debug|Parser|Parsing string 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental'
+2025-09-25 02:46:32.4|Debug|Parser|Unable to parse This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental
+2025-09-25 02:46:32.4|Debug|DownloadDecisionMaker|Processing release 'The Secret Life of God - Discovering the Divine Within You' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.4|Debug|Parser|Parsing string 'The Secret Life of God - Discovering the Divine Within You'
+2025-09-25 02:46:32.4|Debug|Parser|Unable to parse The Secret Life of God - Discovering the Divine Within You
+2025-09-25 02:46:32.4|Debug|DownloadDecisionMaker|Processing release 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.5|Debug|Parser|Parsing string 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your'
+2025-09-25 02:46:32.5|Debug|Parser|Unable to parse THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your
+2025-09-25 02:46:32.5|Debug|DownloadDecisionMaker|Processing release 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.5|Debug|Parser|Parsing string 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More'
+2025-09-25 02:46:32.5|Debug|Parser|Unable to parse How to Identify &amp; Navigate TOXIC Relationships - You Deserve More
+2025-09-25 02:46:32.5|Debug|DownloadDecisionMaker|Processing release 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.5|Debug|Parser|Parsing string 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti'
+2025-09-25 02:46:32.5|Debug|Parser|Unable to parse TensorFlow Developer Certification Guide - Crack Google's official exam on getti
+2025-09-25 02:46:32.6|Debug|DownloadDecisionMaker|Processing release 'LEARNING PHP - From Beginners to Advanced' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.6|Debug|Parser|Parsing string 'LEARNING PHP - From Beginners to Advanced'
+2025-09-25 02:46:32.6|Debug|Parser|Unable to parse LEARNING PHP - From Beginners to Advanced
+2025-09-25 02:46:32.6|Debug|DownloadDecisionMaker|Processing release 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co' from 'TheRARBG (Prowlarr)'
+2025-09-25 02:46:32.6|Debug|Parser|Parsing string 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co'
+2025-09-25 02:46:32.6|Debug|Parser|Unable to parse Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co
+2025-09-25 02:46:32.6|Info|RssSyncService|RSS Sync Completed. Reports found: 50, Reports grabbed: 0
+2025-09-25 02:46:32.6|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-25 02:46:32.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:46:32.7|Debug|Api|[GET] /api/v1/command: 200.OK (12 ms)
+2025-09-25 02:47:27.9|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:52:57.9|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:57:38.1|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:57:38.2|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:57:39.9|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:57:39.9|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (1803 ms)
+2025-09-25 02:57:40.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:57:40.0|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:57:41.9|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:57:41.9|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1864 ms)
+2025-09-25 02:57:58.1|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 02:58:59.3|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:58:59.4|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:01.4|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:01.4|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (2071 ms)
+2025-09-25 02:59:01.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:01.5|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:03.4|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:03.4|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1928 ms)
+2025-09-25 02:59:07.1|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:07.1|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/6/api?t=book&cat=7000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:09.0|Debug|Api|[POST] /api/v1/indexer: 201.Created (1981 ms)
+2025-09-25 02:59:10.3|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:10.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (13 ms)
+2025-09-25 02:59:10.4|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:10.4|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:11.5|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:11.5|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (1102 ms)
+2025-09-25 02:59:11.5|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:11.6|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:13.5|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:13.5|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1943 ms)
+2025-09-25 02:59:13.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:13.6|Debug|Api|[GET] /api/v1/indexer/1: 200.OK (12 ms)
+2025-09-25 02:59:13.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:13.6|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:14.0|Debug|Api|[PUT] /api/v1/indexer/1: 202.Accepted (383 ms)
+2025-09-25 02:59:14.0|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:14.1|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:14.6|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:14.7|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (612 ms)
+2025-09-25 02:59:14.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:14.7|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:16.7|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-25 02:59:16.7|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1987 ms)
+2025-09-25 02:59:16.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:16.8|Debug|Api|[GET] /api/v1/indexer/2: 200.OK (15 ms)
+2025-09-25 02:59:16.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-25 02:59:16.9|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/6/api?t=book&cat=7000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 02:59:17.3|Debug|Api|[PUT] /api/v1/indexer/2: 202.Accepted (495 ms)
+2025-09-25 03:01:58.2|Info|RssSyncService|Starting RSS Sync
+2025-09-25 03:01:58.2|Debug|FetchAndParseRssService|Available indexers 2
+2025-09-25 03:01:58.3|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 03:01:58.3|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/6/api?t=book&cat=7000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-25 03:01:58.7|Debug|FetchAndParseRssService|Found 100 reports
+2025-09-25 03:01:58.7|Info|DownloadDecisionMaker|Processing 100 releases
+2025-09-25 03:01:58.7|Debug|DownloadDecisionMaker|Processing release 'Stewart B. Digital SAT Study Guide Premium 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.7|Debug|Parser|Parsing string 'Stewart B. Digital SAT Study Guide Premium 2026'
+2025-09-25 03:01:58.7|Debug|Parser|Unable to parse Stewart B. Digital SAT Study Guide Premium 2026
+2025-09-25 03:01:58.7|Debug|DownloadDecisionMaker|Processing release 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.7|Debug|Parser|Parsing string 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006'
+2025-09-25 03:01:58.8|Debug|Parser|Unable to parse Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006
+2025-09-25 03:01:58.8|Debug|DownloadDecisionMaker|Processing release 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.8|Debug|Parser|Parsing string 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025'
+2025-09-25 03:01:58.8|Debug|Parser|Unable to parse Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025
+2025-09-25 03:01:58.8|Debug|DownloadDecisionMaker|Processing release 'Misra A. Supercapacitors. Concepts and advances 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.8|Debug|Parser|Parsing string 'Misra A. Supercapacitors. Concepts and advances 2025'
+2025-09-25 03:01:58.8|Debug|Parser|Unable to parse Misra A. Supercapacitors. Concepts and advances 2025
+2025-09-25 03:01:58.8|Debug|DownloadDecisionMaker|Processing release 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.8|Debug|Parser|Parsing string 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)'
+2025-09-25 03:01:58.8|Debug|Parser|Unable to parse RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)
+2025-09-25 03:01:58.8|Debug|DownloadDecisionMaker|Processing release 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.8|Debug|Parser|Parsing string 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025'
+2025-09-25 03:01:58.8|Debug|Parser|Unable to parse Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025
+2025-09-25 03:01:58.8|Debug|DownloadDecisionMaker|Processing release 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.9|Debug|Parser|Parsing string 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025'
+2025-09-25 03:01:58.9|Debug|Parser|Unable to parse Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025
+2025-09-25 03:01:58.9|Debug|DownloadDecisionMaker|Processing release 'Minella M. Water Reuse and Unconventional Water Resources...2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.9|Debug|Parser|Parsing string 'Minella M. Water Reuse and Unconventional Water Resources...2024'
+2025-09-25 03:01:58.9|Debug|Parser|Unable to parse Minella M. Water Reuse and Unconventional Water Resources...2024
+2025-09-25 03:01:58.9|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.9|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025'
+2025-09-25 03:01:58.9|Debug|Parser|Unable to parse Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025
+2025-09-25 03:01:58.9|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Hearing Loss 5ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.9|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Hearing Loss 5ed 2025'
+2025-09-25 03:01:58.9|Debug|Parser|Unable to parse Sataloff R., Roehm P. Hearing Loss 5ed 2025
+2025-09-25 03:01:58.9|Debug|DownloadDecisionMaker|Processing release 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:58.9|Debug|Parser|Parsing string 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024'
+2025-09-25 03:01:58.9|Debug|Parser|Unable to parse Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025'
+2025-09-25 03:01:59.0|Debug|Parser|Unable to parse Stephenson R. The Physical Therapist's Guide to Women's...Health 2025
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025'
+2025-09-25 03:01:59.0|Debug|Parser|Unable to parse Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024'
+2025-09-25 03:01:59.0|Debug|Parser|Unable to parse Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026'
+2025-09-25 03:01:59.0|Debug|Parser|Unable to parse Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025'
+2025-09-25 03:01:59.0|Debug|Parser|Unable to parse Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025
+2025-09-25 03:01:59.0|Debug|DownloadDecisionMaker|Processing release 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.0|Debug|Parser|Parsing string 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Wuelfing C., Murphy R. Imaging Cell Signaling 2024
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Small E. In Defense of the World's Most Despised Species...2023' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Small E. In Defense of the World's Most Despised Species...2023'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Small E. In Defense of the World's Most Despised Species...2023
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Seok J. Stonehouse's Anatomy 2020' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Seok J. Stonehouse's Anatomy 2020'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Seok J. Stonehouse's Anatomy 2020
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Dos Santos W. Biomedical Imaging. Principles and Advancements 2024
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Chino N. Structure and Dynamics of Asymmetric Interactions 2025
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Morana M. Blockchain Application Security. How to Design...2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Morana M. Blockchain Application Security. How to Design...2026'
+2025-09-25 03:01:59.1|Debug|Parser|Unable to parse Morana M. Blockchain Application Security. How to Design...2026
+2025-09-25 03:01:59.1|Debug|DownloadDecisionMaker|Processing release 'Managing Back Pain For Dummies' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.1|Debug|Parser|Parsing string 'Managing Back Pain For Dummies'
+2025-09-25 03:01:59.2|Debug|Parser|Unable to parse Managing Back Pain For Dummies
+2025-09-25 03:01:59.2|Debug|DownloadDecisionMaker|Processing release 'PC Gamer Annual - Volume 9 [2026]' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.2|Debug|Parser|Parsing string 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:01:59.2|Debug|Parser|Book Parsed. PC Gamer Annual - Volume 9 
+2025-09-25 03:01:59.2|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:01:59.2|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:01:59.2|Debug|Parser|Release Group parsed: 
+2025-09-25 03:01:59.2|Debug|ParsingService|Trying inexact author match for PC Gamer Annual
+2025-09-25 03:01:59.2|Debug|ParsingService|No matching author PC Gamer Annual
+2025-09-25 03:01:59.2|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:01:59.2|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:01:59.2|Debug|DownloadDecisionMaker|Processing release 'TIME Special Edition - Weight Loss Breakthrough [2025]' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.2|Debug|Parser|Parsing string 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:01:59.2|Debug|Parser|Book Parsed. TIME Special Edition - Weight Loss Breakthrough 
+2025-09-25 03:01:59.2|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:01:59.2|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:01:59.3|Debug|Parser|Release Group parsed: 
+2025-09-25 03:01:59.3|Debug|ParsingService|Trying inexact author match for TIME Special Edition
+2025-09-25 03:01:59.3|Debug|ParsingService|No matching author TIME Special Edition
+2025-09-25 03:01:59.3|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:01:59.3|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:01:59.3|Debug|DownloadDecisionMaker|Processing release 'Tech AI Magazine - September 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.3|Debug|Parser|Parsing string 'Tech AI Magazine - September 2025'
+2025-09-25 03:01:59.3|Debug|Parser|Book Parsed. Tech AI Magazine - September 
+2025-09-25 03:01:59.3|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 03:01:59.3|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:01:59.3|Debug|Parser|Release Group parsed: 
+2025-09-25 03:01:59.3|Debug|ParsingService|Trying inexact author match for Tech AI Magazine
+2025-09-25 03:01:59.3|Debug|ParsingService|No matching author Tech AI Magazine
+2025-09-25 03:01:59.3|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 03:01:59.3|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:01:59.3|Debug|DownloadDecisionMaker|Processing release 'Understandable Electric Circuits, First Edition' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.4|Debug|Parser|Parsing string 'Understandable Electric Circuits, First Edition'
+2025-09-25 03:01:59.4|Debug|Parser|Unable to parse Understandable Electric Circuits, First Edition
+2025-09-25 03:01:59.4|Debug|DownloadDecisionMaker|Processing release 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.4|Debug|Parser|Parsing string 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 03:01:59.4|Debug|Parser|Book Parsed. Dan Brown - THE SECRET OF SECRETS 
+2025-09-25 03:01:59.4|Debug|QualityParser|Trying to parse quality for 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 03:01:59.4|Debug|Parser|Quality parsed: EPUB v1
+2025-09-25 03:01:59.4|Debug|Parser|Release Group parsed: 
+2025-09-25 03:01:59.4|Debug|ParsingService|Trying inexact author match for Dan Brown
+2025-09-25 03:01:59.4|Debug|ParsingService|No matching author Dan Brown
+2025-09-25 03:01:59.4|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:01:59.4|Debug|DownloadDecisionMaker|Processing release 'The New York Times Best Sellers - September 21, 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.4|Debug|Parser|Parsing string 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:01:59.4|Debug|Parser|Book Parsed. The New York Times Best Sellers - September 21 
+2025-09-25 03:01:59.4|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:01:59.5|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:01:59.5|Debug|Parser|Release Group parsed: 
+2025-09-25 03:01:59.5|Debug|ParsingService|Trying inexact author match for The New York Times Best Sellers
+2025-09-25 03:01:59.5|Debug|ParsingService|No matching author The New York Times Best Sellers
+2025-09-25 03:01:59.5|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Processing release '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.5|Debug|Parser|Parsing string '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024'
+2025-09-25 03:01:59.5|Debug|Parser|Unable to parse 2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Processing release 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.5|Debug|Parser|Parsing string 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990'
+2025-09-25 03:01:59.5|Debug|Parser|Unable to parse Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Processing release 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.5|Debug|Parser|Parsing string 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025'
+2025-09-25 03:01:59.5|Debug|Parser|Unable to parse Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Processing release 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.5|Debug|Parser|Parsing string 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025'
+2025-09-25 03:01:59.5|Debug|Parser|Unable to parse English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025
+2025-09-25 03:01:59.5|Debug|DownloadDecisionMaker|Processing release 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025'
+2025-09-25 03:01:59.6|Debug|Parser|Unable to parse Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025
+2025-09-25 03:01:59.6|Debug|DownloadDecisionMaker|Processing release 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025'
+2025-09-25 03:01:59.6|Debug|Parser|Unable to parse Walsh E. Nadas' Pediatric Cardiology 3ed 2025
+2025-09-25 03:01:59.6|Debug|DownloadDecisionMaker|Processing release 'Lee J. Manifolds and Differential Geometry 2010' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Lee J. Manifolds and Differential Geometry 2010'
+2025-09-25 03:01:59.6|Debug|Parser|Unable to parse Lee J. Manifolds and Differential Geometry 2010
+2025-09-25 03:01:59.6|Debug|DownloadDecisionMaker|Processing release 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025'
+2025-09-25 03:01:59.6|Debug|Parser|Unable to parse Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025
+2025-09-25 03:01:59.6|Debug|DownloadDecisionMaker|Processing release 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016'
+2025-09-25 03:01:59.6|Debug|Parser|Unable to parse Thareja R. Computer Fundamentals and Programming in C 2ed 2016
+2025-09-25 03:01:59.6|Debug|DownloadDecisionMaker|Processing release 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.6|Debug|Parser|Parsing string 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026'
+2025-09-25 03:01:59.7|Debug|Parser|Unable to parse Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026
+2025-09-25 03:01:59.7|Debug|DownloadDecisionMaker|Processing release 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.7|Debug|Parser|Parsing string 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026'
+2025-09-25 03:01:59.7|Debug|Parser|Unable to parse Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026
+2025-09-25 03:01:59.7|Debug|DownloadDecisionMaker|Processing release 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.7|Debug|Parser|Parsing string 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025'
+2025-09-25 03:01:59.7|Debug|Parser|Unable to parse Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025
+2025-09-25 03:01:59.7|Debug|DownloadDecisionMaker|Processing release 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.7|Debug|Parser|Parsing string 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage'
+2025-09-25 03:01:59.7|Debug|Parser|Unable to parse How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage
+2025-09-25 03:01:59.7|Debug|DownloadDecisionMaker|Processing release 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.7|Debug|Parser|Parsing string 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider'
+2025-09-25 03:01:59.7|Debug|Parser|Unable to parse Get In, Get Connected, Get Hired - Lessons from an MBA Insider
+2025-09-25 03:01:59.8|Debug|DownloadDecisionMaker|Processing release 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.8|Debug|Parser|Parsing string 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental'
+2025-09-25 03:01:59.8|Debug|Parser|Unable to parse This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental
+2025-09-25 03:01:59.8|Debug|DownloadDecisionMaker|Processing release 'The Secret Life of God - Discovering the Divine Within You' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.8|Debug|Parser|Parsing string 'The Secret Life of God - Discovering the Divine Within You'
+2025-09-25 03:01:59.8|Debug|Parser|Unable to parse The Secret Life of God - Discovering the Divine Within You
+2025-09-25 03:01:59.8|Debug|DownloadDecisionMaker|Processing release 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.8|Debug|Parser|Parsing string 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your'
+2025-09-25 03:01:59.9|Debug|Parser|Unable to parse THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your
+2025-09-25 03:01:59.9|Debug|DownloadDecisionMaker|Processing release 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.9|Debug|Parser|Parsing string 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More'
+2025-09-25 03:01:59.9|Debug|Parser|Unable to parse How to Identify &amp; Navigate TOXIC Relationships - You Deserve More
+2025-09-25 03:01:59.9|Debug|DownloadDecisionMaker|Processing release 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:01:59.9|Debug|Parser|Parsing string 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti'
+2025-09-25 03:01:59.9|Debug|Parser|Unable to parse TensorFlow Developer Certification Guide - Crack Google's official exam on getti
+2025-09-25 03:02:00.0|Debug|DownloadDecisionMaker|Processing release 'LEARNING PHP - From Beginners to Advanced' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:02:00.0|Debug|Parser|Parsing string 'LEARNING PHP - From Beginners to Advanced'
+2025-09-25 03:02:00.0|Debug|Parser|Unable to parse LEARNING PHP - From Beginners to Advanced
+2025-09-25 03:02:00.0|Debug|DownloadDecisionMaker|Processing release 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co' from 'TheRARBG (Prowlarr)'
+2025-09-25 03:02:00.0|Debug|Parser|Parsing string 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co'
+2025-09-25 03:02:00.0|Debug|Parser|Unable to parse Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co
+2025-09-25 03:02:00.0|Debug|DownloadDecisionMaker|Processing release 'Stewart B. Digital SAT Study Guide Premium 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.0|Debug|Parser|Parsing string 'Stewart B. Digital SAT Study Guide Premium 2026'
+2025-09-25 03:02:00.0|Debug|Parser|Unable to parse Stewart B. Digital SAT Study Guide Premium 2026
+2025-09-25 03:02:00.0|Debug|DownloadDecisionMaker|Processing release 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.1|Debug|Parser|Parsing string 'Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006'
+2025-09-25 03:02:00.1|Debug|Parser|Unable to parse Meyer D. Setting the Table. The Transforming Power of Hospitality..Business 2006
+2025-09-25 03:02:00.1|Debug|DownloadDecisionMaker|Processing release 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.1|Debug|Parser|Parsing string 'Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025'
+2025-09-25 03:02:00.1|Debug|Parser|Unable to parse Galbraith R. The Hallmarked Man (A Cormoran Strike Novel) 2025
+2025-09-25 03:02:00.1|Debug|DownloadDecisionMaker|Processing release 'Misra A. Supercapacitors. Concepts and advances 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.1|Debug|Parser|Parsing string 'Misra A. Supercapacitors. Concepts and advances 2025'
+2025-09-25 03:02:00.1|Debug|Parser|Unable to parse Misra A. Supercapacitors. Concepts and advances 2025
+2025-09-25 03:02:00.1|Debug|DownloadDecisionMaker|Processing release 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.1|Debug|Parser|Parsing string 'RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)'
+2025-09-25 03:02:00.1|Debug|Parser|Unable to parse RADIO ETHER PROGRAM 2,058 (POOR BOY ETHER)
+2025-09-25 03:02:00.1|Debug|DownloadDecisionMaker|Processing release 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.1|Debug|Parser|Parsing string 'Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025'
+2025-09-25 03:02:00.1|Debug|Parser|Unable to parse Bellavia A. Statistical Methods for Environmental Mixtures. A Primer...2025
+2025-09-25 03:02:00.1|Debug|DownloadDecisionMaker|Processing release 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.2|Debug|Parser|Parsing string 'Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025'
+2025-09-25 03:02:00.2|Debug|Parser|Unable to parse Das S. Severe Storms. Anatomy, Early Warning Systems...Climate Scenarios 2025
+2025-09-25 03:02:00.2|Debug|DownloadDecisionMaker|Processing release 'Minella M. Water Reuse and Unconventional Water Resources...2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.2|Debug|Parser|Parsing string 'Minella M. Water Reuse and Unconventional Water Resources...2024'
+2025-09-25 03:02:00.2|Debug|Parser|Unable to parse Minella M. Water Reuse and Unconventional Water Resources...2024
+2025-09-25 03:02:00.2|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.2|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025'
+2025-09-25 03:02:00.2|Debug|Parser|Unable to parse Sataloff R., Roehm P. Occupational Hearing Loss 4ed 2025
+2025-09-25 03:02:00.2|Debug|DownloadDecisionMaker|Processing release 'Sataloff R., Roehm P. Hearing Loss 5ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.2|Debug|Parser|Parsing string 'Sataloff R., Roehm P. Hearing Loss 5ed 2025'
+2025-09-25 03:02:00.2|Debug|Parser|Unable to parse Sataloff R., Roehm P. Hearing Loss 5ed 2025
+2025-09-25 03:02:00.2|Debug|DownloadDecisionMaker|Processing release 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.2|Debug|Parser|Parsing string 'Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024'
+2025-09-25 03:02:00.2|Debug|Parser|Unable to parse Augustine D. MCQs for the European Exam in Core Cardiology 2ed 2024
+2025-09-25 03:02:00.3|Debug|DownloadDecisionMaker|Processing release 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.3|Debug|Parser|Parsing string 'Stephenson R. The Physical Therapist's Guide to Women's...Health 2025'
+2025-09-25 03:02:00.3|Debug|Parser|Unable to parse Stephenson R. The Physical Therapist's Guide to Women's...Health 2025
+2025-09-25 03:02:00.3|Debug|DownloadDecisionMaker|Processing release 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.3|Debug|Parser|Parsing string 'Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025'
+2025-09-25 03:02:00.3|Debug|Parser|Unable to parse Cenzer D. Set Theory and Foundations of Mathematics...Vol 1. 2ed 2025
+2025-09-25 03:02:00.3|Debug|DownloadDecisionMaker|Processing release 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.3|Debug|Parser|Parsing string 'Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024'
+2025-09-25 03:02:00.3|Debug|Parser|Unable to parse Otto F. Restarting Automata. The Standard Type of Restarting Automaton...2024
+2025-09-25 03:02:00.3|Debug|DownloadDecisionMaker|Processing release 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.3|Debug|Parser|Parsing string 'Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026'
+2025-09-25 03:02:00.3|Debug|Parser|Unable to parse Arel-Bundock V. Model to Meaning...Statistical Models with R and Python 2026
+2025-09-25 03:02:00.4|Debug|DownloadDecisionMaker|Processing release 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.4|Debug|Parser|Parsing string 'Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025'
+2025-09-25 03:02:00.4|Debug|Parser|Unable to parse Santos O., Radanliev P. AI-Powered Digital Cyber Resilience 2025
+2025-09-25 03:02:00.4|Debug|DownloadDecisionMaker|Processing release 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.4|Debug|Parser|Parsing string 'Wuelfing C., Murphy R. Imaging Cell Signaling 2024'
+2025-09-25 03:02:00.4|Debug|Parser|Unable to parse Wuelfing C., Murphy R. Imaging Cell Signaling 2024
+2025-09-25 03:02:00.4|Debug|DownloadDecisionMaker|Processing release 'Small E. In Defense of the World's Most Despised Species...2023' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.4|Debug|Parser|Parsing string 'Small E. In Defense of the World's Most Despised Species...2023'
+2025-09-25 03:02:00.5|Debug|Parser|Unable to parse Small E. In Defense of the World's Most Despised Species...2023
+2025-09-25 03:02:00.5|Debug|DownloadDecisionMaker|Processing release 'Seok J. Stonehouse's Anatomy 2020' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.5|Debug|Parser|Parsing string 'Seok J. Stonehouse's Anatomy 2020'
+2025-09-25 03:02:00.5|Debug|Parser|Unable to parse Seok J. Stonehouse's Anatomy 2020
+2025-09-25 03:02:00.5|Debug|DownloadDecisionMaker|Processing release 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.5|Debug|Parser|Parsing string 'Dos Santos W. Biomedical Imaging. Principles and Advancements 2024'
+2025-09-25 03:02:00.5|Debug|Parser|Unable to parse Dos Santos W. Biomedical Imaging. Principles and Advancements 2024
+2025-09-25 03:02:00.5|Debug|DownloadDecisionMaker|Processing release 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.5|Debug|Parser|Parsing string 'Chino N. Structure and Dynamics of Asymmetric Interactions 2025'
+2025-09-25 03:02:00.5|Debug|Parser|Unable to parse Chino N. Structure and Dynamics of Asymmetric Interactions 2025
+2025-09-25 03:02:00.5|Debug|DownloadDecisionMaker|Processing release 'Morana M. Blockchain Application Security. How to Design...2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.5|Debug|Parser|Parsing string 'Morana M. Blockchain Application Security. How to Design...2026'
+2025-09-25 03:02:00.5|Debug|Parser|Unable to parse Morana M. Blockchain Application Security. How to Design...2026
+2025-09-25 03:02:00.5|Debug|DownloadDecisionMaker|Processing release 'Managing Back Pain For Dummies' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.6|Debug|Parser|Parsing string 'Managing Back Pain For Dummies'
+2025-09-25 03:02:00.6|Debug|Parser|Unable to parse Managing Back Pain For Dummies
+2025-09-25 03:02:00.6|Debug|DownloadDecisionMaker|Processing release 'PC Gamer Annual - Volume 9 [2026]' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.6|Debug|Parser|Parsing string 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:02:00.6|Debug|Parser|Book Parsed. PC Gamer Annual - Volume 9 
+2025-09-25 03:02:00.6|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:02:00.6|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:02:00.6|Debug|Parser|Release Group parsed: 
+2025-09-25 03:02:00.7|Debug|ParsingService|Trying inexact author match for PC Gamer Annual
+2025-09-25 03:02:00.7|Debug|ParsingService|No matching author PC Gamer Annual
+2025-09-25 03:02:00.7|Debug|QualityParser|Trying to parse quality for 'PC Gamer Annual - Volume 9 [2026]'
+2025-09-25 03:02:00.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:02:00.7|Debug|DownloadDecisionMaker|Processing release 'TIME Special Edition - Weight Loss Breakthrough [2025]' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.7|Debug|Parser|Parsing string 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:02:00.7|Debug|Parser|Book Parsed. TIME Special Edition - Weight Loss Breakthrough 
+2025-09-25 03:02:00.7|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:02:00.7|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:02:00.7|Debug|Parser|Release Group parsed: 
+2025-09-25 03:02:00.7|Debug|ParsingService|Trying inexact author match for TIME Special Edition
+2025-09-25 03:02:00.7|Debug|ParsingService|No matching author TIME Special Edition
+2025-09-25 03:02:00.7|Debug|QualityParser|Trying to parse quality for 'TIME Special Edition - Weight Loss Breakthrough [2025]'
+2025-09-25 03:02:00.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:02:00.8|Debug|DownloadDecisionMaker|Processing release 'Tech AI Magazine - September 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.8|Debug|Parser|Parsing string 'Tech AI Magazine - September 2025'
+2025-09-25 03:02:00.8|Debug|Parser|Book Parsed. Tech AI Magazine - September 
+2025-09-25 03:02:00.8|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 03:02:00.8|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:02:00.8|Debug|Parser|Release Group parsed: 
+2025-09-25 03:02:00.8|Debug|ParsingService|Trying inexact author match for Tech AI Magazine
+2025-09-25 03:02:00.9|Debug|ParsingService|No matching author Tech AI Magazine
+2025-09-25 03:02:00.9|Debug|QualityParser|Trying to parse quality for 'Tech AI Magazine - September 2025'
+2025-09-25 03:02:00.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:02:00.9|Debug|DownloadDecisionMaker|Processing release 'Understandable Electric Circuits, First Edition' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.9|Debug|Parser|Parsing string 'Understandable Electric Circuits, First Edition'
+2025-09-25 03:02:00.9|Debug|Parser|Unable to parse Understandable Electric Circuits, First Edition
+2025-09-25 03:02:00.9|Debug|DownloadDecisionMaker|Processing release 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:00.9|Debug|Parser|Parsing string 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 03:02:00.9|Debug|Parser|Book Parsed. Dan Brown - THE SECRET OF SECRETS 
+2025-09-25 03:02:00.9|Debug|QualityParser|Trying to parse quality for 'THE SECRET OF SECRETS by Dan Brown (epub)(Fiction)'
+2025-09-25 03:02:00.9|Debug|Parser|Quality parsed: EPUB v1
+2025-09-25 03:02:00.9|Debug|Parser|Release Group parsed: 
+2025-09-25 03:02:00.9|Debug|ParsingService|Trying inexact author match for Dan Brown
+2025-09-25 03:02:00.9|Debug|ParsingService|No matching author Dan Brown
+2025-09-25 03:02:00.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:02:00.9|Debug|DownloadDecisionMaker|Processing release 'The New York Times Best Sellers - September 21, 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.0|Debug|Parser|Parsing string 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:02:01.0|Debug|Parser|Book Parsed. The New York Times Best Sellers - September 21 
+2025-09-25 03:02:01.0|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:02:01.0|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-25 03:02:01.0|Debug|Parser|Release Group parsed: 
+2025-09-25 03:02:01.0|Debug|ParsingService|Trying inexact author match for The New York Times Best Sellers
+2025-09-25 03:02:01.0|Debug|ParsingService|No matching author The New York Times Best Sellers
+2025-09-25 03:02:01.0|Debug|QualityParser|Trying to parse quality for 'The New York Times Best Sellers - September 21, 2025'
+2025-09-25 03:02:01.0|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-25 03:02:01.0|Debug|DownloadDecisionMaker|Processing release '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.0|Debug|Parser|Parsing string '2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024'
+2025-09-25 03:02:01.0|Debug|Parser|Unable to parse 2025 CFA Program Curriculum Level III Portfolio Management Pathway Box Set 2024
+2025-09-25 03:02:01.0|Debug|DownloadDecisionMaker|Processing release 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.0|Debug|Parser|Parsing string 'Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990'
+2025-09-25 03:02:01.0|Debug|Parser|Unable to parse Cartmell M. Introduction to Linear Parametric and Nonlinear Vibrations 1990
+2025-09-25 03:02:01.0|Debug|DownloadDecisionMaker|Processing release 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.0|Debug|Parser|Parsing string 'Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse Marecek G. AAOS Comprehensive Orthopaedic Review. Volume 1 to 3. 4ed 2025
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse English III J. Skin and Systemic Disease. A Clinician's Guide 2ed 2025
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse Clemente J. Spinal Surgery Biomechanics...for Residents and Students 2025
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'Walsh E. Nadas' Pediatric Cardiology 3ed 2025'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse Walsh E. Nadas' Pediatric Cardiology 3ed 2025
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'Lee J. Manifolds and Differential Geometry 2010' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'Lee J. Manifolds and Differential Geometry 2010'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse Lee J. Manifolds and Differential Geometry 2010
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025'
+2025-09-25 03:02:01.1|Debug|Parser|Unable to parse Reddi V. Introduction to Machine Learning Systems. Principles and Practices 2025
+2025-09-25 03:02:01.1|Debug|DownloadDecisionMaker|Processing release 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.1|Debug|Parser|Parsing string 'Thareja R. Computer Fundamentals and Programming in C 2ed 2016'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse Thareja R. Computer Fundamentals and Programming in C 2ed 2016
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.2|Debug|Parser|Parsing string 'Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse Malviya R. Machine Learning in Healthcare. Advances and Future Prospects 2026
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.2|Debug|Parser|Parsing string 'Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse Yao H., Mai T. UAV Swarm Cooperation. A Networking Perspective 2026
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.2|Debug|Parser|Parsing string 'Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse Troia V. Grey Area. Dark Web Data Collection and the Future of OSIN 2025
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.2|Debug|Parser|Parsing string 'How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse How to Get Divorced by 30 - My Misguided Attempt at a Starter Marriage
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.2|Debug|Parser|Parsing string 'Get In, Get Connected, Get Hired - Lessons from an MBA Insider'
+2025-09-25 03:02:01.2|Debug|Parser|Unable to parse Get In, Get Connected, Get Hired - Lessons from an MBA Insider
+2025-09-25 03:02:01.2|Debug|DownloadDecisionMaker|Processing release 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.3|Debug|Parser|Parsing string 'This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental'
+2025-09-25 03:02:01.3|Debug|Parser|Unable to parse This Book Is Cheaper Than Therapy - A No-Nonsense Guide to Improving Your Mental
+2025-09-25 03:02:01.3|Debug|DownloadDecisionMaker|Processing release 'The Secret Life of God - Discovering the Divine Within You' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.3|Debug|Parser|Parsing string 'The Secret Life of God - Discovering the Divine Within You'
+2025-09-25 03:02:01.3|Debug|Parser|Unable to parse The Secret Life of God - Discovering the Divine Within You
+2025-09-25 03:02:01.3|Debug|DownloadDecisionMaker|Processing release 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.3|Debug|Parser|Parsing string 'THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your'
+2025-09-25 03:02:01.3|Debug|Parser|Unable to parse THE ESSENTIAL PLANT BASED DIET IN 30-MINUTES - The Effective Guide to Start Your
+2025-09-25 03:02:01.3|Debug|DownloadDecisionMaker|Processing release 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.3|Debug|Parser|Parsing string 'How to Identify &amp; Navigate TOXIC Relationships - You Deserve More'
+2025-09-25 03:02:01.3|Debug|Parser|Unable to parse How to Identify &amp; Navigate TOXIC Relationships - You Deserve More
+2025-09-25 03:02:01.3|Debug|DownloadDecisionMaker|Processing release 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.3|Debug|Parser|Parsing string 'TensorFlow Developer Certification Guide - Crack Google's official exam on getti'
+2025-09-25 03:02:01.3|Debug|Parser|Unable to parse TensorFlow Developer Certification Guide - Crack Google's official exam on getti
+2025-09-25 03:02:01.3|Debug|DownloadDecisionMaker|Processing release 'LEARNING PHP - From Beginners to Advanced' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.4|Debug|Parser|Parsing string 'LEARNING PHP - From Beginners to Advanced'
+2025-09-25 03:02:01.4|Debug|Parser|Unable to parse LEARNING PHP - From Beginners to Advanced
+2025-09-25 03:02:01.4|Debug|DownloadDecisionMaker|Processing release 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-25 03:02:01.5|Debug|Parser|Parsing string 'Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co'
+2025-09-25 03:02:01.5|Debug|Parser|Unable to parse Python Variables and Data Types Simplified - A Beginner's Guide to Boost Your Co
+2025-09-25 03:02:01.5|Info|RssSyncService|RSS Sync Completed. Reports found: 100, Reports grabbed: 0
+2025-09-25 03:02:01.5|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-25 03:02:58.2|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 03:07:58.3|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-25 03:08:35.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-25 03:08:36.6|Info|ConsoleApp|Exiting main.

@@ -1,0 +1,98 @@
+2025-09-25 01:45:13 - INFO    :: MainThread : Starting Tautulli v2.16.0
+2025-09-25 01:45:13 - INFO    :: MainThread : [Docker] Linux 5.15.167.4-microsoft-standard-WSL2 (#1 SMP Tue Nov 5 00:21:55 UTC 2024 - Alpine Linux 3.22.1)
+2025-09-25 01:45:13 - INFO    :: MainThread : Europe/Istanbul (UTC+0300)
+2025-09-25 01:45:13 - INFO    :: MainThread : Language C / Encoding UTF-8
+2025-09-25 01:45:13 - INFO    :: MainThread : Python 3.12.11 (main, Jun  4 2025, 09:55:47) [GCC 14.2.0]
+2025-09-25 01:45:13 - INFO    :: MainThread : SQLite 3.49.2
+2025-09-25 01:45:13 - INFO    :: MainThread : Program Dir: /app/tautulli
+2025-09-25 01:45:13 - INFO    :: MainThread : Config File: /config/config.ini
+2025-09-25 01:45:13 - INFO    :: MainThread : Database File: /config/tautulli.db
+2025-09-25 01:45:13 - INFO    :: MainThread : Checking if the database upgrades are required...
+2025-09-25 01:45:18 - DEBUG   :: MainThread : Altering database. Updating database table notify_log.
+2025-09-25 01:45:19 - DEBUG   :: MainThread : User 'Local' does not exist. Adding user.
+2025-09-25 01:45:20 - INFO    :: MainThread : Checking if configuration upgrades are required...
+2025-09-25 01:45:20 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Generating UUID...
+2025-09-25 01:45:21 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Generating API key...
+2025-09-25 01:45:21 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Generating JWT secret...
+2025-09-25 01:45:21 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2025-09-25 01:45:21 - INFO    :: MainThread : Retrieving latest version information from GitHub
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/commits/master
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Latest version is cc0150a1b2b745980467003a73aa1be51c1e426a
+2025-09-25 01:45:21 - INFO    :: MainThread : Comparing currently installed version with latest GitHub version
+2025-09-25 01:45:21 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/compare/v2.16.0...cc0150a1b2b745980467003a73aa1be51c1e426a
+2025-09-25 01:45:22 - DEBUG   :: MainThread : In total, 0 commits behind
+2025-09-25 01:45:22 - INFO    :: MainThread : Tautulli is up to date
+2025-09-25 01:45:22 - INFO    :: MainThread : Tautulli NotificationHandler :: Starting background notification handler (2 threads).
+2025-09-25 01:45:23 - ERROR   :: MainThread : Tautulli PlexTV :: PlexTV called, but no token provided.
+2025-09-25 01:45:24 - ERROR   :: MainThread : Tautulli PlexTV :: PlexTV called, but no token provided.
+2025-09-25 01:45:25 - INFO    :: MainThread : Tautulli WebStart :: Initializing Tautulli web server...
+2025-09-25 01:45:25 - WARNING :: MainThread : Tautulli WebStart :: Web server authentication is disabled!
+2025-09-25 01:45:25 - INFO    :: MainThread : Tautulli WebStart :: Thread Pool Size: 10.
+2025-09-25 01:45:25 - INFO    :: MainThread : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
+2025-09-25 01:45:25 - INFO    :: MainThread : [25/Sep/2025:01:45:25] ENGINE Serving on http://0.0.0.0:8181
+2025-09-25 01:45:25 - INFO    :: MainThread : Tautulli is ready!
+2025-09-25 02:48:46 - INFO    :: CP Server Thread-13 : Tautulli Config :: Writing configuration to file
+2025-09-25 02:49:00 - INFO    :: CP Server Thread-8 : Tautulli Config :: Writing configuration to file
+2025-09-25 02:49:00 - INFO    :: CP Server Thread-8 : Tautulli PlexTV :: Requesting resources for server...
+2025-09-25 02:49:00 - INFO    :: CP Server Thread-8 : Tautulli PlexTV :: Pinging Plex.tv to refresh token.
+2025-09-25 02:49:01 - DEBUG   :: CP Server Thread-8 : Tautulli PlexTV :: Plex Pass subscription not found.
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli Config :: Writing configuration to file
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli PlexTV :: Using user-defined URL.
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli PlexTV :: Selected server:  (http://192.168.1.102:32400) ( - Version )
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli Config :: Writing configuration to file
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Restarting Tautulli web server...
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Stopping Tautulli web server...
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE Bus STOPPING
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE Bus STOPPED
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE Bus EXITING
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE Bus EXITED
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Initializing Tautulli web server...
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Web server authentication is enabled: Tautulli admin (username is 'admin') and Plex admin.
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Thread Pool Size: 10.
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : [25/Sep/2025:02:49:01] ENGINE Serving on http://0.0.0.0:8181
+2025-09-25 02:49:01 - DEBUG   :: CP Server Thread-8 : Tautulli Monitor :: Checking for active streams.
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Tautulli WebSocket :: Opening websocket.
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Scheduled background task: Check GitHub for updates
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Scheduled background task: Optimize Tautulli database
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Scheduled background task: Backup Tautulli database
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Scheduled background task: Backup Tautulli config
+2025-09-25 02:49:01 - INFO    :: CP Server Thread-8 : Scheduled background task: Check for server response
+2025-09-25 02:49:01 - INFO    :: Thread-27 (refresh_libraries) : Tautulli Libraries :: Requesting libraries list refresh...
+2025-09-25 02:49:01 - INFO    :: Thread-28 (refresh_users) : Tautulli Users :: Requesting users list refresh...
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Tautulli WebSocket :: Ready
+2025-09-25 02:49:01 - DEBUG   :: Thread-27 (refresh_libraries) : Tautulli Pmsconnect :: No libraries data.
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Scheduled background task: Refresh Plex server URLs
+2025-09-25 02:49:01 - WARNING :: Thread-27 (refresh_libraries) : Tautulli Libraries :: Unable to refresh libraries list.
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Scheduled background task: Refresh users list
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Scheduled background task: Refresh libraries list
+2025-09-25 02:49:01 - INFO    :: Thread-26 (run) : Removed background task: Check for server response
+2025-09-25 02:49:02 - ERROR   :: Thread-28 (refresh_users) : Failed to access uri endpoint /api/servers/****************/shared_servers. Status code 404 Client Error: Not Found for url: https://plex.tv/api/servers/****************/shared_servers
+2025-09-25 02:49:02 - WARNING :: Thread-28 (refresh_users) : Tautulli PlexTV :: Unable to parse shared server list XML for get_full_users_list: 'NoneType' object has no attribute 'getElementsByTagName'.
+2025-09-25 02:49:02 - WARNING :: Thread-28 (refresh_users) : Tautulli Users :: Unable to refresh users list.
+2025-09-25 02:49:12 - WARNING :: CP Server Thread-22 : Tautulli Users :: Unable to retrieve user 591898637 from database. Requesting user list refresh.
+2025-09-25 02:49:12 - INFO    :: CP Server Thread-22 : Tautulli Users :: Requesting users list refresh...
+2025-09-25 02:49:12 - ERROR   :: CP Server Thread-22 : Failed to access uri endpoint /api/servers/****************/shared_servers. Status code 404 Client Error: Not Found for url: https://plex.tv/api/servers/****************/shared_servers
+2025-09-25 02:49:12 - WARNING :: CP Server Thread-22 : Tautulli PlexTV :: Unable to parse shared server list XML for get_full_users_list: 'NoneType' object has no attribute 'getElementsByTagName'.
+2025-09-25 02:49:12 - WARNING :: CP Server Thread-22 : Tautulli Users :: Unable to refresh users list.
+2025-09-25 02:49:12 - WARNING :: CP Server Thread-22 : Tautulli Users :: Unable to retrieve user 591898637 from database. Returning 'Local' user.
+2025-09-25 02:49:12 - DEBUG   :: CP Server Thread-22 : Tautulli WebAuth :: Invalid Plex OAuth login attempt.
+2025-09-25 02:49:18 - DEBUG   :: CP Server Thread-23 : Tautulli WebAuth :: Admin user 'admin' logged into Tautulli using form login.
+2025-09-25 02:49:19 - INFO    :: CP Server Thread-18 : Tautulli Config :: Writing configuration to file
+2025-09-25 03:08:35 - INFO    :: MainThread : Signal 15 caught, saving and exiting...
+2025-09-25 03:08:35 - INFO    :: MainThread : Tautulli WebStart :: Stopping Tautulli web server...
+2025-09-25 03:08:35 - INFO    :: MainThread : [25/Sep/2025:03:08:35] ENGINE Bus STOPPING
+2025-09-25 03:08:35 - INFO    :: MainThread : [25/Sep/2025:03:08:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
+2025-09-25 03:08:35 - INFO    :: MainThread : [25/Sep/2025:03:08:35] ENGINE Bus STOPPED
+2025-09-25 03:08:35 - INFO    :: MainThread : [25/Sep/2025:03:08:35] ENGINE Bus EXITING
+2025-09-25 03:08:35 - INFO    :: MainThread : [25/Sep/2025:03:08:35] ENGINE Bus EXITED
+2025-09-25 03:08:35 - INFO    :: MainThread : Tautulli WebSocket :: Disconnecting websocket...
+2025-09-25 03:08:36 - DEBUG   :: Thread-26 (run) : Tautulli WebSocket :: Leaving thread.
+2025-09-25 03:08:36 - INFO    :: Thread-3 (process_queue) : Tautulli NotificationHandler :: Notification thread exiting...
+2025-09-25 03:08:36 - INFO    :: Thread-2 (process_queue) : Tautulli NotificationHandler :: Notification thread exiting...
+2025-09-25 03:08:36 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2025-09-25 03:08:36 - INFO    :: MainThread : Tautulli is shutting down...
