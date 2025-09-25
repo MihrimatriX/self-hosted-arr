@@ -1,0 +1,69 @@
+# Log dosyaları
+*.log
+**/logs/*.log
+**/logs/.machinelogs*.json
+**/logs/*-audit.json
+
+# Docker ve konteyner logları
+**/logs/
+**/cache/
+**/temp/
+**/transcoding-temp/
+
+# Database dosyaları
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Sistem dosyaları
+*.pid
+*.lock
+*.envelope
+
+# Backup dosyaları
+**/backup/
+**/backups/
+**/restore/
+
+# Cache ve geçici dosyaları
+**/cache/
+**/temp/
+**/transcoding-temp/
+
+# Media dosyaları (büyük dosyalar)
+**/media/
+**/downloads/
+
+# Konfigürasyon yedekleri
+**/config/*.bak
+**/config/*.backup
+
+# Plex özel dosyaları
+**/plex/Library/Application Support/Plex Media Server/Plug-in Support/
+**/plex/Library/Application Support/Plex Media Server/Plug-ins/
+**/plex/Library/Application Support/Plex Media Server/Updates/
+**/plex/Library/Application Support/Plex Media Server/Codecs/
+**/plex/Library/Application Support/Plex Media Server/Crash Reports/
+**/plex/Library/Application Support/Plex Media Server/Diagnostics/
+**/plex/Library/Application Support/Plex Media Server/Drivers/
+
+# Portainer özel dosyaları
+**/portainer/bin/
+**/portainer/compose/
+**/portainer/tls/
+
+# qBittorrent özel dosyaları
+**/qbittorrent/.cache/
+**/qbittorrent/qBittorrent/rss/
+
+# Sentry dosyaları
+**/Sentry/
+
+# MediaCover dosyaları
+**/MediaCover/
+
+# Tautulli özel dosyaları
+**/tautulli/exports/
+**/tautulli/newsletters/
