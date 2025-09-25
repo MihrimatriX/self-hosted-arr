@@ -1,0 +1,361 @@
+2025-09-24 23:29:38.739
+Operating System: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+OS/Process: x64/x64
+Emby Server version: 4.8.11.0
+Operating system: Unix 5.15.167.4
+Command Line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+
+App: Emby Web 4.8.11.0
+Microsoft Edge Windows
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+
+http://localhost:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&PlaySessionId=0b47ee7537534018a0885774d67b3673&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=VideoCodecNotSupported,AudioCodecNotSupported
+
+http://localhost:8096/emby/videos/6/hls1/main/317.ts?PlaySessionId=0b47ee7537534018a0885774d67b3673
+
+{"Protocol":"File","Id":"440e60f975ceb27f8dcab4b7c688da12","Path":"/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv","Type":"Default","Container":"mkv","Size":4077122515,"Name":"Cars 2006 1080p BluRay DD 5 1 x265 edge2020","IsRemote":false,"HasMixedProtocols":false,"RunTimeTicks":69960000000,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"RequiresClosing":false,"RequiresLooping":false,"SupportsProbing":false,"MediaStreams":[{"Codec":"hevc","TimeBase":"1/1000","VideoRange":"SDR","DisplayTitle":"1080p HEVC","IsInterlaced":false,"BitRate":4662232,"BitDepth":10,"RefFrames":1,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Height":800,"Width":1920,"AverageFrameRate":23.809525,"RealFrameRate":23.809525,"Profile":"Main 10","Type":"Video","AspectRatio":"2.40:1","Index":0,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","PixelFormat":"yuv420p10le","Level":120,"IsAnamorphic":false,"ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"eac3","Language":"eng","TimeBase":"1/1000","DisplayTitle":"English EAC3 5.1 (Default)","DisplayLanguage":"English","IsInterlaced":false,"ChannelLayout":"5.1","BitRate":640000,"Channels":6,"SampleRate":48000,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Audio","Index":1,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"PGSSUB","Language":"eng","TimeBase":"1/1000","Title":"SHD","DisplayTitle":"English (Default PGSSUB)","DisplayLanguage":"English","IsInterlaced":false,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Subtitle","Index":2,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0,"SubtitleLocationType":"InternalStream"}],"Formats":[],"Bitrate":4662232,"RequiredHttpHeaders":{},"AddApiKeyToDirectStreamUrl":false,"ReadAtNativeFramerate":false,"ItemId":"6"}
+
+>>>>>>  User policy for admin
+        Enable Playback Remuxing: True
+        Enable Video Playback Transcoding: True
+        Enable Audio Playback Transcoding: True
+
+>>>>>>  Selected Codecs
+Decoder Automatic software decoder
+
+
+Encoder x264
+        Max Bitrate: 781 Mbit/s
+        Color Formats: YUV420P, YUVJ420P, YUV422P, YUVJ422P, YUV444P, YUVJ444P, NV12, NV16, NV21, YUV420P10, YUV422P10, YUV444P10, NV20, GRAY8, GRAY10 - Bit Depths: 8, 10, 12, 14
+        Profiles: Baseline Profile (Level 6.2), Main Profile (Level 6.2), High Profile (Level 6.2), High 10 Profile (Level 6.2), High 4:2:2 Profile (Level 6.2), High 4:4:4 Predictive Profile (Level 6.2)
+
+
+>>>>>>  FindVideoEncoder - MediaType: h264, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'x264'
+Info    Check successful - selecting 'x264'
+
+>>>>>>  FindVideoDecoder - MediaType: hevc, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'Automatic software decoder'
+Info    Check successful - selecting 'Automatic software decoder'
+
+>>>>>>  Processing Plan
+        Name                                        CanDoInHW  WillDoInHW  Reason                                                 
+        Automatic software decoder               >> False      False       Software Codec                                          
+        VideoInput                               >> False      False       Not a hardware decoder                                  
+        ColorConversion                          >> False      False                                                               
+        VideoOutput                              >> False      False       Not a hardware encoder                                  
+        x264                                     >> False      False       Software Codec                                          
+
+>>>>>>  Video Processing Steps for [0:0]: H.265 (HEVC)
+        Step                    HW-Context   Format       SW-Format           Size   Next
+        HEVC                 >> -            yuv420p10    yuv420p10       1920x800 >> format
+        format               >> -            yuv420p      yuv420p         1920x800 >> 
+
+/app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-f531bcb4-3305-48a8-b140-4756c60b7ade_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 00:15:51.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0]" -map [f1_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/47BF1C/47BF1C.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 317 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/47BF1C/47BF1C_%d.ts"
+
+23:29:38.746 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+23:29:38.747   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+23:29:38.747 Execution Date: 2025-09-24 23:29:38
+23:29:38.756 [matroska,webm @ 0x3e85acc0] Could not find codec parameters for stream 2 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+23:29:38.759 Input #0, matroska,webm, from '/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv':
+23:29:38.759   Metadata:
+23:29:38.759     encoder         : libebml v1.4.4 + libmatroska v1.7.1
+23:29:38.759     creation_time   : 2023-09-15T20:50:36.000000Z
+23:29:38.759   Duration: 01:56:36.00, start: 0.000000, bitrate: 4662 kb/s
+23:29:38.759   Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv), 1920x800, SAR 1:1 DAR 12:5, Level 120, 23.81 fps, 23.81 tbr, 1k tbn (default)
+23:29:38.759     Metadata:
+23:29:38.759       BPS             : 4008504
+23:29:38.759       DURATION        : 01:56:35.989000000
+23:29:38.759       NUMBER_OF_FRAMES: 167736
+23:29:38.759       NUMBER_OF_BYTES : 3505431783
+23:29:38.759   Stream #0:1(eng): Audio: eac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default)
+23:29:38.759     Metadata:
+23:29:38.759       BPS             : 640000
+23:29:38.759       DURATION        : 01:56:36.000000000
+23:29:38.759       NUMBER_OF_FRAMES: 218625
+23:29:38.759       NUMBER_OF_BYTES : 559680000
+23:29:38.759   Stream #0:2(eng): Subtitle: hdmv_pgs_subtitle (default)
+23:29:38.759     Metadata:
+23:29:38.759       title           : SHD
+23:29:38.759       BPS             : 32881
+23:29:38.759       DURATION        : 01:55:11.280000000
+23:29:38.759       NUMBER_OF_FRAMES: 3459
+23:29:38.759       NUMBER_OF_BYTES : 28406378
+23:29:38.764 Stream mapping:
+23:29:38.764   Stream #0:0 (hevc) -> format:default (graph 0)
+23:29:38.764   format:default (graph 0) -> Stream #0:0 (libx264)
+23:29:38.764   Stream #0:1 -> #0:1 (eac3 (native) -> mp3 (libmp3lame))
+23:29:38.764 Press [q] to stop, [?] for help
+23:29:38.869 [libx264 @ 0x3e917d40] using SAR=1/1
+23:29:38.870 [libx264 @ 0x3e917d40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+23:29:38.877 [libx264 @ 0x3e917d40] profile High, level 4.0, 4:2:0, 8-bit
+23:29:38.878 [libx264 @ 0x3e917d40] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0 me=hex subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=4 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=72 keyint_min=37 scenecut=0 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=6993 vbv_bufsize=13986 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+23:29:38.903 Output #0, segment, to '/config/transcoding-temp/47BF1C/47BF1C_%d.ts':
+23:29:38.903   Metadata:
+23:29:38.903     encoder         : Lavf59.27.100
+23:29:38.903   Stream #0:0: Video: h264, yuv420p(tv, progressive), 1920x800 [SAR 1:1 DAR 12:5], q=2-31, 23.81 fps, 90k tbn
+23:29:38.903     Metadata:
+23:29:38.903       encoder         : Lavc59.37.100 libx264
+23:29:38.903     Side data:
+23:29:38.903       cpb: bitrate max/min/avg: 6993000/0/0 buffer size: 13986000 vbv_delay: N/A
+23:29:38.903   Stream #0:1(eng): Audio: mp3, 48000 Hz, stereo, fltp, 192 kb/s (default)
+23:29:38.903     Metadata:
+23:29:38.903       encoder         : Lavc59.37.100 libmp3lame
+23:29:38.905 elapsed=00:00:00.10 frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A throttle=off speed=   0x    
+23:29:39.384 elapsed=00:00:00.60 frame=   73 fps=0.0 q=28.0 size=N/A time=00:00:03.07 bitrate=N/A throttle=off speed=5.08x    
+23:29:39.574 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:39.628 SegmentComplete=video:0 Index=317 Start=0.000000 End=954.071956 Duration=954.071956 offset_pts=0 start_pts=0 Frames=72 filename=47BF1C_317.ts
+23:29:39.628 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_318.ts.tmp' for writing
+23:29:39.870 elapsed=00:00:01.10 frame=  119 fps=108 q=28.0 size=N/A time=00:00:05.23 bitrate=N/A throttle=off speed=4.73x    
+23:29:40.383 elapsed=00:00:01.60 frame=  169 fps=105 q=28.0 size=N/A time=00:00:07.29 bitrate=N/A throttle=off speed=4.53x    
+23:29:40.414 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:40.446 SegmentComplete=video:0 Index=318 Start=954.071956 End=957.095956 Duration=3.024000 offset_pts=0 start_pts=954071956 Frames=72 filename=47BF1C_318.ts
+23:29:40.446 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_319.ts.tmp' for writing
+23:29:40.881 elapsed=00:00:02.11 frame=  213 fps=101 q=28.0 size=N/A time=00:00:09.04 bitrate=N/A throttle=off speed=4.28x    
+23:29:41.157 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:41.182 SegmentComplete=video:0 Index=319 Start=957.095956 End=960.119956 Duration=3.024000 offset_pts=0 start_pts=957095956 Frames=72 filename=47BF1C_319.ts
+23:29:41.182 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_320.ts.tmp' for writing
+23:29:41.454 elapsed=00:00:02.67 frame=  262 fps= 98 q=28.0 size=N/A time=00:00:11.04 bitrate=N/A dup=0 drop=1 throttle=off speed=4.13x    
+23:29:41.859 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:41.868 SegmentComplete=video:0 Index=320 Start=960.119956 End=963.143956 Duration=3.024000 offset_pts=0 start_pts=960119956 Frames=72 filename=47BF1C_320.ts
+23:29:41.868 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_321.ts.tmp' for writing
+23:29:41.942 elapsed=00:00:03.17 frame=  327 fps=103 q=28.0 size=N/A time=00:00:13.68 bitrate=N/A dup=0 drop=1 throttle=off speed=4.31x    
+23:29:42.287 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:42.310 SegmentComplete=video:0 Index=321 Start=963.143956 End=966.167956 Duration=3.024000 offset_pts=0 start_pts=963143956 Frames=72 filename=47BF1C_321.ts
+23:29:42.310 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_322.ts.tmp' for writing
+23:29:42.449 elapsed=00:00:03.68 frame=  403 fps=109 q=28.0 size=N/A time=00:00:16.99 bitrate=N/A dup=0 drop=2 throttle=off speed=4.61x    
+23:29:42.816 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:42.826 SegmentComplete=video:0 Index=322 Start=966.167956 End=969.191956 Duration=3.024000 offset_pts=0 start_pts=966167956 Frames=72 filename=47BF1C_322.ts
+23:29:42.827 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_323.ts.tmp' for writing
+23:29:42.958 elapsed=00:00:04.18 frame=  478 fps=114 q=28.0 size=N/A time=00:00:20.20 bitrate=N/A dup=0 drop=2 throttle=off speed=4.83x    
+23:29:43.449 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:43.470 SegmentComplete=video:0 Index=323 Start=969.191956 End=972.215956 Duration=3.024000 offset_pts=0 start_pts=969191956 Frames=72 filename=47BF1C_323.ts
+23:29:43.470 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_324.ts.tmp' for writing
+23:29:43.475 elapsed=00:00:04.71 frame=  531 fps=113 q=28.0 size=N/A time=00:00:22.29 bitrate=N/A dup=0 drop=2 throttle=off speed=4.73x    
+23:29:43.975 elapsed=00:00:05.21 frame=  600 fps=115 q=28.0 size=N/A time=00:00:25.29 bitrate=N/A dup=0 drop=3 throttle=off speed=4.85x    
+23:29:43.984 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:43.998 SegmentComplete=video:0 Index=324 Start=972.215956 End=975.239956 Duration=3.024000 offset_pts=0 start_pts=972215956 Frames=72 filename=47BF1C_324.ts
+23:29:43.998 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_325.ts.tmp' for writing
+23:29:44.478 elapsed=00:00:05.71 frame=  669 fps=117 q=28.0 size=N/A time=00:00:28.08 bitrate=N/A dup=0 drop=3 throttle=off speed=4.92x    
+23:29:44.522 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:44.533 SegmentComplete=video:0 Index=325 Start=975.239956 End=978.263956 Duration=3.024000 offset_pts=0 start_pts=975239956 Frames=72 filename=47BF1C_325.ts
+23:29:44.533 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_326.ts.tmp' for writing
+23:29:44.977 elapsed=00:00:06.21 frame=  724 fps=117 q=28.0 size=N/A time=00:00:30.38 bitrate=N/A dup=0 drop=4 throttle=off speed=4.89x    
+23:29:45.160 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:45.173 SegmentComplete=video:0 Index=326 Start=978.263956 End=981.287956 Duration=3.024000 offset_pts=0 start_pts=978263956 Frames=72 filename=47BF1C_326.ts
+23:29:45.173 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_327.ts.tmp' for writing
+23:29:45.490 elapsed=00:00:06.72 frame=  778 fps=116 q=28.0 size=N/A time=00:00:32.68 bitrate=N/A dup=0 drop=4 throttle=off speed=4.86x    
+23:29:45.801 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:45.811 SegmentComplete=video:0 Index=327 Start=981.287956 End=984.311956 Duration=3.024000 offset_pts=0 start_pts=981287956 Frames=72 filename=47BF1C_327.ts
+23:29:45.812 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_328.ts.tmp' for writing
+23:29:45.989 elapsed=00:00:07.22 frame=  841 fps=116 q=28.0 size=N/A time=00:00:35.32 bitrate=N/A dup=0 drop=5 throttle=off speed=4.89x    
+23:29:46.453 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:46.474 SegmentComplete=video:0 Index=328 Start=984.311956 End=987.335956 Duration=3.024000 offset_pts=0 start_pts=984311956 Frames=72 filename=47BF1C_328.ts
+23:29:46.474 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_329.ts.tmp' for writing
+23:29:46.493 elapsed=00:00:07.72 frame=  894 fps=116 q=28.0 size=N/A time=00:00:37.53 bitrate=N/A dup=0 drop=5 throttle=off speed=4.86x    
+23:29:47.010 elapsed=00:00:08.23 frame=  933 fps=113 q=28.0 size=N/A time=00:00:39.16 bitrate=N/A dup=0 drop=5 throttle=off speed=4.76x    
+23:29:47.429 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:47.460 SegmentComplete=video:0 Index=329 Start=987.335956 End=990.359956 Duration=3.024000 offset_pts=0 start_pts=987335956 Frames=72 filename=47BF1C_329.ts
+23:29:47.460 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_330.ts.tmp' for writing
+23:29:47.504 elapsed=00:00:08.73 frame=  969 fps=111 q=28.0 size=N/A time=00:00:40.70 bitrate=N/A dup=0 drop=5 throttle=off speed=4.66x    
+23:29:48.008 elapsed=00:00:09.24 frame= 1016 fps=110 q=28.0 size=N/A time=00:00:42.67 bitrate=N/A dup=0 drop=6 throttle=off speed=4.62x    
+23:29:48.271 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:48.295 SegmentComplete=video:0 Index=330 Start=990.359956 End=993.383956 Duration=3.024000 offset_pts=0 start_pts=990359956 Frames=72 filename=47BF1C_330.ts
+23:29:48.295 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_331.ts.tmp' for writing
+23:29:48.523 elapsed=00:00:09.75 frame= 1052 fps=108 q=28.0 size=N/A time=00:00:44.25 bitrate=N/A dup=0 drop=6 throttle=off speed=4.54x    
+23:29:49.021 elapsed=00:00:10.25 frame= 1099 fps=107 q=28.0 size=N/A time=00:00:46.08 bitrate=N/A dup=0 drop=6 throttle=off speed=4.49x    
+23:29:49.089 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:49.104 SegmentComplete=video:0 Index=331 Start=993.383956 End=996.407956 Duration=3.024000 offset_pts=0 start_pts=993383956 Frames=72 filename=47BF1C_331.ts
+23:29:49.104 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_332.ts.tmp' for writing
+23:29:49.528 elapsed=00:00:10.76 frame= 1145 fps=106 q=28.0 size=N/A time=00:00:48.14 bitrate=N/A dup=0 drop=7 throttle=off speed=4.47x    
+23:29:49.858 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:49.895 SegmentComplete=video:0 Index=332 Start=996.407956 End=999.431956 Duration=3.024000 offset_pts=0 start_pts=996407956 Frames=72 filename=47BF1C_332.ts
+23:29:49.895 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_333.ts.tmp' for writing
+23:29:50.035 elapsed=00:00:11.26 frame= 1193 fps=106 q=28.0 size=N/A time=00:00:50.11 bitrate=N/A dup=0 drop=7 throttle=off speed=4.45x    
+23:29:50.557 elapsed=00:00:11.77 frame= 1224 fps=104 q=28.0 size=N/A time=00:00:51.40 bitrate=N/A dup=0 drop=7 throttle=off speed=4.36x    
+23:29:50.916 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:50.942 SegmentComplete=video:0 Index=333 Start=999.431956 End=1002.455956 Duration=3.024000 offset_pts=0 start_pts=999431956 Frames=72 filename=47BF1C_333.ts
+23:29:50.942 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_334.ts.tmp' for writing
+23:29:51.049 elapsed=00:00:12.28 frame= 1260 fps=103 q=28.0 size=N/A time=00:00:52.84 bitrate=N/A dup=0 drop=8 throttle=off speed= 4.3x    
+23:29:51.565 elapsed=00:00:12.78 frame= 1296 fps=101 q=28.0 size=N/A time=00:00:54.43 bitrate=N/A dup=0 drop=8 throttle=off speed=4.26x    
+23:29:51.830 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:51.849 SegmentComplete=video:0 Index=334 Start=1002.455956 End=1005.479956 Duration=3.024000 offset_pts=0 start_pts=1002455956 Frames=72 filename=47BF1C_334.ts
+23:29:51.849 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_335.ts.tmp' for writing
+23:29:52.050 elapsed=00:00:13.28 frame= 1348 fps=101 q=28.0 size=N/A time=00:00:56.56 bitrate=N/A dup=0 drop=8 throttle=off speed=4.26x    
+23:29:52.484 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:52.492 SegmentComplete=video:0 Index=335 Start=1005.479956 End=1008.503956 Duration=3.024000 offset_pts=0 start_pts=1005479956 Frames=72 filename=47BF1C_335.ts
+23:29:52.492 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_336.ts.tmp' for writing
+23:29:52.554 elapsed=00:00:13.78 frame= 1403 fps=102 q=28.0 size=N/A time=00:00:58.87 bitrate=N/A dup=0 drop=9 throttle=off speed=4.27x    
+23:29:53.007 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:53.017 SegmentComplete=video:0 Index=336 Start=1008.503956 End=1011.527956 Duration=3.024000 offset_pts=0 start_pts=1008503956 Frames=72 filename=47BF1C_336.ts
+23:29:53.017 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_337.ts.tmp' for writing
+23:29:53.076 elapsed=00:00:14.29 frame= 1474 fps=103 q=28.0 size=N/A time=00:01:01.82 bitrate=N/A dup=0 drop=9 throttle=off speed=4.33x    
+23:29:53.567 elapsed=00:00:14.79 frame= 1531 fps=103 q=28.0 size=N/A time=00:01:04.34 bitrate=N/A dup=0 drop=9 throttle=off speed=4.35x    
+23:29:53.637 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:53.650 SegmentComplete=video:0 Index=337 Start=1011.527956 End=1014.551956 Duration=3.024000 offset_pts=0 start_pts=1011527956 Frames=72 filename=47BF1C_337.ts
+23:29:53.650 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_338.ts.tmp' for writing
+23:29:54.075 elapsed=00:00:15.30 frame= 1570 fps=103 q=28.0 size=N/A time=00:01:06.14 bitrate=N/A dup=0 drop=10 throttle=off speed=4.32x    
+23:29:54.499 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:54.510 SegmentComplete=video:0 Index=338 Start=1014.551956 End=1017.575956 Duration=3.024000 offset_pts=0 start_pts=1014551956 Frames=72 filename=47BF1C_338.ts
+23:29:54.510 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_339.ts.tmp' for writing
+23:29:54.575 elapsed=00:00:15.80 frame= 1618 fps=102 q=28.0 size=N/A time=00:01:08.16 bitrate=N/A dup=0 drop=10 throttle=off speed=4.31x    
+23:29:55.070 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:55.086 SegmentComplete=video:0 Index=339 Start=1017.575956 End=1020.599956 Duration=3.024000 offset_pts=0 start_pts=1017575956 Frames=72 filename=47BF1C_339.ts
+23:29:55.086 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_340.ts.tmp' for writing
+23:29:55.089 elapsed=00:00:16.30 frame= 1683 fps=103 q=28.0 size=N/A time=00:01:10.70 bitrate=N/A dup=0 drop=10 throttle=off speed=4.34x    
+23:29:55.568 elapsed=00:00:16.80 frame= 1743 fps=104 q=28.0 size=N/A time=00:01:13.20 bitrate=N/A dup=0 drop=11 throttle=off speed=4.36x    
+23:29:55.677 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:55.692 SegmentComplete=video:0 Index=340 Start=1020.599956 End=1023.623956 Duration=3.024000 offset_pts=0 start_pts=1020599956 Frames=72 filename=47BF1C_340.ts
+23:29:55.692 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_341.ts.tmp' for writing
+23:29:56.077 elapsed=00:00:17.31 frame= 1801 fps=104 q=28.0 size=N/A time=00:01:15.57 bitrate=N/A dup=0 drop=11 throttle=off speed=4.37x    
+23:29:56.319 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:56.329 SegmentComplete=video:0 Index=341 Start=1023.623956 End=1026.647956 Duration=3.024000 offset_pts=0 start_pts=1023623956 Frames=72 filename=47BF1C_341.ts
+23:29:56.329 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_342.ts.tmp' for writing
+23:29:56.663 elapsed=00:00:17.81 frame= 1850 fps=104 q=28.0 size=N/A time=00:01:17.66 bitrate=N/A dup=0 drop=12 throttle=off speed=4.36x    
+23:29:57.145 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:57.156 SegmentComplete=video:0 Index=342 Start=1026.647956 End=1029.671956 Duration=3.024000 offset_pts=0 start_pts=1026647956 Frames=72 filename=47BF1C_342.ts
+23:29:57.156 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_343.ts.tmp' for writing
+23:29:57.173 elapsed=00:00:18.31 frame= 1901 fps=104 q=28.0 size=N/A time=00:01:19.87 bitrate=N/A dup=0 drop=12 throttle=off speed=4.36x    
+23:29:57.682 elapsed=00:00:18.82 frame= 1935 fps=103 q=28.0 size=N/A time=00:01:21.14 bitrate=N/A dup=0 drop=12 throttle=off speed=4.31x    
+23:29:58.175 elapsed=00:00:19.32 frame= 1968 fps=102 q=28.0 size=N/A time=00:01:22.58 bitrate=N/A dup=0 drop=12 throttle=off speed=4.27x    
+23:29:58.223 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:58.255 SegmentComplete=video:0 Index=343 Start=1029.671956 End=1032.695956 Duration=3.024000 offset_pts=0 start_pts=1029671956 Frames=72 filename=47BF1C_343.ts
+23:29:58.255 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_344.ts.tmp' for writing
+23:29:58.694 elapsed=00:00:19.82 frame= 2013 fps=102 q=28.0 size=N/A time=00:01:24.43 bitrate=N/A dup=0 drop=13 throttle=off speed=4.26x    
+23:29:58.903 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:58.916 SegmentComplete=video:0 Index=344 Start=1032.695956 End=1035.719956 Duration=3.024000 offset_pts=0 start_pts=1032695956 Frames=72 filename=47BF1C_344.ts
+23:29:58.916 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_345.ts.tmp' for writing
+23:29:59.183 elapsed=00:00:20.33 frame= 2078 fps=102 q=28.0 size=N/A time=00:01:27.26 bitrate=N/A dup=0 drop=13 throttle=off speed=4.29x    
+23:29:59.532 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:29:59.541 SegmentComplete=video:0 Index=345 Start=1035.719956 End=1038.743956 Duration=3.024000 offset_pts=0 start_pts=1035719956 Frames=72 filename=47BF1C_345.ts
+23:29:59.541 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_346.ts.tmp' for writing
+23:29:59.681 elapsed=00:00:20.83 frame= 2134 fps=102 q=28.0 size=N/A time=00:01:29.61 bitrate=N/A dup=0 drop=14 throttle=off speed= 4.3x    
+23:30:00.083 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:00.101 SegmentComplete=video:0 Index=346 Start=1038.743956 End=1041.767956 Duration=3.024000 offset_pts=0 start_pts=1038743956 Frames=72 filename=47BF1C_346.ts
+23:30:00.101 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_347.ts.tmp' for writing
+23:30:00.188 elapsed=00:00:21.33 frame= 2201 fps=103 q=28.0 size=N/A time=00:01:32.37 bitrate=N/A dup=0 drop=14 throttle=off speed=4.33x    
+23:30:00.696 elapsed=00:00:21.84 frame= 2252 fps=103 q=28.0 size=N/A time=00:01:34.68 bitrate=N/A dup=0 drop=14 throttle=off speed=4.33x    
+23:30:00.747 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:00.756 SegmentComplete=video:0 Index=347 Start=1041.767956 End=1044.791956 Duration=3.024000 offset_pts=0 start_pts=1041767956 Frames=72 filename=47BF1C_347.ts
+23:30:00.756 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_348.ts.tmp' for writing
+23:30:01.248 elapsed=00:00:22.36 frame= 2291 fps=102 q=28.0 size=N/A time=00:01:36.19 bitrate=N/A dup=0 drop=15 throttle=off speed= 4.3x    
+23:30:01.748 elapsed=00:00:22.87 frame= 2323 fps=102 q=28.0 size=N/A time=00:01:37.63 bitrate=N/A dup=0 drop=15 throttle=off speed=4.27x    
+23:30:01.832 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:01.855 SegmentComplete=video:0 Index=348 Start=1044.791956 End=1047.815956 Duration=3.024000 offset_pts=0 start_pts=1044791956 Frames=72 filename=47BF1C_348.ts
+23:30:01.855 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_349.ts.tmp' for writing
+23:30:02.249 elapsed=00:00:23.38 frame= 2363 fps=101 q=28.0 size=N/A time=00:01:39.26 bitrate=N/A dup=0 drop=15 throttle=off speed=4.25x    
+23:30:02.640 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:02.661 SegmentComplete=video:0 Index=349 Start=1047.815956 End=1050.839956 Duration=3.024000 offset_pts=0 start_pts=1047815956 Frames=72 filename=47BF1C_349.ts
+23:30:02.661 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_350.ts.tmp' for writing
+23:30:02.748 elapsed=00:00:23.88 frame= 2412 fps=101 q=28.0 size=N/A time=00:01:41.37 bitrate=N/A dup=0 drop=16 throttle=off speed=4.24x    
+23:30:03.239 elapsed=00:00:24.38 frame= 2466 fps=101 q=28.0 size=N/A time=00:01:43.60 bitrate=N/A dup=0 drop=16 throttle=off speed=4.25x    
+23:30:03.322 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:03.343 SegmentComplete=video:0 Index=350 Start=1050.839956 End=1053.863944 Duration=3.023989 offset_pts=0 start_pts=1050839956 Frames=72 filename=47BF1C_350.ts
+23:30:03.343 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_351.ts.tmp' for writing
+23:30:03.740 elapsed=00:00:24.88 frame= 2519 fps=101 q=28.0 size=N/A time=00:01:45.93 bitrate=N/A dup=0 drop=16 throttle=off speed=4.26x    
+23:30:04.032 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:04.060 SegmentComplete=video:0 Index=351 Start=1053.863944 End=1056.887944 Duration=3.024000 offset_pts=0 start_pts=1053863944 Frames=72 filename=47BF1C_351.ts
+23:30:04.060 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_352.ts.tmp' for writing
+23:30:04.240 elapsed=00:00:25.38 frame= 2562 fps=101 q=28.0 size=N/A time=00:01:47.64 bitrate=N/A dup=0 drop=17 throttle=off speed=4.24x    
+23:30:04.758 elapsed=00:00:25.88 frame= 2596 fps=100 q=28.0 size=N/A time=00:01:49.10 bitrate=N/A dup=0 drop=17 throttle=off speed=4.21x    
+23:30:05.188 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:05.225 SegmentComplete=video:0 Index=352 Start=1056.887944 End=1059.911944 Duration=3.024000 offset_pts=0 start_pts=1056887944 Frames=72 filename=47BF1C_352.ts
+23:30:05.225 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_353.ts.tmp' for writing
+23:30:05.241 elapsed=00:00:26.39 frame= 2622 fps= 99 q=28.0 size=N/A time=00:01:50.16 bitrate=N/A dup=0 drop=17 throttle=off speed=4.17x    
+23:30:05.764 elapsed=00:00:26.89 frame= 2664 fps= 99 q=28.0 size=N/A time=00:01:52.03 bitrate=N/A dup=0 drop=17 throttle=off speed=4.17x    
+23:30:06.055 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:06.072 SegmentComplete=video:0 Index=353 Start=1059.911944 End=1062.935944 Duration=3.024000 offset_pts=0 start_pts=1059911944 Frames=72 filename=47BF1C_353.ts
+23:30:06.072 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_354.ts.tmp' for writing
+23:30:06.258 elapsed=00:00:27.39 frame= 2705 fps= 99 q=28.0 size=N/A time=00:01:53.59 bitrate=N/A dup=0 drop=18 throttle=off speed=4.15x    
+23:30:06.755 elapsed=00:00:27.89 frame= 2750 fps= 99 q=28.0 size=N/A time=00:01:55.53 bitrate=N/A dup=0 drop=18 throttle=off speed=4.14x    
+23:30:06.920 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:06.953 SegmentComplete=video:0 Index=354 Start=1062.935944 End=1065.959944 Duration=3.024000 offset_pts=0 start_pts=1062935944 Frames=72 filename=47BF1C_354.ts
+23:30:06.953 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_355.ts.tmp' for writing
+23:30:07.262 elapsed=00:00:28.40 frame= 2791 fps= 98 q=28.0 size=N/A time=00:01:57.26 bitrate=N/A dup=0 drop=18 throttle=off speed=4.13x    
+23:30:07.759 elapsed=00:00:28.90 frame= 2823 fps= 98 q=28.0 size=N/A time=00:01:58.48 bitrate=N/A dup=0 drop=18 throttle=off speed= 4.1x    
+23:30:07.908 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:07.945 SegmentComplete=video:0 Index=355 Start=1065.959944 End=1068.983944 Duration=3.024000 offset_pts=0 start_pts=1065959944 Frames=72 filename=47BF1C_355.ts
+23:30:07.945 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_356.ts.tmp' for writing
+23:30:08.283 elapsed=00:00:29.41 frame= 2853 fps= 97 q=28.0 size=N/A time=00:01:59.71 bitrate=N/A dup=0 drop=19 throttle=off speed=4.07x    
+23:30:08.788 elapsed=00:00:29.93 frame= 2886 fps= 96 q=28.0 size=N/A time=00:02:01.27 bitrate=N/A dup=0 drop=19 throttle=off speed=4.05x    
+23:30:08.992 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:09.007 SegmentComplete=video:0 Index=356 Start=1068.983944 End=1072.007944 Duration=3.024000 offset_pts=0 start_pts=1068983944 Frames=72 filename=47BF1C_356.ts
+23:30:09.007 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_357.ts.tmp' for writing
+23:30:09.374 elapsed=00:00:30.45 frame= 2932 fps= 96 q=28.0 size=N/A time=00:02:03.02 bitrate=N/A dup=0 drop=19 throttle=off speed=4.04x    
+23:30:09.823 elapsed=00:00:30.95 frame= 2955 fps= 95 q=28.0 size=N/A time=00:02:04.05 bitrate=N/A dup=0 drop=19 throttle=off speed=4.01x    
+23:30:10.270 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:10.326 SegmentComplete=video:0 Index=357 Start=1072.007944 End=1075.031944 Duration=3.024000 offset_pts=0 start_pts=1072007944 Frames=72 filename=47BF1C_357.ts
+23:30:10.326 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_358.ts.tmp' for writing
+23:30:10.333 elapsed=00:00:31.47 frame= 2980 fps= 95 q=28.0 size=N/A time=00:02:05.20 bitrate=N/A dup=0 drop=20 throttle=off speed=3.98x    
+23:30:10.842 elapsed=00:00:31.98 frame= 3023 fps= 95 q=28.0 size=N/A time=00:02:07.03 bitrate=N/A dup=0 drop=20 throttle=off speed=3.97x    
+23:30:11.204 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:11.243 SegmentComplete=video:0 Index=358 Start=1075.031944 End=1078.055944 Duration=3.024000 offset_pts=0 start_pts=1075031944 Frames=72 filename=47BF1C_358.ts
+23:30:11.243 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_359.ts.tmp' for writing
+23:30:11.345 elapsed=00:00:32.48 frame= 3059 fps= 94 q=28.0 size=N/A time=00:02:08.44 bitrate=N/A dup=0 drop=20 throttle=off speed=3.95x    
+23:30:11.858 elapsed=00:00:33.00 frame= 3113 fps= 94 q=28.0 size=N/A time=00:02:10.75 bitrate=N/A dup=0 drop=20 throttle=off speed=3.96x    
+23:30:11.924 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:11.935 SegmentComplete=video:0 Index=359 Start=1078.055944 End=1081.079944 Duration=3.024000 offset_pts=0 start_pts=1078055944 Frames=72 filename=47BF1C_359.ts
+23:30:11.935 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_360.ts.tmp' for writing
+23:30:12.361 elapsed=00:00:33.50 frame= 3186 fps= 95 q=28.0 size=N/A time=00:02:13.82 bitrate=N/A dup=0 drop=21 throttle=off speed=3.99x    
+23:30:12.422 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:12.431 SegmentComplete=video:0 Index=360 Start=1081.079944 End=1084.103944 Duration=3.024000 offset_pts=0 start_pts=1081079944 Frames=72 filename=47BF1C_360.ts
+23:30:12.431 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_361.ts.tmp' for writing
+23:30:12.856 elapsed=00:00:34.00 frame= 3254 fps= 96 q=28.0 size=N/A time=00:02:16.82 bitrate=N/A dup=0 drop=21 throttle=off speed=4.02x    
+23:30:13.052 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:13.084 SegmentComplete=video:0 Index=361 Start=1084.103944 End=1087.127944 Duration=3.024000 offset_pts=0 start_pts=1084103944 Frames=72 filename=47BF1C_361.ts
+23:30:13.084 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_362.ts.tmp' for writing
+23:30:13.366 elapsed=00:00:34.51 frame= 3294 fps= 95 q=28.0 size=N/A time=00:02:18.38 bitrate=N/A dup=0 drop=22 throttle=off speed=4.01x    
+23:30:13.743 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:13.757 SegmentComplete=video:0 Index=362 Start=1087.127944 End=1090.151944 Duration=3.024000 offset_pts=0 start_pts=1087127944 Frames=72 filename=47BF1C_362.ts
+23:30:13.758 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_363.ts.tmp' for writing
+23:30:13.863 elapsed=00:00:35.01 frame= 3351 fps= 96 q=28.0 size=N/A time=00:02:20.76 bitrate=N/A dup=0 drop=22 throttle=off speed=4.02x    
+23:30:14.384 elapsed=00:00:35.51 frame= 3397 fps= 96 q=28.0 size=N/A time=00:02:22.65 bitrate=N/A dup=0 drop=22 throttle=off speed=4.02x    
+23:30:14.652 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:14.674 SegmentComplete=video:0 Index=363 Start=1090.151944 End=1093.175944 Duration=3.024000 offset_pts=0 start_pts=1090151944 Frames=72 filename=47BF1C_363.ts
+23:30:14.674 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_364.ts.tmp' for writing
+23:30:14.866 elapsed=00:00:36.01 frame= 3428 fps= 95 q=28.0 size=N/A time=00:02:24.02 bitrate=N/A dup=0 drop=23 throttle=off speed=   4x    
+23:30:15.403 elapsed=00:00:36.55 frame= 3465 fps= 95 q=28.0 size=N/A time=00:02:25.53 bitrate=N/A dup=0 drop=23 throttle=off speed=3.98x    
+23:30:15.655 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:15.717 SegmentComplete=video:0 Index=364 Start=1093.175944 End=1096.199944 Duration=3.024000 offset_pts=0 start_pts=1093175944 Frames=72 filename=47BF1C_364.ts
+23:30:15.717 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_365.ts.tmp' for writing
+23:30:15.911 elapsed=00:00:37.05 frame= 3497 fps= 94 q=28.0 size=N/A time=00:02:26.92 bitrate=N/A dup=0 drop=23 throttle=off speed=3.97x    
+23:30:16.390 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:16.406 SegmentComplete=video:0 Index=365 Start=1096.199944 End=1099.223944 Duration=3.024000 offset_pts=0 start_pts=1096199944 Frames=72 filename=47BF1C_365.ts
+23:30:16.406 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_366.ts.tmp' for writing
+23:30:16.416 elapsed=00:00:37.56 frame= 3556 fps= 95 q=28.0 size=N/A time=00:02:29.49 bitrate=N/A dup=0 drop=24 throttle=off speed=3.98x    
+23:30:16.912 elapsed=00:00:38.06 frame= 3625 fps= 95 q=28.0 size=N/A time=00:02:32.30 bitrate=N/A dup=0 drop=24 throttle=off speed=   4x    
+23:30:16.924 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:16.933 SegmentComplete=video:0 Index=366 Start=1099.223944 End=1102.247944 Duration=3.024000 offset_pts=0 start_pts=1099223944 Frames=72 filename=47BF1C_366.ts
+23:30:16.933 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_367.ts.tmp' for writing
+23:30:17.349 
+
+[q] command received. Exiting.
+
+23:30:17.375 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:17.389 SegmentComplete=video:0 Index=367 Start=1102.247944 End=1105.271944 Duration=3.024000 offset_pts=0 start_pts=1102247944 Frames=72 filename=47BF1C_367.ts
+23:30:17.389 [segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C_368.ts.tmp' for writing
+[segment @ 0x3e93b380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+SegmentComplete=video:0 Index=368 Start=1105.271944 End=1105.943944 Duration=0.672000 offset_pts=0 start_pts=1105271944 Frames=16 filename=47BF1C_368.ts
+elapsed=00:00:38.56 frame= 3688 fps= 96 q=-1.0 Lsize=N/A time=00:02:34.94 bitrate=N/A dup=0 drop=25 throttle=off speed=4.02x    
+video:64404kB audio:3641kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x3e917d40] frame I:52    Avg QP:19.39  size:101351
+[libx264 @ 0x3e917d40] frame P:1386  Avg QP:22.90  size: 30713
+[libx264 @ 0x3e917d40] frame B:2250  Avg QP:25.47  size:  8049
+[libx264 @ 0x3e917d40] consecutive B-frames: 13.0% 14.4%  7.9% 64.8%
+[libx264 @ 0x3e917d40] mb I  I16..4: 15.6% 47.6% 36.8%
+[libx264 @ 0x3e917d40] mb P  I16..4: 25.2%  0.0%  0.0%  P16..4: 46.6%  0.0%  0.0%  0.0%  0.0%    skip:28.1%
+[libx264 @ 0x3e917d40] mb B  I16..4:  4.3%  0.0%  0.0%  B16..8: 20.4%  0.0%  0.0%  direct: 6.0%  skip:69.3%  L0:35.8% L1:43.7% BI:20.4%
+[libx264 @ 0x3e917d40] 8x8 transform intra:5.0% inter:58.9%
+[libx264 @ 0x3e917d40] coded y,uvDC,uvAC intra: 38.2% 55.6% 20.5% inter: 12.0% 16.4% 1.1%
+[libx264 @ 0x3e917d40] i16 v,h,dc,p: 22% 43% 15% 19%
+[libx264 @ 0x3e917d40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 31% 13%  7%  7%  5% 10%  5% 11%
+[libx264 @ 0x3e917d40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 31%  8%  7%  7%  5%  9%  6% 10%
+[libx264 @ 0x3e917d40] i8c dc,h,v,p: 35% 38% 16% 12%
+[libx264 @ 0x3e917d40] Weighted P-Frames: Y:8.5% UV:7.1%
+[libx264 @ 0x3e917d40] kb/s:3406.09
+EXIT
+
+======= ExtraData
+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
+---

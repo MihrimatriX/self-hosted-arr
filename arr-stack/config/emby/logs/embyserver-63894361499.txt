@@ -1,0 +1,525 @@
+2025-09-25 00:29:41.461 Info Main: Application path: /app/emby/system/EmbyServer.dll
+2025-09-25 00:29:41.529 Info NetworkManager: Adding event handler for NetworkChange.NetworkAddressChanged
+2025-09-25 00:29:41.756 Info App: Setting default culture to en-US
+2025-09-25 00:29:41.762 Info Main: Emby
+	Command line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+	Operating system: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	Framework: .NET 6.0.36
+	OS/Process: x64/x64
+	Runtime: app/emby/system/System.Private.CoreLib.dll
+	Processor count: 8
+	Data path: /config
+	Application path: /app/emby/system
+2025-09-25 00:29:41.762 Info Main: Logs path: /config/logs
+2025-09-25 00:29:41.762 Info Main: Cache path: /config/cache
+2025-09-25 00:29:41.762 Info Main: Internal metadata path: /config/metadata
+2025-09-25 00:29:41.764 Info App: Emby Server Version: 4.8.11.0
+2025-09-25 00:29:41.766 Info App: Loading assemblies
+2025-09-25 00:29:41.806 Info App: File /config/plugins/Fanart.dll has version 1.0.16.0
+2025-09-25 00:29:41.807 Info App: File /app/emby/system/plugins/Fanart.dll has version 1.0.16.0
+2025-09-25 00:29:41.814 Info App: File /config/plugins/AudioDb.dll has version 1.0.20.0
+2025-09-25 00:29:41.815 Info App: File /app/emby/system/plugins/AudioDb.dll has version 1.0.18.0
+2025-09-25 00:29:41.826 Info App: File /config/plugins/Tvdb.dll has version 1.6.2.0
+2025-09-25 00:29:41.827 Info App: File /app/emby/system/plugins/Tvdb.dll has version 1.5.8.0
+2025-09-25 00:29:41.839 Info App: File /config/plugins/MovieDb.dll has version 1.8.5.0
+2025-09-25 00:29:41.840 Info App: File /app/emby/system/plugins/MovieDb.dll has version 1.8.0.0
+2025-09-25 00:29:41.856 Info App: File /config/plugins/Emby.Dlna.dll has version 1.5.3.0
+2025-09-25 00:29:41.857 Info App: File /app/emby/system/plugins/Emby.Dlna.dll has version 1.4.7.0
+2025-09-25 00:29:41.865 Info App: File /config/plugins/Emby.PortMapper.dll has version 1.3.0.0
+2025-09-25 00:29:41.866 Info App: File /app/emby/system/plugins/Emby.PortMapper.dll has version 1.2.8.0
+2025-09-25 00:29:41.875 Info App: File /config/plugins/MusicBrainz.dll has version 1.0.25.0
+2025-09-25 00:29:41.876 Info App: File /app/emby/system/plugins/MusicBrainz.dll has version 1.0.24.0
+2025-09-25 00:29:41.886 Info App: File /config/plugins/BlurayMounter.dll has version 1.0.2.0
+2025-09-25 00:29:41.887 Info App: File /app/emby/system/plugins/BlurayMounter.dll has version 1.0.2.0
+2025-09-25 00:29:41.897 Info App: File /config/plugins/MBBackup.dll has version 1.8.0.0
+2025-09-25 00:29:41.898 Info App: File /app/emby/system/plugins/MBBackup.dll has version 1.7.2.0
+2025-09-25 00:29:41.906 Info App: File /config/plugins/OMDb.dll has version 1.0.22.0
+2025-09-25 00:29:41.907 Info App: File /app/emby/system/plugins/OMDb.dll has version 1.0.21.0
+2025-09-25 00:29:41.919 Info App: File /config/plugins/NfoMetadata.dll has version 1.0.83.0
+2025-09-25 00:29:41.920 Info App: File /app/emby/system/plugins/NfoMetadata.dll has version 1.0.82.0
+2025-09-25 00:29:41.929 Info App: File /config/plugins/OpenSubtitles.dll has version 1.0.64.0
+2025-09-25 00:29:41.930 Info App: File /app/emby/system/plugins/OpenSubtitles.dll has version 1.0.63.0
+2025-09-25 00:29:41.935 Info App: File /config/plugins/DvdMounter.dll has version 1.0.0.0
+2025-09-25 00:29:41.936 Info App: File /app/emby/system/plugins/DvdMounter.dll has version 1.0.0.0
+2025-09-25 00:29:41.941 Info App: File /config/plugins/Emby.Webhooks.dll has version 1.0.36.0
+2025-09-25 00:29:41.942 Info App: File /app/emby/system/plugins/Emby.Webhooks.dll has version 1.0.35.0
+2025-09-25 00:29:41.951 Info App: File /config/plugins/EmbyGuideData.dll has version 1.0.19.0
+2025-09-25 00:29:41.952 Info App: File /app/emby/system/plugins/EmbyGuideData.dll has version 1.0.18.0
+2025-09-25 00:29:41.965 Info App: File /config/plugins/Emby.Server.CinemaMode.dll has version 1.0.47.0
+2025-09-25 00:29:41.966 Info App: File /app/emby/system/plugins/Emby.Server.CinemaMode.dll has version 1.0.47.0
+2025-09-25 00:29:41.973 Info App: File /config/plugins/StudioImages.dll has version 1.0.3.0
+2025-09-25 00:29:41.973 Info App: File /app/emby/system/plugins/StudioImages.dll has version 1.0.3.0
+2025-09-25 00:29:42.154 Info App: Loading AudioDb, Version=1.0.20.0, Culture=neutral, PublicKeyToken=null from /config/plugins/AudioDb.dll
+2025-09-25 00:29:42.154 Info App: Loading BlurayMounter, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null from /config/plugins/BlurayMounter.dll
+2025-09-25 00:29:42.154 Info App: Loading CoverArt, Version=4.1.28.0, Culture=neutral, PublicKeyToken=null from /config/plugins/CoverArt.dll
+2025-09-25 00:29:42.154 Info App: Loading DvdMounter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /config/plugins/DvdMounter.dll
+2025-09-25 00:29:42.154 Info App: Loading Emby.Dlna, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Emby.Dlna.dll
+2025-09-25 00:29:42.154 Info App: Loading Emby.PortMapper, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Emby.PortMapper.dll
+2025-09-25 00:29:42.154 Info App: Loading Emby.Server.CinemaMode, Version=1.0.47.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Emby.Server.CinemaMode.dll
+2025-09-25 00:29:42.154 Info App: Loading Emby.Webhooks, Version=1.0.36.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Emby.Webhooks.dll
+2025-09-25 00:29:42.154 Info App: Loading EmbyGuideData, Version=1.0.19.0, Culture=neutral, PublicKeyToken=null from /config/plugins/EmbyGuideData.dll
+2025-09-25 00:29:42.154 Info App: Loading Fanart, Version=1.0.16.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Fanart.dll
+2025-09-25 00:29:42.154 Info App: Loading MBBackup, Version=1.8.0.0, Culture=neutral, PublicKeyToken=null from /config/plugins/MBBackup.dll
+2025-09-25 00:29:42.154 Info App: Loading MediaBrowser.Channels.IPTV, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null from /config/plugins/MediaBrowser.Channels.IPTV.dll
+2025-09-25 00:29:42.154 Info App: Loading MediaBrowser.Plugins.Anime, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null from /config/plugins/MediaBrowser.Plugins.Anime.dll
+2025-09-25 00:29:42.154 Info App: Loading MovieDb, Version=1.8.5.0, Culture=neutral, PublicKeyToken=null from /config/plugins/MovieDb.dll
+2025-09-25 00:29:42.154 Info App: Loading MusicBrainz, Version=1.0.25.0, Culture=neutral, PublicKeyToken=null from /config/plugins/MusicBrainz.dll
+2025-09-25 00:29:42.154 Info App: Loading NfoMetadata, Version=1.0.83.0, Culture=neutral, PublicKeyToken=null from /config/plugins/NfoMetadata.dll
+2025-09-25 00:29:42.154 Info App: Loading OMDb, Version=1.0.22.0, Culture=neutral, PublicKeyToken=null from /config/plugins/OMDb.dll
+2025-09-25 00:29:42.154 Info App: Loading OpenSubtitles, Version=1.0.64.0, Culture=neutral, PublicKeyToken=null from /config/plugins/OpenSubtitles.dll
+2025-09-25 00:29:42.154 Info App: Loading StudioImages, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null from /config/plugins/StudioImages.dll
+2025-09-25 00:29:42.154 Info App: Loading Tvdb, Version=1.6.2.0, Culture=neutral, PublicKeyToken=null from /config/plugins/Tvdb.dll
+2025-09-25 00:29:42.154 Info App: Loading Emby.Api, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Web, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading MediaBrowser.Model, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading MediaBrowser.Common, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading MediaBrowser.Controller, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Providers, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Photos, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Server.Implementations, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.LiveTV, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.ActivityLog, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Server.MediaEncoding, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.LocalMetadata, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Notifications, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Web.GenericUI, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Codecs.Dxva, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Codecs, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.154 Info App: Loading Emby.Server.Connect, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.155 Info App: Loading Emby.Server.Sync, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.155 Info App: Loading EmbyServer, Version=4.8.11.0, Culture=neutral, PublicKeyToken=null
+2025-09-25 00:29:42.360 Info SqliteUserRepository: Sqlite version: 3.42.0
+2025-09-25 00:29:42.362 Info SqliteUserRepository: Sqlite compiler options: ATOMIC_INTRINSICS=1,COMPILER=gcc-10.3.0,DEFAULT_AUTOVACUUM,DEFAULT_CACHE_SIZE=-2000,DEFAULT_FILE_FORMAT=4,DEFAULT_JOURNAL_SIZE_LIMIT=-1,DEFAULT_MMAP_SIZE=0,DEFAULT_PAGE_SIZE=4096,DEFAULT_PCACHE_INITSZ=20,DEFAULT_RECURSIVE_TRIGGERS,DEFAULT_SECTOR_SIZE=4096,DEFAULT_SYNCHRONOUS=2,DEFAULT_WAL_AUTOCHECKPOINT=1000,DEFAULT_WAL_SYNCHRONOUS=2,DEFAULT_WORKER_THREADS=0,ENABLE_COLUMN_METADATA,ENABLE_DBSTAT_VTAB,ENABLE_FTS3,ENABLE_FTS3_PARENTHESIS,ENABLE_FTS3_TOKENIZER,ENABLE_FTS4,ENABLE_FTS5,ENABLE_GEOPOLY,ENABLE_MATH_FUNCTIONS,ENABLE_PREUPDATE_HOOK,ENABLE_RTREE,ENABLE_SESSION,ENABLE_UNLOCK_NOTIFY,ENABLE_UPDATE_DELETE_LIMIT,LIKE_DOESNT_MATCH_BLOBS,MALLOC_SOFT_LIMIT=1024,MAX_ATTACHED=10,MAX_COLUMN=2000,MAX_COMPOUND_SELECT=500,MAX_DEFAULT_PAGE_SIZE=8192,MAX_EXPR_DEPTH=1000,MAX_FUNCTION_ARG=127,MAX_LENGTH=1000000000,MAX_LIKE_PATTERN_LENGTH=50000,MAX_MMAP_SIZE=0x7fff0000,MAX_PAGE_COUNT=1073741823,MAX_PAGE_SIZE=65536,MAX_SCHEMA_RETRY=25,MAX_SQL_LENGTH=1000000000,MAX_TRIGGER_DEPTH=1000,MAX_VARIABLE_NUMBER=250000,MAX_VDBE_OP=250000000,MAX_WORKER_THREADS=8,MUTEX_PTHREADS,OMIT_LOOKASIDE,SECURE_DELETE,SYSTEM_MALLOC,TEMP_STORE=1,THREADSAFE=1
+2025-09-25 00:29:42.362 Info SqliteUserRepository: Opening sqlite connection to /config/data/users.db
+2025-09-25 00:29:42.399 Info SqliteUserRepository: Default journal_mode for /config/data/users.db is wal
+2025-09-25 00:29:42.401 Info SqliteUserRepository: PRAGMA foreign_keys=1
+2025-09-25 00:29:42.401 Info SqliteUserRepository: Result of setting SQLITE_DBCONFIG_DQS_DDL to 0 is 0
+2025-09-25 00:29:42.401 Info SqliteUserRepository: Result of setting SQLITE_DBCONFIG_DQS_DML to 0 is 0
+2025-09-25 00:29:42.463 Info ActivityRepository: Opening sqlite connection to /config/data/activitylog.db
+2025-09-25 00:29:42.487 Info ActivityRepository: Default journal_mode for /config/data/activitylog.db is wal
+2025-09-25 00:29:42.487 Info ActivityRepository: PRAGMA foreign_keys=1
+2025-09-25 00:29:42.487 Info ActivityRepository: Result of setting SQLITE_DBCONFIG_DQS_DDL to 0 is 0
+2025-09-25 00:29:42.487 Info ActivityRepository: Result of setting SQLITE_DBCONFIG_DQS_DML to 0 is 0
+2025-09-25 00:29:42.506 Info NetworkManager: Detecting local network addresses
+2025-09-25 00:29:42.506 Info NetworkManager: networkInterface: Ethernet eth0, Speed: 10000000000, Description: eth0
+2025-09-25 00:29:42.507 Info NetworkManager: GatewayAddresses: 172.18.0.1
+2025-09-25 00:29:42.507 Info NetworkManager: UnicastAddresses: 172.18.0.5
+2025-09-25 00:29:42.507 Info NetworkManager: networkInterface: Loopback lo, Speed: -1, Description: lo
+2025-09-25 00:29:42.508 Info NetworkManager: GatewayAddresses: 
+2025-09-25 00:29:42.508 Info NetworkManager: UnicastAddresses: 127.0.0.1,::1
+2025-09-25 00:29:42.545 Info NetworkManager: Detected local ip addresses: [{"IPAddress":"172.18.0.5","HasGateWayAddress":true,"PrefixLength":16,"IPv4Mask":"255.255.0.0"},{"IPAddress":"127.0.0.1","HasGateWayAddress":false,"PrefixLength":8,"IPv4Mask":"255.0.0.0"},{"IPAddress":"::1","HasGateWayAddress":false,"PrefixLength":128}]
+2025-09-25 00:29:42.547 Info SqliteDisplayPreferencesRepository: Opening sqlite connection to /config/data/displaypreferences.db
+2025-09-25 00:29:42.569 Info SqliteDisplayPreferencesRepository: Default journal_mode for /config/data/displaypreferences.db is wal
+2025-09-25 00:29:42.569 Info SqliteDisplayPreferencesRepository: PRAGMA foreign_keys=1
+2025-09-25 00:29:42.569 Info SqliteDisplayPreferencesRepository: Result of setting SQLITE_DBCONFIG_DQS_DDL to 0 is 0
+2025-09-25 00:29:42.569 Info SqliteDisplayPreferencesRepository: Result of setting SQLITE_DBCONFIG_DQS_DML to 0 is 0
+2025-09-25 00:29:42.576 Info ServerConfigurationManager: Saving system configuration
+2025-09-25 00:29:42.581 Info App: Begin vacumming SqliteItemRepository
+2025-09-25 00:29:42.581 Info SqliteItemRepository: Opening sqlite connection to /config/data/library.db
+2025-09-25 00:29:42.609 Info SqliteItemRepository: Default journal_mode for /config/data/library.db is wal
+2025-09-25 00:29:42.610 Info SqliteItemRepository: PRAGMA cache_size=-131072
+2025-09-25 00:29:42.610 Info SqliteItemRepository: PRAGMA page_size=4096
+2025-09-25 00:29:42.610 Info SqliteItemRepository: PRAGMA foreign_keys=1
+2025-09-25 00:29:42.610 Info SqliteItemRepository: Result of setting SQLITE_DBCONFIG_DQS_DDL to 0 is 0
+2025-09-25 00:29:42.610 Info SqliteItemRepository: Result of setting SQLITE_DBCONFIG_DQS_DML to 0 is 0
+2025-09-25 00:29:42.655 Info App: Completed vacumming SqliteItemRepository after 74ms
+2025-09-25 00:29:42.655 Info App: Begin vacumming SqliteUserRepository
+2025-09-25 00:29:42.666 Info App: Completed vacumming SqliteUserRepository after 11ms
+2025-09-25 00:29:42.666 Info App: Begin vacumming AuthenticationRepository
+2025-09-25 00:29:42.666 Info AuthenticationRepository: Opening sqlite connection to /config/data/authentication.db
+2025-09-25 00:29:42.686 Info AuthenticationRepository: Default journal_mode for /config/data/authentication.db is wal
+2025-09-25 00:29:42.686 Info AuthenticationRepository: PRAGMA foreign_keys=1
+2025-09-25 00:29:42.686 Info AuthenticationRepository: Result of setting SQLITE_DBCONFIG_DQS_DDL to 0 is 0
+2025-09-25 00:29:42.686 Info AuthenticationRepository: Result of setting SQLITE_DBCONFIG_DQS_DML to 0 is 0
+2025-09-25 00:29:42.700 Info App: Completed vacumming AuthenticationRepository after 34ms
+2025-09-25 00:29:42.700 Info App: Begin vacumming SqliteDisplayPreferencesRepository
+2025-09-25 00:29:42.710 Info App: Completed vacumming SqliteDisplayPreferencesRepository after 11ms
+2025-09-25 00:29:42.710 Info App: Begin vacumming ActivityRepository
+2025-09-25 00:29:42.721 Info App: Completed vacumming ActivityRepository after 10ms
+2025-09-25 00:29:42.723 Info App: Adding HttpListener prefix http://+:8096/
+2025-09-25 00:29:42.812 Info SqliteItemRepository: Init Complete
+2025-09-25 00:29:43.012 Info App: Emby
+	Command line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+	Operating system: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	Framework: .NET 6.0.36
+	OS/Process: x64/x64
+	Runtime: app/emby/system/System.Private.CoreLib.dll
+	Processor count: 8
+	Data path: /config
+	Application path: /app/emby/system
+2025-09-25 00:29:43.012 Info App: Logs path: /config/logs
+2025-09-25 00:29:43.012 Info App: Cache path: /config/cache
+2025-09-25 00:29:43.012 Info App: Internal metadata path: /config/metadata
+2025-09-25 00:29:43.013 Info App: Transcoding temporary files path: /config/transcoding-temp
+2025-09-25 00:29:44.049 Info FfmpegManager: FFMpeg: /app/emby/bin/ffmpeg
+2025-09-25 00:29:44.049 Info FfmpegManager: FFProbe: /app/emby/bin/ffprobe
+2025-09-25 00:29:44.050 Info FfmpegManager: FFDetect: /app/emby/bin/ffdetect
+2025-09-25 00:29:44.061 Info Skia: SkiaSharp version: 2.88.0.0
+2025-09-25 00:29:44.063 Info ImageProcessor: Adding image processor Skia
+2025-09-25 00:29:44.110 Info libvips: NetVips version: 2.3.1.0
+2025-09-25 00:29:44.110 Info ImageProcessor: Adding image processor libvips
+2025-09-25 00:29:44.140 Info TaskManager: Daily trigger for Emby Server Backup set to fire at 09/26/2025 00:10:00, which is 1420.2643336766666 minutes from now.
+2025-09-25 00:29:44.162 Info TaskManager: Daily trigger for Video preview thumbnail extraction set to fire at 09/25/2025 02:00:00, which is 90.26395692 minutes from now.
+2025-09-25 00:29:44.383 Info TaskManager: Daily trigger for Rotate log file set to fire at 09/26/2025 00:00:00, which is 1410.2602706266666 minutes from now.
+2025-09-25 00:29:44.402 Info TaskManager: Queueing task HardwareDetectionScheduledTask
+2025-09-25 00:29:44.405 Info TaskManager: Executing Hardware Detection
+2025-09-25 00:29:44.423 Info App: ServerId: 9d6313fe3a5c40af95d8dc01e290b589
+2025-09-25 00:29:44.428 Info FfmpegManager: ProcessRun 'ffmpeg -hide_banner -version' Execute: /app/emby/bin/ffmpeg -hide_banner -version
+2025-09-25 00:29:44.467 Info App: Starting entry point Emby.Dlna.Main.DlnaEntryPoint
+2025-09-25 00:29:44.467 Info FfmpegManager: ProcessRun 'ffmpeg -hide_banner -version' Process exited with code 0 - Succeeded
+2025-09-25 00:29:44.494 Info FfmpegManager: FfmpegValidator.Validate complete
+2025-09-25 00:29:44.527 Info App: Entry point completed: Emby.Dlna.Main.DlnaEntryPoint. Duration: 0.060652 seconds
+2025-09-25 00:29:44.527 Info App: Starting entry point Emby.Server.Implementations.Networking.RemoteAddressEntryPoint
+2025-09-25 00:29:44.529 Info App: Loading data from /config/data/wan.dat
+2025-09-25 00:29:44.531 Info App: Entry point completed: Emby.Server.Implementations.Networking.RemoteAddressEntryPoint. Duration: 0.0033346 seconds
+2025-09-25 00:29:44.531 Info App: Starting entry point Emby.Server.Connect.ConnectEntryPoint
+2025-09-25 00:29:44.532 Info App: Loading data from /config/data/connect.txt
+2025-09-25 00:29:44.533 Info App: Entry point completed: Emby.Server.Connect.ConnectEntryPoint. Duration: 0.002138 seconds
+2025-09-25 00:29:44.533 Info App: Core startup complete
+2025-09-25 00:29:44.534 Info App: Starting entry point CoverArt.ServerEntryPoint
+2025-09-25 00:29:44.537 Info CoverArt: CoverArt plugin loading SkiaCoverArtImageProcessor image processor
+2025-09-25 00:29:44.539 Info CoverArt: CoverArt plugin loading NetVipsCoverArtImageProcessor image processor
+2025-09-25 00:29:44.551 Info App: Entry point completed: CoverArt.ServerEntryPoint. Duration: 0.0170457 seconds
+2025-09-25 00:29:44.552 Info App: Starting entry point Emby.PortMapper.ExternalPortForwarding
+2025-09-25 00:29:44.553 Info App: Entry point completed: Emby.PortMapper.ExternalPortForwarding. Duration: 0.0010268 seconds
+2025-09-25 00:29:44.553 Info App: Starting entry point Emby.Security.PluginSecurityManager
+2025-09-25 00:29:44.553 Info App: Entry point completed: Emby.Security.PluginSecurityManager. Duration: 2.62E-05 seconds
+2025-09-25 00:29:44.553 Info App: Starting entry point Emby.Server.CinemaMode.IntrosEntryPoint
+2025-09-25 00:29:44.553 Info App: Entry point completed: Emby.Server.CinemaMode.IntrosEntryPoint. Duration: 0.0001742 seconds
+2025-09-25 00:29:44.553 Info App: Starting entry point MBBackup.ServerEntryPoint
+2025-09-25 00:29:44.553 Info App: Entry point completed: MBBackup.ServerEntryPoint. Duration: 2.89E-05 seconds
+2025-09-25 00:29:44.553 Info App: Starting entry point MovieDb.Security.PluginStartup
+2025-09-25 00:29:44.554 Info App: Entry point completed: MovieDb.Security.PluginStartup. Duration: 0.0013507 seconds
+2025-09-25 00:29:44.554 Info App: Starting entry point NfoMetadata.EntryPoint
+2025-09-25 00:29:44.555 Info App: Entry point completed: NfoMetadata.EntryPoint. Duration: 0.0004582 seconds
+2025-09-25 00:29:44.555 Info App: Starting entry point Tvdb.EntryPoint
+2025-09-25 00:29:44.555 Info App: Entry point completed: Tvdb.EntryPoint. Duration: 3.12E-05 seconds
+2025-09-25 00:29:44.555 Info App: Starting entry point Emby.Server.Implementations.Udp.UdpServerEntryPoint
+2025-09-25 00:29:44.556 Info App: Entry point completed: Emby.Server.Implementations.Udp.UdpServerEntryPoint. Duration: 0.0010245 seconds
+2025-09-25 00:29:44.556 Info App: Starting entry point Emby.Server.Implementations.Playlists.PlaylistUpgradeEntryPoint
+2025-09-25 00:29:44.558 Info App: Entry point completed: Emby.Server.Implementations.Playlists.PlaylistUpgradeEntryPoint. Duration: 0.0017409 seconds
+2025-09-25 00:29:44.558 Info App: Starting entry point Emby.Server.Implementations.Library.DeviceAccessEntryPoint
+2025-09-25 00:29:44.558 Info App: Entry point completed: Emby.Server.Implementations.Library.DeviceAccessEntryPoint. Duration: 0.0003507 seconds
+2025-09-25 00:29:44.558 Info App: Starting entry point Emby.Server.Implementations.IO.LibraryMonitorStartup
+2025-09-25 00:29:44.568 Info SoftwareCodecProvider: h264, libx264, x264, V-E-libx264
+2025-09-25 00:29:44.569 Info SoftwareCodecProvider: hevc, libx265, x265, V-E-libx265
+2025-09-25 00:29:44.569 Info SoftwareCodecProvider: mpeg4, mpeg4, MPEG-4 part 2, V-E-mpeg4
+2025-09-25 00:29:44.569 Info SoftwareCodecProvider: msmpeg4v3, msmpeg4, MPEG-4 part 2 (MS Variant 3), V-E-msmpeg4
+2025-09-25 00:29:44.569 Info SoftwareCodecProvider: vp8, libvpx, libvpx VP8, V-E-libvpx
+2025-09-25 00:29:44.572 Info SoftwareCodecProvider: h264, libx264, x264, V-E-libx264
+2025-09-25 00:29:44.572 Info SoftwareCodecProvider: hevc, libx265, x265, V-E-libx265
+2025-09-25 00:29:44.572 Info SoftwareCodecProvider: mpeg4, mpeg4, MPEG-4 part 2, V-E-mpeg4
+2025-09-25 00:29:44.572 Info SoftwareCodecProvider: msmpeg4v3, msmpeg4, MPEG-4 part 2 (MS Variant 3), V-E-msmpeg4
+2025-09-25 00:29:44.572 Info SoftwareCodecProvider: vp8, libvpx, libvpx VP8, V-E-libvpx
+2025-09-25 00:29:44.577 Info App: Entry point completed: Emby.Server.Implementations.IO.LibraryMonitorStartup. Duration: 0.0182564 seconds
+2025-09-25 00:29:44.577 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.AutomaticRestartEntryPoint
+2025-09-25 00:29:44.577 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.AutomaticRestartEntryPoint. Duration: 0.0004446 seconds
+2025-09-25 00:29:44.577 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.KeepServerAwake
+2025-09-25 00:29:44.577 Info LibraryMonitor: Skipping realtime monitor for /data/movies because the path is currently not available
+2025-09-25 00:29:44.577 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.KeepServerAwake. Duration: 0.0001053 seconds
+2025-09-25 00:29:44.577 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.LibraryChangedNotifier
+2025-09-25 00:29:44.578 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.LibraryChangedNotifier. Duration: 0.0011222 seconds
+2025-09-25 00:29:44.578 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.ServerEventNotifier
+2025-09-25 00:29:44.582 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.ServerEventNotifier. Duration: 0.0034124 seconds
+2025-09-25 00:29:44.582 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.StartupWizard
+2025-09-25 00:29:44.583 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.StartupWizard. Duration: 0.0006196 seconds
+2025-09-25 00:29:44.583 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.SystemEvents
+2025-09-25 00:29:44.583 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.SystemEvents. Duration: 0.0005293 seconds
+2025-09-25 00:29:44.583 Info App: Starting entry point Emby.Server.Implementations.EntryPoints.UserDataChangeNotifier
+2025-09-25 00:29:44.584 Info App: Entry point completed: Emby.Server.Implementations.EntryPoints.UserDataChangeNotifier. Duration: 0.0001629 seconds
+2025-09-25 00:29:44.584 Info App: Starting entry point Emby.Server.Implementations.Channels.ChannelsEntryPoint
+2025-09-25 00:29:44.588 Info TaskManager: Queueing task RefreshChannelsScheduledTask
+2025-09-25 00:29:44.588 Info TaskManager: Executing Refresh Internet Channels
+2025-09-25 00:29:44.589 Info VaapiCodecProvider: ProcessRun 'ffdetect_vaencdec' Execute: /app/emby/bin/ffdetect -hide_banner -show_program_version -loglevel 48 -show_error -show_log 40 vaencdec -print_format json 
+2025-09-25 00:29:44.592 Info App: Entry point completed: Emby.Server.Implementations.Channels.ChannelsEntryPoint. Duration: 0.0084946 seconds
+2025-09-25 00:29:44.592 Info App: Starting entry point Emby.LiveTV.EntryPoint
+2025-09-25 00:29:44.595 Info LiveTV: Loading live tv data from /config/data/livetv/timers
+2025-09-25 00:29:44.597 Info App: Entry point completed: Emby.LiveTV.EntryPoint. Duration: 0.0043883 seconds
+2025-09-25 00:29:44.597 Info App: Starting entry point Emby.LiveTV.RecordingNotifier
+2025-09-25 00:29:44.599 Info App: Entry point completed: Emby.LiveTV.RecordingNotifier. Duration: 0.0025221 seconds
+2025-09-25 00:29:44.599 Info App: Starting entry point Emby.ActivityLog.ActivityLogEntryPoint
+2025-09-25 00:29:44.603 Info App: Entry point completed: Emby.ActivityLog.ActivityLogEntryPoint. Duration: 0.003878 seconds
+2025-09-25 00:29:44.603 Info App: Starting entry point Emby.Server.MediaEncoding.Api.EncodingManagerEntryPoint
+2025-09-25 00:29:44.608 Info App: Entry point completed: Emby.Server.MediaEncoding.Api.EncodingManagerEntryPoint. Duration: 0.0044948 seconds
+2025-09-25 00:29:44.608 Info App: Starting entry point Emby.Notifications.NotificationManagerEntryPoint
+2025-09-25 00:29:44.619 Info Notifications: Registering event nofitier Emby Server User Notifications
+2025-09-25 00:29:44.624 Info App: Entry point completed: Emby.Notifications.NotificationManagerEntryPoint. Duration: 0.0163237 seconds
+2025-09-25 00:29:44.625 Info App: Starting entry point Emby.Server.Sync.SyncNotificationEntryPoint
+2025-09-25 00:29:44.627 Info App: Entry point completed: Emby.Server.Sync.SyncNotificationEntryPoint. Duration: 0.0025692 seconds
+2025-09-25 00:29:44.627 Info App: Starting entry point EmbyServer.Windows.LoopUtilEntryPoint
+2025-09-25 00:29:44.628 Info App: Entry point completed: EmbyServer.Windows.LoopUtilEntryPoint. Duration: 7.04E-05 seconds
+2025-09-25 00:29:44.628 Info App: All entry points have started
+2025-09-25 00:29:44.636 Info VaapiCodecProvider: ProcessRun 'ffdetect_vaencdec' Process exited with code 0 - Succeeded
+2025-09-25 00:29:44.653 Info App: Init BeginReceive on 0.0.0.0
+2025-09-25 00:29:44.653 Info App: Init BeginReceive on 0.0.0.0
+2025-09-25 00:29:44.653 Info App: Init BeginReceive on 172.18.0.5
+2025-09-25 00:29:44.654 Info App: Init BeginReceive on 127.0.0.1
+2025-09-25 00:29:44.709 Info QuickSyncCodecProvider: ProcessRun 'ffdetect_qsvencdec' Execute: /app/emby/bin/ffdetect -hide_banner -show_program_version -loglevel 48 -show_error -show_log 40 qsvencdec -print_format json 
+2025-09-25 00:29:44.795 Info QuickSyncCodecProvider: ProcessRun 'ffdetect_qsvencdec' Process exited with code 0 - Succeeded
+2025-09-25 00:29:44.840 Info TaskManager: Refresh Internet Channels Completed after 0 minute(s) and 0 seconds
+2025-09-25 00:29:44.852 Info NvidiaCodecProvider: ProcessRun 'ffdetect_nvencdec' Execute: /app/emby/bin/ffdetect -hide_banner -show_program_version -loglevel 48 -show_error -show_log 40 nvencdec -print_format json 
+2025-09-25 00:29:44.857 Info NvidiaCodecProvider: ProcessRun 'ffdetect_nvencdec' Process exited with code 1 - Failed
+2025-09-25 00:29:45.044 Info CodecManager: CodecList:
+2025-09-25 00:29:45.044 Info TaskManager: Hardware Detection Completed after 0 minute(s) and 0 seconds
+2025-09-25 00:29:47.367 Info TaskManager: Queueing task PluginUpdateTask
+2025-09-25 00:29:47.367 Info TaskManager: Executing Check for plugin updates
+2025-09-25 00:29:47.373 Info HttpClient: GET https://www.mb3admin.com/admin/service/EmbyPackages.json
+2025-09-25 00:29:47.379 Info TaskManager: Queueing task SystemUpdateTask
+2025-09-25 00:29:47.379 Info TaskManager: Executing Check for application updates
+2025-09-25 00:29:47.395 Info TaskManager: Queueing task SubtitleOcrDataTask
+2025-09-25 00:29:47.396 Info TaskManager: Executing Download OCR Data
+2025-09-25 00:29:47.419 Info TaskManager: Download OCR Data Completed after 0 minute(s) and 0 seconds
+2025-09-25 00:29:47.561 Info App: No application update available.
+2025-09-25 00:29:47.562 Info TaskManager: Check for application updates Completed after 0 minute(s) and 0 seconds
+2025-09-25 00:29:48.828 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Sessions/Capabilities/Full?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:29:48.899 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 71ms. POST http://‌‍‍localhost‌:8096/emby/Sessions/Capabilities/Full?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:29:49.034 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:49.055 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:49.055 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.257 Info TaskManager: Check for plugin updates Completed after 0 minute(s) and 2 seconds
+2025-09-25 00:29:50.576 Info App: Sqlite: 284 - automatic index on LastWatchedEpisodes(SeriesPresentationUniqueKey)
+2025-09-25 00:29:50.605 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.606 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.606 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.611 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.620 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.620 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:50.620 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:54.047 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:29:57.804 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:30:13.310 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:30:55.018 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Plugins/c333f63b-83e9-48d2-8b9a-c5aba546fb1e/Configuration?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:30:55.096 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 78ms. POST http://‌‍‍localhost‌:8096/emby/Plugins/c333f63b-83e9-48d2-8b9a-c5aba546fb1e/Configuration?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:31:06.017 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.019 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.019 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.056 Info App: Sqlite: 284 - automatic index on LastWatchedEpisodes(SeriesPresentationUniqueKey)
+2025-09-25 00:31:06.061 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.062 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.062 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.073 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.073 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:06.074 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:07.116 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:08.238 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/103/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:31:08.348 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:31:08.424 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 186ms. POST http://‌‍‍localhost‌:8096/emby/Items/103/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:31:15.093 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:44.949 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:44.965 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:44.998 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:44.998 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:44.998 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:51.009 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.584 Info App: Sqlite: 284 - automatic index on LastWatchedEpisodes(SeriesPresentationUniqueKey)
+2025-09-25 00:31:56.585 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.585 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.585 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.600 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.600 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:56.600 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:31:58.138 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:01.555 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:01.567 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:01.567 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:01.587 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:09.037 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:09.038 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:09.038 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:09.050 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:09.106 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:09.121 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 71ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:09.202 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:09.265 Info HttpClient: GET https://image.tmdb.org/t/p/original/4TxYHUzqpRhbqjSf162WvpP0Hyu.jpg
+2025-09-25 00:32:10.591 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:10.593 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:10.596 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:10.598 Info SessionManager: Adding playSession 154a2457e81644e292b99816fac4f7e0 to session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:10.600 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 9ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:10.643 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:10.647 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 54ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:10.703 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:10.704 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:10.704 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:10.753 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:10.793 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 39ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported
+2025-09-25 00:32:10.803 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:10.804 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:10.805 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 3ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported
+2025-09-25 00:32:10.819 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 15ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported
+2025-09-25 00:32:10.830 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:10.836 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 6ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=154a2457e81644e292b99816fac4f7e0&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported
+2025-09-25 00:32:10.838 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=154a2457e81644e292b99816fac4f7e0. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.149 Info App: ProcessRun 'StreamTranscode 100535' Execute: /app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-10053527-d131-48d1-8d11-42e0d92dccd4_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/48AB87/48AB87.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/48AB87/48AB87_%d.ts"
+2025-09-25 00:32:11.177 Info App: AppendExtraLogData - Read graph file: /config/logs/ffmpeg-transcode-10053527-d131-48d1-8d11-42e0d92dccd4_1graph.txt
+2025-09-25 00:32:11.186 Info App: AppendExtraLogData - Deserialized GraphData fileStream: 381.000 bytes Graph Count: 1
+2025-09-25 00:32:11.188 Info App: AppendExtraLogData - File Deleted
+2025-09-25 00:32:11.298 Info App: ProcessRun 'StreamTranscode 100535' Process exited with code 1 - Failed
+2025-09-25 00:32:11.307 Error Server: Error processing request
+	*** Error Report ***
+	Version: 4.8.11.0
+	Command line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+	Operating system: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	Framework: .NET 6.0.36
+	OS/Process: x64/x64
+	Runtime: app/emby/system/System.Private.CoreLib.dll
+	Processor count: 8
+	Data path: /config
+	Application path: /app/emby/system
+	Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Error starting ffmpeg
+	-loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-10053527-d131-48d1-8d11-42e0d92dccd4_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/48AB87/48AB87.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/48AB87/48AB87_%d.ts"
+	
+	00:32:11.156 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+	00:32:11.156   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+	00:32:11.157 Execution Date: 2025-09-25 00:32:11
+	00:32:11.161 /data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv: No such file or directory
+	00:32:11.163 EXIT
+	
+	
+	
+	
+	   at Emby.Server.MediaEncoding.Api.BaseStreamingService.StartFfMpeg(StreamState state, String outputPath, CancellationToken cancellationToken, Boolean acquireResources)
+	   at Emby.Server.MediaEncoding.Api.Hls.DynamicHlsService.GetDynamicSegment(StreamRequest request, String manifestAbsoluteUri, String playlistId, String segmentId, Int32 subtitleStreamIndex, AuthorizationInfo authorizationInfo)
+	   at Emby.Server.Implementations.Services.ServiceController.GetTaskResult(Task task)
+	   at Emby.Server.Implementations.Services.ServiceHandler.ProcessRequestAsync(HttpListenerHost httpHost, IServerApplicationHost appHost, IRequest httpReq, IResponse httpRes, IStreamHelper streamHelper, RestPath restPath, String responseContentType, CancellationToken cancellationToken)
+	   at Emby.Server.Implementations.HttpServer.HttpListenerHost.RequestHandler(IRequest httpReq, ReadOnlyMemory`1 urlString, ReadOnlyMemory`1 localPath, CancellationToken cancellationToken)
+	Source: Emby.Server.MediaEncoding
+	TargetSite: Void MoveNext()
+	
+2025-09-25 00:32:11.310 Info Server: http/1.1 Response 500 to ‌‍‍172.18.0.1‌. Time: 472ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=154a2457e81644e292b99816fac4f7e0
+2025-09-25 00:32:11.325 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Sessions/Playing?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.378 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.378 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.378 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.379 Info SessionManager: Playback start reported by app Emby Web 4.8.11.0 on Microsoft Edge Windows playing Arabalar. Started at 0 ms. PlaySessionId: 154a2457e81644e292b99816fac4f7e0
+2025-09-25 00:32:11.384 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 59ms. POST http://‌‍‍localhost‌:8096/emby/Sessions/Playing?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:11.395 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&AudioStreamIndex=1&SubtitleStreamIndex=2&EnableDirectPlay=false&EnableDirectStream=false&AllowVideoStreamCopy=false&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&MaxStreamingBitrate=200000000&CurrentPlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.401 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:11.404 Info SessionManager: Removed playSession 154a2457e81644e292b99816fac4f7e0 from session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:11.404 Info SessionManager: Adding playSession fc5d37fadaeb4fd8809e853b6183f222 to session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:11.404 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 9ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&AudioStreamIndex=1&SubtitleStreamIndex=2&EnableDirectPlay=false&EnableDirectStream=false&AllowVideoStreamCopy=false&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&MaxStreamingBitrate=200000000&CurrentPlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:11.413 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Origin=‌‍‍http://localhost:8096‌, Referer=‌‍‍http://localhost:8096/web/index.html‌, Content-Length=0, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.416 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 3ms. POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us
+2025-09-25 00:32:11.426 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.428 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 2ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false
+2025-09-25 00:32:11.437 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.438 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:11.440 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 2ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false
+2025-09-25 00:32:11.443 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 6ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false
+2025-09-25 00:32:11.454 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:11.457 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.459 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 5ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false
+2025-09-25 00:32:11.492 Info App: ProcessRun 'StreamTranscode 2a6902' Execute: /app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-2a690287-c968-4abb-a651-1262786a095e_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/EE1299/EE1299.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/EE1299/EE1299_%d.ts"
+2025-09-25 00:32:11.507 Info App: AppendExtraLogData - Read graph file: /config/logs/ffmpeg-transcode-2a690287-c968-4abb-a651-1262786a095e_1graph.txt
+2025-09-25 00:32:11.509 Info App: AppendExtraLogData - Deserialized GraphData fileStream: 381.000 bytes Graph Count: 1
+2025-09-25 00:32:11.510 Info App: AppendExtraLogData - File Deleted
+2025-09-25 00:32:11.511 Info App: ProcessRun 'StreamTranscode 2a6902' Process exited with code 1 - Failed
+2025-09-25 00:32:11.547 Error Server: Error processing request
+	*** Error Report ***
+	Version: 4.8.11.0
+	Command line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+	Operating system: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	Framework: .NET 6.0.36
+	OS/Process: x64/x64
+	Runtime: app/emby/system/System.Private.CoreLib.dll
+	Processor count: 8
+	Data path: /config
+	Application path: /app/emby/system
+	Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Error starting ffmpeg
+	-loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-2a690287-c968-4abb-a651-1262786a095e_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/EE1299/EE1299.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/EE1299/EE1299_%d.ts"
+	
+	00:32:11.500 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+	00:32:11.500   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+	00:32:11.501 Execution Date: 2025-09-25 00:32:11
+	00:32:11.502 /data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv: No such file or directory
+	00:32:11.505 EXIT
+	
+	
+	
+	
+	   at Emby.Server.MediaEncoding.Api.BaseStreamingService.StartFfMpeg(StreamState state, String outputPath, CancellationToken cancellationToken, Boolean acquireResources)
+	   at Emby.Server.MediaEncoding.Api.Hls.DynamicHlsService.GetDynamicSegment(StreamRequest request, String manifestAbsoluteUri, String playlistId, String segmentId, Int32 subtitleStreamIndex, AuthorizationInfo authorizationInfo)
+	   at Emby.Server.Implementations.Services.ServiceController.GetTaskResult(Task task)
+	   at Emby.Server.Implementations.Services.ServiceHandler.ProcessRequestAsync(HttpListenerHost httpHost, IServerApplicationHost appHost, IRequest httpReq, IResponse httpRes, IStreamHelper streamHelper, RestPath restPath, String responseContentType, CancellationToken cancellationToken)
+	   at Emby.Server.Implementations.HttpServer.HttpListenerHost.RequestHandler(IRequest httpReq, ReadOnlyMemory`1 urlString, ReadOnlyMemory`1 localPath, CancellationToken cancellationToken)
+	Source: Emby.Server.MediaEncoding
+	TargetSite: Void MoveNext()
+	
+2025-09-25 00:32:11.547 Info Server: http/1.1 Response 500 to ‌‍‍172.18.0.1‌. Time: 90ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222
+2025-09-25 00:32:11.554 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Origin=‌‍‍http://localhost:8096‌, Referer=‌‍‍http://localhost:8096/web/index.html‌, Content-Length=0, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.555 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 1ms. POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=154a2457e81644e292b99816fac4f7e0&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us
+2025-09-25 00:32:11.557 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&AudioStreamIndex=1&SubtitleStreamIndex=2&EnableDirectPlay=false&EnableDirectStream=false&AllowVideoStreamCopy=false&AllowAudioStreamCopy=false&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&MaxStreamingBitrate=200000000&CurrentPlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.602 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:11.604 Info SessionManager: Removed playSession fc5d37fadaeb4fd8809e853b6183f222 from session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:11.604 Info SessionManager: Adding playSession 64ee45e8aef14ce6b399f9301ab0bb13 to session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:11.604 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 47ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=54050839750&IsPlayback=true&AutoOpenLiveStream=true&AudioStreamIndex=1&SubtitleStreamIndex=2&EnableDirectPlay=false&EnableDirectStream=false&AllowVideoStreamCopy=false&AllowAudioStreamCopy=false&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&MaxStreamingBitrate=200000000&CurrentPlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:11.612 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Origin=‌‍‍http://localhost:8096‌, Referer=‌‍‍http://localhost:8096/web/index.html‌, Content-Length=0, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.612 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 1ms. POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us
+2025-09-25 00:32:11.621 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.623 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 2ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false
+2025-09-25 00:32:11.631 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.633 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:11.634 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 2ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/master.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false
+2025-09-25 00:32:11.636 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 6ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false
+2025-09-25 00:32:11.645 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", sec-ch-ua-mobile=?0, DNT=1, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty, Sec-Fetch-Storage-Access=active
+2025-09-25 00:32:11.649 Info Server: http/1.1 GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Referer=‌‍‍http://localhost:8096/web/index.html‌, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.651 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 6ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false&allowAudioStreamCopy=false
+2025-09-25 00:32:11.665 Info App: ProcessRun 'StreamTranscode 93dac8' Execute: /app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-93dac8a5-3a6f-4035-a2f1-9faa6d6472bb_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/93F37E/93F37E.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/93F37E/93F37E_%d.ts"
+2025-09-25 00:32:11.680 Info App: AppendExtraLogData - Read graph file: /config/logs/ffmpeg-transcode-93dac8a5-3a6f-4035-a2f1-9faa6d6472bb_1graph.txt
+2025-09-25 00:32:11.682 Info App: AppendExtraLogData - Deserialized GraphData fileStream: 381.000 bytes Graph Count: 1
+2025-09-25 00:32:11.684 Info App: AppendExtraLogData - File Deleted
+2025-09-25 00:32:11.685 Info App: ProcessRun 'StreamTranscode 93dac8' Process exited with code 1 - Failed
+2025-09-25 00:32:11.721 Error Server: Error processing request
+	*** Error Report ***
+	Version: 4.8.11.0
+	Command line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+	Operating system: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	Framework: .NET 6.0.36
+	OS/Process: x64/x64
+	Runtime: app/emby/system/System.Private.CoreLib.dll
+	Processor count: 8
+	Data path: /config
+	Application path: /app/emby/system
+	Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Emby.Server.MediaEncoding.Unified.Ffmpeg.FfRunException: Error starting ffmpeg
+	-loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-93dac8a5-3a6f-4035-a2f1-9faa6d6472bb_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/93F37E/93F37E.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/93F37E/93F37E_%d.ts"
+	
+	00:32:11.675 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+	00:32:11.675   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+	00:32:11.675 Execution Date: 2025-09-25 00:32:11
+	00:32:11.676 /data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv: No such file or directory
+	00:32:11.678 EXIT
+	
+	
+	
+	
+	   at Emby.Server.MediaEncoding.Api.BaseStreamingService.StartFfMpeg(StreamState state, String outputPath, CancellationToken cancellationToken, Boolean acquireResources)
+	   at Emby.Server.MediaEncoding.Api.Hls.DynamicHlsService.GetDynamicSegment(StreamRequest request, String manifestAbsoluteUri, String playlistId, String segmentId, Int32 subtitleStreamIndex, AuthorizationInfo authorizationInfo)
+	   at Emby.Server.Implementations.Services.ServiceController.GetTaskResult(Task task)
+	   at Emby.Server.Implementations.Services.ServiceHandler.ProcessRequestAsync(HttpListenerHost httpHost, IServerApplicationHost appHost, IRequest httpReq, IResponse httpRes, IStreamHelper streamHelper, RestPath restPath, String responseContentType, CancellationToken cancellationToken)
+	   at Emby.Server.Implementations.HttpServer.HttpListenerHost.RequestHandler(IRequest httpReq, ReadOnlyMemory`1 urlString, ReadOnlyMemory`1 localPath, CancellationToken cancellationToken)
+	Source: Emby.Server.MediaEncoding
+	TargetSite: Void MoveNext()
+	
+2025-09-25 00:32:11.721 Info Server: http/1.1 Response 500 to ‌‍‍172.18.0.1‌. Time: 71ms. GET http://‌‍‍localhost‌:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=64ee45e8aef14ce6b399f9301ab0bb13
+2025-09-25 00:32:11.744 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us. Source Ip: ‌‍‍172.18.0.1‌, Accept=*/*, Connection=keep-alive, Host=‌‍‍localhost:8096‌, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0, Accept-Encoding=gzip, deflate, br, zstd, Accept-Language=tr,en-US;q=0.9,en;q=0.8, Origin=‌‍‍http://localhost:8096‌, Referer=‌‍‍http://localhost:8096/web/index.html‌, Content-Length=0, sec-ch-ua-platform="Windows", sec-ch-ua="Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140", DNT=1, sec-ch-ua-mobile=?0, Sec-Fetch-Site=same-origin, Sec-Fetch-Mode=cors, Sec-Fetch-Dest=empty
+2025-09-25 00:32:11.745 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 1ms. POST http://‌‍‍localhost‌:8096/emby/Videos/ActiveEncodings/Delete?deviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us
+2025-09-25 00:32:11.754 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Sessions/Playing/Stopped?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.784 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.785 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.785 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.790 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.807 Info Server: http/1.1 POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json. Source Ip: ‌‍‍172.18.0.1‌, UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+2025-09-25 00:32:11.820 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.820 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.820 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:11.820 Info SessionManager: Playback stopped reported by app Emby Web 4.8.11.0 on Microsoft Edge Windows playing Arabalar. Stopped at 0 ms. PlaySessionId: 64ee45e8aef14ce6b399f9301ab0bb13
+2025-09-25 00:32:11.823 Info SessionManager: Removed playSession 64ee45e8aef14ce6b399f9301ab0bb13 from session 04d52b0b03283e0aefc6dd7a66914a37
+2025-09-25 00:32:11.823 Info Server: http/1.1 Response 204 to ‌‍‍172.18.0.1‌. Time: 68ms. POST http://‌‍‍localhost‌:8096/emby/Sessions/Playing/Stopped?X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:11.842 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:11.845 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 55ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:11.861 Info App: User policy for admin. EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+2025-09-25 00:32:11.863 Info Server: http/1.1 Response 200 to ‌‍‍172.18.0.1‌. Time: 56ms. POST http://‌‍‍localhost‌:8096/emby/Items/6/PlaybackInfo?UserId=226d4533c08c46b0b9be3901817b9c22&StartTimeTicks=0&IsPlayback=false&AutoOpenLiveStream=false&MaxStreamingBitrate=200000000&X-Emby-Client=Emby Web&X-Emby-Device-Name=Microsoft Edge Windows&X-Emby-Device-Id=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&X-Emby-Client-Version=4.8.11.0&X-Emby-Token=‌b1fd53d21e734841a234e4f8d502c8ad‌&X-Emby-Language=en-us&reqformat=json
+2025-09-25 00:32:14.760 Info App: Sqlite: 284 - automatic index on LastWatchedEpisodes(SeriesPresentationUniqueKey)
+2025-09-25 00:32:14.766 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:14.766 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.
+2025-09-25 00:32:14.766 Warn CoverArt: CoverArt is expired. Please get Emby Premiere to continue using it.

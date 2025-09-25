@@ -1,0 +1,160 @@
+2025-09-24 23:30:17.476
+Operating System: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+OS/Process: x64/x64
+Emby Server version: 4.8.11.0
+Operating system: Unix 5.15.167.4
+Command Line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+
+App: Emby Web 4.8.11.0
+Microsoft Edge Windows
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+
+http://localhost:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&PlaySessionId=0b47ee7537534018a0885774d67b3673&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=VideoCodecNotSupported,AudioCodecNotSupported
+
+http://localhost:8096/emby/videos/6/hls1/main/541.ts?PlaySessionId=0b47ee7537534018a0885774d67b3673
+
+{"Protocol":"File","Id":"440e60f975ceb27f8dcab4b7c688da12","Path":"/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv","Type":"Default","Container":"mkv","Size":4077122515,"Name":"Cars 2006 1080p BluRay DD 5 1 x265 edge2020","IsRemote":false,"HasMixedProtocols":false,"RunTimeTicks":69960000000,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"RequiresClosing":false,"RequiresLooping":false,"SupportsProbing":false,"MediaStreams":[{"Codec":"hevc","TimeBase":"1/1000","VideoRange":"SDR","DisplayTitle":"1080p HEVC","IsInterlaced":false,"BitRate":4662232,"BitDepth":10,"RefFrames":1,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Height":800,"Width":1920,"AverageFrameRate":23.809525,"RealFrameRate":23.809525,"Profile":"Main 10","Type":"Video","AspectRatio":"2.40:1","Index":0,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","PixelFormat":"yuv420p10le","Level":120,"IsAnamorphic":false,"ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"eac3","Language":"eng","TimeBase":"1/1000","DisplayTitle":"English EAC3 5.1 (Default)","DisplayLanguage":"English","IsInterlaced":false,"ChannelLayout":"5.1","BitRate":640000,"Channels":6,"SampleRate":48000,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Audio","Index":1,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"PGSSUB","Language":"eng","TimeBase":"1/1000","Title":"SHD","DisplayTitle":"English (Default PGSSUB)","DisplayLanguage":"English","IsInterlaced":false,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Subtitle","Index":2,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0,"SubtitleLocationType":"InternalStream"}],"Formats":[],"Bitrate":4662232,"RequiredHttpHeaders":{},"AddApiKeyToDirectStreamUrl":false,"ReadAtNativeFramerate":false,"ItemId":"6"}
+
+>>>>>>  User policy for admin
+        Enable Playback Remuxing: True
+        Enable Video Playback Transcoding: True
+        Enable Audio Playback Transcoding: True
+
+>>>>>>  Selected Codecs
+Decoder Automatic software decoder
+
+
+Encoder x264
+        Max Bitrate: 781 Mbit/s
+        Color Formats: YUV420P, YUVJ420P, YUV422P, YUVJ422P, YUV444P, YUVJ444P, NV12, NV16, NV21, YUV420P10, YUV422P10, YUV444P10, NV20, GRAY8, GRAY10 - Bit Depths: 8, 10, 12, 14
+        Profiles: Baseline Profile (Level 6.2), Main Profile (Level 6.2), High Profile (Level 6.2), High 10 Profile (Level 6.2), High 4:2:2 Profile (Level 6.2), High 4:4:4 Predictive Profile (Level 6.2)
+
+
+>>>>>>  FindVideoEncoder - MediaType: h264, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'x264'
+Info    Check successful - selecting 'x264'
+
+>>>>>>  FindVideoDecoder - MediaType: hevc, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'Automatic software decoder'
+Info    Check successful - selecting 'Automatic software decoder'
+
+>>>>>>  Processing Plan
+        Name                                        CanDoInHW  WillDoInHW  Reason                                                 
+        Automatic software decoder               >> False      False       Software Codec                                          
+        VideoInput                               >> False      False       Not a hardware decoder                                  
+        ColorConversion                          >> False      False                                                               
+        VideoOutput                              >> False      False       Not a hardware encoder                                  
+        x264                                     >> False      False       Software Codec                                          
+
+>>>>>>  Video Processing Steps for [0:0]: H.265 (HEVC)
+        Step                    HW-Context   Format       SW-Format           Size   Next
+        HEVC                 >> -            yuv420p10    yuv420p10       1920x800 >> format
+        format               >> -            yuv420p      yuv420p         1920x800 >> 
+
+/app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-7a4fbffd-5145-43ff-ab7c-3a9aa2cd55de_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 00:27:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0]" -map [f1_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/47BF1C/47BF1C.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 541 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/47BF1C/47BF1C_%d.ts"
+
+23:30:17.486 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+23:30:17.487   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+23:30:17.487 Execution Date: 2025-09-24 23:30:17
+23:30:17.497 [matroska,webm @ 0x704bcc0] Could not find codec parameters for stream 2 (Subtitle: hdmv_pgs_subtitle (pgssub)): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+23:30:17.501 Input #0, matroska,webm, from '/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv':
+23:30:17.501   Metadata:
+23:30:17.501     encoder         : libebml v1.4.4 + libmatroska v1.7.1
+23:30:17.501     creation_time   : 2023-09-15T20:50:36.000000Z
+23:30:17.501   Duration: 01:56:36.00, start: 0.000000, bitrate: 4662 kb/s
+23:30:17.501   Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv), 1920x800, SAR 1:1 DAR 12:5, Level 120, 23.81 fps, 23.81 tbr, 1k tbn (default)
+23:30:17.501     Metadata:
+23:30:17.501       BPS             : 4008504
+23:30:17.501       DURATION        : 01:56:35.989000000
+23:30:17.501       NUMBER_OF_FRAMES: 167736
+23:30:17.501       NUMBER_OF_BYTES : 3505431783
+23:30:17.501   Stream #0:1(eng): Audio: eac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default)
+23:30:17.501     Metadata:
+23:30:17.501       BPS             : 640000
+23:30:17.501       DURATION        : 01:56:36.000000000
+23:30:17.501       NUMBER_OF_FRAMES: 218625
+23:30:17.501       NUMBER_OF_BYTES : 559680000
+23:30:17.501   Stream #0:2(eng): Subtitle: hdmv_pgs_subtitle (default)
+23:30:17.501     Metadata:
+23:30:17.501       title           : SHD
+23:30:17.501       BPS             : 32881
+23:30:17.501       DURATION        : 01:55:11.280000000
+23:30:17.501       NUMBER_OF_FRAMES: 3459
+23:30:17.501       NUMBER_OF_BYTES : 28406378
+23:30:17.507 Stream mapping:
+23:30:17.507   Stream #0:0 (hevc) -> format:default (graph 0)
+23:30:17.507   format:default (graph 0) -> Stream #0:0 (libx264)
+23:30:17.507   Stream #0:1 -> #0:1 (eac3 (native) -> mp3 (libmp3lame))
+23:30:17.507 Press [q] to stop, [?] for help
+23:30:17.656 [libx264 @ 0x7108d40] using SAR=1/1
+23:30:17.662 [libx264 @ 0x7108d40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+23:30:17.669 [libx264 @ 0x7108d40] profile High, level 4.0, 4:2:0, 8-bit
+23:30:17.670 [libx264 @ 0x7108d40] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0 me=hex subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=4 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=72 keyint_min=37 scenecut=0 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=6993 vbv_bufsize=13986 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+23:30:17.673 Output #0, segment, to '/config/transcoding-temp/47BF1C/47BF1C_%d.ts':
+23:30:17.673   Metadata:
+23:30:17.673     encoder         : Lavf59.27.100
+23:30:17.673   Stream #0:0: Video: h264, yuv420p(tv, progressive), 1920x800 [SAR 1:1 DAR 12:5], q=2-31, 23.81 fps, 90k tbn
+23:30:17.673     Metadata:
+23:30:17.673       encoder         : Lavc59.37.100 libx264
+23:30:17.673     Side data:
+23:30:17.673       cpb: bitrate max/min/avg: 6993000/0/0 buffer size: 13986000 vbv_delay: N/A
+23:30:17.673   Stream #0:1(eng): Audio: mp3, 48000 Hz, stereo, fltp, 192 kb/s (default)
+23:30:17.673     Metadata:
+23:30:17.673       encoder         : Lavc59.37.100 libmp3lame
+23:30:17.675 elapsed=00:00:00.14 frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A throttle=off speed=   0x    
+23:30:18.161 elapsed=00:00:00.65 frame=   64 fps=0.0 q=28.0 size=N/A time=00:00:02.59 bitrate=N/A throttle=off speed=3.97x    
+23:30:18.677 elapsed=00:00:01.15 frame=   98 fps= 85 q=28.0 size=N/A time=00:00:04.12 bitrate=N/A throttle=off speed=3.57x    
+23:30:18.683 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:18.704 SegmentComplete=video:0 Index=541 Start=0.000000 End=1626.071922 Duration=1626.071922 offset_pts=0 start_pts=0 Frames=72 filename=47BF1C_541.ts
+23:30:18.704 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_542.ts.tmp' for writing
+23:30:19.170 elapsed=00:00:01.65 frame=  140 fps= 85 q=28.0 size=N/A time=00:00:06.00 bitrate=N/A throttle=off speed=3.62x    
+23:30:19.587 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:19.608 SegmentComplete=video:0 Index=542 Start=1626.071922 End=1629.095922 Duration=3.024000 offset_pts=0 start_pts=1626071922 Frames=72 filename=47BF1C_542.ts
+23:30:19.608 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_543.ts.tmp' for writing
+23:30:19.688 elapsed=00:00:02.16 frame=  180 fps= 83 q=28.0 size=N/A time=00:00:07.53 bitrate=N/A throttle=off speed=3.49x    
+23:30:20.176 elapsed=00:00:02.66 frame=  224 fps= 84 q=28.0 size=N/A time=00:00:09.36 bitrate=N/A throttle=off speed=3.51x    
+23:30:20.458 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:20.531 SegmentComplete=video:0 Index=543 Start=1629.095922 End=1632.119922 Duration=3.024000 offset_pts=0 start_pts=1629095922 Frames=72 filename=47BF1C_543.ts
+23:30:20.531 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_544.ts.tmp' for writing
+23:30:20.686 elapsed=00:00:03.17 frame=  259 fps= 82 q=28.0 size=N/A time=00:00:10.70 bitrate=N/A throttle=off speed=3.37x    
+23:30:21.135 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:21.152 SegmentComplete=video:0 Index=544 Start=1632.119922 End=1635.143922 Duration=3.024000 offset_pts=0 start_pts=1632119922 Frames=72 filename=47BF1C_544.ts
+23:30:21.152 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_545.ts.tmp' for writing
+23:30:21.184 elapsed=00:00:03.67 frame=  319 fps= 87 q=28.0 size=N/A time=00:00:13.32 bitrate=N/A dup=0 drop=1 throttle=off speed=3.62x    
+23:30:21.691 elapsed=00:00:04.17 frame=  373 fps= 89 q=28.0 size=N/A time=00:00:15.62 bitrate=N/A dup=0 drop=1 throttle=off speed=3.74x    
+23:30:21.782 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:21.802 SegmentComplete=video:0 Index=545 Start=1635.143922 End=1638.167922 Duration=3.024000 offset_pts=0 start_pts=1635143922 Frames=72 filename=47BF1C_545.ts
+23:30:21.802 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_546.ts.tmp' for writing
+23:30:22.203 elapsed=00:00:04.68 frame=  431 fps= 92 q=28.0 size=N/A time=00:00:18.09 bitrate=N/A dup=0 drop=2 throttle=off speed=3.86x    
+23:30:22.232 
+
+[q] command received. Exiting.
+
+23:30:22.312 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+23:30:22.331 SegmentComplete=video:0 Index=546 Start=1638.167922 End=1641.191922 Duration=3.024000 offset_pts=0 start_pts=1638167922 Frames=72 filename=47BF1C_546.ts
+23:30:22.331 [segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C_547.ts.tmp' for writing
+[segment @ 0x712c380] Opening '/config/transcoding-temp/47BF1C/47BF1C.m3u8.tmp' for writing
+SegmentComplete=video:0 Index=547 Start=1641.191922 End=1641.233922 Duration=0.042000 offset_pts=0 start_pts=1641191922 Frames=1 filename=47BF1C_547.ts
+elapsed=00:00:04.84 frame=  433 fps= 89 q=-1.0 Lsize=N/A time=00:00:18.16 bitrate=N/A dup=0 drop=2 throttle=off speed=3.75x    
+video:4164kB audio:436kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x7108d40] frame I:7     Avg QP:19.06  size: 98510
+[libx264 @ 0x7108d40] frame P:133   Avg QP:21.04  size: 20079
+[libx264 @ 0x7108d40] frame B:293   Avg QP:24.28  size:  3081
+[libx264 @ 0x7108d40] consecutive B-frames:  7.4%  4.6%  7.6% 80.4%
+[libx264 @ 0x7108d40] mb I  I16..4: 27.4% 35.9% 36.7%
+[libx264 @ 0x7108d40] mb P  I16..4: 21.9%  0.0%  0.0%  P16..4: 33.9%  0.0%  0.0%  0.0%  0.0%    skip:44.2%
+[libx264 @ 0x7108d40] mb B  I16..4:  1.0%  0.0%  0.0%  B16..8: 10.7%  0.0%  0.0%  direct: 5.9%  skip:82.4%  L0:35.7% L1:48.8% BI:15.5%
+[libx264 @ 0x7108d40] 8x8 transform intra:6.4% inter:56.0%
+[libx264 @ 0x7108d40] coded y,uvDC,uvAC intra: 32.6% 48.7% 21.2% inter: 5.0% 10.7% 0.5%
+[libx264 @ 0x7108d40] i16 v,h,dc,p: 43% 31% 12% 14%
+[libx264 @ 0x7108d40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 29% 14%  6%  6%  6%  7%  5%  9%
+[libx264 @ 0x7108d40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 23%  9%  8%  7%  8%  7%  6%  8%
+[libx264 @ 0x7108d40] i8c dc,h,v,p: 43% 29% 20%  8%
+[libx264 @ 0x7108d40] Weighted P-Frames: Y:0.8% UV:0.8%
+[libx264 @ 0x7108d40] kb/s:1875.25
+EXIT
+
+======= ExtraData
+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
+---

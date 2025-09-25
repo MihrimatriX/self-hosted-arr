@@ -1,0 +1,66 @@
+2025-09-25 00:32:11.491
+Operating System: Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+OS/Process: x64/x64
+Emby Server version: 4.8.11.0
+Operating system: Unix 5.15.167.4
+Command Line: /app/emby/system/EmbyServer.dll -programdata /config -ffdetect /app/emby/bin/ffdetect -ffmpeg /app/emby/bin/ffmpeg -ffprobe /app/emby/bin/ffprobe -restartexitcode 3
+
+App: Emby Web 4.8.11.0
+Microsoft Edge Windows
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+
+http://localhost:8096/emby/videos/6/main.m3u8?DeviceId=dbf83b7c-a616-4d0e-809d-99dee0c6aae3&MediaSourceId=440e60f975ceb27f8dcab4b7c688da12&StartTimeTicks=54050839750&PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222&api_key=‌b1fd53d21e734841a234e4f8d502c8ad‌&VideoCodec=h264,av1&AudioCodec=mp3,aac&VideoBitrate=199616000&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline,high10&h264-level=62&TranscodeReasons=SubtitleCodecNotSupported,DirectPlayError&allowVideoStreamCopy=false
+
+http://localhost:8096/emby/videos/6/hls1/main/1801.ts?PlaySessionId=fc5d37fadaeb4fd8809e853b6183f222
+
+{"Protocol":"File","Id":"440e60f975ceb27f8dcab4b7c688da12","Path":"/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv","Type":"Default","Container":"mkv","Size":4077122515,"Name":"Cars 2006 1080p BluRay DD 5 1 x265 edge2020","IsRemote":false,"HasMixedProtocols":false,"RunTimeTicks":69960000000,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"RequiresClosing":false,"RequiresLooping":false,"SupportsProbing":false,"MediaStreams":[{"Codec":"hevc","TimeBase":"1/1000","VideoRange":"SDR","DisplayTitle":"1080p HEVC","IsInterlaced":false,"BitRate":4662232,"BitDepth":10,"RefFrames":1,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Height":800,"Width":1920,"AverageFrameRate":23.809525,"RealFrameRate":23.809525,"Profile":"Main 10","Type":"Video","AspectRatio":"2.40:1","Index":0,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","PixelFormat":"yuv420p10le","Level":120,"IsAnamorphic":false,"ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"eac3","Language":"eng","TimeBase":"1/1000","DisplayTitle":"English EAC3 5.1 (Default)","DisplayLanguage":"English","IsInterlaced":false,"ChannelLayout":"5.1","BitRate":640000,"Channels":6,"SampleRate":48000,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Audio","Index":1,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0},{"Codec":"PGSSUB","Language":"eng","TimeBase":"1/1000","Title":"SHD","DisplayTitle":"English (Default PGSSUB)","DisplayLanguage":"English","IsInterlaced":false,"IsDefault":true,"IsForced":false,"IsHearingImpaired":false,"Type":"Subtitle","Index":2,"IsExternal":false,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Protocol":"File","ExtendedVideoType":"None","ExtendedVideoSubType":"None","ExtendedVideoSubTypeDescription":"None","AttachmentSize":0,"SubtitleLocationType":"InternalStream"}],"Formats":[],"Bitrate":4662232,"RequiredHttpHeaders":{},"AddApiKeyToDirectStreamUrl":false,"ReadAtNativeFramerate":false,"ItemId":"6"}
+
+>>>>>>  User policy for admin
+        Enable Playback Remuxing: True
+        Enable Video Playback Transcoding: True
+        Enable Audio Playback Transcoding: True
+
+>>>>>>  Selected Codecs
+Decoder Automatic software decoder
+
+
+Encoder x264
+        Max Bitrate: 781 Mbit/s
+        Color Formats: YUV420P, YUVJ420P, YUV422P, YUVJ422P, YUV444P, YUVJ444P, NV12, NV16, NV21, YUV420P10, YUV422P10, YUV444P10, NV20, GRAY8, GRAY10 - Bit Depths: 8, 10, 12, 14
+        Profiles: Baseline Profile (Level 6.2), Main Profile (Level 6.2), High Profile (Level 6.2), High 10 Profile (Level 6.2), High 4:2:2 Profile (Level 6.2), High 4:4:4 Predictive Profile (Level 6.2)
+
+
+>>>>>>  FindVideoEncoder - MediaType: h264, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'x264'
+Info    Check successful - selecting 'x264'
+
+>>>>>>  FindVideoDecoder - MediaType: hevc, UseHardwareCodecs: True, HWA-Mode: Automatic
+Info    Checking: 'Automatic software decoder'
+Info    Check successful - selecting 'Automatic software decoder'
+
+>>>>>>  Processing Plan
+        Name                                        CanDoInHW  WillDoInHW  Reason                                                 
+        Automatic software decoder               >> False      False       Software Codec                                          
+        VideoInput                               >> False      False       Not a hardware decoder                                  
+        ColorConversion                          >> False      False                                                               
+        SubtitleOverlay                          >> False      False                                                               
+        VideoOutput                              >> False      False       Not a hardware encoder                                  
+        x264                                     >> False      False       Software Codec                                          
+
+>>>>>>  Video Processing Steps for [0:0]: H.265 (HEVC)
+        Step                    HW-Context   Format       SW-Format           Size   Next
+        HEVC                 >> -            yuv420p10    yuv420p10       1920x800 >> format
+        format               >> -            yuv420p      yuv420p         1920x800 >> overlay
+        overlay              >> -            yuv420p      yuv420p         1920x800 >> 
+
+/app/emby/bin/ffmpeg -loglevel +timing -y -print_graphs_file "/config/logs/ffmpeg-transcode-2a690287-c968-4abb-a651-1262786a095e_1graph.txt" -copyts -start_at_zero -f matroska,webm -ss 01:30:03.000 -c:v:0 hevc -noautorotate -i "/data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv" -filter_complex "[0:0]format@f1=pix_fmts=yuv420p[f1_out0];[0:2]scale@f2=width=1920:height=800[f2_out0];[f1_out0][f2_out0]overlay@f3=x=(W-w)/2:y=(H-h):repeatlast=0[f3_out0]" -map [f3_out0] -map 0:1 -sn -c:v:0 libx264 -g:v:0 72 -maxrate:v:0 6993348 -bufsize:v:0 13986696 -sc_threshold:v:0 0 -keyint_min:v:0 72 -r:v:0 23.809524536132812 -pix_fmt:v:0 yuv420p -preset:v:0 veryfast -profile:v:0 high -x264opts:v:0 "subme=0:me_range=4:rc_lookahead=10:partitions=none" -crf:v:0 23 -c:a:0 libmp3lame -ab:a:0 192000 -ac:a:0 2 -metadata:s:a:0 language=eng -filter:a:0 "volume=2" -disposition:a:0 default -max_delay 5000000 -avoid_negative_ts disabled -f segment -map_metadata -1 -map_chapters -1 -segment_format mpegts -segment_list "/config/transcoding-temp/EE1299/EE1299.m3u8" -segment_list_type m3u8 -segment_time 00:00:03.000 -segment_start_number 1801 -individual_header_trailer 0 -write_header_trailer 0 -segment_write_temp 1 "/config/transcoding-temp/EE1299/EE1299_%d.ts"
+
+00:32:11.500 ffmpeg version 5.1-emby_2023_06_25 Copyright (c) 2000-2022 the FFmpeg developers and softworkz for Emby LLC
+00:32:11.500   built with gcc 10.3.0 (crosstool-NG 1.25.0)
+00:32:11.501 Execution Date: 2025-09-25 00:32:11
+00:32:11.502 /data/movies/Cars (2006)/Cars 2006 1080p BluRay DD 5 1 x265 edge2020.mkv: No such file or directory
+00:32:11.505 EXIT
+
+======= ExtraData
+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
+---
