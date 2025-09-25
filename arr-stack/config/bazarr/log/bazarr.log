@@ -1,0 +1,15 @@
+2025-09-25 02:04:24|INFO    |root                            |BAZARR Log file emptied|
+2025-09-25 02:06:01|INFO    |root                            |Scheduler will use this timezone: Europe/Istanbul|
+2025-09-25 02:06:03|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-09-25 02:06:03|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+2025-09-25 02:06:03|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-09-25 02:06:03|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+2025-09-25 02:06:03|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-09-25 02:06:03|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-09-25 02:06:03|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+2025-09-25 02:25:18|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2025-09-25 02:25:18|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2025-09-25 02:25:18|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2025-09-25 02:30:35|ERROR   |root                            |Video file "/downloads/Cars (2006)/Cars.2006.720p.BrRip.x264.YIFY.mp4" cannot be found for analysis|
+2025-09-25 02:32:42|INFO    |root                            |Successful authentication from ***.***.***.*** for user admin|
+2025-09-25 02:47:57|ERROR   |root                            |Video file "/downloads/The Fantastic 4 - First Steps (2025)/The Fantastic Four First Steps 2025 1080p WEBRip 10Bit DDP5 1 x26.mkv" cannot be found for analysis|

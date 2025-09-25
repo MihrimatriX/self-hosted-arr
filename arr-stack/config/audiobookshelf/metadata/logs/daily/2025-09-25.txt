@@ -1,0 +1,27 @@
+{"timestamp":"2025-09-25 01:44:59.498","source":"Server.js:220","message":"=== Starting Server ===","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.502","source":"Server.js:143","message":"[Server] Init v2.29.0","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.503","source":"Server.js:144","message":"[Server] Node.js Version: v20.19.4","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.504","source":"Server.js:145","message":"[Server] Platform: linux","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.505","source":"Server.js:146","message":"[Server] Arch: x64","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.650","source":"Database.js:171","message":"[Database] absdatabase.sqlite not found at /config/absdatabase.sqlite","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.706","source":"Database.js:217","message":"[Database] Initializing db at \"/config/absdatabase.sqlite\"","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.854","source":"Database.js:292","message":"[Database] Loading extension /usr/local/lib/nusqlite3/libnusqlite3.so","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.856","source":"Database.js:300","message":"[Database] Successfully loaded extension /usr/local/lib/nusqlite3/libnusqlite3.so","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.857","source":"Database.js:269","message":"[Database] Db supports unaccent and unicode foldings","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:44:59.858","source":"Database.js:273","message":"[Database] Db connection was successful","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:01.233","source":"MigrationManager.js:71","message":"[MigrationManager] Database is new. Skipping migrations.","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.212","source":"Database.js:201","message":"[Database] Db initialized with models: user, session, apiKey, library, libraryFolder, book, podcast, podcastEpisode, libraryItem, mediaProgress, series, bookSeries, author, bookAuthor, collection, collectionBook, playlist, playlistMediaItem, device, playbackSession, feed, feedEpisode, setting, customMetadataProvider, mediaItemShare","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.222","source":"Database.js:865","message":"[Database] Adding trigger update_library_items_title","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.332","source":"Database.js:865","message":"[Database] Adding trigger update_library_items_title_ignore_prefix","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.508","source":"Database.js:865","message":"[Database] Adding trigger update_library_items_title_from_podcasts_title","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.667","source":"Database.js:865","message":"[Database] Adding trigger update_library_items_title_ignore_prefix_from_podcasts_title_ignore_prefix","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.773","source":"Database.js:903","message":"[Database] Adding trigger update_library_items_author_names_on_book_authors_insert","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:16.949","source":"Database.js:903","message":"[Database] Adding trigger update_library_items_author_names_on_book_authors_delete","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:17.234","source":"Database.js:928","message":"[Database] Adding trigger update_library_items_author_names_on_authors_update","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:18.371","source":"Database.js:207","message":"[Database] running ANALYZE","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:18.436","source":"Database.js:209","message":"[Database] ANALYZE completed","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:18.437","source":"TokenManager.js:42","message":"[TokenManager] JWT secret key not found, generating one","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:19.043","source":"LogManager.js:66","message":"[LogManager] Init current daily log filename: 2025-09-25.txt","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:19.374","source":"BackupManager.js:285","message":"[BackupManager] 0 Backups Found","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:19.377","source":"BackupManager.js:72","message":"[BackupManager] Auto Backups are disabled","levelName":"INFO","level":2}
+{"timestamp":"2025-09-25 01:45:19.781","source":"Server.js:424","message":"Listening on port :80","levelName":"INFO","level":2}
