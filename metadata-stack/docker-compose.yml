@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin-metadata
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - JELLYFIN_PublishedServerUrl=${JELLYFIN_PUBLISHED_SERVER_URL}
+    volumes:
+      - ./config:/config
+      - ${MOVIES_PATH}:/data/movies:ro
+      - ${TV_PATH}:/data/tvshows:ro
+    ports:
+      - "${JELLYFIN_HTTP_PORT}:8096"
+      - "${JELLYFIN_HTTPS_PORT}:8920"  # HTTPS port
+      - "7359:7359/udp"  # DLNA
+      - "1900:1900/udp"  # DLNA
+    restart: unless-stopped
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    driver: bridge
