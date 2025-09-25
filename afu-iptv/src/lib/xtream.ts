@@ -4,7 +4,7 @@ import type {
   ChannelCategory,
   ChannelStream,
   XtreamCategory,
-  XtreamStream
+  XtreamStream,
 } from "@/types/xtream";
 
 export class XtreamApiError extends Error {
@@ -27,7 +27,6 @@ const XTREAM_USER_AGENT =
 const API_BASE = process.env.XTREAM_API_BASE ?? DEFAULT_API_BASE;
 const USERNAME = process.env.XTREAM_USERNAME;
 const PASSWORD = process.env.XTREAM_PASSWORD;
-//const SESSION_COOKIE = process.env.XTREAM_SESSION_COOKIE;
 
 const XTREAM_HEADERS = {
   Accept:
@@ -37,7 +36,7 @@ const XTREAM_HEADERS = {
   Connection: "keep-alive",
   DNT: "1",
   "Upgrade-Insecure-Requests": "1",
-  "User-Agent": XTREAM_USER_AGENT
+  "User-Agent": XTREAM_USER_AGENT,
 } as const;
 
 function ensureCredentials() {
@@ -57,14 +56,16 @@ function buildXtreamUrl(searchParams: Record<string, string | number>) {
     password: PASSWORD!,
     ...Object.fromEntries(
       Object.entries(searchParams).map(([key, value]) => [key, String(value)])
-    )
+    ),
   });
 
   url.search = params.toString();
   return url;
 }
 
-async function xtreamRequest<T>(params: Record<string, string | number>): Promise<T> {
+async function xtreamRequest<T>(
+  params: Record<string, string | number>
+): Promise<T> {
   const url = buildXtreamUrl(params);
 
   let response: Response;
@@ -73,8 +74,8 @@ async function xtreamRequest<T>(params: Record<string, string | number>): Promis
       method: "GET",
       cache: "no-store",
       headers: {
-        ...XTREAM_HEADERS
-      }
+        ...XTREAM_HEADERS,
+      },
     });
   } catch (error) {
     const message =
@@ -122,22 +123,26 @@ function normaliseStreams(streams: XtreamStream[]): ChannelStream[] {
         streamType,
         streamIcon: stream.stream_icon ?? null,
         added: stream.added,
-        streamUrl: `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`
+        streamUrl: `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`,
       };
 
       return normalised;
     })
-    .sort((a, b) => a.name.localeCompare(b.name, "tr", { sensitivity: "base" }));
+    .sort((a, b) =>
+      a.name.localeCompare(b.name, "tr", { sensitivity: "base" })
+    );
 }
 
 async function getLiveCategories(): Promise<XtreamCategory[]> {
   return xtreamRequest<XtreamCategory[]>({ action: "get_live_categories" });
 }
 
-async function getLiveStreamsByCategory(categoryId: string): Promise<XtreamStream[]> {
+async function getLiveStreamsByCategory(
+  categoryId: string
+): Promise<XtreamStream[]> {
   return xtreamRequest<XtreamStream[]>({
     action: "get_live_streams",
-    category_id: categoryId
+    category_id: categoryId,
   });
 }
 
@@ -155,7 +160,7 @@ export const getCategoriesWithStreams = cache(async () => {
         name: category.category_name,
         parentId: category.parent_id,
         order: Number.parseInt(category.category_id, 10) || index,
-        streams: normaliseStreams(streams)
+        streams: normaliseStreams(streams),
       };
 
       return normalisedCategory;
@@ -164,7 +169,9 @@ export const getCategoriesWithStreams = cache(async () => {
 
   return categoriesWithStreams
     .filter((category) => category.streams.length > 0)
-    .sort((a, b) => a.name.localeCompare(b.name, "tr", { sensitivity: "base" }));
+    .sort((a, b) =>
+      a.name.localeCompare(b.name, "tr", { sensitivity: "base" })
+    );
 });
 
 export type { ChannelCategory, ChannelStream };
