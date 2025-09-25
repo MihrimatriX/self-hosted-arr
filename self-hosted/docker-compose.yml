@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  stirling-pdf:
+    image: stirlingtools/stirling-pdf:latest
+    container_name: stirling-pdf
+    volumes:
+      - ./tessdata:/usr/share/tessdata
+      - ./configs:/configs
+      - ./logs:/logs
+      - ./custom-files:/customFiles
+    environment:
+      - DOCKER_ENABLE_SECURITY=true
+      - LANGS=en_US,fr_FR,de_DE
+    networks:
+      - proxy-network
+    restart: unless-stopped
+
+networks:
+  proxy-network:
+    external: true
