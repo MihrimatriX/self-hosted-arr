@@ -3,7 +3,7 @@ import { ChannelBrowser } from "@/components/ChannelBrowser";
 import { getCategoriesWithStreams, XtreamApiError } from "@/lib/xtream";
 import type { ChannelCategory } from "@/types/xtream";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   let categories: ChannelCategory[] = [];
@@ -12,6 +12,8 @@ export default async function HomePage() {
   try {
     categories = await getCategoriesWithStreams();
   } catch (error) {
+    console.error("Xtream verileri cekilirken hata olustu", error);
+
     if (error instanceof XtreamApiError) {
       if (error.status === 401 || error.status === 403) {
         errorMessage = "Xtream kimlik bilgileri dogrulanamadi. Lutfen .env ayarlarinizi kontrol edin.";
