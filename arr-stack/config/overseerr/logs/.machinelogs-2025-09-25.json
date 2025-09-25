@@ -1,0 +1,124 @@
+{"level":"info","message":"Commit Tag: $GIT_SHA","timestamp":"2025-09-24T22:45:10.157Z"}
+{"level":"info","message":"Starting Overseerr version 1.34.0","timestamp":"2025-09-24T22:45:11.902Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2025-09-24T22:45:18.135Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2025-09-24T22:45:18.280Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":0,"type":1},"timestamp":"2025-09-24T22:45:18.323Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":1,"type":2},"timestamp":"2025-09-24T22:45:18.416Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":2,"type":3},"timestamp":"2025-09-24T22:45:18.469Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":3,"type":4},"timestamp":"2025-09-24T22:45:18.564Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":4,"type":5},"timestamp":"2025-09-24T22:45:18.655Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":5,"type":6},"timestamp":"2025-09-24T22:45:18.884Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":6,"type":7},"timestamp":"2025-09-24T22:45:19.043Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":7,"type":8},"timestamp":"2025-09-24T22:45:19.219Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":8,"type":9},"timestamp":"2025-09-24T22:45:19.345Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":9,"type":10},"timestamp":"2025-09-24T22:45:19.427Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":10,"type":11},"timestamp":"2025-09-24T22:45:19.477Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":11,"type":12},"timestamp":"2025-09-24T22:45:19.541Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2025-09-24T22:45:20.375Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T22:48:00.040Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T22:50:00.037Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"bb409eb0-f424-4515-96e1-4c190dc7e406","timestamp":"2025-09-24T22:50:00.039Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T22:50:00.044Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T22:51:00.038Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T22:54:00.045Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T22:55:00.036Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"f54e5f1a-24d5-453b-b316-95d050bb2ced","timestamp":"2025-09-24T22:55:00.037Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T22:55:00.039Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T22:57:00.051Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:00:00.049Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:00:00.056Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"a435f022-6bbd-40d0-a1a0-23fbc4f2086c","timestamp":"2025-09-24T23:00:00.056Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:00:00.059Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:03:00.034Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:05:00.044Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"a152f81d-40c3-4eb1-a7b3-b5b633e4b651","timestamp":"2025-09-24T23:05:00.045Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:05:00.051Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:06:00.043Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:09:00.044Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:10:00.044Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"e6de3cfa-0633-4e76-9ec5-e674656a31a5","timestamp":"2025-09-24T23:10:00.044Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:10:00.047Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:12:00.048Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:15:00.019Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:15:00.025Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"a6771da5-0a1b-406d-9670-996a7c89322a","timestamp":"2025-09-24T23:15:00.026Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:15:00.028Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:18:00.029Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:20:00.015Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"8e157777-71c6-436c-b680-f14118f6a6a5","timestamp":"2025-09-24T23:20:00.016Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:20:00.019Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:21:00.023Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:24:00.028Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:25:00.030Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"bdc7b033-efa5-4b65-b031-4732a01776c1","timestamp":"2025-09-24T23:25:00.030Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:25:00.032Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:27:00.027Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:30:00.032Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:30:00.038Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"aed55078-4638-4a33-ae4b-e016eeef88af","timestamp":"2025-09-24T23:30:00.039Z"}
+{"label":"Plex Scan","level":"warn","message":"No admin configured. Plex scan skipped.","timestamp":"2025-09-24T23:30:00.042Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:33:00.022Z"}
+{"errorMessage":"Unexpected token u in JSON at position 0","label":"API","level":"error","message":"Something went wrong retrieving Plex server list","timestamp":"2025-09-24T23:34:51.237Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:35:00.004Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"c5f74095-4241-484c-ad65-aa279c78e548","timestamp":"2025-09-24T23:35:00.005Z"}
+{"errorMessage":"connect ECONNREFUSED ::1:32400","label":"Plex Scan","level":"error","message":"Scan interrupted","timestamp":"2025-09-24T23:35:00.019Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:36:00.010Z"}
+{"label":"Plex API","level":"error","message":"Cannot read properties of undefined (reading 'filter')","timestamp":"2025-09-24T23:38:49.049Z"}
+{"label":"Plex API","level":"error","message":"Cannot read properties of undefined (reading 'filter')","timestamp":"2025-09-24T23:38:53.841Z"}
+{"label":"Plex API","level":"error","message":"Cannot read properties of undefined (reading 'filter')","timestamp":"2025-09-24T23:38:55.336Z"}
+{"label":"Plex API","level":"error","message":"Cannot read properties of undefined (reading 'filter')","timestamp":"2025-09-24T23:38:56.033Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:39:00.008Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:39:59.407Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:40:00.013Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"ad592840-32e8-4aa5-80fa-3caac5788c4e","timestamp":"2025-09-24T23:40:00.015Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-24T23:40:00.038Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:40:05.710Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"The Fantastic 4: First Steps (2025)","timestamp":"2025-09-24T23:40:15.328Z"}
+{"label":"Media Request","level":"info","mediaId":1,"message":"Sent request to Radarr","requestId":1,"timestamp":"2025-09-24T23:40:15.340Z"}
+{"label":"Radarr","level":"info","message":"Radarr accepted request","timestamp":"2025-09-24T23:40:16.103Z"}
+{"label":"Media Request","level":"info","mediaId":2,"message":"Request has an override quality profile ID: 3","requestId":2,"timestamp":"2025-09-24T23:41:37.910Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Sexy Oral: Uwakina Kuchibiru (1984)","timestamp":"2025-09-24T23:41:37.930Z"}
+{"label":"Media Request","level":"info","mediaId":2,"message":"Sent request to Radarr","requestId":2,"timestamp":"2025-09-24T23:41:37.944Z"}
+{"label":"Radarr","level":"info","message":"Radarr accepted request","timestamp":"2025-09-24T23:41:42.887Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:42:00.008Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:45:00.025Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:45:00.046Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"225626a7-3c7f-4bc7-9b72-2396be856865","timestamp":"2025-09-24T23:45:00.049Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-24T23:45:00.352Z"}
+{"label":"Media Request","level":"warn","mediaId":3,"message":"No Sonarr server configured, skipping request processing","requestId":3,"timestamp":"2025-09-24T23:46:20.530Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Family Guy (1999)","timestamp":"2025-09-24T23:46:20.586Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:47:59.018Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:48:00.112Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:50:00.007Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"9192d45d-1314-4f71-a12f-07b156fd059c","timestamp":"2025-09-24T23:50:00.008Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-24T23:50:00.041Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:51:00.005Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:51:31.815Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:52:27.815Z"}
+{"label":"Media Request","level":"info","mediaId":4,"message":"Request has an override server: Sonarr","requestId":4,"timestamp":"2025-09-24T23:52:43.096Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Family Guy (1999)","timestamp":"2025-09-24T23:52:43.123Z"}
+{"label":"Media Request","level":"info","mediaId":4,"message":"Sent request to Sonarr","requestId":4,"timestamp":"2025-09-24T23:52:43.141Z"}
+{"label":"Sonarr","level":"info","message":"Sonarr accepted request","timestamp":"2025-09-24T23:52:43.793Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:52:46.584Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:53:24.097Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:54:00.008Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Paradise Inn Phuket: The Taste of College Students (2019)","timestamp":"2025-09-24T23:54:46.771Z"}
+{"label":"Media Request","level":"info","mediaId":5,"message":"Sent request to Radarr","requestId":5,"timestamp":"2025-09-24T23:54:46.777Z"}
+{"label":"Radarr","level":"info","message":"Radarr accepted request","timestamp":"2025-09-24T23:54:48.053Z"}
+{"errorMessage":"Request failed with status code 404","label":"Plex.TV Metadata API","level":"error","message":"Failed to retrieve watchlist items","timestamp":"2025-09-24T23:54:55.208Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-24T23:55:00.013Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"2dc55d22-139e-4b49-81e6-632b7bc9ca30","timestamp":"2025-09-24T23:55:00.015Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-24T23:55:00.037Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-24T23:57:00.006Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-25T00:00:00.010Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-25T00:00:00.032Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"dace096c-de1c-43e7-a907-e943bb05a14f","timestamp":"2025-09-25T00:00:00.032Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Full Library Scan","timestamp":"2025-09-25T00:00:00.053Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"36eade65-ac37-49e8-84e6-2a95f2234d7c","timestamp":"2025-09-25T00:00:00.054Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-25T00:00:00.095Z"}
+{"label":"Plex Scan","level":"info","message":"Full Scan Complete","timestamp":"2025-09-25T00:00:00.100Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-25T00:03:00.006Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Recently Added Scan","timestamp":"2025-09-25T00:05:00.009Z"}
+{"label":"Plex Scan","level":"info","message":"Scan starting","sessionId":"e4060516-108e-402b-bafa-8fb30a88b84b","timestamp":"2025-09-25T00:05:00.009Z"}
+{"label":"Plex Scan","level":"info","message":"Recently Added Scan Complete","timestamp":"2025-09-25T00:05:00.039Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Plex Watchlist Sync","timestamp":"2025-09-25T00:06:00.008Z"}

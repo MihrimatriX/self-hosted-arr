@@ -1,0 +1,124 @@
+2025-09-24T22:45:10.157Z [info]: Commit Tag: $GIT_SHA 
+2025-09-24T22:45:11.902Z [info]: Starting Overseerr version 1.34.0 
+2025-09-24T22:45:18.135Z [info][Notifications]: Registered notification agents 
+2025-09-24T22:45:18.280Z [info][Jobs]: Scheduled jobs loaded 
+2025-09-24T22:45:18.323Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":1,"enabled":true,"isBuiltIn":true,"order":0}}
+2025-09-24T22:45:18.416Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":2,"enabled":true,"isBuiltIn":true,"order":1}}
+2025-09-24T22:45:18.469Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":3,"enabled":true,"isBuiltIn":true,"order":2}}
+2025-09-24T22:45:18.564Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":4,"enabled":true,"isBuiltIn":true,"order":3}}
+2025-09-24T22:45:18.655Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":5,"enabled":true,"isBuiltIn":true,"order":4}}
+2025-09-24T22:45:18.884Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":6,"enabled":true,"isBuiltIn":true,"order":5}}
+2025-09-24T22:45:19.043Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":7,"enabled":true,"isBuiltIn":true,"order":6}}
+2025-09-24T22:45:19.219Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":8,"enabled":true,"isBuiltIn":true,"order":7}}
+2025-09-24T22:45:19.345Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":9,"enabled":true,"isBuiltIn":true,"order":8}}
+2025-09-24T22:45:19.427Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":10,"enabled":true,"isBuiltIn":true,"order":9}}
+2025-09-24T22:45:19.477Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":11,"enabled":true,"isBuiltIn":true,"order":10}}
+2025-09-24T22:45:19.541Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":12,"enabled":true,"isBuiltIn":true,"order":11}}
+2025-09-24T22:45:20.375Z [info][Server]: Server ready on port 5055 
+2025-09-24T22:48:00.040Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T22:50:00.037Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T22:50:00.039Z [info][Plex Scan]: Scan starting {"sessionId":"bb409eb0-f424-4515-96e1-4c190dc7e406"}
+2025-09-24T22:50:00.044Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T22:51:00.038Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T22:54:00.045Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T22:55:00.036Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T22:55:00.037Z [info][Plex Scan]: Scan starting {"sessionId":"f54e5f1a-24d5-453b-b316-95d050bb2ced"}
+2025-09-24T22:55:00.039Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T22:57:00.051Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:00:00.049Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:00:00.056Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:00:00.056Z [info][Plex Scan]: Scan starting {"sessionId":"a435f022-6bbd-40d0-a1a0-23fbc4f2086c"}
+2025-09-24T23:00:00.059Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:03:00.034Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:05:00.044Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:05:00.045Z [info][Plex Scan]: Scan starting {"sessionId":"a152f81d-40c3-4eb1-a7b3-b5b633e4b651"}
+2025-09-24T23:05:00.051Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:06:00.043Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:09:00.044Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:10:00.044Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:10:00.044Z [info][Plex Scan]: Scan starting {"sessionId":"e6de3cfa-0633-4e76-9ec5-e674656a31a5"}
+2025-09-24T23:10:00.047Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:12:00.048Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:15:00.019Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:15:00.025Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:15:00.026Z [info][Plex Scan]: Scan starting {"sessionId":"a6771da5-0a1b-406d-9670-996a7c89322a"}
+2025-09-24T23:15:00.028Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:18:00.029Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:20:00.015Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:20:00.016Z [info][Plex Scan]: Scan starting {"sessionId":"8e157777-71c6-436c-b680-f14118f6a6a5"}
+2025-09-24T23:20:00.019Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:21:00.023Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:24:00.028Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:25:00.030Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:25:00.030Z [info][Plex Scan]: Scan starting {"sessionId":"bdc7b033-efa5-4b65-b031-4732a01776c1"}
+2025-09-24T23:25:00.032Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:27:00.027Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:30:00.032Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:30:00.038Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:30:00.039Z [info][Plex Scan]: Scan starting {"sessionId":"aed55078-4638-4a33-ae4b-e016eeef88af"}
+2025-09-24T23:30:00.042Z [warn][Plex Scan]: No admin configured. Plex scan skipped. 
+2025-09-24T23:33:00.022Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:34:51.237Z [error][API]: Something went wrong retrieving Plex server list {"errorMessage":"Unexpected token u in JSON at position 0"}
+2025-09-24T23:35:00.004Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:35:00.005Z [info][Plex Scan]: Scan starting {"sessionId":"c5f74095-4241-484c-ad65-aa279c78e548"}
+2025-09-24T23:35:00.019Z [error][Plex Scan]: Scan interrupted {"errorMessage":"connect ECONNREFUSED ::1:32400"}
+2025-09-24T23:36:00.010Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:38:49.049Z [error][Plex API]: Cannot read properties of undefined (reading 'filter') 
+2025-09-24T23:38:53.841Z [error][Plex API]: Cannot read properties of undefined (reading 'filter') 
+2025-09-24T23:38:55.336Z [error][Plex API]: Cannot read properties of undefined (reading 'filter') 
+2025-09-24T23:38:56.033Z [error][Plex API]: Cannot read properties of undefined (reading 'filter') 
+2025-09-24T23:39:00.008Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:39:59.407Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:40:00.013Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:40:00.015Z [info][Plex Scan]: Scan starting {"sessionId":"ad592840-32e8-4aa5-80fa-3caac5788c4e"}
+2025-09-24T23:40:00.038Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-24T23:40:05.710Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:40:15.328Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"The Fantastic 4: First Steps (2025)"}
+2025-09-24T23:40:15.340Z [info][Media Request]: Sent request to Radarr {"requestId":1,"mediaId":1}
+2025-09-24T23:40:16.103Z [info][Radarr]: Radarr accepted request 
+2025-09-24T23:41:37.910Z [info][Media Request]: Request has an override quality profile ID: 3 {"requestId":2,"mediaId":2}
+2025-09-24T23:41:37.930Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Sexy Oral: Uwakina Kuchibiru (1984)"}
+2025-09-24T23:41:37.944Z [info][Media Request]: Sent request to Radarr {"requestId":2,"mediaId":2}
+2025-09-24T23:41:42.887Z [info][Radarr]: Radarr accepted request 
+2025-09-24T23:42:00.008Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:45:00.025Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:45:00.046Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:45:00.049Z [info][Plex Scan]: Scan starting {"sessionId":"225626a7-3c7f-4bc7-9b72-2396be856865"}
+2025-09-24T23:45:00.352Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-24T23:46:20.530Z [warn][Media Request]: No Sonarr server configured, skipping request processing {"requestId":3,"mediaId":3}
+2025-09-24T23:46:20.586Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Family Guy (1999)"}
+2025-09-24T23:47:59.018Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:48:00.112Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:50:00.007Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:50:00.008Z [info][Plex Scan]: Scan starting {"sessionId":"9192d45d-1314-4f71-a12f-07b156fd059c"}
+2025-09-24T23:50:00.041Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-24T23:51:00.005Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:51:31.815Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:52:27.815Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:52:43.096Z [info][Media Request]: Request has an override server: Sonarr {"requestId":4,"mediaId":4}
+2025-09-24T23:52:43.123Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Family Guy (1999)"}
+2025-09-24T23:52:43.141Z [info][Media Request]: Sent request to Sonarr {"requestId":4,"mediaId":4}
+2025-09-24T23:52:43.793Z [info][Sonarr]: Sonarr accepted request 
+2025-09-24T23:52:46.584Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:53:24.097Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:54:00.008Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-24T23:54:46.771Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Paradise Inn Phuket: The Taste of College Students (2019)"}
+2025-09-24T23:54:46.777Z [info][Media Request]: Sent request to Radarr {"requestId":5,"mediaId":5}
+2025-09-24T23:54:48.053Z [info][Radarr]: Radarr accepted request 
+2025-09-24T23:54:55.208Z [error][Plex.TV Metadata API]: Failed to retrieve watchlist items {"errorMessage":"Request failed with status code 404"}
+2025-09-24T23:55:00.013Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-24T23:55:00.015Z [info][Plex Scan]: Scan starting {"sessionId":"2dc55d22-139e-4b49-81e6-632b7bc9ca30"}
+2025-09-24T23:55:00.037Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-24T23:57:00.006Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-25T00:00:00.010Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-25T00:00:00.032Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-25T00:00:00.032Z [info][Plex Scan]: Scan starting {"sessionId":"dace096c-de1c-43e7-a907-e943bb05a14f"}
+2025-09-25T00:00:00.053Z [info][Jobs]: Starting scheduled job: Plex Full Library Scan 
+2025-09-25T00:00:00.054Z [info][Plex Scan]: Scan starting {"sessionId":"36eade65-ac37-49e8-84e6-2a95f2234d7c"}
+2025-09-25T00:00:00.095Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-25T00:00:00.100Z [info][Plex Scan]: Full Scan Complete 
+2025-09-25T00:03:00.006Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2025-09-25T00:05:00.009Z [info][Jobs]: Starting scheduled job: Plex Recently Added Scan 
+2025-09-25T00:05:00.009Z [info][Plex Scan]: Scan starting {"sessionId":"e4060516-108e-402b-bafa-8fb30a88b84b"}
+2025-09-25T00:05:00.039Z [info][Plex Scan]: Recently Added Scan Complete 
+2025-09-25T00:06:00.008Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
