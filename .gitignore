@@ -1,0 +1,87 @@
+# Log dosyaları
+*.log
+*.log.*
+**/logs/**
+**/log/**
+
+# Cache dosyaları
+**/cache/**
+**/.cache/**
+
+# Database dosyaları
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Temporary dosyalar
+*.tmp
+*.temp
+**/temp/**
+**/tmp/**
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE dosyaları
+.vscode/
+.idea/
+*.sublime-*
+
+# Node modules
+node_modules/
+
+# Build dosyaları
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Media dosyaları
+*.mp4
+*.avi
+*.mkv
+*.mp3
+*.flac
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+
+# Config dosyaları (hassas bilgiler içerebilir)
+**/config/**/*.xml
+**/config/**/*.ini
+**/config/**/*.conf
+**/config/**/*.yaml
+**/config/**/*.yml
+**/config/**/*.json
+!**/config/**/docker-compose.yml
+!**/config/**/docker-compose.yaml
+
+# Backup dosyaları
+**/backup/**
+**/backups/**
+
+# Transcoding temp dosyaları
+**/transcoding-temp/**
+**/transcodes/**
+
+# Plugin dosyaları
+**/plugins/**
+
+# Metadata dosyaları
+**/metadata/**
+
+# Library dosyaları
+**/Library/**
+
+# Specific problematic files
+arr-stack/config/overseerr/logs/.machinelogs.json
