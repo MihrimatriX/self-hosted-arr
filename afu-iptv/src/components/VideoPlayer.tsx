@@ -275,10 +275,11 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
   if (!isOpen) return null;
 
   const videoContent = isEmbedded ? (
-    <div className="h-full w-full bg-black rounded-lg overflow-hidden">
+    <div className="h-full w-full bg-black rounded-lg overflow-hidden flex items-center justify-center">
       {/* Video Container */}
       <div 
-        className="h-full w-full bg-black"
+        className="relative w-full max-w-full bg-black"
+        style={{ aspectRatio: '16/9' }}
         onMouseMove={handleMouseMove}
         onMouseLeave={() => {
           if (isPlaying) {
@@ -357,6 +358,19 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
               </div>
               <h2 className="text-sm font-semibold text-white truncate max-w-xs">{channelName}</h2>
             </div>
+            
+            {/* Audio Control */}
+            <button
+              onClick={handleMuteToggle}
+              className="rounded-lg bg-black/60 p-2 text-white hover:bg-black/80 transition-colors backdrop-blur-sm"
+              title={isMuted ? "Sesi aç" : "Sesi kapat"}
+            >
+              {isMuted ? (
+                <VolumeX className="h-4 w-4" />
+              ) : (
+                <Volume2 className="h-4 w-4" />
+              )}
+            </button>
           </div>
 
           {/* Bottom Controls */}
@@ -382,16 +396,6 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
                   <RotateCcw className="h-4 w-4" />
                 </button>
 
-                <button
-                  onClick={handleMuteToggle}
-                  className="rounded-lg bg-black/60 p-2 text-white hover:bg-black/80 transition-colors backdrop-blur-sm"
-                >
-                  {isMuted ? (
-                    <VolumeX className="h-4 w-4" />
-                  ) : (
-                    <Volume2 className="h-4 w-4" />
-                  )}
-                </button>
               </div>
 
               <div className="flex items-center gap-2">

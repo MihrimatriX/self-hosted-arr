@@ -3,8 +3,9 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { clsx } from "clsx";
-import { Play, Search, Tv, ExternalLink, Menu, X } from "lucide-react";
+import { Play, Search, Tv, ExternalLink, Menu, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { VideoPlayer } from "./VideoPlayer";
+import { CascaderMenu } from "./CascaderMenu";
 import type { ChannelCategory, ChannelStream } from "@/types/xtream";
 
 interface ChannelBrowserProps {
@@ -25,6 +26,7 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isChannelListOpen, setIsChannelListOpen] = useState(false);
+  const [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
 
   const selectedCategory = useMemo(() => {
     if (!selectedCategoryId) {
@@ -68,6 +70,10 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
     setIsChannelListOpen(false); // Close channel list on mobile when playing
   };
 
+  const handleChannelSelect = (stream: ChannelStream) => {
+    handlePlayStream(stream);
+  };
+
   const handleClosePlayer = () => {
     setIsPlayerOpen(false);
     setSelectedStream(null);
@@ -103,62 +109,71 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
 
       {/* Categories Sidebar */}
       <aside className={clsx(
-        "fixed lg:static inset-y-0 left-0 z-50 w-64 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-transform duration-300 ease-in-out",
-        isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+        "fixed lg:static inset-y-0 left-0 z-50 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-all duration-300 ease-in-out",
+        isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
+        isMenuCollapsed ? "w-12" : "w-64"
       )}>
-        <div className="flex h-full flex-col p-3">
-          <div className="mb-4">
-            <h2 className="text-lg font-semibold text-white mb-2">Kategoriler</h2>
-            <div className="flex gap-1 text-xs text-slate-300">
-              <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
-                <Tv className="h-3 w-3 text-primary" />
-                <span className="font-medium text-white">{totals.totalStreams}</span>
+        <div className="flex h-full flex-col">
+          {/* Collapse Toggle */}
+          <div className="flex items-center justify-between p-3 border-b border-white/10">
+            {!isMenuCollapsed && (
+              <div className="flex gap-1 text-xs text-slate-300">
+                <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  <Tv className="h-3 w-3 text-primary" />
+                  <span className="font-medium text-white">{totals.totalStreams}</span>
+                </div>
+                <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span className="font-medium text-white">{totals.totalCategories}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                <span className="font-medium text-white">{totals.totalCategories}</span>
+            )}
+            <button
+              onClick={() => setIsMenuCollapsed(!isMenuCollapsed)}
+              className="rounded-md p-1.5 text-slate-400 hover:text-white transition-colors"
+              title={isMenuCollapsed ? "Menüyü genişlet" : "Menüyü daralt"}
+            >
+              {isMenuCollapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
+            </button>
+          </div>
+
+          {/* Menu Content */}
+          {!isMenuCollapsed && (
+            <div className="flex-1 p-3">
+              <CascaderMenu
+                categories={orderedCategories}
+                selectedCategoryId={selectedCategoryId}
+                onCategorySelect={(categoryId) => {
+                  setSelectedCategoryId(categoryId);
+                  setSearchTerm("");
+                  setIsSidebarOpen(false);
+                }}
+                onChannelSelect={handleChannelSelect}
+                searchTerm={searchTerm}
+                onSearchChange={setSearchTerm}
+              />
+            </div>
+          )}
+
+          {/* Collapsed Menu Icons */}
+          {isMenuCollapsed && (
+            <div className="flex-1 flex flex-col items-center py-4 space-y-2">
+              <div className="rounded-md p-2 bg-white/5 text-slate-400">
+                <Tv className="h-4 w-4" />
+              </div>
+              <div className="rounded-md p-2 bg-white/5 text-slate-400">
+                <Search className="h-4 w-4" />
               </div>
             </div>
-          </div>
-          
-          <div className="relative mb-3">
-            <Search className="pointer-events-none absolute left-2 top-1/2 h-3 w-3 -translate-y-1/2 text-slate-400" />
-            <input
-              value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="Kanal ara..."
-              className="w-full rounded-md border border-white/10 bg-slate-950/60 py-2 pl-7 pr-2 text-xs text-white shadow-inner placeholder:text-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/30"
-            />
-          </div>
-          
-          <div className="flex-1 overflow-y-auto space-y-1 pr-1">
-            {orderedCategories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => {
-                  setSelectedCategoryId(category.id);
-                  setSearchTerm("");
-                  setIsSidebarOpen(false); // Close sidebar on mobile after selection
-                }}
-                className={clsx(
-                  "w-full truncate rounded-md border px-2 py-1.5 text-left text-xs font-medium transition-all",
-                  selectedCategory?.id === category.id
-                    ? "border-primary bg-primary/15 text-primary"
-                    : "border-white/10 bg-white/5 text-slate-300 hover:border-primary/60 hover:text-primary"
-                )}
-                title={category.name}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
+          )}
         </div>
       </aside>
 
       {/* Channel List Sidebar */}
       <aside className={clsx(
-        "fixed lg:static inset-y-0 left-64 z-50 w-64 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-transform duration-300 ease-in-out",
-        isChannelListOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+        "fixed lg:static inset-y-0 z-50 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-all duration-300 ease-in-out",
+        isChannelListOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
+        isMenuCollapsed ? "left-12 w-64" : "left-64 w-64"
       )}>
         <div className="flex h-full flex-col p-3">
           <div className="mb-4">
