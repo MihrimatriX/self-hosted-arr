@@ -24,6 +24,7 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
   const [selectedStream, setSelectedStream] = useState<ChannelStream | null>(null);
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isChannelListOpen, setIsChannelListOpen] = useState(false);
 
   const selectedCategory = useMemo(() => {
     if (!selectedCategoryId) {
@@ -64,6 +65,7 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
   const handlePlayStream = (stream: ChannelStream) => {
     setSelectedStream(stream);
     setIsPlayerOpen(true);
+    setIsChannelListOpen(false); // Close channel list on mobile when playing
   };
 
   const handleClosePlayer = () => {
@@ -73,7 +75,7 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
 
   return (
     <div className="h-screen w-screen flex bg-slate-950">
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu Buttons */}
       <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         className="fixed top-4 left-4 z-50 lg:hidden rounded-lg bg-black/60 p-3 text-white hover:bg-black/80 transition-colors backdrop-blur-sm"
@@ -81,47 +83,55 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
         {isSidebarOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
 
+      <button
+        onClick={() => setIsChannelListOpen(!isChannelListOpen)}
+        className="fixed top-4 left-20 z-50 lg:hidden rounded-lg bg-black/60 p-3 text-white hover:bg-black/80 transition-colors backdrop-blur-sm"
+      >
+        <Tv className="h-6 w-6" />
+      </button>
+
       {/* Sidebar Overlay (Mobile) */}
-      {isSidebarOpen && (
+      {(isSidebarOpen || isChannelListOpen) && (
         <div 
           className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm lg:hidden"
-          onClick={() => setIsSidebarOpen(false)}
+          onClick={() => {
+            setIsSidebarOpen(false);
+            setIsChannelListOpen(false);
+          }}
         />
       )}
 
-      {/* Sidebar */}
+      {/* Categories Sidebar */}
       <aside className={clsx(
-        "fixed lg:static inset-y-0 left-0 z-50 w-80 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-transform duration-300 ease-in-out",
+        "fixed lg:static inset-y-0 left-0 z-50 w-64 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-transform duration-300 ease-in-out",
         isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
       )}>
-        <div className="flex h-full flex-col p-4">
-          <div className="mb-6">
-            <h2 className="text-xl font-semibold text-white mb-2">Kategoriler</h2>
-            <div className="flex gap-2 text-xs text-slate-300">
+        <div className="flex h-full flex-col p-3">
+          <div className="mb-4">
+            <h2 className="text-lg font-semibold text-white mb-2">Kategoriler</h2>
+            <div className="flex gap-1 text-xs text-slate-300">
               <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
                 <Tv className="h-3 w-3 text-primary" />
                 <span className="font-medium text-white">{totals.totalStreams}</span>
-                <span>kanal</span>
               </div>
               <div className="flex items-center gap-1 rounded-full bg-white/5 px-2 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 <span className="font-medium text-white">{totals.totalCategories}</span>
-                <span>kategori</span>
               </div>
             </div>
           </div>
           
-          <div className="relative mb-4">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+          <div className="relative mb-3">
+            <Search className="pointer-events-none absolute left-2 top-1/2 h-3 w-3 -translate-y-1/2 text-slate-400" />
             <input
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
               placeholder="Kanal ara..."
-              className="w-full rounded-lg border border-white/10 bg-slate-950/60 py-2.5 pl-10 pr-3 text-sm text-white shadow-inner placeholder:text-slate-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+              className="w-full rounded-md border border-white/10 bg-slate-950/60 py-2 pl-7 pr-2 text-xs text-white shadow-inner placeholder:text-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/30"
             />
           </div>
           
-          <div className="flex-1 overflow-y-auto space-y-2 pr-2">
+          <div className="flex-1 overflow-y-auto space-y-1 pr-1">
             {orderedCategories.map((category) => (
               <button
                 key={category.id}
@@ -131,7 +141,7 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
                   setIsSidebarOpen(false); // Close sidebar on mobile after selection
                 }}
                 className={clsx(
-                  "w-full truncate rounded-md border px-3 py-2.5 text-left text-sm font-medium transition-all",
+                  "w-full truncate rounded-md border px-2 py-1.5 text-left text-xs font-medium transition-all",
                   selectedCategory?.id === category.id
                     ? "border-primary bg-primary/15 text-primary"
                     : "border-white/10 bg-white/5 text-slate-300 hover:border-primary/60 hover:text-primary"
@@ -145,51 +155,62 @@ export function ChannelBrowser({ categories }: ChannelBrowserProps) {
         </div>
       </aside>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col min-w-0">
-        {/* Header */}
-        <div className="flex items-center justify-between p-4 lg:p-6 border-b border-white/10 bg-slate-900/50">
-          <div>
-            <h1 className="text-xl lg:text-2xl font-semibold text-white">
-              {selectedCategory?.name || "Kanal Rehberi"}
-            </h1>
-            <p className="text-sm text-slate-300 mt-1">
+      {/* Channel List Sidebar */}
+      <aside className={clsx(
+        "fixed lg:static inset-y-0 left-64 z-50 w-64 bg-slate-900/95 backdrop-blur-md border-r border-white/10 transition-transform duration-300 ease-in-out",
+        isChannelListOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+      )}>
+        <div className="flex h-full flex-col p-3">
+          <div className="mb-4">
+            <h2 className="text-lg font-semibold text-white mb-1">
+              {selectedCategory?.name || "Kanallar"}
+            </h2>
+            <p className="text-xs text-slate-300">
               {filteredStreams.length} kanal bulundu
             </p>
           </div>
-        </div>
-
-        {/* Channel Grid */}
-        <div className="flex-1 p-4 lg:p-6 overflow-y-auto">
-          {filteredStreams.length === 0 ? (
-            <div className="flex items-center justify-center h-full">
-              <div className="rounded-xl border border-dashed border-white/10 bg-white/5 p-8 text-center text-slate-400">
-                Seçili kategori için kanal bulunamadı.
+          
+          <div className="flex-1 overflow-y-auto space-y-1 pr-1">
+            {filteredStreams.length === 0 ? (
+              <div className="rounded-lg border border-dashed border-white/10 bg-white/5 p-4 text-center text-slate-400">
+                <p className="text-xs">Seçili kategori için kanal bulunamadı.</p>
               </div>
-            </div>
-          ) : (
-            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-              {filteredStreams.map((stream) => (
+            ) : (
+              filteredStreams.map((stream) => (
                 <ChannelListItem
                   key={stream.id}
                   stream={stream}
                   onPlay={handlePlayStream}
                 />
-              ))}
-            </div>
-          )}
+              ))
+            )}
+          </div>
         </div>
+      </aside>
+
+      {/* Video Player Area */}
+      <div className="flex-1 flex flex-col min-w-0">
+        {selectedStream && isPlayerOpen ? (
+          <div className="h-full w-full bg-black">
+            <VideoPlayer
+              streamUrl={selectedStream.streamUrl}
+              channelName={selectedStream.name}
+              isOpen={true}
+              onClose={handleClosePlayer}
+              isEmbedded={true}
+            />
+          </div>
+        ) : (
+          <div className="flex-1 flex items-center justify-center bg-slate-900/50">
+            <div className="text-center text-slate-400">
+              <Tv className="h-16 w-16 mx-auto mb-4 text-slate-500" />
+              <h3 className="text-lg font-semibold mb-2">Video Oynatıcı</h3>
+              <p className="text-sm">Bir kanal seçin ve oynatın</p>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Video Player Modal */}
-      {selectedStream && (
-        <VideoPlayer
-          streamUrl={selectedStream.streamUrl}
-          channelName={selectedStream.name}
-          isOpen={isPlayerOpen}
-          onClose={handleClosePlayer}
-        />
-      )}
     </div>
   );
 }
@@ -210,20 +231,20 @@ function ChannelListItem({ stream, onPlay }: ChannelListItemProps) {
   };
 
   return (
-    <div className="group flex flex-col rounded-xl border border-white/10 bg-white/5 p-4 transition-all hover:border-primary/50 hover:bg-white/10">
+    <div className="group flex items-center gap-2 rounded-md border border-white/10 bg-white/5 p-2 transition-all hover:border-primary/50 hover:bg-white/10">
       {/* Channel Logo */}
-      <div className="relative h-16 w-full mb-3 overflow-hidden rounded-lg bg-gradient-to-tr from-slate-800 to-slate-700">
+      <div className="relative h-8 w-8 shrink-0 overflow-hidden rounded-md bg-gradient-to-tr from-slate-800 to-slate-700">
         {stream.streamIcon ? (
           <Image
             src={stream.streamIcon}
             alt={stream.name}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-contain object-center p-2"
+            sizes="32px"
+            className="object-contain object-center p-0.5"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">
-            <span className="text-2xl font-semibold uppercase text-white/60">
+            <span className="text-xs font-semibold uppercase text-white/60">
               {stream.name.charAt(0)}
             </span>
           </div>
@@ -231,27 +252,26 @@ function ChannelListItem({ stream, onPlay }: ChannelListItemProps) {
       </div>
 
       {/* Channel Info */}
-      <div className="flex-1 min-w-0 mb-3">
-        <h3 className="truncate text-sm font-semibold text-white group-hover:text-primary transition-colors">
+      <div className="flex-1 min-w-0">
+        <h3 className="truncate text-xs font-semibold text-white group-hover:text-primary transition-colors">
           {stream.name}
         </h3>
-        <p className="text-xs text-slate-400 mt-1">
-          {stream.streamType === "live" ? "Canlı Yayın" : stream.streamType}
+        <p className="text-xs text-slate-400">
+          {stream.streamType === "live" ? "Canlı" : stream.streamType}
         </p>
       </div>
 
       {/* Action Buttons */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1">
         <button
           onClick={handlePlayClick}
-          className="group/btn flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2 text-xs font-medium text-white transition hover:bg-primary/80"
+          className="group/btn inline-flex items-center gap-1 rounded-md bg-primary px-2 py-1 text-xs font-medium text-white transition hover:bg-primary/80"
         >
           <Play className="h-3 w-3 transition-transform group-hover/btn:scale-110" />
-          Oynat
         </button>
         <button
           onClick={handleExternalClick}
-          className="group/btn inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-xs font-medium text-white transition hover:bg-white/10"
+          className="group/btn inline-flex items-center gap-1 rounded-md border border-white/20 bg-white/5 px-1.5 py-1 text-xs font-medium text-white transition hover:bg-white/10"
           title="Yeni sekmede aç"
         >
           <ExternalLink className="h-3 w-3 transition-transform group-hover/btn:scale-110" />
