@@ -21,7 +21,6 @@ ENV PORT=3000
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./package.json
 COPY --from=build /app/next.config.mjs ./next.config.mjs
-COPY --from=build /app/public ./public
 COPY --from=build /app/.next ./.next
 
 EXPOSE 3000

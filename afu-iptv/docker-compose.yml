@@ -1,18 +1,19 @@
 services:
   tv-service:
-    build:
-      context: .
+    build: .
     container_name: tv-service
-    dockerfile: Dockerfile
     ports:
       - "3444:3000"
+    env_file:
+      - .env
     environment:
       NODE_ENV: production
-      PORT: 3444
+      PORT: 3000
     restart: unless-stopped
     networks:
       - proxy-network
 
 networks:
   proxy-network:
+    driver: bridge
     external: true
