@@ -147,7 +147,8 @@ export async function getCategoriesWithStreams(): Promise<ChannelCategory[]> {
   const categories = await getLiveCategories();
   const categoriesWithStreams: ChannelCategory[] = [];
 
-  for (const [index, category] of categories.entries()) {
+  for (let index = 0; index < categories.length; index += 1) {
+    const category = categories[index];
     try {
       const streams = await getLiveStreamsByCategory(category.category_id);
 
@@ -176,3 +177,4 @@ export async function getCategoriesWithStreams(): Promise<ChannelCategory[]> {
 }
 
 export type { ChannelCategory, ChannelStream };
+

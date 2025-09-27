@@ -1,7 +1,7 @@
-import { Sparkles, Wand2 } from "lucide-react";
 import { ChannelBrowser } from "@/components/ChannelBrowser";
 import { getCategoriesWithStreams, XtreamApiError } from "@/lib/xtream";
 import type { ChannelCategory } from "@/types/xtream";
+import { AuthWrapper } from "@/components/AuthWrapper";
 
 export const dynamic = "force-dynamic";
 
@@ -31,19 +31,22 @@ export default async function HomePage() {
 
   return (
     <main className="h-screen w-screen overflow-hidden">
-      {errorMessage ? (
-        <div className="flex h-full items-center justify-center">
-          <section className="card-glass flex flex-col items-center gap-4 rounded-3xl border border-red-500/40 bg-red-500/10 p-10 text-center text-red-200">
-            <h2 className="text-xl font-semibold">Xtream verileri su anda yuklenemedi</h2>
-            <p className="max-w-2xl text-sm text-red-100/80">{errorMessage}</p>
-            <p className="text-xs text-red-100/70">
-              Sorun devam ederse Xtream servis durumunu ve env ayarlarinizi kontrol edin.
-            </p>
-          </section>
-        </div>
-      ) : (
-        <ChannelBrowser categories={categories} />
-      )}
+      <AuthWrapper>
+        {errorMessage ? (
+          <div className="flex h-full items-center justify-center">
+            <section className="card-glass flex flex-col items-center gap-4 rounded-3xl border border-red-500/40 bg-red-500/10 p-10 text-center text-red-200">
+              <h2 className="text-xl font-semibold">Xtream verileri su anda yuklenemedi</h2>
+              <p className="max-w-2xl text-sm text-red-100/80">{errorMessage}</p>
+              <p className="text-xs text-red-100/70">
+                Sorun devam ederse Xtream servis durumunu ve env ayarlarinizi kontrol edin.
+              </p>
+            </section>
+          </div>
+        ) : (
+          <ChannelBrowser categories={categories} />
+        )}
+      </AuthWrapper>
     </main>
   );
 }
+

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { X, Volume2, VolumeX, Maximize, Minimize, Play, Pause, RotateCcw } from "lucide-react";
 import { clsx } from "clsx";
@@ -29,8 +29,317 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
   const [duration, setDuration] = useState(0);
   
   const videoRef = useRef<HTMLVideoElement>(null);
+  const playerContainerRef = useRef<HTMLDivElement>(null);
   const hlsRef = useRef<any>(null);
   const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Stream yükleme fonksiyonu
+  const loadStream = useCallback(async () => {
+    setIsLoading(true);
+    setHasError(false);
+    setIsPlaying(false); // Yükleme sırasında oynatma durumunu sıfırla
+
+    try {
+      // Dynamic import of HLS.js
+      const Hls = (await import("hls.js")).default;
+      const video = videoRef.current;
+      if (!video) return;
+
+      // Mevcut video'yu güvenli bir şekilde durdur
+      try {
+        video.pause();
+        video.currentTime = 0;
+      } catch (error) {
+        devLog("Video pause error during load:", error);
+      }
+
+      if (Hls.isSupported()) {
+        if (hlsRef.current) {
+          hlsRef.current.destroy();
+        }
+
+        const hls = new Hls({
+          enableWorker: true,
+          lowLatencyMode: true,
+          backBufferLength: 90,
+          maxBufferLength: 30,
+          maxMaxBufferLength: 60,
+          liveSyncDurationCount: 3,
+          liveMaxLatencyDurationCount: 5,
+          debug: false,
+        });
+
+        hlsRef.current = hls;
+
+        hls.on(Hls.Events.MEDIA_ATTACHED, () => {
+          devLog("HLS: Media attached");
+        });
+
+        hls.on(Hls.Events.MANIFEST_PARSED, async () => {
+          devLog("HLS: Manifest parsed");
+          setIsLoading(false);
+          setHasError(false);
+          
+          // Video yüklendikten sonra güvenli bir şekilde oynat
+          try {
+            if (videoRef.current && !videoRef.current.paused) {
+              // Eğer video zaten oynatılıyorsa, yeniden başlat
+              await videoRef.current.play();
+            }
+          } catch (error) {
+            if (error instanceof Error && error.name === 'AbortError') {
+              devLog("Play() interrupted during manifest parsed - bu normal");
+            } else {
+              devLog("Play error after manifest parsed:", error);
+            }
+          }
+        });
+
+        hls.on(Hls.Events.ERROR, (event: any, data: any) => {
+          devLog("HLS Error:", data);
+          if (data.fatal) {
+            setIsLoading(false);
+            setHasError(true);
+            setIsPlaying(false);
+            // Video'yu durdur ve temizle
+            if (videoRef.current) {
+              videoRef.current.pause();
+              videoRef.current.currentTime = 0;
+            }
+            // HLS instance'ını temizle
+            if (hlsRef.current) {
+              hlsRef.current.destroy();
+              hlsRef.current = null;
+            }
+          }
+        });
+
+        hls.attachMedia(video);
+        hls.loadSource(streamUrl);
+      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        // Safari native HLS support
+        video.src = streamUrl;
+        setIsLoading(false);
+        
+        // Safari'de güvenli oynatma
+        try {
+          await video.play();
+        } catch (error) {
+          if (error instanceof Error && error.name === 'AbortError') {
+            devLog("Safari play() interrupted - bu normal");
+          } else {
+            devLog("Safari play error:", error);
+          }
+        }
+      } else {
+        throw new Error("HLS desteklenmiyor");
+      }
+    } catch (error) {
+      devLog("Stream yükleme hatası:", error);
+      setIsLoading(false);
+      setHasError(true);
+      setIsPlaying(false);
+      // Video'yu durdur ve temizle
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+      // HLS instance'ını temizle
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
+    }
+  }, [streamUrl]);
+
+  // Kontrolleri otomatik gizle
+  const resetControlsTimeout = useCallback(() => {
+    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
+    
+    setShowControls(true);
+    controlsTimeoutRef.current = setTimeout(() => {
+      if (isPlaying) {
+        setShowControls(false);
+      }
+    }, 3000);
+  }, [isPlaying]);
+
+  const handleMouseMove = useCallback(() => {
+    resetControlsTimeout();
+  }, [resetControlsTimeout]);
+
+
+
+
+  const handlePlayPause = useCallback(async () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    try {
+      if (video.paused) {
+        // Video yükleniyor veya hata durumunda play() çağırma
+        if (isLoading || hasError) {
+          devLog("Video yükleniyor veya hata durumunda, play() çağrılmıyor");
+          return;
+        }
+        
+        await video.play();
+      } else {
+        video.pause();
+      }
+    } catch (error) {
+      // AbortError veya diğer play() hatalarını yakala
+      if (error instanceof Error && error.name === 'AbortError') {
+        devLog("Play() request was interrupted - bu normal bir durum");
+      } else {
+        devLog("Play/Pause error:", error);
+      }
+    }
+    
+    resetControlsTimeout();
+  }, [hasError, isLoading, resetControlsTimeout]);
+
+
+
+
+  const handleVolumeChange = useCallback((newVolume: number) => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    setVolume(newVolume);
+    video.volume = newVolume;
+    setIsMuted(newVolume === 0);
+    resetControlsTimeout();
+  }, [resetControlsTimeout]);
+
+
+
+
+  const handleMuteToggle = useCallback(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (isMuted) {
+      video.volume = 0.8;
+      setVolume(0.8);
+      setIsMuted(false);
+    } else {
+      video.volume = 0;
+      setIsMuted(true);
+    }
+    resetControlsTimeout();
+  }, [isMuted, resetControlsTimeout]);
+
+
+
+
+  const handleFullscreen = useCallback(() => {
+    const container = playerContainerRef.current;
+    if (!container) return;
+
+    const fullscreenElement =
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      (document as any).msFullscreenElement;
+
+    if (!fullscreenElement) {
+      const requestFullscreen =
+        container.requestFullscreen ||
+        (container as any).webkitRequestFullscreen ||
+        (container as any).msRequestFullscreen;
+
+      if (requestFullscreen) {
+        requestFullscreen.call(container);
+      }
+    } else {
+      const exitFullscreen =
+        document.exitFullscreen ||
+        (document as any).webkitExitFullscreen ||
+        (document as any).msExitFullscreen;
+
+      if (exitFullscreen) {
+        exitFullscreen.call(document);
+      }
+    }
+
+    resetControlsTimeout();
+  }, [resetControlsTimeout]);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      const fullscreenElement =
+        document.fullscreenElement ||
+        (document as any).webkitFullscreenElement ||
+        (document as any).msFullscreenElement;
+
+      setIsFullscreen(Boolean(fullscreenElement));
+
+      if (!fullscreenElement) {
+        setShowControls(true);
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+    document.addEventListener("MSFullscreenChange", handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+      document.removeEventListener("MSFullscreenChange", handleFullscreenChange);
+    };
+  }, []);
+  const handleRestart = async () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Hata durumunda tamamen yeniden yükle
+    if (hasError) {
+      setHasError(false);
+      setIsLoading(true);
+      setIsPlaying(false);
+      
+      // HLS instance'ını temizle
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
+      
+      // Video'yu güvenli bir şekilde temizle
+      try {
+        video.pause();
+        video.currentTime = 0;
+        video.src = "";
+      } catch (error) {
+        devLog("Video cleanup error during restart:", error);
+      }
+      
+      // Stream'i yeniden yükle
+      setTimeout(() => {
+        loadStream();
+      }, 100);
+    } else {
+      // Normal restart - sadece başa sar
+      try {
+        video.currentTime = 0;
+        // Eğer video oynatılıyorsa, yeniden başlat
+        if (!video.paused) {
+          await video.play();
+        }
+      } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') {
+          devLog("Play() interrupted during restart - bu normal");
+        } else {
+          devLog("Restart play error:", error);
+        }
+      }
+    }
+    
+    resetControlsTimeout();
+  };
+
+
+
 
   // ESC tuşu ile kapatma (sadece embedded değilse)
   useEffect(() => {
@@ -59,80 +368,22 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
       document.body.style.overflow = "unset";
       }
     };
-  }, [isOpen, onClose, isEmbedded]);
+  }, [handleFullscreen, handlePlayPause, isEmbedded, isOpen, onClose]);
 
   // HLS stream yükleme
+  // Stream yükleme
   useEffect(() => {
     if (!isOpen || !videoRef.current) return;
-
-    const video = videoRef.current;
-    let hls: any = null;
-
-    const loadStream = async () => {
-      setIsLoading(true);
-      setHasError(false);
-
-      try {
-        // Dynamic import of HLS.js
-        const Hls = (await import("hls.js")).default;
-
-        if (Hls.isSupported()) {
-          hls = new Hls({
-            enableWorker: true,
-            lowLatencyMode: true,
-            backBufferLength: 90,
-            maxBufferLength: 30,
-            maxMaxBufferLength: 60,
-            liveSyncDurationCount: 3,
-            liveMaxLatencyDurationCount: 5,
-            debug: false,
-          });
-
-          hlsRef.current = hls;
-
-          hls.on(Hls.Events.MEDIA_ATTACHED, () => {
-            devLog("HLS: Media attached");
-          });
-
-          hls.on(Hls.Events.MANIFEST_PARSED, () => {
-            devLog("HLS: Manifest parsed");
-            setIsLoading(false);
-            setHasError(false);
-          });
-
-          hls.on(Hls.Events.ERROR, (event: any, data: any) => {
-            devLog("HLS Error:", data);
-            if (data.fatal) {
-              setIsLoading(false);
-              setHasError(true);
-            }
-          });
-
-          hls.attachMedia(video);
-          hls.loadSource(streamUrl);
-        } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          // Safari native HLS support
-          video.src = streamUrl;
-          setIsLoading(false);
-        } else {
-          throw new Error("HLS desteklenmiyor");
-        }
-      } catch (error) {
-        devLog("Stream yükleme hatası:", error);
-        setIsLoading(false);
-        setHasError(true);
-      }
-    };
 
     loadStream();
 
     return () => {
-      if (hls) {
-        hls.destroy();
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
         hlsRef.current = null;
       }
     };
-  }, [isOpen, streamUrl]);
+  }, [isOpen, loadStream]);
 
   // Video event listeners
   useEffect(() => {
@@ -156,8 +407,20 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
     };
 
     const handleError = () => {
+      devLog("Video error event triggered");
       setIsLoading(false);
       setHasError(true);
+      setIsPlaying(false);
+      // Video'yu durdur ve temizle
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+      // HLS instance'ını temizle
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
     };
 
     video.addEventListener("loadedmetadata", handleLoadedMetadata);
@@ -175,93 +438,6 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
     };
   }, [isOpen]);
 
-  // Kontrolleri otomatik gizle
-  const resetControlsTimeout = () => {
-    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
-    
-    setShowControls(true);
-    controlsTimeoutRef.current = setTimeout(() => {
-      if (isPlaying) {
-        setShowControls(false);
-      }
-    }, 3000);
-  };
-
-  const handleMouseMove = () => {
-    resetControlsTimeout();
-  };
-
-  const handlePlayPause = () => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-    resetControlsTimeout();
-  };
-
-  const handleVolumeChange = (newVolume: number) => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    setVolume(newVolume);
-    video.volume = newVolume;
-    setIsMuted(newVolume === 0);
-    resetControlsTimeout();
-  };
-
-  const handleMuteToggle = () => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (isMuted) {
-      video.volume = 0.8;
-      setVolume(0.8);
-      setIsMuted(false);
-    } else {
-      video.volume = 0;
-      setIsMuted(true);
-    }
-    resetControlsTimeout();
-  };
-
-  const handleFullscreen = () => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (!document.fullscreenElement) {
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if ((video as any).webkitRequestFullscreen) {
-        (video as any).webkitRequestFullscreen();
-      } else if ((video as any).msRequestFullscreen) {
-        (video as any).msRequestFullscreen();
-      }
-      setIsFullscreen(true);
-    } else {
-      if (document.exitFullscreen) {
-      document.exitFullscreen();
-      } else if ((document as any).webkitExitFullscreen) {
-        (document as any).webkitExitFullscreen();
-      } else if ((document as any).msExitFullscreen) {
-        (document as any).msExitFullscreen();
-      }
-      setIsFullscreen(false);
-    }
-    resetControlsTimeout();
-  };
-
-  const handleRestart = () => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    video.currentTime = 0;
-    resetControlsTimeout();
-  };
-
   const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
     const video = videoRef.current;
     if (!video || duration === 0) return;
@@ -275,11 +451,11 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
   if (!isOpen) return null;
 
   const videoContent = isEmbedded ? (
-    <div className="h-full w-full bg-black rounded-lg overflow-hidden flex items-center justify-center">
+    <div ref={playerContainerRef} className={clsx("flex h-full w-full items-center justify-center overflow-hidden bg-black", isFullscreen ? "" : "rounded-lg")}>
       {/* Video Container */}
-      <div 
-        className="relative w-full max-w-full bg-black"
-        style={{ aspectRatio: '16/9' }}
+      <div
+        className="relative flex w-full items-center justify-center bg-black"
+        style={isFullscreen ? undefined : { aspectRatio: "16 / 9" }}
         onMouseMove={handleMouseMove}
         onMouseLeave={() => {
           if (isPlaying) {
@@ -289,12 +465,12 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
       >
         <video
           ref={videoRef}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           autoPlay
           muted={isMuted}
           playsInline
           crossOrigin="anonymous"
-          style={{ backgroundColor: '#000' }}
+          style={{ backgroundColor: "#000" }}
         />
 
         {/* Loading Overlay */}
@@ -419,10 +595,11 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
   ) : (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95 backdrop-blur-md">
       <div className="w-full px-4">
-        <div className="relative mx-auto w-full max-w-5xl aspect-video">
+        <div ref={playerContainerRef} className={clsx("relative mx-auto w-full", isFullscreen ? "h-full" : "max-w-5xl aspect-video")}>
+
           {/* Video Container */}
-          <div 
-            className="absolute inset-0 bg-black rounded-2xl overflow-hidden"
+          <div
+            className={clsx("absolute inset-0 flex items-center justify-center overflow-hidden bg-black", isFullscreen ? "" : "rounded-2xl")}
             onMouseMove={handleMouseMove}
             onMouseLeave={() => {
               if (isPlaying) {
@@ -432,12 +609,12 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
           >
           <video
             ref={videoRef}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
             autoPlay
             muted={isMuted}
             playsInline
             crossOrigin="anonymous"
-            style={{ backgroundColor: '#000' }}
+            style={{ backgroundColor: "#000" }}
           />
 
           {/* Loading Overlay */}
@@ -595,3 +772,47 @@ export function VideoPlayer({ streamUrl, channelName, isOpen, onClose, isEmbedde
   if (typeof window === "undefined") return null;
   return createPortal(videoContent, document.body);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@ import type { ChannelCategory, ChannelStream } from "@/types/xtream";
 
 interface FavoritesData {
   categories: string[];
-  channels: string[];
+  channels: number[];
 }
 
 const FAVORITES_KEY = "afu-iptv-favorites";
@@ -15,27 +15,35 @@ export function useFavorites() {
     categories: [],
     channels: []
   });
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // Load favorites from localStorage on mount
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    
     try {
       const stored = localStorage.getItem(FAVORITES_KEY);
       if (stored) {
-        setFavorites(JSON.parse(stored));
+        const parsed = JSON.parse(stored);
+        setFavorites(parsed);
       }
     } catch (error) {
       console.error("Error loading favorites:", error);
+    } finally {
+      setIsLoaded(true);
     }
   }, []);
 
-  // Save favorites to localStorage whenever they change
+  // Save favorites to localStorage whenever they change (but only after initial load)
   useEffect(() => {
+    if (!isLoaded || typeof window === "undefined") return;
+    
     try {
       localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
     } catch (error) {
       console.error("Error saving favorites:", error);
     }
-  }, [favorites]);
+  }, [favorites, isLoaded]);
 
   const toggleCategoryFavorite = (categoryId: string) => {
     setFavorites(prev => ({
@@ -46,7 +54,7 @@ export function useFavorites() {
     }));
   };
 
-  const toggleChannelFavorite = (channelId: string) => {
+  const toggleChannelFavorite = (channelId: number) => {
     setFavorites(prev => ({
       ...prev,
       channels: prev.channels.includes(channelId)
@@ -59,7 +67,7 @@ export function useFavorites() {
     return favorites.categories.includes(categoryId);
   };
 
-  const isChannelFavorite = (channelId: string) => {
+  const isChannelFavorite = (channelId: number) => {
     return favorites.channels.includes(channelId);
   };
 
