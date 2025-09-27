@@ -9,6 +9,11 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+      # Xtream API Configuration
+      XTREAM_API_BASE: ${XTREAM_API_BASE:-http://tgrpro25.xyz:8080/player_api.php}
+      XTREAM_USERNAME: ${XTREAM_USERNAME}
+      XTREAM_PASSWORD: ${XTREAM_PASSWORD}
+      XTREAM_SESSION_COOKIE: ${XTREAM_SESSION_COOKIE:-}
     restart: unless-stopped
     networks:
       - proxy-network

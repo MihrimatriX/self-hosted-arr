@@ -3,6 +3,17 @@ import { getCategoriesWithStreams, XtreamApiError } from "@/lib/xtream";
 
 export const revalidate = 60;
 
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
+}
+
 export async function GET() {
   try {
     const categories = await getCategoriesWithStreams();
