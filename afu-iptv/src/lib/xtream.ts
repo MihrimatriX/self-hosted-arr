@@ -116,13 +116,19 @@ function normaliseStreams(streams: XtreamStream[]): ChannelStream[] {
       const extension = streamType === "live" ? "m3u8" : "mp4";
       const folder = streamType === "live" ? "live" : "movie";
 
+      // Orijinal stream URL'i
+      const originalStreamUrl = `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`;
+      
+      // Proxy URL'i oluştur
+      const proxyUrl = `/api/proxy/stream?url=${encodeURIComponent(originalStreamUrl)}`;
+
       const normalised: ChannelStream = {
         id: stream.stream_id,
         name: stream.name,
         streamType,
         streamIcon: stream.stream_icon ?? null,
         added: stream.added,
-        streamUrl: `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`
+        streamUrl: proxyUrl
       };
 
       return normalised;
