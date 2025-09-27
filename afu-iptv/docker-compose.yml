@@ -9,6 +9,8 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+      # App URL Configuration
+      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-https://teve.ahmetfuzunkaya.com}
       # Xtream API Configuration
       XTREAM_API_BASE: ${XTREAM_API_BASE:-http://tgrpro25.xyz:8080/player_api.php}
       XTREAM_USERNAME: ${XTREAM_USERNAME}

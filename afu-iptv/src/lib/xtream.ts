@@ -119,8 +119,9 @@ function normaliseStreams(streams: XtreamStream[]): ChannelStream[] {
       // Orijinal stream URL'i
       const originalStreamUrl = `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`;
       
-      // Proxy URL'i oluştur
-      const proxyUrl = `/api/proxy/stream?url=${encodeURIComponent(originalStreamUrl)}`;
+      // Proxy URL'i oluştur - tam URL olarak
+      const proxyBaseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3444';
+      const proxyUrl = `${proxyBaseUrl}/api/proxy/stream?url=${encodeURIComponent(originalStreamUrl)}`;
 
       const normalised: ChannelStream = {
         id: stream.stream_id,
