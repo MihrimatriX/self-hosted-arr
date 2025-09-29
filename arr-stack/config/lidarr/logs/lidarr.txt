@@ -3016,3 +3016,136 @@
 2025-09-25 03:02:16.3|Info|RssSyncService|RSS Sync Completed. Reports found: 111, Reports grabbed: 0
 2025-09-25 03:08:35.7|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:36.7|Info|ConsoleApp|Exiting main.
+2025-09-29 22:30:55.2|Info|Bootstrap|Starting Lidarr - /app/lidarr/bin/Lidarr - Version 2.13.3.4711
+2025-09-29 22:30:55.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:55.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:57.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:59.3|Info|MigrationController|*** Migrating data source=/config/lidarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:30:59.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:00.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:00.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:01.1|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:01.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.8112744s
+2025-09-29 22:31:01.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:01.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.9817255s
+2025-09-29 22:31:02.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:02.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:02.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:02.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:03.2|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6297191s
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:03.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6979395s
+2025-09-29 22:31:05.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8686
+2025-09-29 22:31:08.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:08.3|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:08.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/lidarr/bin
+2025-09-29 22:31:08.5|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:37.8|Info|RssSyncService|Starting RSS Sync
+2025-09-29 22:31:37.8|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:39.8|Error|CommandExecutor|Error occurred while executing task RefreshArtist
+
+[v2.13.3.4711] System.NullReferenceException: Object reference not set to an instance of an object.
+   at NzbDrone.Core.MetadataSource.SkyHook.SkyHookProxy.GetChangedArtists(DateTime startTime) in ./Lidarr.Core/MetadataSource/SkyHook/SkyHookProxy.cs:line 60
+   at NzbDrone.Core.Music.RefreshArtistService.Execute(RefreshArtistCommand message) in ./Lidarr.Core/Music/Services/RefreshArtistService.cs:line 391
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Lidarr.Core/Messaging/Commands/CommandExecutor.cs:line 83
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Lidarr.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-09-29 22:31:40.4|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:40:31 and 09/28/2025 21:21:27 UTC. Search may be required.
+2025-09-29 22:31:40.6|Info|TrackGroupingService|Grouping 0 tracks
+2025-09-29 22:31:40.9|Info|ImportApprovedTracks|Importing 0 tracks
+2025-09-29 22:31:40.9|Warn|Torznab|Indexer TorrentDownload (Prowlarr) rss sync didn't cover the period between 09/25/2025 03:02:09 and 09/29/2025 05:31:40 UTC. Search may be required.
+2025-09-29 22:31:41.0|Warn|Torznab|Indexer Uindex (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:11:03 and 09/29/2025 18:47:04 UTC. Search may be required.
+2025-09-29 22:31:41.1|Warn|Torznab|Indexer TorrentGalaxyClone (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:42:10 and 09/28/2025 21:24:40 UTC. Search may be required.
+2025-09-29 22:31:41.5|Info|DownloadDecisionMaker|Processing 113 releases
+2025-09-29 22:31:41.5|Info|Database|Vacuuming Log database
+2025-09-29 22:31:41.7|Info|Database|Log database compressed
+2025-09-29 22:31:41.9|Info|Database|Vacuuming Main database
+2025-09-29 22:31:42.6|Info|Database|Main database compressed
+2025-09-29 22:31:51.3|Info|RssSyncService|RSS Sync Completed. Reports found: 113, Reports grabbed: 0
+2025-09-29 22:31:56.9|Warn|LidarrErrorPipeline|FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+
+[v2.13.3.4711] FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+   at Lidarr.Api.V1.ProviderControllerBase`4.VerifyValidationResult(ValidationResult validationResult, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 311
+   at Lidarr.Api.V1.ProviderControllerBase`4.Test(TProviderDefinition definition, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 302
+   at Lidarr.Api.V1.ProviderControllerBase`4.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 87
+   at lambda_method103(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Lidarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/BufferingMiddleware.cs:line 27
+   at Lidarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/IfModifiedMiddleware.cs:line 40
+   at Lidarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/CacheHeaderMiddleware.cs:line 32
+   at Lidarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/StartingUpMiddleware.cs:line 37
+   at Lidarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/UrlBaseMiddleware.cs:line 28
+   at Lidarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/VersionMiddleware.cs:line 28
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+
+
+2025-09-29 22:31:57.1|Warn|LidarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:59.0|Warn|LidarrErrorPipeline|FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+
+[v2.13.3.4711] FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+   at Lidarr.Api.V1.ProviderControllerBase`4.VerifyValidationResult(ValidationResult validationResult, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 316
+   at Lidarr.Api.V1.ProviderControllerBase`4.Test(TProviderDefinition definition, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 302
+   at Lidarr.Api.V1.ProviderControllerBase`4.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 87
+   at lambda_method103(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Lidarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/BufferingMiddleware.cs:line 27
+   at Lidarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/IfModifiedMiddleware.cs:line 40
+   at Lidarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/CacheHeaderMiddleware.cs:line 32
+   at Lidarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/StartingUpMiddleware.cs:line 37
+   at Lidarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/UrlBaseMiddleware.cs:line 28
+   at Lidarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/VersionMiddleware.cs:line 28
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+
+
+2025-09-29 22:31:59.2|Warn|LidarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:39:10.6|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:15.1|Info|ConsoleApp|Exiting main.

@@ -2249,3 +2249,696 @@
 2025-09-25 03:03:37.8|Debug|ImportListSyncService|No import lists with automatic add enabled
 2025-09-25 03:08:35.7|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:36.7|Info|ConsoleApp|Exiting main.
+2025-09-29 22:30:59.0|Debug|ProcessProvider|Found 0 processes with the name: Lidarr.Console
+2025-09-29 22:30:59.0|Debug|ProcessProvider|Found 1 processes with the name: Lidarr
+2025-09-29 22:30:59.1|Debug|ProcessProvider| - [153] Lidarr
+2025-09-29 22:30:59.3|Info|MigrationController|*** Migrating data source=/config/lidarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:30:59.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:00.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:00.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:01.1|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:01.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.8112744s
+2025-09-29 22:31:01.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:01.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.9817255s
+2025-09-29 22:31:02.1|Debug|MigrationController|Took: 00:00:02.7468577
+2025-09-29 22:31:02.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:02.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:02.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:02.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:03.2|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6297191s
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:03.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6979395s
+2025-09-29 22:31:03.6|Debug|MigrationController|Took: 00:00:01.1315147
+2025-09-29 22:31:04.0|Debug|FingerprintingService|fpcalc version: 1.5.1
+2025-09-29 22:31:05.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8686
+2025-09-29 22:31:06.2|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-09-29 22:31:06.4|Debug|QualityDefinitionService|Setting up default quality config
+2025-09-29 22:31:07.7|Debug|NotificationFactory|Initializing Providers. Count 25
+2025-09-29 22:31:08.0|Debug|IndexerFactory|Initializing Providers. Count 10
+2025-09-29 22:31:08.0|Debug|ImportListFactory|Initializing Providers. Count 10
+2025-09-29 22:31:08.1|Debug|MetadataFactory|Initializing Providers. Count 3
+2025-09-29 22:31:08.1|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-09-29 22:31:08.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:08.3|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:08.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/lidarr/bin
+2025-09-29 22:31:08.5|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:10.3|Debug|QBittorrentProxyV2|qBittorrent authentication succeeded.
+2025-09-29 22:31:37.8|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-29 22:31:37.8|Info|RssSyncService|Starting RSS Sync
+2025-09-29 22:31:37.8|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:37.9|Debug|HousekeepingService|Starting CleanupAbsolutePathMetadataFiles
+2025-09-29 22:31:37.9|Debug|FetchAndParseRssService|Available indexers 4
+2025-09-29 22:31:37.9|Debug|HousekeepingService|Completed CleanupAbsolutePathMetadataFiles
+2025-09-29 22:31:37.9|Debug|HousekeepingService|Starting CleanupAdditionalNamingSpecs
+2025-09-29 22:31:37.9|Debug|HousekeepingService|Completed CleanupAdditionalNamingSpecs
+2025-09-29 22:31:37.9|Debug|HousekeepingService|Starting CleanupAdditionalUsers
+2025-09-29 22:31:38.0|Debug|HousekeepingService|Completed CleanupAdditionalUsers
+2025-09-29 22:31:38.0|Debug|HousekeepingService|Starting CleanupCommandQueue
+2025-09-29 22:31:38.0|Debug|HousekeepingService|Completed CleanupCommandQueue
+2025-09-29 22:31:38.1|Debug|HousekeepingService|Starting CleanupDownloadClientUnavailablePendingReleases
+2025-09-29 22:31:38.1|Debug|HousekeepingService|Completed CleanupDownloadClientUnavailablePendingReleases
+2025-09-29 22:31:38.1|Debug|HousekeepingService|Starting CleanupDuplicateMetadataFiles
+2025-09-29 22:31:38.2|Debug|HousekeepingService|Completed CleanupDuplicateMetadataFiles
+2025-09-29 22:31:38.2|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:38.2|Debug|HousekeepingService|Starting CleanupOrphanedAlbums
+2025-09-29 22:31:38.3|Debug|HousekeepingService|Completed CleanupOrphanedAlbums
+2025-09-29 22:31:38.3|Debug|HousekeepingService|Starting CleanupOrphanedArtistMetadata
+2025-09-29 22:31:38.3|Debug|HousekeepingService|Completed CleanupOrphanedArtistMetadata
+2025-09-29 22:31:38.3|Debug|HousekeepingService|Starting CleanupOrphanedBlocklist
+2025-09-29 22:31:38.3|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/4/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:38.4|Debug|HousekeepingService|Completed CleanupOrphanedBlocklist
+2025-09-29 22:31:38.4|Debug|HousekeepingService|Starting CleanupOrphanedDownloadClientStatus
+2025-09-29 22:31:38.4|Debug|HousekeepingService|Completed CleanupOrphanedDownloadClientStatus
+2025-09-29 22:31:38.4|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:38.5|Debug|HousekeepingService|Starting CleanupOrphanedHistoryItems
+2025-09-29 22:31:38.5|Debug|HousekeepingService|Completed CleanupOrphanedHistoryItems
+2025-09-29 22:31:38.6|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/6/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:38.6|Debug|HousekeepingService|Starting CleanupOrphanedImportListStatus
+2025-09-29 22:31:38.6|Debug|HousekeepingService|Completed CleanupOrphanedImportListStatus
+2025-09-29 22:31:38.6|Debug|HousekeepingService|Starting CleanupOrphanedIndexerStatus
+2025-09-29 22:31:38.9|Debug|HousekeepingService|Completed CleanupOrphanedIndexerStatus
+2025-09-29 22:31:38.9|Debug|HousekeepingService|Starting CleanupOrphanedMetadataFiles
+2025-09-29 22:31:39.0|Debug|HousekeepingService|Completed CleanupOrphanedMetadataFiles
+2025-09-29 22:31:39.0|Debug|HousekeepingService|Starting CleanupOrphanedNotificationStatus
+2025-09-29 22:31:39.1|Debug|HousekeepingService|Completed CleanupOrphanedNotificationStatus
+2025-09-29 22:31:39.1|Debug|HousekeepingService|Starting CleanupOrphanedPendingReleases
+2025-09-29 22:31:39.3|Debug|HousekeepingService|Completed CleanupOrphanedPendingReleases
+2025-09-29 22:31:39.3|Debug|HousekeepingService|Starting CleanupOrphanedReleases
+2025-09-29 22:31:39.4|Debug|HousekeepingService|Completed CleanupOrphanedReleases
+2025-09-29 22:31:39.4|Debug|HousekeepingService|Starting CleanupOrphanedTrackFiles
+2025-09-29 22:31:39.5|Debug|HousekeepingService|Completed CleanupOrphanedTrackFiles
+2025-09-29 22:31:39.5|Debug|HousekeepingService|Starting CleanupOrphanedTracks
+2025-09-29 22:31:39.6|Debug|HousekeepingService|Completed CleanupOrphanedTracks
+2025-09-29 22:31:39.6|Debug|HousekeepingService|Starting CleanupQualityProfileFormatItems
+2025-09-29 22:31:39.7|Debug|HousekeepingService|Completed CleanupQualityProfileFormatItems
+2025-09-29 22:31:39.8|Debug|HousekeepingService|Starting CleanupTemporaryUpdateFiles
+2025-09-29 22:31:39.8|Debug|HousekeepingService|Completed CleanupTemporaryUpdateFiles
+2025-09-29 22:31:40.0|Debug|HousekeepingService|Starting CleanupUnusedTags
+2025-09-29 22:31:39.8|Error|CommandExecutor|Error occurred while executing task RefreshArtist
+
+[v2.13.3.4711] System.NullReferenceException: Object reference not set to an instance of an object.
+   at NzbDrone.Core.MetadataSource.SkyHook.SkyHookProxy.GetChangedArtists(DateTime startTime) in ./Lidarr.Core/MetadataSource/SkyHook/SkyHookProxy.cs:line 60
+   at NzbDrone.Core.Music.RefreshArtistService.Execute(RefreshArtistCommand message) in ./Lidarr.Core/Music/Services/RefreshArtistService.cs:line 391
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Lidarr.Core/Messaging/Commands/CommandExecutor.cs:line 83
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Lidarr.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-09-29 22:31:40.2|Debug|HousekeepingService|Completed CleanupUnusedTags
+2025-09-29 22:31:40.3|Debug|HousekeepingService|Starting DeleteBadMediaCovers
+2025-09-29 22:31:40.4|Debug|MediaFileService|Filtering 0 files for unchanged files
+2025-09-29 22:31:40.5|Debug|HousekeepingService|Completed DeleteBadMediaCovers
+2025-09-29 22:31:40.5|Debug|HousekeepingService|Starting FixFutureDownloadClientStatusTimes
+2025-09-29 22:31:40.5|Debug|ImportDecisionMaker|Analyzing 0/0 files.
+2025-09-29 22:31:40.6|Debug|IdentificationService|Starting track identification
+2025-09-29 22:31:40.6|Debug|HousekeepingService|Completed FixFutureDownloadClientStatusTimes
+2025-09-29 22:31:40.4|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:40:31 and 09/28/2025 21:21:27 UTC. Search may be required.
+2025-09-29 22:31:40.7|Debug|HousekeepingService|Starting FixFutureImportListStatusTimes
+2025-09-29 22:31:40.6|Info|TrackGroupingService|Grouping 0 tracks
+2025-09-29 22:31:40.8|Debug|IdentificationService|Sorted 0 tracks into 0 releases in 156ms
+2025-09-29 22:31:40.8|Debug|IdentificationService|Track identification for 0 tracks took 212ms
+2025-09-29 22:31:40.8|Debug|DiskScanService|Import decisions complete [00:00:00.5221368]
+2025-09-29 22:31:40.9|Debug|HousekeepingService|Completed FixFutureImportListStatusTimes
+2025-09-29 22:31:40.9|Debug|HousekeepingService|Starting FixFutureIndexerStatusTimes
+2025-09-29 22:31:40.9|Info|ImportApprovedTracks|Importing 0 tracks
+2025-09-29 22:31:40.9|Debug|ImportApprovedTracks|Importing 0 files. replaceExisting: False
+2025-09-29 22:31:40.9|Warn|Torznab|Indexer TorrentDownload (Prowlarr) rss sync didn't cover the period between 09/25/2025 03:02:09 and 09/29/2025 05:31:40 UTC. Search may be required.
+2025-09-29 22:31:40.9|Debug|HousekeepingService|Completed FixFutureIndexerStatusTimes
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Starting FixFutureNotificationStatusTimes
+2025-09-29 22:31:41.0|Debug|ImportApprovedTracks|Inserted new trackfiles in 1ms
+2025-09-29 22:31:41.0|Warn|Torznab|Indexer Uindex (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:11:03 and 09/29/2025 18:47:04 UTC. Search may be required.
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Completed FixFutureNotificationStatusTimes
+2025-09-29 22:31:41.1|Debug|ImportApprovedTracks|TrackFileIds updated, total 85ms
+2025-09-29 22:31:41.1|Debug|HousekeepingService|Starting FixFutureRunScheduledTasks
+2025-09-29 22:31:41.1|Warn|Torznab|Indexer TorrentGalaxyClone (Prowlarr) rss sync didn't cover the period between 09/25/2025 02:42:10 and 09/28/2025 21:24:40 UTC. Search may be required.
+2025-09-29 22:31:41.3|Debug|DiskScanService|Inserted 0 new unmatched trackfiles
+2025-09-29 22:31:41.3|Debug|DiskScanService|Updated info for 0 known files
+2025-09-29 22:31:41.3|Debug|HousekeepingService|Completed FixFutureRunScheduledTasks
+2025-09-29 22:31:41.3|Debug|DiskScanService|Track import complete for:
+ [00:00:00.4939367]
+2025-09-29 22:31:41.4|Debug|FetchAndParseRssService|Found 113 reports
+2025-09-29 22:31:41.4|Debug|HousekeepingService|Starting TrimLogDatabase
+2025-09-29 22:31:41.5|Info|DownloadDecisionMaker|Processing 113 releases
+2025-09-29 22:31:41.5|Debug|InstallUpdateService|Checking for updates
+2025-09-29 22:31:41.5|Debug|DownloadDecisionMaker|Processing release 'Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:41.5|Info|Database|Vacuuming Log database
+2025-09-29 22:31:41.7|Debug|Parser|Parsing string 'Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC'
+2025-09-29 22:31:41.7|Info|Database|Log database compressed
+2025-09-29 22:31:41.7|Debug|HousekeepingService|Completed TrimLogDatabase
+2025-09-29 22:31:41.8|Debug|InstallUpdateService|No update available
+2025-09-29 22:31:41.8|Debug|HousekeepingService|Starting UpdateCleanTitleForArtist
+2025-09-29 22:31:41.8|Debug|HousekeepingService|Completed UpdateCleanTitleForArtist
+2025-09-29 22:31:41.8|Debug|HousekeepingService|Compressing main database after housekeeping
+2025-09-29 22:31:41.9|Info|Database|Vacuuming Main database
+2025-09-29 22:31:42.1|Debug|Parser|Unable to parse Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC
+2025-09-29 22:31:42.1|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black A Forest Mighty Black 2014 FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:42.2|Debug|Parser|Parsing string 'A Forest Mighty Black A Forest Mighty Black 2014 FLAC'
+2025-09-29 22:31:42.2|Debug|Parser|Unable to parse A Forest Mighty Black A Forest Mighty Black 2014 FLAC
+2025-09-29 22:31:42.3|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:42.3|Debug|Parser|Parsing string 'A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC'
+2025-09-29 22:31:42.4|Debug|Parser|Unable to parse A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC
+2025-09-29 22:31:42.4|Debug|DownloadDecisionMaker|Processing release 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:42.5|Debug|Parser|Parsing string 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC'
+2025-09-29 22:31:42.5|Debug|Parser|Album Parsed. Cher - Believe 
+2025-09-29 22:31:42.6|Debug|QualityParser|Trying to parse quality for 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC'
+2025-09-29 22:31:42.6|Info|Database|Main database compressed
+2025-09-29 22:31:42.9|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:43.0|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:43.1|Debug|ParsingService|Trying inexact artist match for Cher
+2025-09-29 22:31:43.1|Debug|ParsingService|No matching artist Cher
+2025-09-29 22:31:43.2|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:43.2|Debug|DownloadDecisionMaker|Processing release 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.2|Debug|Parser|Parsing string 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]'
+2025-09-29 22:31:43.2|Debug|Parser|Album Parsed. Beat - Live 
+2025-09-29 22:31:43.2|Debug|QualityParser|Trying to parse quality for 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]'
+2025-09-29 22:31:43.2|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:43.3|Debug|Parser|Release Group parsed: FLAC
+2025-09-29 22:31:43.3|Debug|ParsingService|Trying inexact artist match for Beat
+2025-09-29 22:31:43.3|Debug|ParsingService|No matching artist Beat
+2025-09-29 22:31:43.3|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:43.3|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black Mellowdramatic 1997 FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.3|Debug|Parser|Parsing string 'A Forest Mighty Black Mellowdramatic 1997 FLAC'
+2025-09-29 22:31:43.3|Debug|Parser|Unable to parse A Forest Mighty Black Mellowdramatic 1997 FLAC
+2025-09-29 22:31:43.4|Debug|DownloadDecisionMaker|Processing release 'Cher - The Farewell Tour [Live] (2025) MP3' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.4|Debug|Parser|Parsing string 'Cher - The Farewell Tour [Live] (2025) MP3'
+2025-09-29 22:31:43.4|Debug|Parser|Album Parsed. Cher - The Farewell Tour 
+2025-09-29 22:31:43.4|Debug|QualityParser|Trying to parse quality for 'Cher - The Farewell Tour [Live] (2025) MP3'
+2025-09-29 22:31:43.5|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:43.5|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:43.5|Debug|ParsingService|Trying inexact artist match for Cher
+2025-09-29 22:31:43.5|Debug|ParsingService|No matching artist Cher
+2025-09-29 22:31:43.6|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:43.6|Debug|DownloadDecisionMaker|Processing release 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.6|Debug|Parser|Parsing string 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]'
+2025-09-29 22:31:43.7|Debug|Parser|Album Parsed. Level 42 - Collected 
+2025-09-29 22:31:43.7|Debug|QualityParser|Trying to parse quality for 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]'
+2025-09-29 22:31:43.7|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:43.7|Debug|Parser|Release Group parsed: rjk
+2025-09-29 22:31:43.7|Debug|ParsingService|Trying inexact artist match for Level 42
+2025-09-29 22:31:43.7|Debug|ParsingService|No matching artist Level 42
+2025-09-29 22:31:43.8|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:43.8|Debug|DownloadDecisionMaker|Processing release 'Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.8|Debug|Parser|Parsing string 'Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44'
+2025-09-29 22:31:43.8|Debug|Parser|Unable to parse Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44
+2025-09-29 22:31:43.8|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.8|Debug|Parser|Parsing string 'Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock'
+2025-09-29 22:31:43.9|Debug|Parser|Unable to parse Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock
+2025-09-29 22:31:43.9|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.9|Debug|Parser|Parsing string 'Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16'
+2025-09-29 22:31:43.9|Debug|Parser|Unable to parse Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16
+2025-09-29 22:31:43.9|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:43.9|Debug|Parser|Parsing string 'Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:43.9|Debug|Parser|Unable to parse Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44
+2025-09-29 22:31:44.0|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.0|Debug|Parser|Parsing string 'Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:44.0|Debug|Parser|Unable to parse Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:44.0|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.0|Debug|Parser|Parsing string 'Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:44.0|Debug|Parser|Unable to parse Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:44.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.1|Debug|Parser|Parsing string 'Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:44.1|Debug|Parser|Unable to parse Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:44.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.1|Debug|Parser|Parsing string 'Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha'
+2025-09-29 22:31:44.1|Debug|Parser|Unable to parse Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha
+2025-09-29 22:31:44.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.1|Debug|Parser|Parsing string 'Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16'
+2025-09-29 22:31:44.1|Debug|Parser|Unable to parse Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16
+2025-09-29 22:31:44.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.2|Debug|Parser|Parsing string 'Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44'
+2025-09-29 22:31:44.2|Debug|Parser|Unable to parse Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44
+2025-09-29 22:31:44.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.2|Debug|Parser|Parsing string 'Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp'
+2025-09-29 22:31:44.2|Debug|Parser|Unable to parse Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp
+2025-09-29 22:31:44.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Life Live 1983 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.2|Debug|Parser|Parsing string 'Thin Lizzy Life Live 1983 Hard rock Flac 16 44'
+2025-09-29 22:31:44.2|Debug|Parser|Unable to parse Thin Lizzy Life Live 1983 Hard rock Flac 16 44
+2025-09-29 22:31:44.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy 1976 2024 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.2|Debug|Parser|Parsing string 'Thin Lizzy 1976 2024 Hard rock Flac 16 44'
+2025-09-29 22:31:44.2|Debug|Parser|Unable to parse Thin Lizzy 1976 2024 Hard rock Flac 16 44
+2025-09-29 22:31:44.3|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.3|Debug|Parser|Parsing string 'Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44'
+2025-09-29 22:31:44.3|Debug|Parser|Unable to parse Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44
+2025-09-29 22:31:44.3|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.3|Debug|Parser|Parsing string 'Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:44.3|Debug|Parser|Unable to parse Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44
+2025-09-29 22:31:44.3|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.3|Debug|Parser|Parsing string 'Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44'
+2025-09-29 22:31:44.4|Debug|Parser|Unable to parse Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44
+2025-09-29 22:31:44.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.4|Debug|Parser|Parsing string 'Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro'
+2025-09-29 22:31:44.4|Debug|Parser|Unable to parse Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro
+2025-09-29 22:31:44.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.4|Debug|Parser|Parsing string 'Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48'
+2025-09-29 22:31:44.4|Debug|Parser|Unable to parse Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48
+2025-09-29 22:31:44.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.4|Debug|Parser|Parsing string 'Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac'
+2025-09-29 22:31:44.5|Debug|Parser|Unable to parse Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac
+2025-09-29 22:31:44.5|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Renegade 2001 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.5|Debug|Parser|Parsing string 'Thin Lizzy Renegade 2001 Hard rock Flac 16 44'
+2025-09-29 22:31:44.5|Debug|Parser|Unable to parse Thin Lizzy Renegade 2001 Hard rock Flac 16 44
+2025-09-29 22:31:44.5|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.5|Debug|Parser|Parsing string 'Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44'
+2025-09-29 22:31:44.5|Debug|Parser|Unable to parse Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44
+2025-09-29 22:31:44.5|Debug|DownloadDecisionMaker|Processing release 'Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.5|Debug|Parser|Parsing string 'Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo'
+2025-09-29 22:31:44.6|Debug|Parser|Unable to parse Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo
+2025-09-29 22:31:44.6|Debug|DownloadDecisionMaker|Processing release 'Gina Sicilia Hey Sugar 2008 flac 24 48' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.6|Debug|Parser|Parsing string 'Gina Sicilia Hey Sugar 2008 flac 24 48'
+2025-09-29 22:31:44.6|Debug|Parser|Unable to parse Gina Sicilia Hey Sugar 2008 flac 24 48
+2025-09-29 22:31:44.6|Debug|DownloadDecisionMaker|Processing release 'Gina Sicilia Allow Me To Confess 2007 flac 24 48' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.6|Debug|Parser|Parsing string 'Gina Sicilia Allow Me To Confess 2007 flac 24 48'
+2025-09-29 22:31:44.6|Debug|Parser|Unable to parse Gina Sicilia Allow Me To Confess 2007 flac 24 48
+2025-09-29 22:31:44.6|Debug|DownloadDecisionMaker|Processing release 'BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.6|Debug|Parser|Parsing string 'BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24'
+2025-09-29 22:31:44.6|Debug|Parser|Unable to parse BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24
+2025-09-29 22:31:44.6|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.6|Debug|Parser|Parsing string 'Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac'
+2025-09-29 22:31:44.7|Debug|Parser|Unable to parse Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac
+2025-09-29 22:31:44.7|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.7|Debug|Parser|Parsing string 'Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022'
+2025-09-29 22:31:44.7|Debug|Parser|Unable to parse Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022
+2025-09-29 22:31:44.7|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.7|Debug|Parser|Parsing string 'Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc'
+2025-09-29 22:31:44.7|Debug|Parser|Unable to parse Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc
+2025-09-29 22:31:44.7|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Runnegghiè 2024 Pop Flac 24 48' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.8|Debug|Parser|Parsing string 'Alessio Bondì Runnegghiè 2024 Pop Flac 24 48'
+2025-09-29 22:31:44.8|Debug|Parser|Unable to parse Alessio Bondì Runnegghiè 2024 Pop Flac 24 48
+2025-09-29 22:31:44.8|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Maharìa 2021 Pop Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.8|Debug|Parser|Parsing string 'Alessio Bondì Maharìa 2021 Pop Flac 16 44'
+2025-09-29 22:31:44.8|Debug|Parser|Unable to parse Alessio Bondì Maharìa 2021 Pop Flac 16 44
+2025-09-29 22:31:44.8|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Nivuru 2018 Pop Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.8|Debug|Parser|Parsing string 'Alessio Bondì Nivuru 2018 Pop Flac 16 44'
+2025-09-29 22:31:44.8|Debug|Parser|Unable to parse Alessio Bondì Nivuru 2018 Pop Flac 16 44
+2025-09-29 22:31:44.8|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Sfardo 2015 Pop Flac 16 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.9|Debug|Parser|Parsing string 'Alessio Bondì Sfardo 2015 Pop Flac 16 44'
+2025-09-29 22:31:44.9|Debug|Parser|Unable to parse Alessio Bondì Sfardo 2015 Pop Flac 16 44
+2025-09-29 22:31:44.9|Debug|DownloadDecisionMaker|Processing release 'Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.9|Debug|Parser|Parsing string 'Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea'
+2025-09-29 22:31:44.9|Debug|Parser|Unable to parse Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea
+2025-09-29 22:31:44.9|Debug|DownloadDecisionMaker|Processing release 'Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:44.9|Debug|Parser|Parsing string 'Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats'
+2025-09-29 22:31:45.0|Debug|Parser|Unable to parse Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats
+2025-09-29 22:31:45.0|Debug|DownloadDecisionMaker|Processing release 'The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.0|Debug|Parser|Parsing string 'The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac'
+2025-09-29 22:31:45.0|Debug|Parser|Unable to parse The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac
+2025-09-29 22:31:45.0|Debug|DownloadDecisionMaker|Processing release 'VA - The Sound of the 70s (2025) MP3' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.0|Debug|Parser|Parsing string 'VA - The Sound of the 70s (2025) MP3'
+2025-09-29 22:31:45.0|Debug|Parser|Album Parsed. VA - The Sound of the 70s 
+2025-09-29 22:31:45.0|Debug|QualityParser|Trying to parse quality for 'VA - The Sound of the 70s (2025) MP3'
+2025-09-29 22:31:45.0|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:45.0|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.1|Debug|ParsingService|Trying inexact artist match for VA
+2025-09-29 22:31:45.1|Debug|ParsingService|No matching artist VA
+2025-09-29 22:31:45.1|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.1|Debug|DownloadDecisionMaker|Processing release 'VA - 70s 100 Hits (2010) MP3' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.1|Debug|Parser|Parsing string 'VA - 70s 100 Hits (2010) MP3'
+2025-09-29 22:31:45.1|Debug|Parser|Album Parsed. VA - 70s 100 Hits 
+2025-09-29 22:31:45.2|Debug|QualityParser|Trying to parse quality for 'VA - 70s 100 Hits (2010) MP3'
+2025-09-29 22:31:45.2|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:45.2|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.2|Debug|ParsingService|Trying inexact artist match for VA
+2025-09-29 22:31:45.2|Debug|ParsingService|No matching artist VA
+2025-09-29 22:31:45.2|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.2|Debug|DownloadDecisionMaker|Processing release 'Rage Against The Machine - Discography (1992-2022) FLAC' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.3|Debug|Parser|Parsing string 'Rage Against The Machine - Discography (1992-2022) FLAC'
+2025-09-29 22:31:45.3|Debug|Parser|Album Parsed. Rage Against The Machine - Discography 
+2025-09-29 22:31:45.3|Debug|QualityParser|Trying to parse quality for 'Rage Against The Machine - Discography (1992-2022) FLAC'
+2025-09-29 22:31:45.3|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:45.3|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.3|Debug|ParsingService|Trying inexact artist match for Rage Against The Machine
+2025-09-29 22:31:45.4|Debug|ParsingService|No matching artist Rage Against The Machine
+2025-09-29 22:31:45.4|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.4|Debug|DownloadDecisionMaker|Processing release 'Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.4|Debug|Parser|Parsing string 'Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44'
+2025-09-29 22:31:45.4|Debug|Parser|Unable to parse Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44
+2025-09-29 22:31:45.4|Debug|DownloadDecisionMaker|Processing release 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.4|Debug|Parser|Parsing string 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi'
+2025-09-29 22:31:45.4|Debug|Parser|Unable to parse Accademia Bizantina Dantone Tampieri Handel Concerti Grossi
+2025-09-29 22:31:45.4|Debug|DownloadDecisionMaker|Processing release 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.4|Debug|Parser|Parsing string 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi'
+2025-09-29 22:31:45.4|Debug|Parser|Unable to parse Accademia Bizantina Dantone Tampieri Handel Concerti Grossi
+2025-09-29 22:31:45.5|Debug|DownloadDecisionMaker|Processing release 'Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.5|Debug|Parser|Parsing string 'Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44'
+2025-09-29 22:31:45.5|Debug|Parser|Unable to parse Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44
+2025-09-29 22:31:45.5|Debug|DownloadDecisionMaker|Processing release 'Second Sky & Phase Materia - Dayswimming (2020) FLAC' from 'Uindex (Prowlarr)'
+2025-09-29 22:31:45.5|Debug|Parser|Parsing string 'Second Sky & Phase Materia - Dayswimming (2020) FLAC'
+2025-09-29 22:31:45.5|Debug|Parser|Album Parsed. Second Sky & Phase Materia - Dayswimming 
+2025-09-29 22:31:45.5|Debug|QualityParser|Trying to parse quality for 'Second Sky & Phase Materia - Dayswimming (2020) FLAC'
+2025-09-29 22:31:45.5|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:45.5|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.5|Debug|ParsingService|Trying inexact artist match for Second Sky & Phase Materia
+2025-09-29 22:31:45.5|Debug|ParsingService|No matching artist Second Sky & Phase Materia
+2025-09-29 22:31:45.5|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.5|Debug|DownloadDecisionMaker|Processing release 'Billy Joel - Japanese Singles Collection - Greatest Hits (2021) [rjk]' from 'Uindex (Prowlarr)'
+2025-09-29 22:31:45.6|Debug|Parser|Parsing string 'Billy Joel - Japanese Singles Collection - Greatest Hits (2021) [rjk]'
+2025-09-29 22:31:45.6|Debug|Parser|Album Parsed. Billy Joel - Japanese Singles Collection - Greatest Hits 
+2025-09-29 22:31:45.6|Debug|QualityParser|Trying to parse quality for 'Billy Joel - Japanese Singles Collection - Greatest Hits (2021) [rjk]'
+2025-09-29 22:31:45.6|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:45.6|Debug|Parser|Release Group parsed: rjk
+2025-09-29 22:31:45.6|Debug|ParsingService|Trying inexact artist match for Billy Joel
+2025-09-29 22:31:45.6|Debug|ParsingService|No matching artist Billy Joel
+2025-09-29 22:31:45.6|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.7|Debug|DownloadDecisionMaker|Processing release 'Alison Krauss - A Hundred Miles Or More: A Collection (2007) FLAC' from 'Uindex (Prowlarr)'
+2025-09-29 22:31:45.7|Debug|Parser|Parsing string 'Alison Krauss - A Hundred Miles Or More: A Collection (2007) FLAC'
+2025-09-29 22:31:45.7|Debug|Parser|Album Parsed. Alison Krauss - A Hundred Miles Or More: A Collection 
+2025-09-29 22:31:45.7|Debug|QualityParser|Trying to parse quality for 'Alison Krauss - A Hundred Miles Or More: A Collection (2007) FLAC'
+2025-09-29 22:31:45.7|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:45.7|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.7|Debug|ParsingService|Trying inexact artist match for Alison Krauss
+2025-09-29 22:31:45.7|Debug|ParsingService|No matching artist Alison Krauss
+2025-09-29 22:31:45.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.8|Debug|DownloadDecisionMaker|Processing release 'Rage Against The Machine  Discography (1992 2022) FLAC' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:45.8|Debug|Parser|Parsing string 'Rage Against The Machine  Discography (1992 2022) FLAC'
+2025-09-29 22:31:45.8|Debug|Parser|Album Parsed. Rage Against The Machine - Discography 
+2025-09-29 22:31:45.8|Debug|QualityParser|Trying to parse quality for 'Rage Against The Machine  Discography (1992 2022) FLAC'
+2025-09-29 22:31:45.8|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:45.8|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:45.8|Debug|ParsingService|Trying inexact artist match for Rage Against The Machine
+2025-09-29 22:31:45.8|Debug|ParsingService|No matching artist Rage Against The Machine
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'VA  70s 100 Hits (2010) MP3' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'VA  70s 100 Hits (2010) MP3'
+2025-09-29 22:31:45.9|Debug|Parser|Unable to parse VA  70s 100 Hits (2010) MP3
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'Cher  Believe [25th Anniversary Deluxe Edition] (1998 2023) FLAC' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'Cher  Believe [25th Anniversary Deluxe Edition] (1998 2023) FLAC'
+2025-09-29 22:31:45.9|Debug|Parser|Unable to parse Cher  Believe [25th Anniversary Deluxe Edition] (1998 2023) FLAC
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'Level 42  Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'Level 42  Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]'
+2025-09-29 22:31:46.0|Debug|Parser|Unable to parse Level 42  Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]
+2025-09-29 22:31:46.0|Debug|DownloadDecisionMaker|Processing release 'VA  The Sound of the 70s (2025) MP3' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.0|Debug|Parser|Parsing string 'VA  The Sound of the 70s (2025) MP3'
+2025-09-29 22:31:46.0|Debug|Parser|Unable to parse VA  The Sound of the 70s (2025) MP3
+2025-09-29 22:31:46.1|Debug|DownloadDecisionMaker|Processing release 'The Art Of Noise  Who  039s Afraid Of The Art Of Noise (1984) flac' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.1|Debug|Parser|Parsing string 'The Art Of Noise  Who  039s Afraid Of The Art Of Noise (1984) flac'
+2025-09-29 22:31:46.2|Debug|Parser|Unable to parse The Art Of Noise  Who  039s Afraid Of The Art Of Noise (1984) flac
+2025-09-29 22:31:46.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy  Live And Dangerous (Super Deluxe) (1978 Hard rock) [' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.3|Debug|Parser|Parsing string 'Thin Lizzy  Live And Dangerous (Super Deluxe) (1978 Hard rock) ['
+2025-09-29 22:31:46.3|Debug|Parser|Unable to parse Thin Lizzy  Live And Dangerous (Super Deluxe) (1978 Hard rock) [
+2025-09-29 22:31:46.3|Debug|DownloadDecisionMaker|Processing release 'Cher  The Farewell Tour [Live] (2025) MP3' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.3|Debug|Parser|Parsing string 'Cher  The Farewell Tour [Live] (2025) MP3'
+2025-09-29 22:31:46.3|Debug|Parser|Unable to parse Cher  The Farewell Tour [Live] (2025) MP3
+2025-09-29 22:31:46.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy  Rock Legends (Deluxe) (2020 Hard rock) [Flac 16 44]' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.4|Debug|Parser|Parsing string 'Thin Lizzy  Rock Legends (Deluxe) (2020 Hard rock) [Flac 16 44]'
+2025-09-29 22:31:46.4|Debug|Parser|Unable to parse Thin Lizzy  Rock Legends (Deluxe) (2020 Hard rock) [Flac 16 44]
+2025-09-29 22:31:46.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy  Decca Era  amp Mercury Rarities (2020 Hard rock) [Flac' from 'TorrentDownload (Prowlarr)'
+2025-09-29 22:31:46.4|Debug|Parser|Parsing string 'Thin Lizzy  Decca Era  amp Mercury Rarities (2020 Hard rock) [Flac'
+2025-09-29 22:31:46.4|Debug|Parser|Unable to parse Thin Lizzy  Decca Era  amp Mercury Rarities (2020 Hard rock) [Flac
+2025-09-29 22:31:46.5|Debug|DownloadDecisionMaker|Processing release 'Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:46.5|Debug|Parser|Parsing string 'Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC'
+2025-09-29 22:31:46.5|Debug|Parser|Unable to parse Alison Krauss A Hundred Miles Or More A Collection 2007 FLAC
+2025-09-29 22:31:46.5|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black A Forest Mighty Black 2014 FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:46.6|Debug|Parser|Parsing string 'A Forest Mighty Black A Forest Mighty Black 2014 FLAC'
+2025-09-29 22:31:46.6|Debug|Parser|Unable to parse A Forest Mighty Black A Forest Mighty Black 2014 FLAC
+2025-09-29 22:31:46.6|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:46.7|Debug|Parser|Parsing string 'A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC'
+2025-09-29 22:31:46.7|Debug|Parser|Unable to parse A Forest Mighty Black Mellowdramatic Remixed 1998 FLAC
+2025-09-29 22:31:46.7|Debug|DownloadDecisionMaker|Processing release 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:46.8|Debug|Parser|Parsing string 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC'
+2025-09-29 22:31:46.8|Debug|Parser|Album Parsed. Cher - Believe 
+2025-09-29 22:31:46.8|Debug|QualityParser|Trying to parse quality for 'Cher - Believe [25th Anniversary Deluxe Edition] (1998/2023) FLAC'
+2025-09-29 22:31:46.8|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:46.9|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:46.9|Debug|ParsingService|Trying inexact artist match for Cher
+2025-09-29 22:31:46.9|Debug|ParsingService|No matching artist Cher
+2025-09-29 22:31:46.9|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:46.9|Debug|DownloadDecisionMaker|Processing release 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.0|Debug|Parser|Parsing string 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]'
+2025-09-29 22:31:47.0|Debug|Parser|Album Parsed. Beat - Live 
+2025-09-29 22:31:47.1|Debug|QualityParser|Trying to parse quality for 'Beat - Live (Live in Los Angeles 2024) (2025) [FLAC]'
+2025-09-29 22:31:47.1|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:47.1|Debug|Parser|Release Group parsed: FLAC
+2025-09-29 22:31:47.2|Debug|ParsingService|Trying inexact artist match for Beat
+2025-09-29 22:31:47.2|Debug|ParsingService|No matching artist Beat
+2025-09-29 22:31:47.2|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:47.3|Debug|DownloadDecisionMaker|Processing release 'A Forest Mighty Black Mellowdramatic 1997 FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.3|Debug|Parser|Parsing string 'A Forest Mighty Black Mellowdramatic 1997 FLAC'
+2025-09-29 22:31:47.3|Debug|Parser|Unable to parse A Forest Mighty Black Mellowdramatic 1997 FLAC
+2025-09-29 22:31:47.4|Debug|DownloadDecisionMaker|Processing release 'Cher - The Farewell Tour [Live] (2025) MP3' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.4|Debug|Parser|Parsing string 'Cher - The Farewell Tour [Live] (2025) MP3'
+2025-09-29 22:31:47.4|Debug|Parser|Album Parsed. Cher - The Farewell Tour 
+2025-09-29 22:31:47.4|Debug|QualityParser|Trying to parse quality for 'Cher - The Farewell Tour [Live] (2025) MP3'
+2025-09-29 22:31:47.5|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:47.5|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:47.5|Debug|ParsingService|Trying inexact artist match for Cher
+2025-09-29 22:31:47.5|Debug|ParsingService|No matching artist Cher
+2025-09-29 22:31:47.6|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:47.6|Debug|DownloadDecisionMaker|Processing release 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.6|Debug|Parser|Parsing string 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]'
+2025-09-29 22:31:47.7|Debug|Parser|Album Parsed. Level 42 - Collected 
+2025-09-29 22:31:47.7|Debug|QualityParser|Trying to parse quality for 'Level 42 - Collected (2016) (3 CD) (Remastered) [FLAC] [rjk]'
+2025-09-29 22:31:47.7|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:47.7|Debug|Parser|Release Group parsed: rjk
+2025-09-29 22:31:47.8|Debug|ParsingService|Trying inexact artist match for Level 42
+2025-09-29 22:31:47.8|Debug|ParsingService|No matching artist Level 42
+2025-09-29 22:31:47.8|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:47.8|Debug|DownloadDecisionMaker|Processing release 'Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.9|Debug|Parser|Parsing string 'Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44'
+2025-09-29 22:31:47.9|Debug|Parser|Unable to parse Haru Nemuri Ekkolaptόmenos 2025 J Pop Flac 16 44
+2025-09-29 22:31:47.9|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:47.9|Debug|Parser|Parsing string 'Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock'
+2025-09-29 22:31:48.0|Debug|Parser|Unable to parse Thin Lizzy Live And Dangerous Super Deluxe 1978 Hard rock
+2025-09-29 22:31:48.0|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.0|Debug|Parser|Parsing string 'Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16'
+2025-09-29 22:31:48.0|Debug|Parser|Unable to parse Thin Lizzy Live In Japan 1980 live 1980 Hard rock Flac 16
+2025-09-29 22:31:48.0|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.1|Debug|Parser|Parsing string 'Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:48.1|Debug|Parser|Unable to parse Thin Lizzy Hammersmith Live 1980 2020 Hard rock Flac 16 44
+2025-09-29 22:31:48.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.1|Debug|Parser|Parsing string 'Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:48.1|Debug|Parser|Unable to parse Thin Lizzy Live in Japan Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:48.1|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.1|Debug|Parser|Parsing string 'Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:48.2|Debug|Parser|Unable to parse Thin Lizzy Live in Chicago Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:48.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.2|Debug|Parser|Parsing string 'Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:48.2|Debug|Parser|Unable to parse Thin Lizzy Live in Glasgow Live 2020 Hard rock Flac 16 44
+2025-09-29 22:31:48.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.2|Debug|Parser|Parsing string 'Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha'
+2025-09-29 22:31:48.2|Debug|Parser|Unable to parse Thin Lizzy Live 2012 O2 Shepherds Bush Empire Live 2013 Ha
+2025-09-29 22:31:48.2|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.2|Debug|Parser|Parsing string 'Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16'
+2025-09-29 22:31:48.2|Debug|Parser|Unable to parse Thin Lizzy Live in London 22 01 2011 2011 Hard rock Flac 16
+2025-09-29 22:31:48.3|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.3|Debug|Parser|Parsing string 'Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44'
+2025-09-29 22:31:48.3|Debug|Parser|Unable to parse Thin Lizzy Live At The BBC 2011 Hard rock Flac 16 44
+2025-09-29 22:31:48.3|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.3|Debug|Parser|Parsing string 'Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp'
+2025-09-29 22:31:48.4|Debug|Parser|Unable to parse Thin Lizzy Still Dangerous Live at the Tower Theatre Philadelp
+2025-09-29 22:31:48.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Life Live 1983 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.4|Debug|Parser|Parsing string 'Thin Lizzy Life Live 1983 Hard rock Flac 16 44'
+2025-09-29 22:31:48.4|Debug|Parser|Unable to parse Thin Lizzy Life Live 1983 Hard rock Flac 16 44
+2025-09-29 22:31:48.4|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy 1976 2024 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.5|Debug|Parser|Parsing string 'Thin Lizzy 1976 2024 Hard rock Flac 16 44'
+2025-09-29 22:31:48.5|Debug|Parser|Unable to parse Thin Lizzy 1976 2024 Hard rock Flac 16 44
+2025-09-29 22:31:48.5|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.5|Debug|Parser|Parsing string 'Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44'
+2025-09-29 22:31:48.5|Debug|Parser|Unable to parse Thin Lizzy Here I Go Again 2024 Hard rock Flac 16 44
+2025-09-29 22:31:48.5|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.6|Debug|Parser|Parsing string 'Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44'
+2025-09-29 22:31:48.6|Debug|Parser|Unable to parse Thin Lizzy Rock Legends Deluxe 2020 Hard rock Flac 16 44
+2025-09-29 22:31:48.6|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.6|Debug|Parser|Parsing string 'Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44'
+2025-09-29 22:31:48.7|Debug|Parser|Unable to parse Thin Lizzy Whiskey In The Jar 1996 Hard rock Flac 16 44
+2025-09-29 22:31:48.7|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.7|Debug|Parser|Parsing string 'Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro'
+2025-09-29 22:31:48.7|Debug|Parser|Unable to parse Thin Lizzy Wild One The Very Best Of Thin Lizzy 1996 Hard ro
+2025-09-29 22:31:48.7|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.8|Debug|Parser|Parsing string 'Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48'
+2025-09-29 22:31:48.8|Debug|Parser|Unable to parse Thin Lizzy The Acoustic Sessions 2025 Hard rock Flac 24 48
+2025-09-29 22:31:48.8|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.9|Debug|Parser|Parsing string 'Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac'
+2025-09-29 22:31:48.9|Debug|Parser|Unable to parse Thin Lizzy Decca Era Mercury Rarities 2020 Hard rock Flac
+2025-09-29 22:31:48.9|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Renegade 2001 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:48.9|Debug|Parser|Parsing string 'Thin Lizzy Renegade 2001 Hard rock Flac 16 44'
+2025-09-29 22:31:48.9|Debug|Parser|Unable to parse Thin Lizzy Renegade 2001 Hard rock Flac 16 44
+2025-09-29 22:31:49.0|Debug|DownloadDecisionMaker|Processing release 'Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.0|Debug|Parser|Parsing string 'Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44'
+2025-09-29 22:31:49.0|Debug|Parser|Unable to parse Thin Lizzy Johnny The Fox 1990 Hard rock Flac 16 44
+2025-09-29 22:31:49.0|Debug|DownloadDecisionMaker|Processing release 'Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.0|Debug|Parser|Parsing string 'Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo'
+2025-09-29 22:31:49.0|Debug|Parser|Unable to parse Hollywood Vampires Alice Cooper Johnny Depp Joe Perry Hollywo
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Processing release 'Gina Sicilia Hey Sugar 2008 flac 24 48' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.1|Debug|Parser|Parsing string 'Gina Sicilia Hey Sugar 2008 flac 24 48'
+2025-09-29 22:31:49.1|Debug|Parser|Unable to parse Gina Sicilia Hey Sugar 2008 flac 24 48
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Processing release 'Gina Sicilia Allow Me To Confess 2007 flac 24 48' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.1|Debug|Parser|Parsing string 'Gina Sicilia Allow Me To Confess 2007 flac 24 48'
+2025-09-29 22:31:49.1|Debug|Parser|Unable to parse Gina Sicilia Allow Me To Confess 2007 flac 24 48
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Processing release 'BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.2|Debug|Parser|Parsing string 'BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24'
+2025-09-29 22:31:49.2|Debug|Parser|Unable to parse BEAT Neon Heat Disease LIVE in Los Angeles 2025 2cd flac 24
+2025-09-29 22:31:49.2|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.2|Debug|Parser|Parsing string 'Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac'
+2025-09-29 22:31:49.2|Debug|Parser|Unable to parse Alessio Bondì Si fussi fimmina Live 2025 Elettronica Flac
+2025-09-29 22:31:49.3|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.3|Debug|Parser|Parsing string 'Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022'
+2025-09-29 22:31:49.3|Debug|Parser|Unable to parse Alessio Bondì Fabio Rizzo Aki Spadaro Spaccaossa OST 2022
+2025-09-29 22:31:49.4|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.4|Debug|Parser|Parsing string 'Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc'
+2025-09-29 22:31:49.4|Debug|Parser|Unable to parse Alessio Bondì Alessandro Presti Alessio Bondì Tatum Art Orc
+2025-09-29 22:31:49.4|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Runnegghiè 2024 Pop Flac 24 48' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.5|Debug|Parser|Parsing string 'Alessio Bondì Runnegghiè 2024 Pop Flac 24 48'
+2025-09-29 22:31:49.5|Debug|Parser|Unable to parse Alessio Bondì Runnegghiè 2024 Pop Flac 24 48
+2025-09-29 22:31:49.5|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Maharìa 2021 Pop Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.5|Debug|Parser|Parsing string 'Alessio Bondì Maharìa 2021 Pop Flac 16 44'
+2025-09-29 22:31:49.5|Debug|Parser|Unable to parse Alessio Bondì Maharìa 2021 Pop Flac 16 44
+2025-09-29 22:31:49.6|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Nivuru 2018 Pop Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.6|Debug|Parser|Parsing string 'Alessio Bondì Nivuru 2018 Pop Flac 16 44'
+2025-09-29 22:31:49.6|Debug|Parser|Unable to parse Alessio Bondì Nivuru 2018 Pop Flac 16 44
+2025-09-29 22:31:49.6|Debug|DownloadDecisionMaker|Processing release 'Alessio Bondì Sfardo 2015 Pop Flac 16 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.7|Debug|Parser|Parsing string 'Alessio Bondì Sfardo 2015 Pop Flac 16 44'
+2025-09-29 22:31:49.7|Debug|Parser|Unable to parse Alessio Bondì Sfardo 2015 Pop Flac 16 44
+2025-09-29 22:31:49.7|Debug|DownloadDecisionMaker|Processing release 'Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.7|Debug|Parser|Parsing string 'Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea'
+2025-09-29 22:31:49.8|Debug|Parser|Unable to parse Jeezy DJ Drama Still Snowin Rap Hip Hop 2025 320_kbps Bea
+2025-09-29 22:31:49.8|Debug|DownloadDecisionMaker|Processing release 'Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:49.9|Debug|Parser|Parsing string 'Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats'
+2025-09-29 22:31:49.9|Debug|Parser|Unable to parse Eric Bellinger It All Makes Sense R BSoul 2025 320_kbps Beats
+2025-09-29 22:31:49.9|Debug|DownloadDecisionMaker|Processing release 'The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:50.0|Debug|Parser|Parsing string 'The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac'
+2025-09-29 22:31:50.0|Debug|Parser|Unable to parse The Art Of Noise Who s Afraid Of The Art Of Noise 1984 flac
+2025-09-29 22:31:50.0|Debug|DownloadDecisionMaker|Processing release 'VA - The Sound of the 70s (2025) MP3' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:50.0|Debug|Parser|Parsing string 'VA - The Sound of the 70s (2025) MP3'
+2025-09-29 22:31:50.1|Debug|Parser|Album Parsed. VA - The Sound of the 70s 
+2025-09-29 22:31:50.1|Debug|QualityParser|Trying to parse quality for 'VA - The Sound of the 70s (2025) MP3'
+2025-09-29 22:31:50.2|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:50.2|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:50.3|Debug|ParsingService|Trying inexact artist match for VA
+2025-09-29 22:31:50.3|Debug|ParsingService|No matching artist VA
+2025-09-29 22:31:50.4|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:50.4|Debug|DownloadDecisionMaker|Processing release 'VA - 70s 100 Hits (2010) MP3' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:50.5|Debug|Parser|Parsing string 'VA - 70s 100 Hits (2010) MP3'
+2025-09-29 22:31:50.5|Debug|Parser|Album Parsed. VA - 70s 100 Hits 
+2025-09-29 22:31:50.6|Debug|QualityParser|Trying to parse quality for 'VA - 70s 100 Hits (2010) MP3'
+2025-09-29 22:31:50.6|Debug|Parser|Quality parsed: Unknown v1
+2025-09-29 22:31:50.6|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:50.6|Debug|ParsingService|Trying inexact artist match for VA
+2025-09-29 22:31:50.7|Debug|ParsingService|No matching artist VA
+2025-09-29 22:31:50.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:50.7|Debug|DownloadDecisionMaker|Processing release 'Rage Against The Machine - Discography (1992-2022) FLAC' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:50.7|Debug|Parser|Parsing string 'Rage Against The Machine - Discography (1992-2022) FLAC'
+2025-09-29 22:31:50.7|Debug|Parser|Album Parsed. Rage Against The Machine - Discography 
+2025-09-29 22:31:50.8|Debug|QualityParser|Trying to parse quality for 'Rage Against The Machine - Discography (1992-2022) FLAC'
+2025-09-29 22:31:50.8|Debug|Parser|Quality parsed: FLAC v1
+2025-09-29 22:31:50.8|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:50.8|Debug|ParsingService|Trying inexact artist match for Rage Against The Machine
+2025-09-29 22:31:50.8|Debug|ParsingService|No matching artist Rage Against The Machine
+2025-09-29 22:31:50.8|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Artist
+2025-09-29 22:31:50.9|Debug|DownloadDecisionMaker|Processing release 'Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:50.9|Debug|Parser|Parsing string 'Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44'
+2025-09-29 22:31:50.9|Debug|Parser|Unable to parse Niccolò Fabi Libertà negli occhi 2025 Pop Flac 24 44
+2025-09-29 22:31:51.0|Debug|DownloadDecisionMaker|Processing release 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.0|Debug|Parser|Parsing string 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi'
+2025-09-29 22:31:51.1|Debug|Parser|Unable to parse Accademia Bizantina Dantone Tampieri Handel Concerti Grossi
+2025-09-29 22:31:51.1|Debug|DownloadDecisionMaker|Processing release 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.1|Debug|Parser|Parsing string 'Accademia Bizantina Dantone Tampieri Handel Concerti Grossi'
+2025-09-29 22:31:51.2|Debug|Parser|Unable to parse Accademia Bizantina Dantone Tampieri Handel Concerti Grossi
+2025-09-29 22:31:51.2|Debug|DownloadDecisionMaker|Processing release 'Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.2|Debug|Parser|Parsing string 'Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44'
+2025-09-29 22:31:51.2|Debug|Parser|Unable to parse Nomadi Live al Teatro Dal Verme Live 2025 Pop Flac 24 44
+2025-09-29 22:31:51.3|Info|RssSyncService|RSS Sync Completed. Reports found: 113, Reports grabbed: 0
+2025-09-29 22:31:51.3|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-29 22:31:55.9|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:56.1|Debug|Api|[GET] /api/v1/indexer: 200.OK (195 ms)
+2025-09-29 22:31:56.2|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:56.3|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (161 ms)
+2025-09-29 22:31:56.3|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:56.5|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:56.9|Warn|LidarrErrorPipeline|FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+
+[v2.13.3.4711] FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+   at Lidarr.Api.V1.ProviderControllerBase`4.VerifyValidationResult(ValidationResult validationResult, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 311
+   at Lidarr.Api.V1.ProviderControllerBase`4.Test(TProviderDefinition definition, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 302
+   at Lidarr.Api.V1.ProviderControllerBase`4.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 87
+   at lambda_method103(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Lidarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/BufferingMiddleware.cs:line 27
+   at Lidarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/IfModifiedMiddleware.cs:line 40
+   at Lidarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/CacheHeaderMiddleware.cs:line 32
+   at Lidarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/StartingUpMiddleware.cs:line 37
+   at Lidarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/UrlBaseMiddleware.cs:line 28
+   at Lidarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/VersionMiddleware.cs:line 28
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+
+
+2025-09-29 22:31:57.1|Warn|LidarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:57.1|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (762 ms)
+2025-09-29 22:31:57.1|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:57.2|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:59.0|Warn|LidarrErrorPipeline|FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+
+[v2.13.3.4711] FluentValidation.ValidationException: Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+   at Lidarr.Api.V1.ProviderControllerBase`4.VerifyValidationResult(ValidationResult validationResult, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 316
+   at Lidarr.Api.V1.ProviderControllerBase`4.Test(TProviderDefinition definition, Boolean includeWarnings) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 302
+   at Lidarr.Api.V1.ProviderControllerBase`4.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Lidarr.Api.V1/ProviderControllerBase.cs:line 87
+   at lambda_method103(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Lidarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/BufferingMiddleware.cs:line 27
+   at Lidarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/IfModifiedMiddleware.cs:line 40
+   at Lidarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/CacheHeaderMiddleware.cs:line 32
+   at Lidarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/StartingUpMiddleware.cs:line 37
+   at Lidarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/UrlBaseMiddleware.cs:line 28
+   at Lidarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Lidarr.Http/Middleware/VersionMiddleware.cs:line 28
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+
+
+2025-09-29 22:31:59.2|Warn|LidarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:59.2|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (2063 ms)
+2025-09-29 22:31:59.3|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:59.3|Debug|Api|[GET] /api/v1/indexer/1: 200.OK (14 ms)
+2025-09-29 22:31:59.4|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:59.4|Debug|Api|[GET] /api/v1/indexer/3: 200.OK (10 ms)
+2025-09-29 22:31:59.4|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:59.5|Debug|Api|[GET] /api/v1/indexer/4: 200.OK (33 ms)
+2025-09-29 22:31:59.5|Debug|Lidarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:59.5|Debug|Api|[GET] /api/v1/indexer/2: 200.OK (10 ms)
+2025-09-29 22:37:06.6|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-29 22:39:10.6|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:15.1|Info|ConsoleApp|Exiting main.

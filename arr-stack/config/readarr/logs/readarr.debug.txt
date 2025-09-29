@@ -1158,3 +1158,543 @@
 2025-09-25 03:07:58.3|Debug|ImportListSyncService|No import lists with automatic add enabled
 2025-09-25 03:08:35.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:36.6|Info|ConsoleApp|Exiting main.
+2025-09-29 22:31:05.1|Debug|ProcessProvider|Found 0 processes with the name: Readarr.Console
+2025-09-29 22:31:05.2|Debug|ProcessProvider|Found 1 processes with the name: Readarr
+2025-09-29 22:31:05.2|Debug|ProcessProvider| - [146] Readarr
+2025-09-29 22:31:05.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:05.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:05.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:05.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:06.0|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:06.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5774358s
+2025-09-29 22:31:06.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:06.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6916696s
+2025-09-29 22:31:06.3|Debug|MigrationController|Took: 00:00:01.1835154
+2025-09-29 22:31:07.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8787
+2025-09-29 22:31:07.9|Debug|QualityDefinitionService|Setting up default quality config
+2025-09-29 22:31:08.3|Debug|NotificationFactory|Initializing Providers. Count 25
+2025-09-29 22:31:08.7|Debug|IndexerFactory|Initializing Providers. Count 8
+2025-09-29 22:31:08.8|Debug|ImportListFactory|Initializing Providers. Count 6
+2025-09-29 22:31:08.8|Debug|MetadataFactory|Initializing Providers. Count 0
+2025-09-29 22:31:08.9|Debug|DownloadClientFactory|Initializing Providers. Count 17
+2025-09-29 22:31:08.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:09.0|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:09.1|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-09-29 22:31:09.7|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:10.1|Debug|QBittorrentProxyV2|qBittorrent authentication succeeded.
+2025-09-29 22:31:39.1|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-29 22:31:39.4|Debug|MediaFileService|Filtering 0 files for unchanged files
+2025-09-29 22:31:39.5|Debug|ImportDecisionMaker|Analyzing 0/0 files.
+2025-09-29 22:31:39.5|Debug|IdentificationService|Starting book identification
+2025-09-29 22:31:39.6|Info|TrackGroupingService|Grouping 0 tracks
+2025-09-29 22:31:39.6|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:39.7|Debug|IdentificationService|Sorted 0 tracks into 0 releases in 160ms
+2025-09-29 22:31:39.6|Info|RssSyncService|Starting RSS Sync
+2025-09-29 22:31:39.8|Debug|HousekeepingService|Starting CleanupAbsolutePathMetadataFiles
+2025-09-29 22:31:39.9|Debug|IdentificationService|Track identification for 0 tracks took 350ms
+2025-09-29 22:31:40.0|Debug|HousekeepingService|Completed CleanupAbsolutePathMetadataFiles
+2025-09-29 22:31:40.0|Debug|FetchAndParseRssService|Available indexers 2
+2025-09-29 22:31:40.0|Debug|DiskScanService|Import decisions complete [00:00:00.6127635]
+2025-09-29 22:31:40.1|Debug|HousekeepingService|Starting CleanupAdditionalNamingSpecs
+2025-09-29 22:31:40.2|Debug|HousekeepingService|Completed CleanupAdditionalNamingSpecs
+2025-09-29 22:31:40.3|Debug|HousekeepingService|Starting CleanupAdditionalUsers
+2025-09-29 22:31:40.2|Info|ImportApprovedBooks|Importing 0 files
+2025-09-29 22:31:40.3|Debug|ImportApprovedBooks|Importing 0 files. Replace existing: False
+2025-09-29 22:31:40.3|Debug|HousekeepingService|Completed CleanupAdditionalUsers
+2025-09-29 22:31:40.4|Debug|ImportApprovedBooks|Inserted new trackfiles in 2ms
+2025-09-29 22:31:40.4|Debug|HousekeepingService|Starting CleanupCommandQueue
+2025-09-29 22:31:40.5|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/2/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:40.5|Debug|DiskScanService|Inserted 0 new unmatched trackfiles
+2025-09-29 22:31:40.5|Debug|HousekeepingService|Completed CleanupCommandQueue
+2025-09-29 22:31:40.6|Debug|HousekeepingService|Starting CleanupDownloadClientUnavailablePendingReleases
+2025-09-29 22:31:40.6|Debug|DiskScanService|Updated info for 0 known files
+2025-09-29 22:31:40.7|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/6/api?t=book&cat=7000&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:40.7|Debug|HousekeepingService|Completed CleanupDownloadClientUnavailablePendingReleases
+2025-09-29 22:31:40.7|Debug|DiskScanService|Book import complete for:
+ [00:00:00.5552629]
+2025-09-29 22:31:40.8|Debug|HousekeepingService|Starting CleanupDuplicateMetadataFiles
+2025-09-29 22:31:40.8|Debug|HousekeepingService|Completed CleanupDuplicateMetadataFiles
+2025-09-29 22:31:40.9|Debug|HousekeepingService|Starting CleanupOrphanedAuthorMetadata
+2025-09-29 22:31:40.9|Debug|InstallUpdateService|Checking for updates
+2025-09-29 22:31:40.9|Debug|HousekeepingService|Completed CleanupOrphanedAuthorMetadata
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Starting CleanupOrphanedBlocklist
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Completed CleanupOrphanedBlocklist
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Starting CleanupOrphanedBookFiles
+2025-09-29 22:31:41.0|Debug|HousekeepingService|Completed CleanupOrphanedBookFiles
+2025-09-29 22:31:41.1|Debug|HousekeepingService|Starting CleanupOrphanedBooks
+2025-09-29 22:31:41.1|Debug|HousekeepingService|Completed CleanupOrphanedBooks
+2025-09-29 22:31:41.1|Debug|HousekeepingService|Starting CleanupOrphanedDownloadClientStatus
+2025-09-29 22:31:41.1|Debug|InstallUpdateService|No update available
+2025-09-29 22:31:41.1|Debug|HousekeepingService|Completed CleanupOrphanedDownloadClientStatus
+2025-09-29 22:31:41.2|Debug|HousekeepingService|Starting CleanupOrphanedEditions
+2025-09-29 22:31:41.2|Debug|HousekeepingService|Completed CleanupOrphanedEditions
+2025-09-29 22:31:41.2|Debug|HousekeepingService|Starting CleanupOrphanedHistoryItems
+2025-09-29 22:31:41.3|Debug|HousekeepingService|Completed CleanupOrphanedHistoryItems
+2025-09-29 22:31:41.3|Debug|HousekeepingService|Starting CleanupOrphanedImportListStatus
+2025-09-29 22:31:41.3|Debug|HousekeepingService|Completed CleanupOrphanedImportListStatus
+2025-09-29 22:31:41.3|Debug|HousekeepingService|Starting CleanupOrphanedIndexerStatus
+2025-09-29 22:31:41.4|Debug|HousekeepingService|Completed CleanupOrphanedIndexerStatus
+2025-09-29 22:31:41.5|Debug|HousekeepingService|Starting CleanupOrphanedMetadataFiles
+2025-09-29 22:31:41.5|Debug|HousekeepingService|Completed CleanupOrphanedMetadataFiles
+2025-09-29 22:31:41.5|Debug|HousekeepingService|Starting CleanupOrphanedNotificationStatus
+2025-09-29 22:31:41.6|Debug|HousekeepingService|Completed CleanupOrphanedNotificationStatus
+2025-09-29 22:31:41.6|Debug|HousekeepingService|Starting CleanupOrphanedPendingReleases
+2025-09-29 22:31:41.6|Debug|HousekeepingService|Completed CleanupOrphanedPendingReleases
+2025-09-29 22:31:41.6|Debug|HousekeepingService|Starting CleanupOrphanedSeriesBookLinks
+2025-09-29 22:31:41.7|Debug|HousekeepingService|Completed CleanupOrphanedSeriesBookLinks
+2025-09-29 22:31:41.7|Debug|HousekeepingService|Starting CleanupQualityProfileFormatItems
+2025-09-29 22:31:41.7|Debug|HousekeepingService|Completed CleanupQualityProfileFormatItems
+2025-09-29 22:31:41.7|Debug|HousekeepingService|Starting CleanupTemporaryUpdateFiles
+2025-09-29 22:31:41.8|Debug|HousekeepingService|Completed CleanupTemporaryUpdateFiles
+2025-09-29 22:31:41.8|Debug|HousekeepingService|Starting CleanupUnusedTags
+2025-09-29 22:31:41.9|Debug|HousekeepingService|Completed CleanupUnusedTags
+2025-09-29 22:31:41.9|Debug|HousekeepingService|Starting DeleteBadMediaCovers
+2025-09-29 22:31:42.0|Debug|HousekeepingService|Completed DeleteBadMediaCovers
+2025-09-29 22:31:42.0|Debug|HousekeepingService|Starting FixFutureDownloadClientStatusTimes
+2025-09-29 22:31:42.1|Debug|HousekeepingService|Completed FixFutureDownloadClientStatusTimes
+2025-09-29 22:31:42.1|Debug|HousekeepingService|Starting FixFutureImportListStatusTimes
+2025-09-29 22:31:42.2|Debug|HousekeepingService|Completed FixFutureImportListStatusTimes
+2025-09-29 22:31:42.2|Debug|HousekeepingService|Starting FixFutureIndexerStatusTimes
+2025-09-29 22:31:42.2|Debug|HousekeepingService|Completed FixFutureIndexerStatusTimes
+2025-09-29 22:31:42.3|Debug|HousekeepingService|Starting FixFutureNotificationStatusTimes
+2025-09-29 22:31:42.4|Debug|HousekeepingService|Completed FixFutureNotificationStatusTimes
+2025-09-29 22:31:42.4|Debug|HousekeepingService|Starting FixFutureRunScheduledTasks
+2025-09-29 22:31:42.5|Debug|HousekeepingService|Completed FixFutureRunScheduledTasks
+2025-09-29 22:31:42.6|Debug|HousekeepingService|Starting FixMultipleMonitoredEditions
+2025-09-29 22:31:42.6|Debug|HousekeepingService|Completed FixMultipleMonitoredEditions
+2025-09-29 22:31:42.6|Debug|HousekeepingService|Starting TrimHttpCache
+2025-09-29 22:31:42.8|Info|Database|Vacuuming Cache database
+2025-09-29 22:31:42.9|Info|Database|Cache database compressed
+2025-09-29 22:31:42.9|Debug|HousekeepingService|Completed TrimHttpCache
+2025-09-29 22:31:42.9|Debug|HousekeepingService|Starting TrimLogDatabase
+2025-09-29 22:31:43.0|Info|Database|Vacuuming Log database
+2025-09-29 22:31:43.1|Info|Database|Log database compressed
+2025-09-29 22:31:43.1|Debug|HousekeepingService|Completed TrimLogDatabase
+2025-09-29 22:31:43.2|Debug|HousekeepingService|Starting UpdateCleanTitleForAuthor
+2025-09-29 22:31:43.2|Debug|HousekeepingService|Completed UpdateCleanTitleForAuthor
+2025-09-29 22:31:43.2|Debug|HousekeepingService|Compressing main database after housekeeping
+2025-09-29 22:31:43.2|Info|Database|Vacuuming Main database
+2025-09-29 22:31:43.5|Info|Database|Main database compressed
+2025-09-29 22:31:44.1|Warn|Torznab|Indexer TorrentGalaxyClone (Prowlarr) rss sync didn't cover the period between 9/24/2025 10:47:58AM and 9/27/2025 12:31:44PM UTC. Search may be required.
+2025-09-29 22:31:45.1|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 9/24/2025 10:41:19AM and 9/27/2025 11:27:32AM UTC. Search may be required.
+2025-09-29 22:31:45.4|Debug|FetchAndParseRssService|Found 100 reports
+2025-09-29 22:31:45.4|Info|DownloadDecisionMaker|Processing 100 releases
+2025-09-29 22:31:45.4|Debug|DownloadDecisionMaker|Processing release 'Curry G. Radar Essentials 2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.5|Debug|Parser|Parsing string 'Curry G. Radar Essentials 2ed 2025'
+2025-09-29 22:31:45.8|Debug|Parser|Unable to parse Curry G. Radar Essentials 2ed 2025
+2025-09-29 22:31:45.8|Debug|DownloadDecisionMaker|Processing release 'Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.8|Debug|Parser|Parsing string 'Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025'
+2025-09-29 22:31:45.8|Debug|Parser|Unable to parse Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025'
+2025-09-29 22:31:45.9|Debug|Parser|Unable to parse Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025'
+2025-09-29 22:31:45.9|Debug|Parser|Unable to parse Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025
+2025-09-29 22:31:45.9|Debug|DownloadDecisionMaker|Processing release 'Libertino J. Renal Cancer. Contemporary Management 3ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:45.9|Debug|Parser|Parsing string 'Libertino J. Renal Cancer. Contemporary Management 3ed 2025'
+2025-09-29 22:31:46.0|Debug|Parser|Unable to parse Libertino J. Renal Cancer. Contemporary Management 3ed 2025
+2025-09-29 22:31:46.0|Debug|DownloadDecisionMaker|Processing release 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.0|Debug|Parser|Parsing string 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023'
+2025-09-29 22:31:46.0|Debug|Parser|Unable to parse Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023
+2025-09-29 22:31:46.1|Debug|DownloadDecisionMaker|Processing release 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.1|Debug|Parser|Parsing string 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025'
+2025-09-29 22:31:46.1|Debug|Parser|Unable to parse Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025
+2025-09-29 22:31:46.2|Debug|DownloadDecisionMaker|Processing release 'Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.2|Debug|Parser|Parsing string 'Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025'
+2025-09-29 22:31:46.2|Debug|Parser|Unable to parse Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025
+2025-09-29 22:31:46.2|Debug|DownloadDecisionMaker|Processing release 'Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.3|Debug|Parser|Parsing string 'Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025'
+2025-09-29 22:31:46.3|Debug|Parser|Unable to parse Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025
+2025-09-29 22:31:46.6|Debug|DownloadDecisionMaker|Processing release 'Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.7|Debug|Parser|Parsing string 'Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025'
+2025-09-29 22:31:46.3|Error|CommandExecutor|Error occurred while executing task RefreshAuthor
+
+[v0.4.19.2811] System.Net.Http.HttpRequestException: Resource temporarily unavailable (api.bookinfo.club:443)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Readarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 329
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Readarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 315
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Readarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 116
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Readarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Readarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.GetAsync[T](HttpRequest request) in ./Readarr.Common/Http/HttpClient.cs:line 333
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./Readarr.Common/Http/HttpClient.cs:line 341
+   at NzbDrone.Core.MetadataSource.BookInfo.BookInfoProxy.GetChangedAuthors(DateTime startTime) in ./Readarr.Core/MetadataSource/BookInfo/BookInfoProxy.cs:line 81
+   at NzbDrone.Core.Books.RefreshAuthorService.Execute(RefreshAuthorCommand message) in ./Readarr.Core/Books/Services/RefreshAuthorService.cs:line 369
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Readarr.Core/Messaging/Commands/CommandExecutor.cs:line 79
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Readarr.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-09-29 22:31:46.7|Debug|Parser|Unable to parse Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025
+2025-09-29 22:31:46.7|Debug|DownloadDecisionMaker|Processing release 'Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.8|Debug|Parser|Parsing string 'Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025'
+2025-09-29 22:31:46.8|Debug|Parser|Unable to parse Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025
+2025-09-29 22:31:46.8|Debug|DownloadDecisionMaker|Processing release 'Matthews P. Differential Equations, Bifurcations and Chaos 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.8|Debug|Parser|Parsing string 'Matthews P. Differential Equations, Bifurcations and Chaos 2025'
+2025-09-29 22:31:46.9|Debug|Parser|Unable to parse Matthews P. Differential Equations, Bifurcations and Chaos 2025
+2025-09-29 22:31:46.9|Debug|DownloadDecisionMaker|Processing release 'Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:46.9|Debug|Parser|Parsing string 'Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025'
+2025-09-29 22:31:46.9|Debug|Parser|Unable to parse Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025
+2025-09-29 22:31:46.9|Debug|DownloadDecisionMaker|Processing release 'Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.0|Debug|Parser|Parsing string 'Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024'
+2025-09-29 22:31:47.0|Debug|Parser|Unable to parse Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024
+2025-09-29 22:31:47.0|Debug|DownloadDecisionMaker|Processing release 'Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.0|Debug|Parser|Parsing string 'Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025'
+2025-09-29 22:31:47.1|Debug|Parser|Unable to parse Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025
+2025-09-29 22:31:47.1|Debug|DownloadDecisionMaker|Processing release 'Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.1|Debug|Parser|Parsing string 'Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026'
+2025-09-29 22:31:47.2|Debug|Parser|Unable to parse Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026
+2025-09-29 22:31:47.2|Debug|DownloadDecisionMaker|Processing release 'Yang Y. Positioning and Sensing Over Wireless Networks 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.2|Debug|Parser|Parsing string 'Yang Y. Positioning and Sensing Over Wireless Networks 2025'
+2025-09-29 22:31:47.3|Debug|Parser|Unable to parse Yang Y. Positioning and Sensing Over Wireless Networks 2025
+2025-09-29 22:31:47.3|Debug|DownloadDecisionMaker|Processing release 'Chen T. Supply Chain Localization in the Semiconductor Industry...2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.4|Debug|Parser|Parsing string 'Chen T. Supply Chain Localization in the Semiconductor Industry...2025'
+2025-09-29 22:31:47.4|Debug|Parser|Unable to parse Chen T. Supply Chain Localization in the Semiconductor Industry...2025
+2025-09-29 22:31:47.4|Debug|DownloadDecisionMaker|Processing release 'Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.4|Debug|Parser|Parsing string 'Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025'
+2025-09-29 22:31:47.5|Debug|Parser|Unable to parse Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025
+2025-09-29 22:31:47.5|Debug|DownloadDecisionMaker|Processing release 'Campbell W. Barton. Conceptual Electrocardiography 2024' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.5|Debug|Parser|Parsing string 'Campbell W. Barton. Conceptual Electrocardiography 2024'
+2025-09-29 22:31:47.5|Debug|Parser|Unable to parse Campbell W. Barton. Conceptual Electrocardiography 2024
+2025-09-29 22:31:47.6|Debug|DownloadDecisionMaker|Processing release 'LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.6|Debug|Parser|Parsing string 'LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025'
+2025-09-29 22:31:47.6|Debug|Parser|Unable to parse LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025
+2025-09-29 22:31:47.7|Debug|DownloadDecisionMaker|Processing release 'Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.7|Debug|Parser|Parsing string 'Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025'
+2025-09-29 22:31:47.7|Debug|Parser|Unable to parse Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025
+2025-09-29 22:31:47.7|Debug|DownloadDecisionMaker|Processing release 'Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.8|Debug|Parser|Parsing string 'Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025'
+2025-09-29 22:31:47.8|Debug|Parser|Unable to parse Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025
+2025-09-29 22:31:47.8|Debug|DownloadDecisionMaker|Processing release 'Capel M. Concurrent and Real-time Programming. Principles and Applications 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.8|Debug|Parser|Parsing string 'Capel M. Concurrent and Real-time Programming. Principles and Applications 2025'
+2025-09-29 22:31:47.9|Debug|Parser|Unable to parse Capel M. Concurrent and Real-time Programming. Principles and Applications 2025
+2025-09-29 22:31:47.9|Debug|DownloadDecisionMaker|Processing release 'Jha G. Securing the Enterprise. A Practical Guide...2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:47.9|Debug|Parser|Parsing string 'Jha G. Securing the Enterprise. A Practical Guide...2025'
+2025-09-29 22:31:47.9|Debug|Parser|Unable to parse Jha G. Securing the Enterprise. A Practical Guide...2025
+2025-09-29 22:31:48.0|Debug|DownloadDecisionMaker|Processing release 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:48.0|Debug|Parser|Parsing string 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:48.0|Debug|Parser|Book Parsed. Buenosvinos C  Command - Query Responsibility Segregation 
+2025-09-29 22:31:48.0|Debug|QualityParser|Trying to parse quality for 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:48.2|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:48.2|Debug|Parser|Release Group parsed: Query
+2025-09-29 22:31:48.3|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:48.4|Debug|ParsingService|Trying inexact author match for Buenosvinos C  Command
+2025-09-29 22:31:48.4|Debug|ParsingService|No matching author Buenosvinos C  Command
+2025-09-29 22:31:48.4|Debug|QualityParser|Trying to parse quality for 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:48.4|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:48.4|Debug|DownloadDecisionMaker|Processing release 'RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:48.5|Debug|Parser|Parsing string 'RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)'
+2025-09-29 22:31:48.5|Debug|Parser|Unable to parse RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)
+2025-09-29 22:31:48.5|Debug|DownloadDecisionMaker|Processing release '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:48.5|Debug|Parser|Parsing string '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:48.5|Debug|Parser|Book Parsed. (FuZzCasT)--Ultimate Comprehension and Control- - 27-09 
+2025-09-29 22:31:48.6|Debug|QualityParser|Trying to parse quality for '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:48.6|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:48.6|Debug|Api|[GET] /api/v1/indexer: 200.OK (443 ms)
+2025-09-29 22:31:48.6|Debug|Parser|Release Group parsed: 12pm
+2025-09-29 22:31:48.6|Debug|ParsingService|Trying inexact author match for (FuZzCasT)--Ultimate Comprehension and Control-
+2025-09-29 22:31:48.7|Debug|ParsingService|No matching author (FuZzCasT)--Ultimate Comprehension and Control-
+2025-09-29 22:31:48.7|Debug|QualityParser|Trying to parse quality for '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:48.7|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:48.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:48.8|Debug|DownloadDecisionMaker|Processing release 'Assorted Magazines - September 27 2025 (True PDF)' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:48.8|Debug|Parser|Parsing string 'Assorted Magazines - September 27 2025 (True PDF)'
+2025-09-29 22:31:48.8|Debug|Parser|Book Parsed. Assorted Magazines - September 27 2025 
+2025-09-29 22:31:48.9|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (214 ms)
+2025-09-29 22:31:48.9|Debug|QualityParser|Trying to parse quality for 'Assorted Magazines - September 27 2025 (True PDF)'
+2025-09-29 22:31:48.9|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:48.9|Debug|Parser|Quality parsed: PDF v1
+2025-09-29 22:31:48.9|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:49.0|Debug|ParsingService|Trying inexact author match for Assorted Magazines
+2025-09-29 22:31:49.0|Debug|ParsingService|No matching author Assorted Magazines
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Processing release 'Manner J. Spectrum Wars. A New Hope for Connectivity 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.1|Debug|Parser|Parsing string 'Manner J. Spectrum Wars. A New Hope for Connectivity 2025'
+2025-09-29 22:31:49.1|Debug|Parser|Unable to parse Manner J. Spectrum Wars. A New Hope for Connectivity 2025
+2025-09-29 22:31:49.1|Debug|DownloadDecisionMaker|Processing release 'Kasal M. Reception of Weak Radio Signals from Space 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.2|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:49.2|Debug|Parser|Parsing string 'Kasal M. Reception of Weak Radio Signals from Space 2025'
+2025-09-29 22:31:49.2|Debug|Parser|Unable to parse Kasal M. Reception of Weak Radio Signals from Space 2025
+2025-09-29 22:31:49.2|Debug|DownloadDecisionMaker|Processing release 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.2|Debug|Parser|Parsing string 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:49.3|Debug|Parser|Book Parsed. Coxson G , Russo J  Optimal - Peak 
+2025-09-29 22:31:49.3|Debug|QualityParser|Trying to parse quality for 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:49.3|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:49.3|Debug|Parser|Release Group parsed: Sidelobe
+2025-09-29 22:31:49.4|Debug|ParsingService|Trying inexact author match for Coxson G , Russo J  Optimal
+2025-09-29 22:31:49.4|Debug|ParsingService|No matching author Coxson G , Russo J  Optimal
+2025-09-29 22:31:49.4|Debug|QualityParser|Trying to parse quality for 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:49.5|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:49.5|Debug|DownloadDecisionMaker|Processing release 'Burge R. Mechanical and Manufacturing Design of Antennas 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.5|Debug|Parser|Parsing string 'Burge R. Mechanical and Manufacturing Design of Antennas 2025'
+2025-09-29 22:31:49.5|Debug|Parser|Unable to parse Burge R. Mechanical and Manufacturing Design of Antennas 2025
+2025-09-29 22:31:49.5|Debug|DownloadDecisionMaker|Processing release 'Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.6|Debug|Parser|Parsing string 'Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025'
+2025-09-29 22:31:49.6|Debug|Parser|Unable to parse Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025
+2025-09-29 22:31:49.6|Debug|DownloadDecisionMaker|Processing release 'Denavit M. Steel Connection Design by Inelastic Analysis 2024' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.6|Debug|Parser|Parsing string 'Denavit M. Steel Connection Design by Inelastic Analysis 2024'
+2025-09-29 22:31:49.6|Debug|Parser|Unable to parse Denavit M. Steel Connection Design by Inelastic Analysis 2024
+2025-09-29 22:31:49.7|Debug|DownloadDecisionMaker|Processing release 'Ramadurai R. Strain Engineering in Functional Materials and Devices 2023' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.7|Debug|Parser|Parsing string 'Ramadurai R. Strain Engineering in Functional Materials and Devices 2023'
+2025-09-29 22:31:49.7|Debug|Parser|Unable to parse Ramadurai R. Strain Engineering in Functional Materials and Devices 2023
+2025-09-29 22:31:49.7|Debug|DownloadDecisionMaker|Processing release 'Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.8|Debug|Parser|Parsing string 'Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022'
+2025-09-29 22:31:49.8|Debug|Parser|Unable to parse Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022
+2025-09-29 22:31:49.9|Debug|DownloadDecisionMaker|Processing release 'Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:49.9|Debug|Parser|Parsing string 'Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025'
+2025-09-29 22:31:49.9|Debug|Parser|Unable to parse Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025
+2025-09-29 22:31:50.0|Debug|DownloadDecisionMaker|Processing release 'Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.0|Debug|Parser|Parsing string 'Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025'
+2025-09-29 22:31:50.0|Debug|Parser|Unable to parse Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025
+2025-09-29 22:31:50.1|Debug|DownloadDecisionMaker|Processing release 'Chen H. Color Atlas of Veterinary Pathology Vol 1 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.1|Debug|Parser|Parsing string 'Chen H. Color Atlas of Veterinary Pathology Vol 1 2025'
+2025-09-29 22:31:50.2|Debug|Parser|Unable to parse Chen H. Color Atlas of Veterinary Pathology Vol 1 2025
+2025-09-29 22:31:50.2|Debug|DownloadDecisionMaker|Processing release 'Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.3|Debug|Parser|Parsing string 'Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025'
+2025-09-29 22:31:50.3|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:50.3|Debug|Parser|Unable to parse Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025
+2025-09-29 22:31:50.4|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (1488 ms)
+2025-09-29 22:31:50.4|Debug|DownloadDecisionMaker|Processing release 'Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.5|Debug|Parser|Parsing string 'Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025'
+2025-09-29 22:31:50.5|Debug|Parser|Unable to parse Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025
+2025-09-29 22:31:50.6|Debug|DownloadDecisionMaker|Processing release 'Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.6|Debug|Parser|Parsing string 'Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026'
+2025-09-29 22:31:50.6|Debug|Parser|Unable to parse Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026
+2025-09-29 22:31:50.6|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:50.6|Debug|DownloadDecisionMaker|Processing release 'Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.7|Debug|Parser|Parsing string 'Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019'
+2025-09-29 22:31:50.7|Debug|Parser|Unable to parse Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019
+2025-09-29 22:31:50.7|Debug|DownloadDecisionMaker|Processing release 'Dhondge K. Fundamentals of Passwordless Authentication 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.7|Debug|Parser|Parsing string 'Dhondge K. Fundamentals of Passwordless Authentication 2025'
+2025-09-29 22:31:50.8|Debug|Parser|Unable to parse Dhondge K. Fundamentals of Passwordless Authentication 2025
+2025-09-29 22:31:50.8|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/3/api?t=book&cat=7000,7020&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:50.8|Debug|DownloadDecisionMaker|Processing release 'Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.8|Debug|Parser|Parsing string 'Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025'
+2025-09-29 22:31:50.8|Debug|Parser|Unable to parse Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025
+2025-09-29 22:31:50.8|Debug|DownloadDecisionMaker|Processing release 'Soleimani A. Designing with Algorithms. A Mathematical Guide 2026' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:50.9|Debug|Parser|Parsing string 'Soleimani A. Designing with Algorithms. A Mathematical Guide 2026'
+2025-09-29 22:31:50.9|Debug|Parser|Unable to parse Soleimani A. Designing with Algorithms. A Mathematical Guide 2026
+2025-09-29 22:31:51.0|Debug|DownloadDecisionMaker|Processing release 'McFedries P. Coding For Dummies. All New Edition 2026' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:51.0|Debug|Parser|Parsing string 'McFedries P. Coding For Dummies. All New Edition 2026'
+2025-09-29 22:31:51.1|Debug|Parser|Unable to parse McFedries P. Coding For Dummies. All New Edition 2026
+2025-09-29 22:31:51.1|Debug|DownloadDecisionMaker|Processing release 'Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:51.1|Debug|Parser|Parsing string 'Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026'
+2025-09-29 22:31:51.2|Debug|Parser|Unable to parse Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026
+2025-09-29 22:31:51.2|Debug|DownloadDecisionMaker|Processing release 'Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025' from 'TheRARBG (Prowlarr)'
+2025-09-29 22:31:51.2|Debug|Parser|Parsing string 'Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025'
+2025-09-29 22:31:51.2|Debug|Parser|Unable to parse Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025
+2025-09-29 22:31:51.3|Debug|DownloadDecisionMaker|Processing release 'Curry G. Radar Essentials 2ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.3|Debug|Parser|Parsing string 'Curry G. Radar Essentials 2ed 2025'
+2025-09-29 22:31:51.3|Debug|Parser|Unable to parse Curry G. Radar Essentials 2ed 2025
+2025-09-29 22:31:51.3|Debug|DownloadDecisionMaker|Processing release 'Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.3|Debug|Parser|Parsing string 'Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025'
+2025-09-29 22:31:51.4|Debug|Parser|Unable to parse Sharma U. Soil Acidity. Management Options for Higher Crop Productivity 2025
+2025-09-29 22:31:51.4|Debug|DownloadDecisionMaker|Processing release 'Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.4|Debug|Parser|Parsing string 'Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025'
+2025-09-29 22:31:51.4|Debug|Parser|Unable to parse Mathur P. Rhizosphere Engineering and Stress Resilience in Plants...2025
+2025-09-29 22:31:51.4|Debug|DownloadDecisionMaker|Processing release 'Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.4|Debug|Parser|Parsing string 'Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025'
+2025-09-29 22:31:51.4|Debug|Parser|Unable to parse Wei G. Cellulose-Based Hydrogels and Aerogels. Synthesis,...Applications 2025
+2025-09-29 22:31:51.4|Debug|DownloadDecisionMaker|Processing release 'Libertino J. Renal Cancer. Contemporary Management 3ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.5|Debug|Parser|Parsing string 'Libertino J. Renal Cancer. Contemporary Management 3ed 2025'
+2025-09-29 22:31:51.5|Debug|Parser|Unable to parse Libertino J. Renal Cancer. Contemporary Management 3ed 2025
+2025-09-29 22:31:51.5|Debug|DownloadDecisionMaker|Processing release 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.5|Debug|Parser|Parsing string 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023'
+2025-09-29 22:31:51.5|Debug|Parser|Unable to parse Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 2. 2023
+2025-09-29 22:31:51.5|Debug|DownloadDecisionMaker|Processing release 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.6|Debug|Parser|Parsing string 'Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025'
+2025-09-29 22:31:51.6|Debug|Parser|Unable to parse Won-Jong B. Diagnosis and Management of Primary Bone Tumors  Vol 1. 2025
+2025-09-29 22:31:51.6|Debug|DownloadDecisionMaker|Processing release 'Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.6|Debug|Parser|Parsing string 'Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025'
+2025-09-29 22:31:51.6|Debug|Parser|Unable to parse Kumar V. A Comprehensive Guide to Degenerative Spine Disorders 2025
+2025-09-29 22:31:51.6|Debug|DownloadDecisionMaker|Processing release 'Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.6|Debug|Parser|Parsing string 'Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025'
+2025-09-29 22:31:51.7|Debug|Parser|Unable to parse Prakash D. Fundamentals of X-ray Imaging. Basic Principles,..., and Safety 2025
+2025-09-29 22:31:51.7|Debug|DownloadDecisionMaker|Processing release 'Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.7|Debug|Parser|Parsing string 'Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025'
+2025-09-29 22:31:51.7|Debug|Parser|Unable to parse Chacko J. Landmark Studies in Critical Care...Base of Contemporary Practice 2025
+2025-09-29 22:31:51.7|Debug|DownloadDecisionMaker|Processing release 'Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.7|Debug|Parser|Parsing string 'Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025'
+2025-09-29 22:31:51.7|Debug|Parser|Unable to parse Quinn C. Generative AI for the Medical Student..Concepts..Clinical Practice 2025
+2025-09-29 22:31:51.7|Debug|DownloadDecisionMaker|Processing release 'Matthews P. Differential Equations, Bifurcations and Chaos 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.7|Debug|Parser|Parsing string 'Matthews P. Differential Equations, Bifurcations and Chaos 2025'
+2025-09-29 22:31:51.8|Debug|Parser|Unable to parse Matthews P. Differential Equations, Bifurcations and Chaos 2025
+2025-09-29 22:31:51.8|Debug|DownloadDecisionMaker|Processing release 'Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.8|Debug|Parser|Parsing string 'Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025'
+2025-09-29 22:31:51.8|Debug|Parser|Unable to parse Itskov M. Tensor Algebra and Tensor Analysis for Engineers...6ed 2025
+2025-09-29 22:31:51.8|Debug|DownloadDecisionMaker|Processing release 'Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.9|Debug|Parser|Parsing string 'Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024'
+2025-09-29 22:31:51.9|Debug|Parser|Unable to parse Thompson G. Understanding Anatomy and Physiology...Interactive Approach 4ed 2024
+2025-09-29 22:31:51.9|Debug|DownloadDecisionMaker|Processing release 'Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:51.9|Debug|Parser|Parsing string 'Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025'
+2025-09-29 22:31:51.9|Debug|Parser|Unable to parse Libby A. Beginning Voice Search Optimization. An Introductory Toolkit...2025
+2025-09-29 22:31:52.0|Debug|DownloadDecisionMaker|Processing release 'Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.0|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:52.0|Debug|Parser|Parsing string 'Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026'
+2025-09-29 22:31:52.0|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1351 ms)
+2025-09-29 22:31:52.0|Debug|Parser|Unable to parse Kanjani D. Securing Google Cloud Platform. Implementing cloud security...2026
+2025-09-29 22:31:52.0|Debug|DownloadDecisionMaker|Processing release 'Yang Y. Positioning and Sensing Over Wireless Networks 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.0|Debug|Parser|Parsing string 'Yang Y. Positioning and Sensing Over Wireless Networks 2025'
+2025-09-29 22:31:52.1|Debug|Parser|Unable to parse Yang Y. Positioning and Sensing Over Wireless Networks 2025
+2025-09-29 22:31:52.1|Debug|DownloadDecisionMaker|Processing release 'Chen T. Supply Chain Localization in the Semiconductor Industry...2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.1|Debug|Parser|Parsing string 'Chen T. Supply Chain Localization in the Semiconductor Industry...2025'
+2025-09-29 22:31:52.1|Debug|Parser|Unable to parse Chen T. Supply Chain Localization in the Semiconductor Industry...2025
+2025-09-29 22:31:52.1|Debug|DownloadDecisionMaker|Processing release 'Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.1|Debug|Parser|Parsing string 'Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025'
+2025-09-29 22:31:52.2|Debug|Parser|Unable to parse Kumar I. Practical Approach to Imaging in Pediatric Oncology 2025
+2025-09-29 22:31:52.2|Debug|DownloadDecisionMaker|Processing release 'Campbell W. Barton. Conceptual Electrocardiography 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.2|Debug|Parser|Parsing string 'Campbell W. Barton. Conceptual Electrocardiography 2024'
+2025-09-29 22:31:52.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:52.2|Debug|Parser|Unable to parse Campbell W. Barton. Conceptual Electrocardiography 2024
+2025-09-29 22:31:52.2|Debug|DownloadDecisionMaker|Processing release 'LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.2|Debug|Api|[GET] /api/v1/indexer/1: 200.OK (14 ms)
+2025-09-29 22:31:52.2|Debug|Parser|Parsing string 'LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025'
+2025-09-29 22:31:52.2|Debug|Parser|Unable to parse LaMotte L. Foundations of Multiple Regression and Analysis of Variance 2025
+2025-09-29 22:31:52.2|Debug|DownloadDecisionMaker|Processing release 'Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.2|Debug|Parser|Parsing string 'Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025'
+2025-09-29 22:31:52.2|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:52.2|Debug|Parser|Unable to parse Hong S. Set Dynamic Equations on Time Scales.A Brief Introduction with Apps 2025
+2025-09-29 22:31:52.3|Debug|DownloadDecisionMaker|Processing release 'Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.3|Debug|Parser|Parsing string 'Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025'
+2025-09-29 22:31:52.3|Debug|Parser|Unable to parse Lam Q. Equilibrium Problems. Existence, Stability, and Approximation 2025
+2025-09-29 22:31:52.3|Debug|DownloadDecisionMaker|Processing release 'Capel M. Concurrent and Real-time Programming. Principles and Applications 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.3|Debug|Parser|Parsing string 'Capel M. Concurrent and Real-time Programming. Principles and Applications 2025'
+2025-09-29 22:31:52.3|Debug|Parser|Unable to parse Capel M. Concurrent and Real-time Programming. Principles and Applications 2025
+2025-09-29 22:31:52.3|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:52.3|Debug|DownloadDecisionMaker|Processing release 'Jha G. Securing the Enterprise. A Practical Guide...2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.3|Debug|Parser|Parsing string 'Jha G. Securing the Enterprise. A Practical Guide...2025'
+2025-09-29 22:31:52.3|Debug|Parser|Unable to parse Jha G. Securing the Enterprise. A Practical Guide...2025
+2025-09-29 22:31:52.3|Debug|DownloadDecisionMaker|Processing release 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.3|Debug|Parser|Parsing string 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:52.3|Debug|Parser|Book Parsed. Buenosvinos C  Command - Query Responsibility Segregation 
+2025-09-29 22:31:52.3|Debug|QualityParser|Trying to parse quality for 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:52.3|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:52.4|Debug|Parser|Release Group parsed: Query
+2025-09-29 22:31:52.4|Debug|ParsingService|Trying inexact author match for Buenosvinos C  Command
+2025-09-29 22:31:52.4|Debug|ParsingService|No matching author Buenosvinos C  Command
+2025-09-29 22:31:52.4|Debug|QualityParser|Trying to parse quality for 'Buenosvinos C. Command-Query Responsibility Segregation (CQRS) by Example 2024'
+2025-09-29 22:31:52.4|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:52.4|Debug|DownloadDecisionMaker|Processing release 'RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.4|Debug|Parser|Parsing string 'RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)'
+2025-09-29 22:31:52.4|Debug|Parser|Unable to parse RADIO ETHER PROGRAM 2,057 (GREAT AMERICAN SONGBOOK ETHER #3)
+2025-09-29 22:31:52.4|Debug|DownloadDecisionMaker|Processing release '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.4|Debug|Parser|Parsing string '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:52.4|Debug|Parser|Book Parsed. (FuZzCasT)--Ultimate Comprehension and Control- - 27-09 
+2025-09-29 22:31:52.4|Debug|QualityParser|Trying to parse quality for '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:52.4|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:52.4|Debug|Parser|Release Group parsed: 12pm
+2025-09-29 22:31:52.4|Debug|ParsingService|Trying inexact author match for (FuZzCasT)--Ultimate Comprehension and Control-
+2025-09-29 22:31:52.4|Debug|ParsingService|No matching author (FuZzCasT)--Ultimate Comprehension and Control-
+2025-09-29 22:31:52.5|Debug|QualityParser|Trying to parse quality for '(FuZzCasT)-[@_@]-Ultimate Comprehension and Control-[@_@] - 27-09-2025 - 11-12pm'
+2025-09-29 22:31:52.5|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:52.5|Debug|DownloadDecisionMaker|Processing release 'Assorted Magazines - September 27 2025 (True PDF)' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.5|Debug|Parser|Parsing string 'Assorted Magazines - September 27 2025 (True PDF)'
+2025-09-29 22:31:52.5|Debug|Parser|Book Parsed. Assorted Magazines - September 27 2025 
+2025-09-29 22:31:52.5|Debug|QualityParser|Trying to parse quality for 'Assorted Magazines - September 27 2025 (True PDF)'
+2025-09-29 22:31:52.5|Debug|Parser|Quality parsed: PDF v1
+2025-09-29 22:31:52.5|Debug|Parser|Release Group parsed: 
+2025-09-29 22:31:52.6|Debug|ParsingService|Trying inexact author match for Assorted Magazines
+2025-09-29 22:31:52.6|Debug|ParsingService|No matching author Assorted Magazines
+2025-09-29 22:31:52.6|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:52.6|Debug|DownloadDecisionMaker|Processing release 'Manner J. Spectrum Wars. A New Hope for Connectivity 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.6|Debug|Parser|Parsing string 'Manner J. Spectrum Wars. A New Hope for Connectivity 2025'
+2025-09-29 22:31:52.6|Debug|Parser|Unable to parse Manner J. Spectrum Wars. A New Hope for Connectivity 2025
+2025-09-29 22:31:52.6|Debug|DownloadDecisionMaker|Processing release 'Kasal M. Reception of Weak Radio Signals from Space 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.6|Debug|Parser|Parsing string 'Kasal M. Reception of Weak Radio Signals from Space 2025'
+2025-09-29 22:31:52.6|Debug|Parser|Unable to parse Kasal M. Reception of Weak Radio Signals from Space 2025
+2025-09-29 22:31:52.6|Debug|DownloadDecisionMaker|Processing release 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.6|Debug|Parser|Parsing string 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:52.6|Debug|Parser|Book Parsed. Coxson G , Russo J  Optimal - Peak 
+2025-09-29 22:31:52.6|Debug|QualityParser|Trying to parse quality for 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:52.6|Debug|Parser|Quality parsed: Unknown Text v1
+2025-09-29 22:31:52.7|Debug|Parser|Release Group parsed: Sidelobe
+2025-09-29 22:31:52.7|Debug|ParsingService|Trying inexact author match for Coxson G , Russo J  Optimal
+2025-09-29 22:31:52.7|Debug|ParsingService|No matching author Coxson G , Russo J  Optimal
+2025-09-29 22:31:52.7|Debug|QualityParser|Trying to parse quality for 'Coxson G., Russo J. Optimal-Peak-Sidelobe Polyphase Codes 2025'
+2025-09-29 22:31:52.7|Debug|DownloadDecisionMaker|Release rejected for the following reasons: [Permanent] Unknown Author
+2025-09-29 22:31:52.7|Debug|DownloadDecisionMaker|Processing release 'Burge R. Mechanical and Manufacturing Design of Antennas 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.7|Debug|Parser|Parsing string 'Burge R. Mechanical and Manufacturing Design of Antennas 2025'
+2025-09-29 22:31:52.7|Debug|Parser|Unable to parse Burge R. Mechanical and Manufacturing Design of Antennas 2025
+2025-09-29 22:31:52.7|Debug|DownloadDecisionMaker|Processing release 'Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.7|Debug|Parser|Parsing string 'Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025'
+2025-09-29 22:31:52.8|Debug|Parser|Unable to parse Aluf O. Advanced Microwave RF Antennas and Circuits Nonlinearity Apps...2ed 2025
+2025-09-29 22:31:52.8|Debug|DownloadDecisionMaker|Processing release 'Denavit M. Steel Connection Design by Inelastic Analysis 2024' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.8|Debug|Parser|Parsing string 'Denavit M. Steel Connection Design by Inelastic Analysis 2024'
+2025-09-29 22:31:52.8|Debug|Parser|Unable to parse Denavit M. Steel Connection Design by Inelastic Analysis 2024
+2025-09-29 22:31:52.8|Debug|DownloadDecisionMaker|Processing release 'Ramadurai R. Strain Engineering in Functional Materials and Devices 2023' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.8|Debug|Parser|Parsing string 'Ramadurai R. Strain Engineering in Functional Materials and Devices 2023'
+2025-09-29 22:31:52.8|Debug|Parser|Unable to parse Ramadurai R. Strain Engineering in Functional Materials and Devices 2023
+2025-09-29 22:31:52.8|Debug|DownloadDecisionMaker|Processing release 'Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.8|Debug|Parser|Parsing string 'Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022'
+2025-09-29 22:31:52.8|Debug|Parser|Unable to parse Swain B. Nanostructured Biomaterials. Basic Structures and Applications 2022
+2025-09-29 22:31:52.8|Debug|DownloadDecisionMaker|Processing release 'Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.8|Debug|Parser|Parsing string 'Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025'
+2025-09-29 22:31:52.9|Debug|Parser|Unable to parse Bogatin E. Bogatin's Practical Guide...Practices for Digital Oscilloscopes 2025
+2025-09-29 22:31:52.9|Debug|DownloadDecisionMaker|Processing release 'Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.9|Debug|Parser|Parsing string 'Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025'
+2025-09-29 22:31:52.9|Debug|Parser|Unable to parse Papadakis M., Rabow M. Current Medical Diagnosis and Treatment 64ed 2025
+2025-09-29 22:31:52.9|Debug|DownloadDecisionMaker|Processing release 'Chen H. Color Atlas of Veterinary Pathology Vol 1 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.9|Debug|Parser|Parsing string 'Chen H. Color Atlas of Veterinary Pathology Vol 1 2025'
+2025-09-29 22:31:52.9|Debug|Parser|Unable to parse Chen H. Color Atlas of Veterinary Pathology Vol 1 2025
+2025-09-29 22:31:52.9|Debug|DownloadDecisionMaker|Processing release 'Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.9|Debug|Parser|Parsing string 'Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025'
+2025-09-29 22:31:52.9|Debug|Parser|Unable to parse Broadbent A. The Oxford Handbook of Philosophy of Medicine 2025
+2025-09-29 22:31:52.9|Debug|DownloadDecisionMaker|Processing release 'Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:52.9|Debug|Parser|Parsing string 'Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025'
+2025-09-29 22:31:52.9|Debug|Parser|Unable to parse Dormann C. Statistics by Simulation. A Synthetic Data Approach 2025
+2025-09-29 22:31:53.0|Debug|DownloadDecisionMaker|Processing release 'Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.0|Debug|Parser|Parsing string 'Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026'
+2025-09-29 22:31:53.0|Debug|Parser|Unable to parse Welzl E. Boolean Satisfiability-Combinatorics and Algorithms 2026
+2025-09-29 22:31:53.0|Debug|DownloadDecisionMaker|Processing release 'Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.0|Debug|Parser|Parsing string 'Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019'
+2025-09-29 22:31:53.0|Debug|Parser|Unable to parse Bullinger S. Image-Based 3D Reconstruction of Dynamic Objects...2019
+2025-09-29 22:31:53.0|Debug|DownloadDecisionMaker|Processing release 'Dhondge K. Fundamentals of Passwordless Authentication 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.0|Debug|Parser|Parsing string 'Dhondge K. Fundamentals of Passwordless Authentication 2025'
+2025-09-29 22:31:53.0|Debug|Parser|Unable to parse Dhondge K. Fundamentals of Passwordless Authentication 2025
+2025-09-29 22:31:53.0|Debug|DownloadDecisionMaker|Processing release 'Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.0|Debug|Parser|Parsing string 'Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025'
+2025-09-29 22:31:53.0|Debug|Parser|Unable to parse Wendt D. AI Strategy and Security. A Roadmap for Secure,...AI Adoption 2025
+2025-09-29 22:31:53.0|Debug|DownloadDecisionMaker|Processing release 'Soleimani A. Designing with Algorithms. A Mathematical Guide 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.0|Debug|Parser|Parsing string 'Soleimani A. Designing with Algorithms. A Mathematical Guide 2026'
+2025-09-29 22:31:53.1|Debug|Parser|Unable to parse Soleimani A. Designing with Algorithms. A Mathematical Guide 2026
+2025-09-29 22:31:53.1|Debug|DownloadDecisionMaker|Processing release 'McFedries P. Coding For Dummies. All New Edition 2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.1|Debug|Parser|Parsing string 'McFedries P. Coding For Dummies. All New Edition 2026'
+2025-09-29 22:31:53.1|Debug|Parser|Unable to parse McFedries P. Coding For Dummies. All New Edition 2026
+2025-09-29 22:31:53.1|Debug|DownloadDecisionMaker|Processing release 'Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.1|Debug|Parser|Parsing string 'Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026'
+2025-09-29 22:31:53.1|Debug|Parser|Unable to parse Ullah M. Advanced Snowflake. Processing Data, Developing Applications,...2026
+2025-09-29 22:31:53.1|Debug|DownloadDecisionMaker|Processing release 'Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025' from 'TorrentGalaxyClone (Prowlarr)'
+2025-09-29 22:31:53.1|Debug|Parser|Parsing string 'Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025'
+2025-09-29 22:31:53.1|Debug|Parser|Unable to parse Yamanoor S. IoT Product Development Using ESP32 Microcontrollers...Examples 2025
+2025-09-29 22:31:53.1|Info|RssSyncService|RSS Sync Completed. Reports found: 100, Reports grabbed: 0
+2025-09-29 22:31:53.2|Debug|PendingReleaseService|Removing failed releases from pending
+2025-09-29 22:31:53.7|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:53.7|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (1474 ms)
+2025-09-29 22:31:53.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:53.8|Debug|Torznab|Downloading Feed http://192.168.1.102:9696/5/api?t=book&cat=7000,3030,7030,7020,7010&extended=1&apikey=(removed)&offset=0&limit=100
+2025-09-29 22:31:55.6|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:55.6|Debug|Api|[POST] /api/v1/indexer?forceSave=true: 400.BadRequest (1837 ms)
+2025-09-29 22:31:55.8|Debug|Readarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-09-29 22:31:55.8|Debug|Api|[GET] /api/v1/indexer/2: 200.OK (13 ms)
+2025-09-29 22:37:08.6|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-09-29 22:39:09.6|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:12.6|Info|ConsoleApp|Exiting main.

@@ -4329,3 +4329,46 @@
 2025-09-25 03:03:44.8|Info|MovieService|Deleted movie [Cars (2006)][tt0317219, 920]
 2025-09-25 03:08:35.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:36.9|Info|ConsoleApp|Exiting main.
+2025-09-29 22:30:55.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 5.27.5.10198
+2025-09-29 22:30:56.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:56.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:58.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:59.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:00.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:00.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:00.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:01.5|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:01.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.9413409s
+2025-09-29 22:31:01.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:02.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.151831s
+2025-09-29 22:31:03.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:03.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:03.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:03.8|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:03.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5002546s
+2025-09-29 22:31:03.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:04.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5418408s
+2025-09-29 22:31:05.6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2025-09-29 22:31:07.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2025-09-29 22:31:08.4|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:08.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:08.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2025-09-29 22:31:08.8|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:38.3|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:39.4|Info|RssSyncService|Starting RSS Sync
+2025-09-29 22:31:40.8|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-09-29 22:31:42.1|Info|Database|Vacuuming Log database
+2025-09-29 22:31:42.1|Warn|Torznab|Indexer YTS (Prowlarr) rss sync didn't cover the period between 09/24/2025 21:56:39 and 09/26/2025 14:06:11 UTC. Search may be required.
+2025-09-29 22:31:42.3|Info|Database|Log database compressed
+2025-09-29 22:31:42.6|Info|Database|Vacuuming Main database
+2025-09-29 22:31:43.2|Info|Database|Main database compressed
+2025-09-29 22:31:43.2|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 09/24/2025 23:01:25 and 09/29/2025 10:01:09 UTC. Search may be required.
+2025-09-29 22:31:44.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:31:46.2|Info|DownloadDecisionMaker|Processing 237 releases
+2025-09-29 22:31:46.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-09-29 22:32:06.0|Info|RssSyncService|RSS Sync Completed. Reports found: 237, Reports grabbed: 0
+2025-09-29 22:39:09.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:12.3|Info|ConsoleApp|Exiting main.

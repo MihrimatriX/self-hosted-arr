@@ -5476,3 +5476,44 @@
 2025-09-25 03:08:35.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:36.1|Info|DownloadDecisionMaker|Processing 314 releases
 2025-09-25 03:08:36.4|Info|ConsoleApp|Exiting main.
+2025-09-29 22:30:55.7|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/Sonarr - Version 4.0.15.2941
+2025-09-29 22:30:56.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:56.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:58.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:30:59.8|Info|MigrationController|*** Migrating data source=/config/sonarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:00.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:00.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:00.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:01.7|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:01.8|Info|FluentMigrator.Runner.MigrationRunner|=> 1.1261877s
+2025-09-29 22:31:01.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:02.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.2167779s
+2025-09-29 22:31:03.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:03.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:03.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:03.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:03.9|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:03.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5315183s
+2025-09-29 22:31:04.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:04.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5879002s
+2025-09-29 22:31:05.9|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8989
+2025-09-29 22:31:08.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:08.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:08.7|Info|Microsoft.Hosting.Lifetime|Content root path: /app/sonarr/bin
+2025-09-29 22:31:08.8|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:38.8|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:38.9|Info|RssSyncService|Starting RSS Sync
+2025-09-29 22:31:39.0|Info|SceneMappingService|Updating Scene mappings
+2025-09-29 22:31:41.7|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 09/24/2025 23:40:35 and 09/29/2025 17:01:19 UTC. Search may be required.
+2025-09-29 22:31:42.1|Warn|Torznab|Indexer Uindex (Prowlarr) rss sync didn't cover the period between 09/24/2025 23:36:00 and 09/29/2025 18:31:41 UTC. Search may be required.
+2025-09-29 22:31:42.4|Warn|Torznab|Indexer TorrentGalaxyClone (Prowlarr) rss sync didn't cover the period between 09/24/2025 23:47:24 and 09/29/2025 17:08:42 UTC. Search may be required.
+2025-09-29 22:31:42.5|Warn|Torznab|Indexer LimeTorrents (Prowlarr) rss sync didn't cover the period between 09/25/2025 00:03:24 and 09/29/2025 17:31:42 UTC. Search may be required.
+2025-09-29 22:31:44.8|Info|DownloadDecisionMaker|Processing 163 releases
+2025-09-29 22:31:45.0|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-09-29 22:31:45.2|Info|Database|Vacuuming Log database
+2025-09-29 22:31:45.3|Info|Database|Log database compressed
+2025-09-29 22:31:45.4|Info|Database|Vacuuming Main database
+2025-09-29 22:31:47.3|Info|Database|Main database compressed
+2025-09-29 22:32:03.2|Info|RssSyncService|RSS Sync Completed. Reports found: 163, Reports grabbed: 0
+2025-09-29 22:39:09.6|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:11.5|Info|ConsoleApp|Exiting main.

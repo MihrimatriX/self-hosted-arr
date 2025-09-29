@@ -119,21 +119,6 @@ services:
       - ${QBITTORRENT_BT_PORT}:6881/udp
     restart: unless-stopped
 
-  emby:
-    image: lscr.io/linuxserver/emby:latest
-    container_name: emby
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - TZ=${TZ}
-    volumes:
-      - ${CONFIG_ROOT}/emby:/config
-      - ${MEDIA_MOVIES_DIR}:/data/movies
-      - ${MEDIA_TV_DIR}:/data/tvshows
-    ports:
-      - ${EMBY_HTTP_PORT}:8096
-    restart: unless-stopped
-
   jellyfin:
     image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
@@ -172,38 +157,6 @@ services:
       - 32414:32414/udp
     restart: unless-stopped
 
-  overseerr:
-    image: sctx/overseerr:latest
-    container_name: overseerr
-    environment:
-      - LOG_LEVEL=info
-      - TZ=${TZ}
-    volumes:
-      - ${CONFIG_ROOT}/overseerr:/app/config
-    ports:
-      - ${OVERSEERR_PORT}:5055
-    restart: unless-stopped
-
-  recyclarr:
-    image: ghcr.io/recyclarr/recyclarr:latest
-    container_name: recyclarr
-    environment:
-      - TZ=${TZ}
-    volumes:
-      - ${CONFIG_ROOT}/recyclarr:/config
-    restart: unless-stopped
-
-  portainer:
-    image: portainer/portainer-ce:latest
-    container_name: portainer
-    command: -H unix:///var/run/docker.sock
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ${PORTAINER_DATA}:/data
-    ports:
-      - ${PORTAINER_PORT}:9443
-    restart: unless-stopped
-
   watchtower:
     image: containrrr/watchtower:latest
     container_name: watchtower
@@ -214,62 +167,3 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --cleanup --include-restarting --schedule "0 30 4 * * *"
     restart: unless-stopped
-
-  navidrome:
-    image: deluan/navidrome:latest
-    container_name: navidrome
-    environment:
-      - ND_LOGLEVEL=info
-      - ND_SCANSCHEDULE=1h
-      - ND_LASTFM_ENABLED=false
-      - TZ=${TZ}
-    volumes:
-      - ${NAVIDROME_DATA}:/data
-      - ${NAVIDROME_MUSIC}:/music
-    ports:
-      - ${NAVIDROME_PORT}:4533
-    restart: unless-stopped
-
-  tautulli:
-    image: lscr.io/linuxserver/tautulli:latest
-    container_name: tautulli
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - TZ=${TZ}
-    volumes:
-      - ${TAUTULLI_DATA}:/config
-      - "${CONFIG_ROOT}/plex/Library/Application Support/Plex Media Server/Logs:/logs:ro"
-    ports:
-      - ${TAUTULLI_PORT}:8181
-    restart: unless-stopped
-
-  jellystat:
-    image: cyfershepard/jellystat:latest
-    container_name: jellystat
-    environment:
-      - TZ=${TZ}
-      - JELLYSTAT_DB_PATH=/app/data
-    volumes:
-      - ${JELLYSTAT_DATA}:/app/data
-    ports:
-      - ${JELLYSTAT_PORT}:3000
-    restart: unless-stopped
-
-  audiobookshelf:
-    image: ghcr.io/advplyr/audiobookshelf:latest
-    container_name: audiobookshelf
-    environment:
-      - TZ=${TZ}
-    volumes:
-      - ${AUDIOBOOKSHELF_CONFIG}:/config
-      - ${AUDIOBOOKSHELF_METADATA}:/metadata
-      - ${AUDIOBOOKSHELF_AUDIOBOOKS}:/audiobooks
-    ports:
-      - ${AUDIOBOOKSHELF_HTTP_PORT}:80
-      - ${AUDIOBOOKSHELF_HTTPS_PORT}:443
-    restart: unless-stopped
-
-networks:
-  default:
-    name: arr-stack

@@ -2692,3 +2692,353 @@
 2025-09-25 03:08:35.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-09-25 03:08:35.8|Info|ReleaseSearchService|Searching indexer(s): [Uindex] for Term: [Family Guy] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000]
 2025-09-25 03:08:36.7|Info|ConsoleApp|Exiting main.
+2025-09-29 22:30:59.6|Info|Bootstrap|Starting Prowlarr - /app/prowlarr/bin/Prowlarr - Version 2.0.5.5160
+2025-09-29 22:31:00.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:31:00.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:31:01.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-09-29 22:31:03.6|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:04.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:04.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:04.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:04.6|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:04.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.3722905s
+2025-09-29 22:31:04.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:04.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.4394953s
+2025-09-29 22:31:05.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-09-29 22:31:05.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-09-29 22:31:05.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-09-29 22:31:05.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-09-29 22:31:06.0|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-09-29 22:31:05.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.5832922s
+2025-09-29 22:31:06.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-09-29 22:31:06.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.6814038s
+2025-09-29 22:31:07.4|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-09-29 22:31:07.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-09-29 22:31:08.4|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-09-29 22:31:19.8|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-09-29 22:31:19.9|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-09-29 22:31:19.9|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-09-29 22:31:38.1|Info|HistoryService|Removing items older than 30 days from history
+2025-09-29 22:31:38.3|Info|HousekeepingService|Running housecleaning tasks
+2025-09-29 22:31:38.3|Info|ReleaseSearchService|Searching indexer(s): [TheRARBG] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-09-29 22:31:38.4|Info|ReleaseSearchService|Searching indexer(s): [Uindex] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-09-29 22:31:38.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-09-29 22:31:38.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentGalaxyClone] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-09-29 22:31:39.9|Info|ReleaseSearchService|Searching indexer(s): [TheRARBG] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-09-29 22:31:40.3|Info|ReleaseSearchService|Searching indexer(s): [YTS] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2040, 2045, 2060]
+2025-09-29 22:31:40.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-09-29 22:31:40.5|Info|ReleaseSearchService|Searching indexer(s): [TheRARBG] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:40.5|Info|ReleaseSearchService|Searching indexer(s): [Uindex] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-09-29 22:31:40.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-09-29 22:31:40.7|Info|ReleaseSearchService|Searching indexer(s): [Uindex] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:40.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentGalaxyClone] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-09-29 22:31:40.7|Info|ReleaseSearchService|Searching indexer(s): [TheRARBG] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 7020]
+2025-09-29 22:31:40.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentGalaxyClone] for Term: [], Offset: 0, Limit: 100, Categories: [7000]
+2025-09-29 22:31:40.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentGalaxyClone] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:40.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:42.5|Info|Database|Vacuuming Log database
+2025-09-29 22:31:42.9|Info|Database|Log database compressed
+2025-09-29 22:31:43.1|Info|Database|Vacuuming Main database
+2025-09-29 22:31:43.4|Info|Database|Main database compressed
+2025-09-29 22:31:44.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:44.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:44.8|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:46.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-09-29 22:31:47.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:47.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:47.1|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:7878/api/v3/indexer?forceSave=true]
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:49.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 7020]
+2025-09-29 22:31:50.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8787/api/v1/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:50.5|Warn|ReadarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:51.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 7020]
+2025-09-29 22:31:52.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8787/api/v1/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:52.1|Warn|ReadarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:52.1|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.AddIndexer(ReadarrIndexer indexer, ReadarrSettings settings) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 96
+   at NzbDrone.Core.Applications.Readarr.Readarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Readarr/Readarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:53.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7030, 7020, 7010]
+2025-09-29 22:31:53.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8787/api/v1/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:53.8|Warn|ReadarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:55.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7030, 7020, 7010]
+2025-09-29 22:31:55.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8787/api/v1/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:55.7|Warn|ReadarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:55.7|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8787/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 202
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 137
+   at NzbDrone.Core.Applications.Readarr.ReadarrV1Proxy.AddIndexer(ReadarrIndexer indexer, ReadarrSettings settings) in ./Prowlarr.Core/Applications/Readarr/ReadarrV1Proxy.cs:line 96
+   at NzbDrone.Core.Applications.Readarr.Readarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Readarr/Readarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:56.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-09-29 22:31:57.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8686/api/v1/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:57.1|Warn|LidarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8686/api/v1/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:58.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-09-29 22:31:59.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.1.102:8686/api/v1/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-09-29 22:31:59.2|Warn|LidarrV1Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8686/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:31:59.3|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8686/api/v1/indexer?forceSave=true]
+
+[v2.0.5.5160] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.1.102:8686/api/v1/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Lidarr.LidarrV1Proxy.AddIndexer(LidarrIndexer indexer, LidarrSettings settings) in ./Prowlarr.Core/Applications/Lidarr/LidarrV1Proxy.cs:line 99
+   at NzbDrone.Core.Applications.Lidarr.Lidarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Lidarr/Lidarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-09-29 22:39:09.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-09-29 22:39:11.3|Info|ConsoleApp|Exiting main.
