@@ -1,15 +1,14 @@
-version: '3.8'
-
 services:
-  # PDF İşleme Aracı
   stirling-pdf:
     image: stirlingtools/stirling-pdf:latest
     container_name: stirling-pdf
     volumes:
-      - ./tessdata:/usr/share/tessdata
-      - ./configs:/configs
-      - ./logs:/logs
-      - ./custom-files:/customFiles
+      - ./data/tessdata:/usr/share/tessdata
+      - ./data/configs:/configs
+      - ./data/logs:/logs
+      - ./data/custom-files:/customFiles
+    ports:
+      - "8080:8080"
     environment:
       - DOCKER_ENABLE_SECURITY=true
       - LANGS=en_US,fr_FR,de_DE
@@ -17,12 +16,13 @@ services:
       - proxy-network
     restart: unless-stopped
 
-  # RSS Feed Okuyucu
   freshrss:
     image: lscr.io/linuxserver/freshrss:latest
     container_name: freshrss
     volumes:
-      - ./freshrss-data:/config
+      - ./data/freshrss-data:/config
+    ports:
+      - "8081:80"
     environment:
       - PUID=1000
       - PGID=1000
@@ -31,12 +31,14 @@ services:
       - proxy-network
     restart: unless-stopped
 
-  # Şifre Yöneticisi
   vaultwarden:
     image: vaultwarden/server:latest
     container_name: vaultwarden
     volumes:
-      - ./vaultwarden-data:/data
+      - ./data/vaultwarden-data:/data
+    ports:
+      - "8082:80"
+      - "3012:3012"
     environment:
       - WEBSOCKET_ENABLED=true
       - ADMIN_TOKEN=your_admin_token_here
@@ -44,116 +46,98 @@ services:
       - proxy-network
     restart: unless-stopped
 
-  # URL Kısaltma Servisi
   yourls:
-    image: yourls:latest
+    image: tiredofit/yourls:latest
     container_name: yourls
-    volumes:
-      - ./yourls-data:/var/www/html
     environment:
-      - YOURLS_DB_HOST=yourls-db
-      - YOURLS_DB_USER=yourls
-      - YOURLS_DB_PASS=yourls_password
-      - YOURLS_DB_NAME=yourls
-      - YOURLS_SITE=https://your-domain.com
-      - YOURLS_USER=admin
-      - YOURLS_PASS=admin_password
+      DB_HOST: yourls-db
+      DB_NAME: yourls
+      DB_USER: yourls
+      DB_PASS: yourls_password
+      ADMIN_USER: admin
+      ADMIN_PASS: admin_password
+      SITE_NAME: "My YOURLS"
+      SITE_URL: "http://localhost:8083"
+      DEBUG: "FALSE"
+    ports:
+      - "8083:80"
     depends_on:
       - yourls-db
     networks:
       - proxy-network
     restart: unless-stopped
 
-  # YOURLS Veritabanı
   yourls-db:
     image: mariadb:latest
     container_name: yourls-db
-    volumes:
-      - ./yourls-db:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=root_password
-      - MYSQL_DATABASE=yourls
-      - MYSQL_USER=yourls
-      - MYSQL_PASSWORD=yourls_password
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: yourls
+      MYSQL_USER: yourls
+      MYSQL_PASSWORD: yourls_password
     networks:
       - proxy-network
     restart: unless-stopped
 
-  # Blog Platformu
-  ghost:
-    image: ghost:latest
-    container_name: ghost
-    volumes:
-      - ./ghost-data:/var/lib/ghost/content
-    environment:
-      - database__client=mysql
-      - database__connection__host=ghost-db
-      - database__connection__user=ghost
-      - database__connection__password=ghost_password
-      - database__connection__database=ghost
-      - url=https://your-domain.com
-    depends_on:
-      - ghost-db
-    networks:
-      - proxy-network
-    restart: unless-stopped
-
-  # Ghost Veritabanı
-  ghost-db:
-    image: mariadb:latest
-    container_name: ghost-db
-    volumes:
-      - ./ghost-db:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=root_password
-      - MYSQL_DATABASE=ghost
-      - MYSQL_USER=ghost
-      - MYSQL_PASSWORD=ghost_password
-    networks:
-      - proxy-network
-    restart: unless-stopped
-
-  # Sosyal Medya Link Yöneticisi
   linkstack:
     image: linkstackorg/linkstack:latest
     container_name: linkstack
     volumes:
-      - ./linkstack-data:/app/data
+      - ./data/linkstack-data:/app/data
+    ports:
+      - "3133:80"
     environment:
-      - APP_NAME=LinkStack
-      - APP_URL=https://your-domain.com
-      - APP_ENV=production
-      - APP_DEBUG=false
-      - DB_CONNECTION=sqlite
-      - DB_DATABASE=/app/data/database.sqlite
+      APP_NAME: LinkStack
+      APP_URL: http://localhost:3133
+      FORCE_HTTPS: false
+      APP_ENV: production
+      APP_DEBUG: false
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /app/data/database.sqlite
+      APP_KEY: base64:XfKf4U9T1+0PqYxxcH4U0VjH3PkYt7qg8Yjdz9RyCVE=   # kendi ürettiğin key'i koy
     networks:
       - proxy-network
     restart: unless-stopped
 
-  # Kanban ve Proje Yönetimi
-  wekan:
-    image: wekanteam/wekan:latest
-    container_name: wekan
-    volumes:
-      - ./wekan-data:/data
-    environment:
-      - MONGO_URL=mongodb://wekan-db:27017/wekan
-    depends_on:
-      - wekan-db
-    networks:
-      - proxy-network
-    restart: unless-stopped
-
-  # Wekan Veritabanı
-  wekan-db:
+  mongo:
     image: mongo:latest
-    container_name: wekan-db
+    container_name: wekan-mongo
     volumes:
-      - ./wekan-db:/data/db
-    networks:
-      - proxy-network
+      - ./data/mongo_data:/data/db
     restart: unless-stopped
+
+  wekan:
+    image: wekanteam/wekan
+    container_name: wekan
+    depends_on:
+      - mongo
+    ports:
+      - "5555:8080"
+    environment:
+      MONGO_URL: "mongodb://mongo:27017/wekan"
+      ROOT_URL: "http://localhost:8080"
+      PORT: "8080"
+    restart: unless-stopped
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    container_name: n8n
+    ports:
+      - "5678:5678"
+    environment:
+      GENERIC_TIMEZONE: "Europe/Istanbul"
+      TZ: "Europe/Istanbul"
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+      N8N_RUNNERS_ENABLED: "true"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    restart: unless-stopped
+
+volumes:
+  n8n_data:
+    driver: local
 
 networks:
   proxy-network:
+    driver: bridge
     external: true

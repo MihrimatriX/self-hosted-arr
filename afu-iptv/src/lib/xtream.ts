@@ -121,7 +121,25 @@ function normaliseStreams(streams: XtreamStream[]): ChannelStream[] {
       
       // Proxy URL'sini olustur - base URL varsa onu kullan, yoksa relative path
       const proxyBaseUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "");
-      const proxyPath = `/api/proxy/stream?url=${encodeURIComponent(originalStreamUrl)}`;
+      const streamRefererRaw =
+        process.env.XTREAM_STREAM_REFERER?.trim() ?? originalStreamUrl;
+      let resolvedStreamReferer: string | null = streamRefererRaw;
+
+      if (resolvedStreamReferer) {
+        try {
+          resolvedStreamReferer = new URL(resolvedStreamReferer).toString();
+        } catch {
+          resolvedStreamReferer = originalStreamUrl;
+        }
+      }
+
+      const proxyParams = new URLSearchParams({ url: originalStreamUrl });
+
+      if (resolvedStreamReferer) {
+        proxyParams.set("referer", resolvedStreamReferer);
+      }
+
+      const proxyPath = `/api/proxy/stream?${proxyParams.toString()}`;
       const proxyUrl = proxyBaseUrl ? `${proxyBaseUrl}${proxyPath}` : proxyPath;
 
       const normalised: ChannelStream = {
@@ -185,4 +203,3 @@ export async function getCategoriesWithStreams(): Promise<ChannelCategory[]> {
 }
 
 export type { ChannelCategory, ChannelStream };
-
