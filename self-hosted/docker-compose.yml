@@ -46,39 +46,6 @@ services:
       - proxy-network
     restart: unless-stopped
 
-  yourls:
-    image: tiredofit/yourls:latest
-    container_name: yourls
-    environment:
-      DB_HOST: yourls-db
-      DB_NAME: yourls
-      DB_USER: yourls
-      DB_PASS: yourls_password
-      ADMIN_USER: admin
-      ADMIN_PASS: admin_password
-      SITE_NAME: "My YOURLS"
-      SITE_URL: "http://localhost:8083"
-      DEBUG: "FALSE"
-    ports:
-      - "8083:80"
-    depends_on:
-      - yourls-db
-    networks:
-      - proxy-network
-    restart: unless-stopped
-
-  yourls-db:
-    image: mariadb:latest
-    container_name: yourls-db
-    environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: yourls
-      MYSQL_USER: yourls
-      MYSQL_PASSWORD: yourls_password
-    networks:
-      - proxy-network
-    restart: unless-stopped
-
   linkstack:
     image: linkstackorg/linkstack:latest
     container_name: linkstack
