@@ -119,28 +119,44 @@ function normaliseStreams(streams: XtreamStream[]): ChannelStream[] {
       // Orijinal stream URL'i
       const originalStreamUrl = `${origin}/${folder}/${USERNAME}/${PASSWORD}/${stream.stream_id}.${extension}`;
       
-      // Proxy URL'sini olustur - base URL varsa onu kullan, yoksa relative path
-      const proxyBaseUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "");
-      const streamRefererRaw =
-        process.env.XTREAM_STREAM_REFERER?.trim() ?? originalStreamUrl;
-      let resolvedStreamReferer: string | null = streamRefererRaw;
+      // ÇÖZÜM: Direkt streaming kullan (proxy bypass)
+      // Development modda proxy kullan, production'da direkt
+      const useDirectStreaming = process.env.USE_DIRECT_STREAMING === "true" || false;
+      
+      let proxyUrl: string;
+      
+      if (useDirectStreaming) {
+        // Direkt Xtream URL'ini kullan (proxy yok)
+        proxyUrl = originalStreamUrl;
+      } else {
+        // Proxy üzerinden git
+        const proxyBaseUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "");
+        const streamRefererRaw =
+          process.env.XTREAM_STREAM_REFERER?.trim() ?? originalStreamUrl;
+        let resolvedStreamReferer: string | null = streamRefererRaw;
 
-      if (resolvedStreamReferer) {
-        try {
-          resolvedStreamReferer = new URL(resolvedStreamReferer).toString();
-        } catch {
-          resolvedStreamReferer = originalStreamUrl;
+        if (resolvedStreamReferer) {
+          try {
+            resolvedStreamReferer = new URL(resolvedStreamReferer).toString();
+          } catch {
+            resolvedStreamReferer = originalStreamUrl;
+          }
         }
+
+        const proxyParams = new URLSearchParams({ url: originalStreamUrl });
+
+        if (resolvedStreamReferer) {
+          proxyParams.set("referer", resolvedStreamReferer);
+        }
+
+        // Development modunda debug parametresi ekle
+        if (process.env.NODE_ENV !== "production") {
+          proxyParams.set("debug", "1");
+        }
+
+        const proxyPath = `/api/proxy/stream?${proxyParams.toString()}`;
+        proxyUrl = proxyBaseUrl ? `${proxyBaseUrl}${proxyPath}` : proxyPath;
       }
-
-      const proxyParams = new URLSearchParams({ url: originalStreamUrl });
-
-      if (resolvedStreamReferer) {
-        proxyParams.set("referer", resolvedStreamReferer);
-      }
-
-      const proxyPath = `/api/proxy/stream?${proxyParams.toString()}`;
-      const proxyUrl = proxyBaseUrl ? `${proxyBaseUrl}${proxyPath}` : proxyPath;
 
       const normalised: ChannelStream = {
         id: stream.stream_id,

@@ -121,6 +121,14 @@ export async function GET(request: NextRequest) {
     searchParams.get("debug") === "true" ||
     searchParams.has("debug");
 
+  if (debugEnabled) {
+    console.log("[Proxy] Request received:", {
+      streamUrl,
+      refererParam,
+      headers: Object.fromEntries(request.headers.entries()),
+    });
+  }
+
   if (!streamUrl) {
     return applyCors(
       NextResponse.json({ error: "Stream URL is required" }, { status: 400 })
@@ -234,9 +242,13 @@ export async function GET(request: NextRequest) {
 
     if (!upstreamResponse.ok || !upstreamResponse.body) {
       const detail = await upstreamResponse.text().catch(() => undefined);
-      console.warn("Proxy upstream error", {
+      console.error("[Proxy] Upstream error:", {
+        url: targetUrl.toString(),
         status: upstreamResponse.status,
+        statusText: upstreamResponse.statusText,
+        retryStage,
         detail: detail?.slice(0, 200),
+        headers: Object.fromEntries(upstreamResponse.headers.entries()),
       });
 
       const errorResponse = NextResponse.json(
@@ -329,9 +341,20 @@ export async function GET(request: NextRequest) {
       })
     );
   } catch (error) {
-    console.error("Stream proxy error", error);
+    console.error("[Proxy] Stream proxy error:", {
+      error: error instanceof Error ? error.message : String(error),
+      stack: error instanceof Error ? error.stack : undefined,
+      streamUrl,
+      refererParam,
+    });
     return applyCors(
-      NextResponse.json({ error: "Failed to fetch stream" }, { status: 500 })
+      NextResponse.json(
+        {
+          error: "Failed to fetch stream",
+          message: error instanceof Error ? error.message : "Unknown error",
+        },
+        { status: 500 }
+      )
     );
   }
 }

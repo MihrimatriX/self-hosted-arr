@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,14 +16,7 @@ module.exports = {
           DEFAULT: "#38bdf8",
           foreground: "#0f172a"
         }
-      },
-      boxShadow: {
-        floating: "0 20px 45px -12px rgba(37, 99, 235, 0.35)"
-      },
-      backgroundImage: {
-        'grid-pattern': "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0)"
       }
     }
-  },
-  plugins: []
+  }
 };

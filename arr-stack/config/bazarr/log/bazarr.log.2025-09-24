@@ -1,8 +1,0 @@
-2025-09-24 22:39:30|INFO    |root                            |Scheduler will use this timezone: Europe/Istanbul|
-2025-09-24 22:39:35|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
-2025-09-24 22:39:35|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
-2025-09-24 22:39:35|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
-2025-09-24 23:16:44|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
-2025-09-24 23:16:44|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
-2025-09-24 23:18:58|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
-2025-09-24 23:18:58|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
