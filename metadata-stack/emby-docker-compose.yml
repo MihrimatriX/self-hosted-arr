@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  emby:
+    image: lscr.io/linuxserver/emby:latest
+    container_name: emby-metadata
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - UMASK_SET=022
+    volumes:
+      - ./emby-config:/config
+      - ${MOVIES_PATH}:/data/movies:ro
+      - ${TV_PATH}:/data/tvshows:ro
+    ports:
+      - "${EMBY_HTTP_PORT}:8096"
+      - "${EMBY_HTTPS_PORT}:8920"  # HTTPS port
+    restart: unless-stopped
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    driver: bridge

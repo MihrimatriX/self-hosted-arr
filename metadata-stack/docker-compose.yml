@@ -16,8 +16,6 @@ services:
     ports:
       - "${JELLYFIN_HTTP_PORT}:8096"
       - "${JELLYFIN_HTTPS_PORT}:8920"  # HTTPS port
-      - "7359:7359/udp"  # DLNA
-      - "1900:1900/udp"  # DLNA
     restart: unless-stopped
     networks:
       - proxy-network

@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-icons": "node scripts/generate-icons.js",
+    "pwa-build": "npm run generate-icons && npm run build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
