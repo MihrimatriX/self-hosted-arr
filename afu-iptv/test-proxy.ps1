@@ -10,7 +10,7 @@ $encodedReferer = [System.Uri]::EscapeDataString($referer)
 
 # Test 1: Debug mode ile
 Write-Host "=== Test 1: Debug Mode ===" -ForegroundColor Cyan
-$proxyUrl = "http://localhost:3002/api/proxy/stream?url=$encodedStreamUrl&referer=$encodedReferer&debug=1"
+$proxyUrl = "http://localhost:3000/api/proxy/stream?url=$encodedStreamUrl&referer=$encodedReferer&debug=1"
 Write-Host "URL: $proxyUrl" -ForegroundColor Yellow
 
 try {
@@ -18,7 +18,7 @@ try {
         "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         "Accept" = "*/*"
         "Accept-Language" = "tr,en-US;q=0.9,en;q=0.8"
-        "Referer" = "http://localhost:3002/"
+        "Referer" = "http://localhost:3000/"
     } -UseBasicParsing
     
     Write-Host "✅ Success! Status: $($response.StatusCode)" -ForegroundColor Green
@@ -43,7 +43,7 @@ try {
 Write-Host "`n=== Test 2: Simple m3u8 Test ===" -ForegroundColor Cyan
 $simpleStreamUrl = "http://tgrpro25.xyz:8080/live/Mustafa0301/03012025@xyz/307968.m3u8"
 $encodedSimpleUrl = [System.Uri]::EscapeDataString($simpleStreamUrl)
-$proxyUrl2 = "http://localhost:3002/api/proxy/stream?url=$encodedSimpleUrl&debug=1"
+$proxyUrl2 = "http://localhost:3000/api/proxy/stream?url=$encodedSimpleUrl&debug=1"
 
 Write-Host "URL: $proxyUrl2" -ForegroundColor Yellow
 
@@ -64,7 +64,7 @@ try {
 # Test 3: Health check
 Write-Host "`n=== Test 3: Health Check ===" -ForegroundColor Cyan
 try {
-    $healthResponse = Invoke-RestMethod -Uri "http://localhost:3002/api/health" -Method GET
+    $healthResponse = Invoke-RestMethod -Uri "http://localhost:3000/api/health" -Method GET
     Write-Host "✅ Health Check Success!" -ForegroundColor Green
     $healthResponse | ConvertTo-Json -Depth 10 | Write-Host
 } catch {

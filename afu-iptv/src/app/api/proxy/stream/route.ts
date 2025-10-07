@@ -100,15 +100,17 @@ function rewritePlaylist(body: string, baseUrl: URL) {
 
 function applyCors<T extends Response | NextResponse>(response: T): T {
   response.headers.set("Access-Control-Allow-Origin", "*");
-  response.headers.set("Access-Control-Allow-Methods", "GET, OPTIONS");
+  response.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   response.headers.set(
     "Access-Control-Allow-Headers",
-    "Content-Type, Range, Accept, Origin, Referer"
+    "Content-Type, Range, Accept, Origin, Referer, User-Agent, Cache-Control, Pragma, X-Requested-With"
   );
   response.headers.set(
     "Access-Control-Expose-Headers",
-    "Accept-Ranges, Content-Length, Content-Range"
+    "Accept-Ranges, Content-Length, Content-Range, X-Proxy-Debug, X-Proxy-Environment"
   );
+  response.headers.set("Access-Control-Allow-Credentials", "false");
+  response.headers.set("Access-Control-Max-Age", "86400");
   return response;
 }
 
@@ -121,11 +123,19 @@ export async function GET(request: NextRequest) {
     searchParams.get("debug") === "true" ||
     searchParams.has("debug");
 
-  if (debugEnabled) {
+  // Production'da da debug log'ları göster
+  const isProduction = process.env.NODE_ENV === "production";
+  const shouldLog = debugEnabled || isProduction;
+
+  if (shouldLog) {
     console.log("[Proxy] Request received:", {
-      streamUrl,
-      refererParam,
-      headers: Object.fromEntries(request.headers.entries()),
+      streamUrl: streamUrl?.substring(0, 100) + "...",
+      refererParam: refererParam?.substring(0, 100) + "...",
+      userAgent: request.headers.get("user-agent"),
+      origin: request.headers.get("origin"),
+      referer: request.headers.get("referer"),
+      environment: process.env.NODE_ENV,
+      timestamp: new Date().toISOString()
     });
   }
 
@@ -242,21 +252,30 @@ export async function GET(request: NextRequest) {
 
     if (!upstreamResponse.ok || !upstreamResponse.body) {
       const detail = await upstreamResponse.text().catch(() => undefined);
-      console.error("[Proxy] Upstream error:", {
+      const errorInfo = {
         url: targetUrl.toString(),
         status: upstreamResponse.status,
         statusText: upstreamResponse.statusText,
         retryStage,
         detail: detail?.slice(0, 200),
         headers: Object.fromEntries(upstreamResponse.headers.entries()),
-      });
+        environment: process.env.NODE_ENV,
+        timestamp: new Date().toISOString()
+      };
+      
+      console.error("[Proxy] Upstream error:", errorInfo);
 
       const errorResponse = NextResponse.json(
-        { error: "Stream not available", status: upstreamResponse.status },
+        { 
+          error: "Stream not available", 
+          status: upstreamResponse.status,
+          message: `Upstream server returned ${upstreamResponse.status}: ${upstreamResponse.statusText}`,
+          ...(shouldLog && { debug: errorInfo })
+        },
         { status: upstreamResponse.status || 502 }
       );
 
-      if (debugEnabled) {
+      if (shouldLog) {
         errorResponse.headers.set("X-Proxy-Debug", "1");
         errorResponse.headers.set(
           "X-Proxy-Referer",
@@ -273,6 +292,7 @@ export async function GET(request: NextRequest) {
           String(upstreamResponse.status)
         );
         errorResponse.headers.set("X-Proxy-Target-Host", targetUrl.host);
+        errorResponse.headers.set("X-Proxy-Environment", process.env.NODE_ENV || "unknown");
       }
 
       return applyCors(errorResponse);
@@ -341,19 +361,33 @@ export async function GET(request: NextRequest) {
       })
     );
   } catch (error) {
-    console.error("[Proxy] Stream proxy error:", {
+    const errorInfo = {
       error: error instanceof Error ? error.message : String(error),
       stack: error instanceof Error ? error.stack : undefined,
-      streamUrl,
-      refererParam,
-    });
+      streamUrl: streamUrl?.substring(0, 100) + "...",
+      refererParam: refererParam?.substring(0, 100) + "...",
+      environment: process.env.NODE_ENV,
+      timestamp: new Date().toISOString(),
+      userAgent: request.headers.get("user-agent"),
+      origin: request.headers.get("origin")
+    };
+    
+    console.error("[Proxy] Stream proxy error:", errorInfo);
+    
     return applyCors(
       NextResponse.json(
         {
           error: "Failed to fetch stream",
           message: error instanceof Error ? error.message : "Unknown error",
+          ...(shouldLog && { debug: errorInfo })
         },
-        { status: 500 }
+        { 
+          status: 500,
+          headers: shouldLog ? {
+            "X-Proxy-Debug": "1",
+            "X-Proxy-Environment": process.env.NODE_ENV || "unknown"
+          } : {}
+        }
       )
     );
   }

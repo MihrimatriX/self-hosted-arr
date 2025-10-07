@@ -92,7 +92,19 @@ const nextConfig = {
           },
           {
             key: "Access-Control-Allow-Headers",
-            value: "Content-Type, Authorization"
+            value: "Content-Type, Authorization, Range, Accept, Origin, Referer, User-Agent, Cache-Control, Pragma, X-Requested-With"
+          },
+          {
+            key: "Access-Control-Expose-Headers",
+            value: "Accept-Ranges, Content-Length, Content-Range, X-Proxy-Debug, X-Proxy-Environment"
+          },
+          {
+            key: "Access-Control-Allow-Credentials",
+            value: "false"
+          },
+          {
+            key: "Access-Control-Max-Age",
+            value: "86400"
           }
         ]
       }

@@ -38,13 +38,17 @@ export async function GET() {
       url.searchParams.set("action", "get_live_categories");
 
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 saniye timeout
 
       const response = await fetch(url.toString(), {
         method: "GET",
         headers: {
           "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+          "Accept-Language": "tr,en-US;q=0.9,en;q=0.8",
+          "Cache-Control": "no-cache",
+          "Pragma": "no-cache"
         },
         signal: controller.signal,
       });
@@ -55,13 +59,20 @@ export async function GET() {
         xtreamStatus = "OK";
       } else {
         xtreamStatus = "ERROR";
-        xtreamError = `HTTP ${response.status}`;
+        xtreamError = `HTTP ${response.status}: ${response.statusText}`;
       }
     }
   } catch (error) {
     xtreamStatus = "ERROR";
-    xtreamError =
-      error instanceof Error ? error.message : "Unknown error";
+    if (error instanceof Error) {
+      if (error.name === 'AbortError') {
+        xtreamError = "Connection timeout (10s)";
+      } else {
+        xtreamError = error.message;
+      }
+    } else {
+      xtreamError = "Unknown error";
+    }
   }
 
   return NextResponse.json(
